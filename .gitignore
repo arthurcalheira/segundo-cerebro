@@ -1,0 +1,13 @@
+# Obsidian: estado da janela, muda a cada clique
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Segredos
+.env
+.env.*
