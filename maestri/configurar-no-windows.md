@@ -2,6 +2,8 @@
 
 Configuração do vault no Obsidian e dos terminais no Maestri, no notebook. Os passos marcados **(você)** são cliques em aplicativos. Os marcados **(agente)** são pedidos para um Claude Code.
 
+Caminho mais curto: deixar um Claude Code fazer tudo por `maestri/instalar-pelo-agente.md`. Este guia é a versão à mão.
+
 O notebook já tem o Git for Windows, o Claude Code e o clone de `ferramenta-grupos`, que é onde o projeto roda hoje.
 
 ## 1. Instalar (você)
