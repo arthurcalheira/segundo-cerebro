@@ -1,0 +1,8 @@
+{
+  "commitMessage": "vault: {{date}}",
+  "autoCommitMessage": "vault: {{date}}",
+  "autoSaveInterval": 10,
+  "differentIntervalCommitAndPush": false,
+  "autoPullOnBoot": true,
+  "showedMobileNotice": true
+}

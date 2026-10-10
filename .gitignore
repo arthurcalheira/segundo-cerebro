@@ -11,3 +11,6 @@ desktop.ini
 # Segredos
 .env
 .env.*
+
+# Maestri: o workspace mora em ~/.maestri; recrutas com papel rodam em .maestri/roles/
+.maestri/

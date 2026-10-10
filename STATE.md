@@ -1,6 +1,14 @@
 # Estado
 
-**09/10/2026:** vault montado numa sessão do Claude Code na nuvem: estrutura, regras (`AGENTS.md`), skills (`processar-inbox`, `fechar-sessao`, `despachar-nuvem`), papéis do Maestri e guia do Windows. Nada foi testado no Obsidian nem no Maestri, que rodam no notebook Windows, fora do alcance da nuvem.
+**09/10/2026:** vault montado numa sessão do Claude Code na nuvem: estrutura, regras (`AGENTS.md`), skills (`processar-inbox`, `fechar-sessao`, `despachar-nuvem`), papéis do Maestri e guia do Windows.
+
+**10/10/2026:** instalado no notebook Windows pelo roteiro `maestri/instalar-pelo-agente.md`:
+
+- [x] Pastas: `C:\Users\arthu\claude code\segundo-cerebro`, ao lado do clone que já existia em `claude code\ferramenta grupos` (com espaço, na branch `plano-4a`). A junction `claude code\ferramenta-grupos` aponta para ele, para que `../ferramenta-grupos` funcione como está escrito no vault.
+- [x] Obsidian 1.14.4 e Maestri 0.21.5 já estavam instalados.
+- [x] Obsidian Git 2.41.1 em `.obsidian/plugins/obsidian-git/`: commit-and-sync a cada 10 min (`autoSaveInterval`), pull ao abrir (`autoPullOnBoot`), mensagem `vault: {{date}}` (`commitMessage` e `autoCommitMessage`). As chaves foram tiradas dos `DEFAULT_SETTINGS` do `main.js`.
+- [x] Vault aberto no Obsidian, com o plugin ativo.
+- [x] Workspace "vitrinista" no Maestri, com o terminal `curador` (Maestro marcado) rodando `claude -n curador --add-dir ../ferramenta-grupos --append-system-prompt-file maestri/papeis/curador.md`. O terminal tinha subido só com `claude`; o comando foi corrigido no `workspace.json` com o Maestri fechado.
 
 ## Decisões
 
@@ -8,17 +16,14 @@
 - **Código e estado técnico só no projeto; no vault, o que não é código.** O vault aponta para os arquivos do projeto e não copia.
 - **O código é feito nas sessões na nuvem** (é assim que o projeto já trabalha). No notebook roda só o Curador, no Maestri; `../ferramenta-grupos` lá é cópia de leitura. Decidido em 10/10, depois do primeiro desenho com um Executor local.
 - **Sync pelo Obsidian Git**; agentes locais não fazem commit no vault. Sessão na nuvem só cria arquivo novo no inbox e faz push.
+- **Repositório público**, por escolha confirmada em 09/10. A branch padrão no GitHub é `claude/magical-fermi-mfb4ah`.
 
-## Não confirmado (Maestri)
+## Maestri no Windows
 
-O site oficial é bloqueado pelo proxy do container da nuvem. O que segue veio de busca na web.
-
-- Onde o Maestri grava as notas do canvas no Windows. Um guia de iniciante para macOS diz que é na pasta de trabalho do workspace.
-- Se o modo Maestro funciona igual no Windows.
-- Preço: as fontes divergem (US$ 18 pagos uma vez ou US$ 19 por mês).
+- **Confirmado em 10/10:** o Maestri grava o workspace (canvas, notas, terminais, snapshots) em `C:\Users\arthu\.maestri\workspaces\<id>\`, fora do vault. Na pasta de trabalho não apareceu nada. O `.gitignore` passou a ignorar `.maestri/` por precaução: a skill `maestri-manager` diz que recrutas com papel rodam em `.maestri/roles/<id>/`.
+- **Não confirmado:** se o modo Maestro funciona igual no Windows (está marcado, mas não foi usado); preço (as fontes divergem: US$ 18 pagos uma vez ou US$ 19 por mês).
 
 ## Próximo passo
 
-1. Deixar o repositório privado e dar push.
-2. No notebook: `maestri/configurar-no-windows.md`.
-3. Primeira rodada do Curador: ver onde a nota do Maestri foi parar e ajustar o `.gitignore`.
+1. Conferir, depois de 10 min com o Obsidian aberto, se o Obsidian Git fez o primeiro commit `vault: …` e o push.
+2. Usar o Curador no Maestri: primeira rodada de abertura do papel (`maestri/papeis/curador.md`).
