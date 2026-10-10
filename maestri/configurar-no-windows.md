@@ -4,7 +4,7 @@ Configuração do vault no Obsidian e dos terminais no Maestri, no notebook. Os 
 
 Caminho mais curto: deixar um Claude Code fazer tudo por `maestri/instalar-pelo-agente.md`. Este guia é a versão à mão.
 
-O notebook já tem o Git for Windows, o Claude Code e o clone de `ferramenta-grupos`, que é onde o projeto roda hoje.
+Precisa do Git for Windows e do Claude Code no notebook. O `ferramenta-grupos` é desenvolvido na nuvem; no notebook ele é só uma cópia para o Curador ler.
 
 ## 1. Instalar (você)
 
@@ -13,9 +13,9 @@ O notebook já tem o Git for Windows, o Claude Code e o clone de `ferramenta-gru
 
 ## 2. Clonar o vault (agente)
 
-Abra um terminal na pasta que contém `ferramenta-grupos`, rode `claude` e cole:
+Abra um terminal numa pasta de projetos (ex.: `Documentos\projetos`), rode `claude` e cole:
 
-> Clone https://github.com/arthurcalheira/segundo-cerebro nesta pasta, ao lado de ferramenta-grupos, e confira que segundo-cerebro/AGENTS.md existe.
+> Clone https://github.com/arthurcalheira/segundo-cerebro e https://github.com/arthurcalheira/ferramenta-grupos lado a lado nesta pasta (se ferramenta-grupos já existir em outro lugar, clone ao lado dele) e confira que segundo-cerebro/AGENTS.md existe.
 
 ## 3. Obsidian (você)
 
@@ -32,21 +32,13 @@ Abra um terminal na pasta que contém `ferramenta-grupos`, rode `claude` e cole:
    claude -n curador --add-dir ../ferramenta-grupos --append-system-prompt-file maestri/papeis/curador.md
    ```
    Nas configurações do terminal, aba Details, marque **Maestro**.
-3. Terminal **Executor**, na pasta `ferramenta-grupos`:
-   ```
-   claude -n executor --add-dir ../segundo-cerebro --append-system-prompt-file ../segundo-cerebro/maestri/papeis/executor.md
-   ```
-   Com o Codex no lugar do Claude Code, peça a ele que leia `../segundo-cerebro/maestri/papeis/executor.md` e siga o papel. Não foi testado se o Codex consegue gravar fora da pasta dele.
-4. Puxe uma linha do Executor até o Curador.
-5. Opcional: uma nota "Agora" no canvas, ligada aos dois, como quadro de status curto. O que for importante o Curador passa para o vault.
+3. Opcional: uma nota "Agora" no canvas, ligada ao Curador, como quadro de status curto. O que for importante o Curador passa para o vault.
+
+O código continua sendo feito nas sessões na nuvem; não há terminal de desenvolvimento no canvas.
 
 ## 5. Primeira rodada (agente: Curador)
 
 > Confira onde o Maestri gravou a nota "Agora" e os arquivos do workspace. Ponha no .gitignore o que for dado interno do Maestri e anote no STATE.md.
-
-## Memória (3,7 GB)
-
-Curador, Executor, Obsidian e Maestri juntos já ocupam boa parte da memória (cada Claude Code usa centenas de MB). Antes de `dev:up` (Postgres e Evolution), feche o Curador. Trabalho pesado vai para a nuvem pela skill `despachar-nuvem`.
 
 ## Pelo celular
 

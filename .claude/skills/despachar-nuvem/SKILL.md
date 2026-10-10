@@ -9,7 +9,7 @@ A sessão na nuvem clona `ferramenta-grupos` do GitHub, na branch atual (não a 
 
 ## Antes
 
-- Em `../ferramenta-grupos`: `git status` limpo e a branch no GitHub. O que não estiver no GitHub não chega à sessão. O push sai do notebook: confirme antes.
+- Em `../ferramenta-grupos` (cópia só de leitura): `git checkout <branch de partida>` e `git pull`. A sessão parte do que está no GitHub nessa branch; normalmente o `master`, ou a branch do plano em andamento segundo o `STATE.md`.
 - Escreva a tarefa autossuficiente: objetivo, spec ou arquivos de referência, como conferir (suíte, `next build`) e "ao terminar, atualize o STATE.md e dê push na branch".
 
 ## Despachar

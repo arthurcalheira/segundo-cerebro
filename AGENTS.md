@@ -1,6 +1,6 @@
 # Segundo cérebro — Vitrinista
 
-Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-grupos`, pasta irmã `../ferramenta-grupos`). Lido e escrito por agentes (Claude Code, Codex) orquestrados no Maestri, no notebook Windows, e por sessões do Claude Code na nuvem.
+Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-grupos`, desenvolvido em sessões do Claude Code na nuvem; cópia de leitura na pasta irmã `../ferramenta-grupos`). Mantido pelo Curador, um Claude Code no Maestri, no notebook Windows.
 
 ## Onde mora cada verdade
 
@@ -30,10 +30,9 @@ Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-g
 
 ## Quem faz o quê no Maestri
 
-- **Curador**: terminal com o modo Maestro, Claude Code aberto neste vault. Organiza o inbox, mantém mapa, pendências e decisões, escreve o diário e despacha trabalho pesado para a nuvem. Papel: `maestri/papeis/curador.md`.
-- **Executor**: Claude Code ou Codex aberto em `ferramenta-grupos`. Trabalha no código pelas regras de lá e, ao fim de cada entrega, cria uma nota no `00-inbox/` daqui. Papel: `maestri/papeis/executor.md`.
-- **Sessões na nuvem** (`claude --cloud`): trabalham no repositório do projeto e não escrevem aqui. O Curador registra cada uma em `10-vitrinista/sessoes-nuvem.md` e traz o resultado (skill `despachar-nuvem`).
-- No máximo dois agentes locais ao mesmo tempo: o notebook tem 3,7 GB de RAM (`ferramenta-grupos/AGENTS.md`). O que não couber vai para a nuvem.
+- **Curador**: o único agente no notebook. Terminal com o modo Maestro, Claude Code aberto neste vault. Organiza o inbox, mantém mapa, pendências e decisões, escreve o diário, acompanha o projeto e manda tarefas para a nuvem. Papel: `maestri/papeis/curador.md`.
+- **Executor = sessões do Claude Code na nuvem.** O código do `ferramenta-grupos` é feito lá, abertas pelo claude.ai ou pelo Curador (`claude --cloud`). Elas trabalham no repositório do projeto e não escrevem aqui. O Curador traz o resultado pelo `STATE.md` e pelas branches do projeto, e registra as que ele mesmo abriu em `10-vitrinista/sessoes-nuvem.md` (skill `despachar-nuvem`).
+- `../ferramenta-grupos` no notebook é só uma cópia para leitura e para mandar tarefas à nuvem: ninguém desenvolve nela.
 
 ## Sincronização
 

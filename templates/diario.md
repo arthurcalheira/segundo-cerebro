@@ -6,6 +6,4 @@ data: {{date:YYYY-MM-DD}}
 
 ## Curador
 
-## Executor
-
 ## Nuvem

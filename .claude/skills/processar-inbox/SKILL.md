@@ -1,6 +1,6 @@
 ---
 name: processar-inbox
-description: Esvazia o 00-inbox do vault levando cada nota para o diário, as decisões, as pendências, a pesquisa ou as ideias, com links. Use quando o inbox tiver notas, quando o Executor avisar de nota nova ou quando pedirem para organizar o vault.
+description: Esvazia o 00-inbox do vault levando cada nota para o diário, as decisões, as pendências, a pesquisa ou as ideias, com links. Use quando o inbox tiver notas, ou quando pedirem para organizar o vault.
 ---
 
 # Processar o inbox

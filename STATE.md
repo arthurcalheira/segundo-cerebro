@@ -6,7 +6,7 @@
 
 - **Vault separado do código**, com o projeto na pasta irmã `../ferramenta-grupos`. Abrir o repositório do projeto como vault faria o Obsidian varrer o `node_modules` num notebook de 3,7 GB, e o estado técnico já tem lugar (`STATE.md` de lá).
 - **Código e estado técnico só no projeto; no vault, o que não é código.** O vault aponta para os arquivos do projeto e não copia.
-- **No máximo dois agentes locais** (3,7 GB de RAM). Trabalho pesado vai para a nuvem com `claude --cloud`.
+- **O código é feito nas sessões na nuvem** (é assim que o projeto já trabalha). No notebook roda só o Curador, no Maestri; `../ferramenta-grupos` lá é cópia de leitura. Decidido em 10/10, depois do primeiro desenho com um Executor local.
 - **Sync pelo Obsidian Git**; agentes locais não fazem commit no vault. Sessão na nuvem só cria arquivo novo no inbox e faz push.
 
 ## Não confirmado (Maestri)
