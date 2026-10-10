@@ -43,9 +43,16 @@ Elas disparam no terminal do Curador. Com um `--pre-run` que só sai com código
 |---|---|---|
 | Abertura | todo dia às 9h | Rotina de abertura do papel (pull, estados, diário, inbox) |
 | Vigia da nuvem | a cada 20 min | O pre-run faz `git fetch` e compara as branches com a última leitura (script em `maestri/scripts/`). Só dispara quando alguma branch mudou, e o comando pede ao Curador para trazer o resultado |
-| Fechamento | todo dia às 19h | Skill `fechar-sessao` |
+| Fechamento | todo dia às 21h30 | Skill `fechar-sessao` |
 
 Rotina só dispara com o notebook ligado e o Maestri aberto. Se o terminal estiver ocupado, ela pula (o padrão).
+
+Criadas e testadas em 10/10. O que os testes mostraram sobre o `--pre-run` no Windows:
+
+- Ele roda no `cmd.exe`, já dentro da pasta do workspace, com `%MAESTRI_WORKSPACE_DIR%` definida e o `git` no PATH.
+- **Aspa dupla no pre-run faz ele não executar nada, sem erro.** Como o caminho do vault tem espaço, a saída é entrar na pasta com `cd /d %MAESTRI_WORKSPACE_DIR% &&` e usar caminho relativo, sem aspas.
+- Com o terminal alvo ocupado, o disparo é pulado antes do pre-run (uma observação). Por isso o vigia não perde aviso: o estado dele só avança quando o script roda.
+- Rotina `--once` some da lista depois de disparar, mesmo quando o disparo foi pulado.
 
 ## Pelo celular
 
@@ -65,6 +72,6 @@ Rotina só dispara com o notebook ligado e o Maestri aberto. Se o terminal estiv
 ## Não confirmado
 
 - Se o `claude --cloud` volta sozinho para o prompt ou fica conectado à sessão (por isso o terminal próprio).
-- Qual shell o `--pre-run` das rotinas usa no Windows (PowerShell ou o Git Bash). O script do vigia precisa ser escrito para ele.
+- A entrega do comando do vigia no terminal do Curador com a saída do pre-run no lugar do `{{output}}`: um disparo único de teste foi agendado para as 14h21 de 10/10; o vigia de verdade só se confirma no primeiro push de uma sessão na nuvem.
 - Quanto um terminal Shell e um portal pesam de fato no Windows. Medir no passo 2 e no 5.
 - O nome do terminal no canvas aparece como "Maestro", e não "curador" como diz o `STATE.md` do vault. Não muda nada no funcionamento.

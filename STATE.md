@@ -22,8 +22,14 @@
 ## Maestri no Windows
 
 - **Confirmado em 10/10:** o Maestri grava o workspace (canvas, notas, terminais, snapshots) em `C:\Users\arthu\.maestri\workspaces\<id>\`, fora do vault. Na pasta de trabalho não apareceu nada. O `.gitignore` passou a ignorar `.maestri/` por precaução: a skill `maestri-manager` diz que recrutas com papel rodam em `.maestri/roles/<id>/`.
-- **Não confirmado:** se o modo Maestro funciona igual no Windows (está marcado, mas não foi usado); preço (as fontes divergem: US$ 18 pagos uma vez ou US$ 19 por mês).
+- **Confirmado em 10/10, modo Maestro:** `maestri list`, `preset list`, `workspace list`, `note create/write` e `routine create/edit/run` funcionam. O terminal aparece no canvas como "Maestro". `recruit`, portal e floors ainda não foram usados.
+- **Rotinas (10/10):** Abertura 9h, Vigia da nuvem a cada 20 min e Fechamento 21h30. O `--pre-run` roda no `cmd.exe` e não executa se tiver aspa dupla; detalhes em `maestri/plano-workspace.md`. O vigia guarda a última leitura das branches em `.maestri/vigia-refs.txt` (ignorado pelo git).
+- **Não confirmado:** a entrega do comando de uma rotina no terminal do Curador com o `{{output}}` preenchido (teste de disparo único agendado para as 14h21 de 10/10); preço (as fontes divergem: US$ 18 pagos uma vez ou US$ 19 por mês).
 
 ## Próximo passo
 
-1. Usar o Curador no Maestri: primeira rodada de abertura do papel (`maestri/papeis/curador.md`).
+Plano do workspace em `maestri/plano-workspace.md`, aprovado em 10/10 com o fechamento às 21h30. Feitos: a nota "Agora" (passo 1) e as rotinas (passo 3). A cópia local do projeto está no `master`.
+
+1. Passo 2: primeira tarefa na nuvem por um terminal Shell (`claude --cloud`), para testar o caminho e ajustar a skill `despachar-nuvem`. Espera a escolha do próximo plano (5C, 5D, 5G ou 5H; recomendado 5G).
+2. Passo 4: chave SSH para o VPS. Espera o ok para o SSH e a troca da senha de root.
+3. Passos 5 e 6: primeiro deploy por aqui (a 5F) e atualizar `maestri/papeis/curador.md` e `maestri/configurar-no-windows.md`.
