@@ -9,6 +9,7 @@
 - [x] Obsidian Git 2.41.1 em `.obsidian/plugins/obsidian-git/`: commit-and-sync a cada 10 min (`autoSaveInterval`), pull ao abrir (`autoPullOnBoot`), mensagem `vault: {{date}}` (`commitMessage` e `autoCommitMessage`). As chaves foram tiradas dos `DEFAULT_SETTINGS` do `main.js`.
 - [x] Vault aberto no Obsidian, com o plugin ativo.
 - [x] Workspace "vitrinista" no Maestri, com o terminal `curador` (Maestro marcado) rodando `claude -n curador --add-dir ../ferramenta-grupos --append-system-prompt-file maestri/papeis/curador.md`. O terminal tinha subido só com `claude`; o comando foi corrigido no `workspace.json` com o Maestri fechado.
+- [x] Sync testado: primeiro commit automático `vault: 2026-10-10 12:50:48` com push. Antes disso o commit falhava porque o git do notebook não tinha nome e e-mail. A identidade foi configurada só neste repositório, com o e-mail noreply do GitHub (o repositório é público).
 
 ## Decisões
 
@@ -25,5 +26,4 @@
 
 ## Próximo passo
 
-1. Conferir, depois de 10 min com o Obsidian aberto, se o Obsidian Git fez o primeiro commit `vault: …` e o push.
-2. Usar o Curador no Maestri: primeira rodada de abertura do papel (`maestri/papeis/curador.md`).
+1. Usar o Curador no Maestri: primeira rodada de abertura do papel (`maestri/papeis/curador.md`).
