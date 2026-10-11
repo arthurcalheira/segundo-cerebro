@@ -7,6 +7,8 @@ Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-g
 - **Código e estado técnico ficam no projeto**, não aqui: `STATE.md`, `AGENTS.md`, `PRODUCT.md`, `.claude/guides/` e `docs/` de `ferramenta-grupos`. O vault aponta para eles pelo caminho e nunca copia o conteúdo. Mapa: [[vitrinista]].
 - **O vault guarda o que não é código:** decisões de produto e negócio, pendências fora do código, pesquisa (concorrentes, programas de afiliados, preços), lançamento e conteúdo, ideias e o diário do que cada agente fez.
 - Decisão que muda o código entra no projeto pelo agente que trabalha nele (spec, guia ou `STATE.md` de lá). Aqui fica a nota da decisão, dizendo onde ela entrou.
+- Aqui não há build, lint nem teste: é um vault de notas. Os comandos do projeto estão no `AGENTS.md` de `ferramenta-grupos`.
+- Onde paramos e o próximo passo do vault: `STATE.md`, na raiz (reescrito a cada fechamento).
 
 ## Pastas
 
@@ -17,8 +19,9 @@ Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-g
 | `20-pesquisa/` | Uma nota por assunto pesquisado, com fontes e data |
 | `30-diario/` | Uma nota por dia (`AAAA-MM-DD.md`), uma linha por entrega, sob o nome do agente |
 | `90-arquivo/` | O que saiu de uso (decisão revogada, pesquisa vencida, pendência resolvida há mais de um mês) |
-| `maestri/` | Papéis dos terminais e a configuração no Windows |
+| `maestri/` | Papéis dos terminais (`papeis/`), plano do workspace e das rotinas (`plano-workspace.md`), script do vigia (`scripts/`) e a configuração no Windows |
 | `templates/` | Modelos de diário, decisão e pesquisa |
+| `.maestri/` | Fora do git: rascunho de tarefa para a nuvem e a última leitura do vigia. Temporário vai aqui |
 
 ## Como escrever
 
@@ -26,7 +29,7 @@ Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-g
 - Link entre notas com `[[nome-da-nota]]`. Arquivo do projeto pelo caminho, em código: `ferramenta-grupos/STATE.md`.
 - Decisão, pesquisa e pendência dizem a fonte (conversa, arquivo do projeto, site) e a data. O que não foi confirmado vai marcado como não confirmado.
 - Nada de número, depoimento ou resultado inventado (princípio "prova real ou nenhuma" do `PRODUCT.md`).
-- Sem segredos (tokens, senhas, `.env`) e sem dados pessoais de terceiros (telefone, CPF, e-mail).
+- O repositório do vault é público: sem segredos (tokens, senhas, `.env`), sem dados pessoais de terceiros (telefone, CPF, e-mail) e sem detalhe de segurança do servidor (endereço IP, firewall, como as chaves são guardadas).
 
 ## Quem faz o quê no Maestri
 
@@ -38,6 +41,8 @@ Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-g
 ## Sincronização
 
 - O vault é um repositório git. No notebook, o plugin Obsidian Git faz commit e sync sozinho enquanto o Obsidian está aberto; agentes locais não fazem commit aqui.
+- A branch do vault é `claude/magical-fermi-mfb4ah` (não há `master`). Sincronizado quer dizer `git status` limpo e `git log origin/claude/magical-fermi-mfb4ah..HEAD` vazio. Com coisa parada, o Obsidian está fechado: `cmd /c start "" "obsidian://open?path=<pasta do vault>"`. Confira ao abrir e antes de mandar à nuvem uma sessão que leia o vault.
+- O clone do projeto mora em `claude code\ferramenta grupos` (com espaço); `../ferramenta-grupos` é uma junction para ele. Caminho entre aspas em todo comando.
 - Sessão na nuvem que escrever no vault só cria arquivo novo no `00-inbox/` e faz commit e push ao terminar: o container some no fim da sessão, e editar arquivo existente brigaria com o sync do notebook.
 
 ## Skills (`.claude/skills/`)
