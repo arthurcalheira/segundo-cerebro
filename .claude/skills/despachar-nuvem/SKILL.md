@@ -41,6 +41,7 @@ Toda sessão tem uma função, com o papel em `maestri/papeis/<função>.md`. Co
 
 - Instrução nova: `claude -p "<mensagem>" --cloud <id>`, de dentro da pasta do repositório. Conferido em 10/10: responde `Sent to cloud session` e sai; pode rodar pela ferramenta de shell. A resposta da sessão não volta por aqui.
 - Andamento: o link da sessão no claude.ai ou no app do Claude.
+- Branch parada não quer dizer sessão parada (11/10): o Construtor fez quatro tarefas sem push e depois o processo dele foi reiniciado. Peça na tarefa "push a cada tarefa". Com mais de uma hora sem push durante uma execução, mande uma mensagem pedindo o estado no `STATE.md`: ela também acorda a sessão.
 - Resultado: `git -C ../ferramenta-grupos fetch origin`, depois o `STATE.md` e o diff da branch da sessão.
 - Continuar no notebook: `claude --teleport <id>` num terminal em `../ferramenta-grupos` com a árvore limpa. Vira uma cópia local, e o que for feito nela não volta para a nuvem.
 
