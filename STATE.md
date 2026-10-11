@@ -31,20 +31,20 @@ Está escrito onde é usado: a skill `despachar-nuvem` (como abrir sessão, mand
 
 ## Onde paramos (10/10, 21h45)
 
-- **Sync do vault parado desde as 14h19:** o Obsidian estava fechado e nada do que foi escrito à tarde subiu para o GitHub. As sessões na nuvem leem o vault de lá: a nota [[2026-10-10-documentos-legais-prazos]], citada no `STATE.md` do projeto, ainda não existia no GitHub. O Curador abriu o Obsidian no fechamento; conferir na abertura se o commit e o push aconteceram.
-- **5C pronto na branch, sem merge.** O Construtor (`session_013rwxSVet66nEoYze4K1roE`, ver `10-vitrinista/sessoes-nuvem.md`) terminou em `b45bbc7`, na branch `claude/plano-5c-multi-numeros-a0ybgc`: oito tarefas, revisão em quatro lentes (14 achados menores, corrigidos), conferência no navegador, suítes verdes, `STATE.md` do projeto reescrito. A branch leva também a troca do e-mail de contato do site para `contato@usevitrinista.com.br`.
+- **Sync do vault:** ficou parado das 14h19 às 21h47, porque o Obsidian estava fechado; nesse intervalo as sessões na nuvem leram um vault sem as notas da tarde (a nota [[2026-10-10-documentos-legais-prazos]], citada no `STATE.md` do projeto, não existia no GitHub). O Curador abriu o Obsidian no fechamento e o commit `3444c87` subiu com tudo (conferido: nada pendente, e o `.claude/settings.local.json` ficou de fora). O Obsidian ficou aberto, com 251 MB.
+- **5C no `master` desde as 21h55 de 10/10** (`b45bbc7`), por avanço direto feito pelo Curador com o ok dado na conversa ("pode subir ao master sim"). **Ainda não está no servidor:** o deploy não foi pedido. O Construtor (`session_013rwxSVet66nEoYze4K1roE`, ver `10-vitrinista/sessoes-nuvem.md`) terminou em `b45bbc7`, na branch `claude/plano-5c-multi-numeros-a0ybgc`: oito tarefas, revisão em quatro lentes (14 achados menores, corrigidos), conferência no navegador, suítes verdes, `STATE.md` do projeto reescrito. A branch leva também a troca do e-mail de contato do site para `contato@usevitrinista.com.br`.
 - **Servidor:** painel em `https://painel.usevitrinista.com.br` desde as 15h38 (troca do domínio concluída, Asaas incluído), em `572e93a`, com a 5F no ar. Senha de root trocada.
 - **E-mail do domínio:** caixa `contato@` no Zoho Mail recebendo; falta o DKIM. Ver [[email-do-dominio]].
 - **Cota da semana:** 39% usada às 15h de sábado, com aviso de que acabaria antes do reset de sexta às 16h. O 5C inteiro rodou depois dessa medição: o valor atual não foi conferido.
 
 ## Próximo passo
 
-1. **Conferir o sync do vault** (`git log origin/claude/magical-fermi-mfb4ah..HEAD` vazio e `git status` limpo). Se não subiu, o Obsidian precisa ficar aberto.
-2. **Merge e deploy do 5C, com confirmação.** Antes, no servidor (lista do `STATE.md` do projeto, seção "Antes do merge e do deploy do 5C"):
+1. **Conferir o sync do vault a cada abertura** (`git log origin/claude/magical-fermi-mfb4ah..HEAD` vazio e `git status` limpo). Se houver coisa parada, o Obsidian está fechado: abrir com `cmd /c start "" "obsidian://open?path=<pasta do vault>"`.
+2. **Deploy do 5C, com confirmação** (o merge já foi feito). Antes, no servidor (lista do `STATE.md` do projeto, seção "Antes do merge e do deploy do 5C"):
    - quantos números a conta de produção tem e qual é o mais antigo, porque a web passa a abrir no mais antigo. Em 10/10 o `wa:status` mostrava dois, um conectado com o automático ligado e um desconectado sem grupo; não conferido se são da mesma conta;
    - a conta de produção é admin e vale como Atelier: a tela Conexão muda mesmo com um número;
    - o worker sobe antes da web, e a web precisa ser recriada: no deploy de 10/10 o container da web não foi recriado, embora a imagem tivesse sido reconstruída.
-3. **Avisar o próximo agente do projeto** do que o `STATE.md` de lá ainda traz errado: o webhook do Asaas no endereço novo já foi cadastrado em 10/10 e os dois ajustes no painel do Asaas foram feitos; a caixa `contato@` já recebeu mensagem real.
+3. **Avisar o próximo agente do projeto** do que o `STATE.md` de lá ainda traz errado: o webhook do Asaas no endereço novo já foi cadastrado em 10/10 e os dois ajustes no painel do Asaas foram feitos; a caixa `contato@` já recebeu mensagem real; o 5C já está no `master` (o texto de lá diz "sem merge").
 4. **Abrir o Construtor da 5D** depois do 5C no `master`, se a cota permitir.
 5. **Com quem cuida do produto** (ver [[pendencias]]): DKIM no Zoho; seis lacunas para o advogado; prova da autorização das lojas; onde fica o backup externo; Google Analytics ou não; link do dashboard da multimarca; as 8 frases de chamada; @ no Instagram; INPI.
 6. **Do plano do workspace, ainda por fazer:** atualizar `maestri/configurar-no-windows.md` com as rotinas, o terminal do VPS e o portal.

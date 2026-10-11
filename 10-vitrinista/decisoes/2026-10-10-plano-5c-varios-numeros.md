@@ -18,7 +18,7 @@ fonte: respostas dadas à sessão do Construtor na nuvem, registradas no commit 
 
 **Por quê:** as razões de cada item estão na spec. A 2, a 3, a 4, a 5 e a 7 seguiram a recomendação do Construtor.
 
-**Onde entrou:** `ferramenta-grupos/docs/superpowers/specs/2026-10-10-plano-5c-varios-numeros-design.md`, na branch `claude/plano-5c-multi-numeros-a0ybgc` (ainda fora do `master`).
+**Onde entrou:** `ferramenta-grupos/docs/superpowers/specs/2026-10-10-plano-5c-varios-numeros-design.md`, no `master` desde 10/10 (`b45bbc7`, vindo da branch `claude/plano-5c-multi-numeros-a0ybgc`). Ainda não está no servidor.
 
 **Alternativas descartadas:** começar pela 5G (administração), que era a recomendação do Curador; vender o Atelier só depois da 5D; o número mais antigo continuar sem escolha.
 
