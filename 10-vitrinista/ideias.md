@@ -31,5 +31,5 @@ A conta que orienta as sugestões: o Essencial rende R$ 59,90 por número, o Mai
 - 10/10 — Novidades só do Maison para cima (texto por IA, alerta de queda de preço e o que mais vier): o Essencial fica como o básico que funciona.
 - 10/10 — Plano anual só no Maison e no Atelier, por exemplo 12 meses pelo preço de 10. Não verificado como o Asaas trata cobrança anual.
 - 10/10 — Não mexer agora: o preço do Essencial (subir para R$ 69,90, o piso da concorrente, arrisca leads; testar depois, com dados da 5G).
-- 10/10 — Antes de vender o Atelier: definir canal e horário do atendimento direto.
+- 10/10 — Antes de vender o Atelier: definir canal e horário do atendimento direto. Decidido no mesmo dia, no brainstorming da 5G: WhatsApp e e-mail, todos os dias das 9h às 21h ([[2026-10-10-plano-5g-administracao]]).
 - 10/10 — Pergunta em aberto: o alvo é o Maison, com o Atelier para quem precisa de vários números?
