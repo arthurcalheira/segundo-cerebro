@@ -18,8 +18,10 @@ fonte: respostas dadas à sessão do Construtor na nuvem, registradas no commit 
 
 **Por quê:** as razões de cada item estão na spec. A 2, a 3, a 4, a 5 e a 7 seguiram a recomendação do Construtor.
 
-**Onde entrou:** `ferramenta-grupos/docs/superpowers/specs/2026-10-10-plano-5c-varios-numeros-design.md`, no `master` desde 10/10 (`b45bbc7`, vindo da branch `claude/plano-5c-multi-numeros-a0ybgc`). Ainda não está no servidor.
+**Onde entrou:** `ferramenta-grupos/docs/superpowers/specs/2026-10-10-plano-5c-varios-numeros-design.md`, no `master` desde 10/10 (`b45bbc7`, vindo da branch `claude/plano-5c-multi-numeros-a0ybgc`). No servidor desde as 22h06 do mesmo dia.
 
 **Alternativas descartadas:** começar pela 5G (administração), que era a recomendação do Curador; vender o Atelier só depois da 5D; o número mais antigo continuar sem escolha.
+
+**Revogado na noite de 10/10:** a 5D saiu dos planos, ver [[2026-10-10-sem-mensagens-agendadas]]. O parágrafo abaixo fica como registro do que tinha sido decidido à tarde.
 
 **Consequência, confirmada na conversa com o Curador em 10/10:** a spec do lançamento diz que nada é vendido antes de existir, e o Atelier promete as mensagens agendadas (5D). Como o Atelier será vendido no lançamento, **a 5D é requisito do lançamento e é o plano seguinte ao 5C**. Depois vêm a 5G e a 5H. A ordem foi mantida mais tarde na mesma conversa ("mantém a ordem"), quando surgiu a ideia de adiantar a 5G: ela não roda em paralelo com o 5C (mesmos arquivos, mesma migração `0035`, mesma cota). Entrou no projeto pelo Construtor, no commit `ede1c49` da branch do 5C (`STATE.md`).
