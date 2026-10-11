@@ -1,6 +1,6 @@
 # Estado
 
-Reescrito no fechamento de 10/10/2026 pelo Curador. O dia inteiro está em `30-diario/2026-10-10.md`.
+Reescrito no fechamento de 10/10/2026 pelo Curador; atualizado às 22h50 com a abertura da 5G. O dia inteiro está em `30-diario/2026-10-10.md`.
 
 ## Como o vault funciona hoje
 
@@ -35,7 +35,7 @@ Está escrito onde é usado: a skill `despachar-nuvem` (como abrir sessão, mand
 - **5C no `master` desde as 21h55 e no servidor desde as 22h06 de 10/10** (`b45bbc7`), os dois com ok dado na conversa. Conferido depois do deploy: os cinco containers saudáveis; web e worker rodando as imagens novas (desta vez a web foi recriada); migração `0035` aplicada, com os dois números na ordem do id; os dois números são de contas diferentes, um em cada; número principal conectado com o automático ligado; nenhum erro no log do worker; `/termos` e `/privacidade` com `contato@usevitrinista.com.br` e sem o e-mail antigo. As telas por dentro do painel foram conferidas por quem cuida do produto: a linha "Número:" aparece na Conexão e o resto está normal (confirmado na conversa). O Construtor (`session_013rwxSVet66nEoYze4K1roE`, ver `10-vitrinista/sessoes-nuvem.md`) terminou em `b45bbc7`, na branch `claude/plano-5c-multi-numeros-a0ybgc`: oito tarefas, revisão em quatro lentes (14 achados menores, corrigidos), conferência no navegador, suítes verdes, `STATE.md` do projeto reescrito. A branch leva também a troca do e-mail de contato do site para `contato@usevitrinista.com.br`.
 - **Servidor:** painel em `https://painel.usevitrinista.com.br` desde as 15h38 (troca do domínio concluída, Asaas incluído), em `b45bbc7`, com a 5F e o 5C no ar. Senha de root trocada.
 - **E-mail do domínio:** caixa `contato@` no Zoho Mail recebendo; falta o DKIM. Ver [[email-do-dominio]].
-- **Cota da semana:** 39% usada às 15h de sábado, com aviso de que acabaria antes do reset de sexta às 16h. O 5C inteiro rodou depois dessa medição: o valor atual não foi conferido.
+- **Cota da semana:** 53% usada às 22h45 de sábado 10/10 (lida na barra do Claude Code, `7d`), antes de abrir a 5G; eram 39% às 15h. Zera na sexta às 16h. A execução da 5G só começa com a aprovação da spec.
 
 ## Próximo passo
 
@@ -43,7 +43,7 @@ Está escrito onde é usado: a skill `despachar-nuvem` (como abrir sessão, mand
 2. **Levar ao próximo agente do projeto, no início da tarefa dele:**
    - **Defeito no `deploy/atualizar.sh`:** com mais de 20 commits novos ele aborta logo depois do `git pull`, antes de construir. A linha `git log --oneline "$antes..$depois" | head -n 20` roda sob `set -o pipefail`, e o `head` fecha a saída. Aconteceu em 10/10 com 23 commits: o código ficou baixado e os containers antigos continuaram no ar. Rodar de novo resolve, porque sem commit novo o script não passa por essa linha.
    - O que o `STATE.md` de lá ainda traz errado: o 5C já está no `master` e no servidor (o texto diz "sem merge"); o webhook do Asaas no endereço novo foi cadastrado em 10/10 e os dois ajustes no painel do Asaas foram feitos; a caixa `contato@` já recebeu mensagem real; no deploy do 5C a web foi recriada normalmente.
-3. **Abrir o Construtor da 5G** (administração). Em 10/10 à noite o pedido foi feito e suspenso na mesma conversa ("espera"): nenhuma sessão foi aberta. Abrir só com novo pedido e se a cota permitir (conferir o uso da semana antes; zera na sexta às 16h). No início da tarefa dele, além do item 2: tirar as mensagens agendadas do projeto, pelos lugares listados em [[2026-10-10-sem-mensagens-agendadas]].
+3. **Acompanhar o Construtor da 5G** (administração), aberto às 22h50 de 10/10 com novo pedido na conversa: `session_018vtJhnFxU15MdfeuPieSrY`, linha em [[sessoes-nuvem]]. A tarefa já leva o item 2 e a retirada das mensagens agendadas ([[2026-10-10-sem-mensagens-agendadas]]), como três commits antes do brainstorming. Ele para depois da spec e espera a aprovação, dada na sessão (claude.ai ou app do Claude). A branch ainda não tinha push às 22h52. Quando houver: conferir os três acertos, anotar as decisões do brainstorming em `decisoes/` e trocar a situação na linha.
 4. **Com quem cuida do produto** (ver [[pendencias]]): DKIM no Zoho; seis lacunas para o advogado; prova da autorização das lojas; onde fica o backup externo; Google Analytics ou não; link do dashboard da multimarca; as 8 frases de chamada; @ no Instagram; INPI.
 5. **Sem decisão, guardado em [[ideias]]:** 13 ideias de features e as sugestões de planos e página de vendas para o objetivo de levar o máximo de assinantes ao Maison ou ao Atelier, com lucro e sem perder leads. Três perguntas esperam resposta: teste grátis com os recursos do Maison, Maison como "recomendado pela Fran" e o alvo ser o Maison. Se aprovadas, vão para a 5H.
 6. **Do plano do workspace, ainda por fazer:** atualizar `maestri/configurar-no-windows.md` com as rotinas, o terminal do VPS e o portal.

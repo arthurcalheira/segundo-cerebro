@@ -25,6 +25,7 @@ Toda sessão tem uma função, com o papel em `maestri/papeis/<função>.md`. Co
 
 - Em `../ferramenta-grupos` (cópia só de leitura): `git checkout <branch de partida>` e `git pull`. A sessão parte do que está no GitHub nessa branch; normalmente o `master`, ou a branch do plano em andamento segundo o `STATE.md`.
 - Pesquisador: a sessão parte do que está no GitHub do vault. Confira que o Obsidian Git já enviou o que ela precisa ler (`git status` limpo e `git log origin/<branch>..HEAD` vazio).
+- Cota da semana (conferido em 10/10): abra `claude` no terminal recrutado e leia o `7d:` na barra de baixo; saia com `/exit`. Não há leitura pela ferramenta de shell. Mande ao terminal o que começa com `/` pela ferramenta PowerShell: o Git Bash troca `/exit` por um caminho do Windows.
 - Escreva a tarefa autossuficiente: o papel, objetivo, spec ou arquivos de referência, como conferir (suíte, `next build`) e "ao terminar, atualize o STATE.md e dê push na branch".
 
 ## Despachar
