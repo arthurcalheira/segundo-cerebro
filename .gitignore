@@ -14,3 +14,6 @@ desktop.ini
 
 # Maestri: o workspace mora em ~/.maestri; recrutas com papel rodam em .maestri/roles/
 .maestri/
+
+# Claude Code: configuração só deste notebook (o modelo do Curador)
+.claude/settings.local.json

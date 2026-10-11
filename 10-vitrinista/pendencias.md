@@ -4,10 +4,15 @@ O que depende de você e não é tarefa de código. Operação do VPS, testes e 
 
 Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62cad`).
 
-- [x] Registrar o domínio `usevitrinista.com.br` (feito em 10/10). Falta a entrada `painel` no DNS do registro.br: passo 2 da próxima sessão em `ferramenta-grupos/STATE.md`.
+- [x] Registrar o domínio `usevitrinista.com.br` (feito em 10/10). O painel passou para `https://painel.usevitrinista.com.br` em 10/10 às 15h38.
+- [x] Asaas, depois da troca do domínio (passo 15, item 4, de `ferramenta-grupos/docs/implantacao.md`): webhook antigo apagado e site da conta trocado no painel do Asaas, feito em 10/10 segundo informado na conversa (não conferido pelo Curador, que não lista os webhooks do Asaas). O webhook do endereço novo foi cadastrado pelo Curador no mesmo dia.
 - [ ] Mandar o link do dashboard da multimarca (vira link no "Onde acho meu código?"). Fonte: `ferramenta-grupos/STATE.md`, 10/10.
 - [ ] Aprovar ou reescrever as 8 sugestões de frase de chamada (`apps/web/src/lib/cta-suggestions.ts`). Fonte: `ferramenta-grupos/STATE.md`, 10/10.
 - [ ] Reservar o @ da Vitrinista no Instagram.
 - [ ] Verificar o nome Vitrinista no INPI.
-- [ ] Confirmar com a Farm e a Dress To se os programas de afiliados permitem envio automático e uso das fotos.
-- [ ] Revisão dos documentos legais por advogado antes do lançamento.
+- [x] Confirmar com a Farm e a Dress To se os programas de afiliados permitem envio automático e uso das fotos. Confirmado em 10/10, segundo informado na conversa: as duas autorizam o envio automático e o uso das fotos. A autorização não tem nenhuma condição (informado na mesma conversa). Não registrado: de que forma veio (e-mail, termo, conversa) e de quem.
+- [ ] Guardar a prova da autorização da Farm e da Dress To (o e-mail, o termo ou o endereço da regra). Sem dados pessoais de terceiros no vault. Fonte: conversa de 10/10.
+- [x] Revisão dos documentos legais por advogado antes do lançamento. Feita, segundo informado na conversa em 10/10.
+- [ ] Trazer o retorno do advogado: o que mudar nos textos e as respostas às lacunas. Em 10/10 os documentos do projeto ainda tinham 19 lacunas "[A DEFINIR]" (11 em `docs/legal/privacidade.md`, 7 em `termos.md`, 1 em `cookies.md`; a vigésima ocorrência é a nota de rascunho) e a política de privacidade ainda se dizia "rascunho para revisão por advogado". Uma das 19, a do item 9 dos termos, já tem resposta: a autorização das lojas. Oito já têm resposta: [[2026-10-10-documentos-legais-prazos]]. Para o advogado restam seis: endereço para correspondência, teto de responsabilidade, transferências para fora do Brasil, prazo dos dados fiscais, registros de acesso e por quanto tempo guardar o código do CPF e do número do teste grátis.
+- [ ] E-mail do domínio (`contato@usevitrinista.com.br`, Zoho Mail, 10/10): MX e SPF publicados e recebimento confirmado. Falta o DKIM (criar o seletor no Admin Console do Zoho e cadastrar o TXT no registro.br) e testar uma resposta enviada da caixa. A troca do e-mail de contato no site já foi pedida ao Construtor. Ver [[email-do-dominio]]. Fonte: conversa de 10/10.
+- [ ] Decidir onde fica a cópia de segurança fora do servidor (também é requisito para abrir as vendas) e se a página de vendas usa o Google Analytics além do pixel da Meta. Fonte: conversa de 10/10. Entra no projeto pela 5H. Fonte: conversa de 10/10 e `ferramenta-grupos/docs/legal/`.

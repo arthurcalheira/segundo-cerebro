@@ -18,7 +18,8 @@ Um terminal de Claude Code a mais custa de 100 a 300 MB. Um portal é um navegad
 |---|---|---|---|
 | **Curador** | Claude Code, Maestro | sempre | Você conversa com ele: vault, despacho, acompanhamento |
 | **Agora** | nota | sempre | Três a cinco linhas: sessão na nuvem rodando, o que espera você, próximo passo. O que importa vai para o vault |
-| **Nuvem** | terminal Shell em `../ferramenta-grupos` | durante uma sessão na nuvem | Roda `claude --cloud`: cria a sessão ou se conecta a uma que já existe. Você pode falar com a sessão direto por ele; o Curador lê com `maestri check` |
+| **Nuvem** | terminal Shell em `../ferramenta-grupos` | só durante o despacho (segundos) | Roda `claude --cloud "<tarefa>"`, que cria a sessão e devolve o link. Não fica conectado: a conta não permite (10/10) |
+| **Sessão na nuvem** | portal no link da sessão | na fase de conversa de uma sessão | Mostra a sessão ao vivo no canvas; você conversa ali e o Curador lê. Um por vez |
 | **VPS** | terminal Shell com `ssh` | durante um deploy ou diagnóstico | `atualizar.sh`, logs, `cli.sh`. Cada comando só depois do seu ok |
 | **Painel** | portal | para conferir uma tela | O painel em produção depois de um deploy, a 375 px e a 1280 px |
 
@@ -30,8 +31,8 @@ O que muda com o terminal **VPS**: a nuvem não alcança o VPS (o proxy bloqueia
 
 1. **Você pede aqui.** O Curador põe a cópia local no `master`, lê o `STATE.md` do projeto e escreve a tarefa para ser lida sem contexto nenhum: objetivo, spec, como conferir, e "ao terminar, atualize o STATE.md e dê push na branch".
 2. **Despacho.** O Curador abre o terminal **Nuvem** e roda `claude --cloud "<tarefa>"`. A sessão é registrada em `10-vitrinista/sessoes-nuvem.md`.
-3. **Fase de conversa** (brainstorming e aprovação da spec, como o projeto já faz). O terminal Nuvem fica conectado à sessão: você responde lá, ou o Curador relaya e anota as decisões em `decisoes/`.
-4. **Fase longa** (execução do plano, revisões). O terminal Nuvem é fechado e a sessão segue sozinha. Instrução nova vai por `claude -p "<mensagem>" --cloud <id>`, sem abrir nada.
+3. **Fase de conversa** (brainstorming e aprovação da spec, como o projeto já faz). **Mudou em 10/10:** o plano era deixar o terminal Nuvem conectado à sessão, mas a conta não permite conectar a uma sessão que já existe. A conversa acontece num portal do canvas aberto no link da sessão (ou no claude.ai, ou no app do Claude). Pelo portal o Curador lê a conversa e anota as decisões em `decisoes/`.
+4. **Fase longa** (execução do plano, revisões). A sessão segue sozinha. Instrução nova vai por `claude -p "<mensagem>" --cloud <id>`, sem abrir nada (conferido em 10/10).
 5. **Resultado.** A rotina "Vigia da nuvem" (abaixo) avisa o Curador quando a branch recebe push. Ele lê o `STATE.md` e o diff, resume para você e atualiza o diário, as pendências e as decisões.
 6. **Integração.** Merge no `master` com o seu ok. Deploy pelo terminal VPS (`atualizar.sh`), também com o seu ok. Conferência no portal **Painel**.
 
@@ -71,7 +72,11 @@ Criadas e testadas em 10/10. O que os testes mostraram sobre o `--pre-run` no Wi
 
 ## Não confirmado
 
-- Se o `claude --cloud` volta sozinho para o prompt ou fica conectado à sessão (por isso o terminal próprio).
-- A entrega do comando do vigia no terminal do Curador com a saída do pre-run no lugar do `{{output}}`: um disparo único de teste foi agendado para as 14h21 de 10/10; o vigia de verdade só se confirma no primeiro push de uma sessão na nuvem.
+- Mandar mensagem à sessão digitando no campo do portal (o campo "Prompt" existe; não foi usado, porque `claude -p ... --cloud <id>` já entrega).
+
+## Confirmado em 10/10: a sessão na nuvem aparece no canvas por um portal
+
+Um portal aberto no link da sessão (`claude.ai/code/session_...`) mostra a sessão ao vivo, depois de um login manual no claude.ai. O Curador lê a conversa pelo `maestri portal snapshot`. Custo medido: o Maestri foi de 217 MB para 356 a 384 MB com a sessão aberta (pico de 544 MB na tela de login), e a memória livre ficou entre 0,06 e 0,12 GB. Cabe **um** portal, com o resto fechado. A barra da sessão também mostra o uso da cota da semana.
+- O vigia de verdade, num push real de uma sessão na nuvem. A entrega do comando no terminal do Curador com o `{{output}}` preenchido foi confirmada por um disparo único de teste (10/10, 14h21).
 - Quanto um terminal Shell e um portal pesam de fato no Windows. Medir no passo 2 e no 5.
 - O nome do terminal no canvas aparece como "Maestro", e não "curador" como diz o `STATE.md` do vault. Não muda nada no funcionamento.

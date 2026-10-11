@@ -32,6 +32,7 @@ Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-g
 
 - **Curador**: o único agente no notebook. Terminal com o modo Maestro, Claude Code aberto neste vault. Organiza o inbox, mantém mapa, pendências e decisões, escreve o diário, acompanha o projeto e manda tarefas para a nuvem. Papel: `maestri/papeis/curador.md`.
 - **Executor = sessões do Claude Code na nuvem.** O código do `ferramenta-grupos` é feito lá, abertas pelo claude.ai ou pelo Curador (`claude --cloud`). Elas trabalham no repositório do projeto e não escrevem aqui. O Curador traz o resultado pelo `STATE.md` e pelas branches do projeto, e registra as que ele mesmo abriu em `10-vitrinista/sessoes-nuvem.md` (skill `despachar-nuvem`).
+- **Cada sessão na nuvem tem uma função** (10/10), com o papel em `maestri/papeis/`: `construtor` (um plano de código, um por vez), `revisor` (lê a branch do construtor, sem editar), `conteudo` (textos de venda e lançamento) e `pesquisador`. As três primeiras rodam no projeto; o pesquisador roda neste vault e só cria arquivo novo no `00-inbox/`.
 - `../ferramenta-grupos` no notebook é só uma cópia para leitura e para mandar tarefas à nuvem: ninguém desenvolve nela.
 
 ## Sincronização
