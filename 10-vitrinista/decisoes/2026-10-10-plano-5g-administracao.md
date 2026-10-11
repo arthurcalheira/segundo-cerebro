@@ -6,7 +6,7 @@ fonte: brainstorming na sessão do Construtor da 5G, 10/10/2026 à noite (o proj
 ---
 # Plano 5G: administração
 
-**Decisão:** oito escolhas feitas no brainstorming da 5G, registradas na spec em rascunho. A spec ainda espera aprovação; o plano e a execução só começam depois dela.
+**Decisão:** oito escolhas feitas no brainstorming da 5G, registradas na spec. A spec foi aprovada na sessão ("spec aprovada", segundo o commit `33d1346`, à 0h02 de 11/10), e o plano tem nove tarefas.
 
 1. Atendimento do Atelier por dois canais, WhatsApp e e-mail. Os outros planos continuam só com o e-mail.
 2. Horário do atendimento: todos os dias, das 9h às 21h.
