@@ -25,7 +25,7 @@ Sugestões do Curador em 10/10/2026, para o objetivo declarado na conversa: leva
 A conta que orienta as sugestões: o Essencial rende R$ 59,90 por número, o Maison R$ 99,90 e o Atelier R$ 59,97 por número se a assinante usar os três, e ainda inclui o atendimento direto. O plano de maior lucro é o Maison. O custo real por número no servidor não foi medido.
 
 - 10/10 — Teste grátis de 7 dias com os recursos do Maison para todo mundo, qualquer que seja o plano escolhido. No fim, quem não quiser o Maison desce para o Essencial. Hoje o teste vale no plano escolhido (`TRIAL_DAYS` em `packages/core/src/billing/subscription.ts`).
-- 10/10 — Maison no centro da página de assinar, marcado como "recomendado pela Fran". Não usar "mais vendido" sem dado. O Atelier ao lado serve de âncora de preço. Hoje a página não destaca nenhum plano.
+- 10/10 — Maison no centro da página de assinar, marcado como "recomendado pela Fran" (o selo caiu em 11/10: [[2026-10-11-criadora-sem-ligacao-publica]]; o destaque do Maison continua sem decisão). Não usar "mais vendido" sem dado. O Atelier ao lado serve de âncora de preço. Hoje a página não destaca nenhum plano.
 - 10/10 — Convite a subir na hora da necessidade: segunda loja, editar a mensagem, foto própria, segundo grupo. A cobrança da diferença já existe; falta conferir se o convite aparece em todos esses pontos.
 - 10/10 — Ao cancelar, oferecer a descida para o Essencial antes da saída.
 - 10/10 — Novidades só do Maison para cima (texto por IA, alerta de queda de preço e o que mais vier): o Essencial fica como o básico que funciona.
