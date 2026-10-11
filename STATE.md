@@ -30,7 +30,7 @@ Pedido na conversa de 11/10: reiniciar a sessão do Curador e começar a 5H (pá
 ## Ainda por fazer, sem data
 
 - Depois da 5G: ver o cartão "Atendimento Atelier" quando houver a primeira conta no Atelier; trocar o número de atendimento quando houver o definitivo (mudar a linha no `.env` do servidor e rodar o `atualizar.sh`, com confirmação); olhar o log do worker no primeiro apagar real de um número, porque a resposta da Evolution ao apagar uma instância não foi confirmada.
-- Com quem cuida do produto ([[pendencias]]): DKIM no Zoho; lacunas para o advogado; prova da autorização das lojas; backup externo; Google Analytics ou não; link do dashboard da multimarca; as 8 frases de chamada; @ no Instagram; INPI.
+- Com quem cuida do produto ([[pendencias]]): DKIM no Zoho; lacunas para o advogado; prova da autorização das lojas; backup externo; Google Analytics ou não; link do dashboard da multimarca; as 8 frases de chamada; INPI. O `@usevitrinista` no Instagram já está reservado (informado em 11/10).
 - Sem decisão, em [[ideias]]: 13 ideias de features e as sugestões de planos e página de vendas.
 - Do plano do workspace: atualizar `maestri/configurar-no-windows.md` com as rotinas, o terminal do VPS e o portal.
 

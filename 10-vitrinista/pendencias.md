@@ -8,7 +8,7 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] Asaas, depois da troca do domínio (passo 15, item 4, de `ferramenta-grupos/docs/implantacao.md`): webhook antigo apagado e site da conta trocado no painel do Asaas, feito em 10/10 segundo informado na conversa (não conferido pelo Curador, que não lista os webhooks do Asaas). O webhook do endereço novo foi cadastrado pelo Curador no mesmo dia.
 - [ ] Mandar o link do dashboard da multimarca (vira link no "Onde acho meu código?"). Fonte: `ferramenta-grupos/STATE.md`, 10/10.
 - [ ] Aprovar ou reescrever as 8 sugestões de frase de chamada (`apps/web/src/lib/cta-suggestions.ts`). Fonte: `ferramenta-grupos/STATE.md`, 10/10.
-- [ ] Reservar o @ da Vitrinista no Instagram.
+- [x] Reservar o @ da Vitrinista no Instagram: `@usevitrinista`, já reservado. Fonte: conversa de 11/10; o perfil não foi aberto pelo Curador, então a reserva não foi conferida.
 - [ ] Verificar o nome Vitrinista no INPI.
 - [x] Confirmar com a Farm e a Dress To se os programas de afiliados permitem envio automático e uso das fotos. Confirmado em 10/10, segundo informado na conversa: as duas autorizam o envio automático e o uso das fotos. A autorização não tem nenhuma condição (informado na mesma conversa). Não registrado: de que forma veio (e-mail, termo, conversa) e de quem.
 - [ ] Guardar a prova da autorização da Farm e da Dress To (o e-mail, o termo ou o endereço da regra). Sem dados pessoais de terceiros no vault. Fonte: conversa de 10/10.
