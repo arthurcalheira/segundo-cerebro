@@ -19,7 +19,7 @@ fonte: brainstorming na sessão do Construtor da 5G, 10/10/2026 à noite (o proj
 
 **Por quê:** os motivos de cada escolha não estão na spec e a conversa não foi lida. Não registrado.
 
-**Onde entrou:** `ferramenta-grupos/docs/superpowers/specs/2026-10-11-plano-5g-administracao-design.md` e o `STATE.md`, na branch `claude/plan-5g-admin-lvjaat` (commit `103817d`), fora do `master`. O desenho completo (telas, colunas novas, registro das ações, demonstração) está lá.
+**Onde entrou:** `ferramenta-grupos/docs/superpowers/specs/2026-10-11-plano-5g-administracao-design.md` e o `STATE.md`, na branch `claude/plan-5g-admin-lvjaat` (commit `103817d`). Construída e levada ao `master` em 11/10 às 19h43 (`aa655fb`); ainda fora do servidor. O desenho completo (telas, colunas novas, registro das ações, demonstração) está lá.
 
 **O que muda em decisões anteriores:**
 - A [[2026-10-10-plano-5c-varios-numeros]] previa que apagar a vaga ficaria com a administração; passou para a assinante (item 4).
