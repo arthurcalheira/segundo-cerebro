@@ -15,7 +15,7 @@ fonte: conversa com o Curador, 10/10/2026 à noite ("vamos tirar essa ideia dos 
 - Custaria um plano inteiro de cota e de tempo, na frente do que o lançamento precisa de fato (5G e 5H).
 - O Atelier continua com o que justifica o preço: até 3 números, grupos sem limite, uma vitrine por número e atendimento direto.
 
-**Onde entrou:** na branch `claude/plan-5g-admin-lvjaat` do projeto, commit `61c60d4` (10/10, 22h53), no `master` desde 11/10 às 19h43 com a 5G e ainda fora do servidor: `scheduledMessages` saiu de `plans.ts`, `gate.ts` e `plan-view.ts` com os testes, a spec do lançamento ganhou a seção "Retirada da 5D" e o `STATE.md` passou a dizer 5G e depois 5H. No ar nada muda até o deploy, e mesmo depois o Atelier segue "em breve" em `/assinar`.
+**Onde entrou:** na branch `claude/plan-5g-admin-lvjaat` do projeto, commit `61c60d4` (10/10, 22h53), no `master` desde 11/10 às 19h43 e no servidor desde as 19h48, com a 5G: `scheduledMessages` saiu de `plans.ts`, `gate.ts` e `plan-view.ts` com os testes, a spec do lançamento ganhou a seção "Retirada da 5D" e o `STATE.md` passou a dizer 5G e depois 5H. O Atelier segue "em breve" em `/assinar` (segundo o `STATE.md` do projeto; a página pede sessão e não foi aberta pelo Curador).
 
 **Alternativas descartadas:** construir a 5D antes do lançamento (decidido mais cedo no mesmo dia, em [[2026-10-10-plano-5c-varios-numeros]], e revogado aqui); lançar só com Essencial e Maison.
 

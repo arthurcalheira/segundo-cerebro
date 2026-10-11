@@ -19,7 +19,7 @@ fonte: brainstorming na sessão do Construtor da 5G, 10/10/2026 à noite (o proj
 
 **Por quê:** os motivos de cada escolha não estão na spec e a conversa não foi lida. Não registrado.
 
-**Onde entrou:** `ferramenta-grupos/docs/superpowers/specs/2026-10-11-plano-5g-administracao-design.md` e o `STATE.md`, na branch `claude/plan-5g-admin-lvjaat` (commit `103817d`). Construída e levada ao `master` em 11/10 às 19h43 (`aa655fb`); ainda fora do servidor. O desenho completo (telas, colunas novas, registro das ações, demonstração) está lá.
+**Onde entrou:** `ferramenta-grupos/docs/superpowers/specs/2026-10-11-plano-5g-administracao-design.md` e o `STATE.md`, na branch `claude/plan-5g-admin-lvjaat` (commit `103817d`). Construída, levada ao `master` em 11/10 às 19h43 (`aa655fb`) e no servidor desde as 19h48. O desenho completo (telas, colunas novas, registro das ações, demonstração) está lá.
 
 **O que muda em decisões anteriores:**
 - A [[2026-10-10-plano-5c-varios-numeros]] previa que apagar a vaga ficaria com a administração; passou para a assinante (item 4).
@@ -27,4 +27,4 @@ fonte: brainstorming na sessão do Construtor da 5G, 10/10/2026 à noite (o proj
 
 **Alternativas descartadas:** "ver como ela" (abrir o painel da assinante); pausa em um nível só; apagar a vaga pela administração.
 
-**Falta:** o número de WhatsApp do atendimento. Ele entra no servidor como variável de ambiente (`ATENDIMENTO_WHATSAPP`) e não vai para o repositório nem para este vault. Sem ele, o cartão do Atelier mostra só o e-mail. Ver [[pendencias]].
+**Número do atendimento:** escolhido em 11/10, "por enquanto", e posto no servidor no mesmo dia como variável de ambiente (`ATENDIMENTO_WHATSAPP`). Não vai para o repositório nem para este vault. Para trocar: mudar a linha no `.env` do servidor e rodar o `atualizar.sh` (passo 16 de `ferramenta-grupos/docs/implantacao.md`).
