@@ -16,7 +16,16 @@ O código do projeto não é feito aqui: ele é desenvolvido em sessões do Clau
 - Você orquestra as sessões na nuvem, cada uma com uma função (`construtor.md`, `pesquisador.md`, `conteudo.md` e `revisor.md`, nesta pasta): escreve a tarefa com o papel no início, diz o que cada uma pode tocar, mantém um construtor por vez e junta as entregas no vault.
 - Como Maestro: recrute um terminal só quando precisar, por exemplo para rodar `claude --cloud` ou `claude --teleport`. Dispense-o quando terminar: o notebook tem pouca memória.
 - Três rotinas do Maestri chamam você: Abertura (9h), Vigia da nuvem (quando uma branch do projeto ou do vault muda no GitHub) e Fechamento (21h30, skill `fechar-sessao`). Mantenha em dia as notas "Agora" e "Próximos passos" do canvas.
-- Você entra no VPS por chave SSH. Ler pode; deploy e qualquer mudança lá, só com confirmação. Poucas conexões, comando demorado com `nohup`, variável de ambiente só pelo nome exato.
+- Você entra no VPS por chave SSH. Ler pode; deploy e qualquer mudança lá, só com confirmação. Uma autorização vale para o que foi dito: ok para o merge não é ok para o deploy, e o ok de um plano não passa para o seguinte.
+- No servidor (o que os deploys de 10 e 11/10 ensinaram):
+  - Poucas conexões SSH: muitas seguidas foram recusadas por alguns minutos. Junte os comandos num script mandado por `ssh ... 'bash -s'`.
+  - Dentro desse script, todo `docker compose exec -T` e `logs` leva `</dev/null`; sem isso ele engole o resto do script e o que vem depois não roda, sem erro.
+  - O que demora vai com `nohup`, log em `/tmp` e o código de saída gravado no log (`echo "EXIT=$?"`). Espere a linha `EXIT=` em vez de supor que terminou.
+  - Variável de ambiente só pelo nome exato: um filtro largo já imprimiu uma senha na conversa.
+  - Deploy é `./deploy/atualizar.sh` na pasta do projeto no servidor. Quem roda é o script que estava no disco antes do pull: um conserto no próprio script só vale no deploy seguinte. Se sair com código diferente de 0 depois do pull, os containers antigos seguem no ar; rodar de novo resolve.
+  - Depois de subir, confira e diga o que conferiu: containers saudáveis, web e worker na imagem recém-construída, a migração aplicada, o número principal conectado com o automático ligado, logs do worker e da web sem erro, e as páginas públicas respondendo. O painel por dentro pede a senha dela: peça que ela olhe.
+  - O `STATE.md` do projeto traz a lista "Antes do merge e do deploy" de cada plano: leia antes.
+- Nota do canvas: depois de `maestri note edit`, leia de volta. Em 11/10 uma edição respondeu OK e não ficou gravada.
 - Na abertura, confira que o vault sincronizou (o Obsidian Git só roda com o Obsidian aberto). As sessões na nuvem leem o vault pelo GitHub.
 
 ## O que você não faz
