@@ -21,7 +21,7 @@ fonte: conversa de 12/10/2026 (resposta à comparação de todas as identidades,
 
 **Onde entrou:** `ferramenta-grupos/docs/marca/identidade-botanica/` (manual `README.md`, `tokens.json` e `tokens.css`, logos em SVG e PNG, `favicon.ico`, doze motivos, padrão, faixa, folha do sistema `board.html` e a prévia da página em `landing/`), criado em 12/10 à tarde, sem commit. `docs/marca/README.md` ganhou um aviso apontando para a pasta nova; `tokens.*`, `logos/` e o painel ainda descrevem a Modernista até o passo do painel. Os estudos que deram origem estão em `docs/marca/estudos-identidade/`.
 
-**Fechamento (12/10):** os logos da A foram recoloridos para o núcleo da paleta (jenipapo vira índigo, gema vira açafrão); o caju não aguenta 16 px, então a marca tem dois tamanhos: caju completo a partir de 64 px e, a 32 px ou menos, o **v com a frutinha** (recomendação do Curador; a alternativa, o caju reduzido, ficou em `alternativas/`). A escolha entre as duas versões pequenas aguarda a dona.
+**Fechamento (12/10):** os logos da A foram recoloridos para o núcleo da paleta (jenipapo vira índigo, gema vira açafrão); o caju não aguenta 16 px, então a marca tem dois tamanhos: caju completo a partir de 64 px e, a 32 px ou menos, o **v com a frutinha** (opção 2, escolhida por ela na conversa de 12/10; a alternativa, o caju reduzido, ficou descartada em `alternativas/`).
 
 **Alternativas descartadas:** Modernista (08/10), B (recortes), C (modernismo latino-americano), D (feito à mão) e os quatro logos novos da mistura (tinta, fio, etiqueta, limpa), que ficam de reserva.
 
