@@ -25,4 +25,6 @@ fonte: conversa de 12/10/2026 (resposta à comparação de todas as identidades,
 
 **Alternativas descartadas:** Modernista (08/10), B (recortes), C (modernismo latino-americano), D (feito à mão) e os quatro logos novos da mistura (tinta, fio, etiqueta, limpa), que ficam de reserva.
 
-**Ordem daqui para frente:** media kit, página de vendas, painel. Ver [[vitrinista]] e o `STATE`.
+**Media kit:** feito em 12/10 em `ferramenta-grupos/docs/marca/identidade-botanica/kit/` (uma página, `noindex`, ZIP de 1,3 MB), sem commit.
+
+**Ordem daqui para frente:** página de vendas, painel. Ver [[vitrinista]] e o `STATE`.
