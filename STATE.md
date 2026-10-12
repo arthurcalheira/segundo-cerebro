@@ -1,10 +1,14 @@
 # Estado
 
-Reescrito no fechamento de 11/10/2026 (20h10) pelo Curador. Os dias estão em `30-diario/2026-10-10.md` e `30-diario/2026-10-11.md`.
+Reescrito no fechamento de 11/10/2026 (20h10) pelo Curador; atualizado em 12/10 (manhã) antes de compactar a sessão. Os dias estão em `30-diario/2026-10-10.md`, `30-diario/2026-10-11.md` e `30-diario/2026-10-12.md`.
 
-## Próximo passo: abrir o Construtor da 5H
+## Em curso (12/10): identidade visual nova, antes da página de vendas
 
-Pedido na conversa de 11/10: reiniciar a sessão do Curador e começar a 5H (página de vendas e documentos). Nenhuma sessão foi aberta ainda.
+A página de vendas **não começa antes da identidade**. Ordem decidida na conversa: identidade → media kit → página de vendas → painel. Estado: rodada "mistura" (desenho botânico + fio de ponto) com os 12 motivos e quatro caminhos de logo prontos (tinta, etiqueta, limpa, fio), falta o agente do sistema (paleta, tipografia, componentes), a folha de cada logo sobre o mesmo sistema e a escolha dela. Arquivos de trabalho no scratchpad da sessão e em `ferramenta-grupos/docs/marca/` (sem commit). A criadora não é citada em nenhuma peça: [[2026-10-11-criadora-sem-ligacao-publica]].
+
+## Próximo passo depois da identidade: abrir o Construtor da 5H (só documentos legais)
+
+Pedido na conversa de 11/10: reiniciar a sessão do Curador e começar a 5H (página de vendas e documentos). Nenhuma sessão foi aberta ainda. **Como a página passou a ser feita no notebook, a tarefa da nuvem precisa ser reescrita só com os documentos legais** antes de despachar.
 
 1. **Conferir o sync do vault** (`git status` limpo e `git log origin/claude/magical-fermi-mfb4ah..HEAD` vazio). No fechamento havia edições locais esperando o próximo commit do Obsidian Git, com o Obsidian aberto.
 2. **Ler a cota da semana antes de abrir** (skill `despachar-nuvem`, "Antes"). A última leitura é de 9h02 de 11/10: 58%, antes de mais da metade da 5G. Às 19h57 a barra não mostrou a cota (só `Eff:--`), então o valor atual é desconhecido. Zera na sexta, 16/10, às 16h. Se não der para ler, dizer isso e pedir que ela olhe o `/usage`.
