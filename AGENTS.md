@@ -26,6 +26,7 @@ Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-g
 ## Como escrever
 
 - Português do Brasil. Nome de arquivo em minúsculas com hífen; nota com data começa por `AAAA-MM-DD-`.
+- Diário, decisão e pesquisa nascem do modelo em `templates/` (frontmatter `tipo` e `data`; decisão tem `status: valendo` e "Onde entrou"; pesquisa tem `conferido`). O Obsidian cria a nota do dia em `30-diario/` com o mesmo modelo.
 - Link entre notas com `[[nome-da-nota]]`. Arquivo do projeto pelo caminho, em código: `ferramenta-grupos/STATE.md`.
 - Decisão, pesquisa e pendência dizem a fonte (conversa, arquivo do projeto, site) e a data. O que não foi confirmado vai marcado como não confirmado.
 - Nada de número, depoimento ou resultado inventado (princípio "prova real ou nenhuma" do `PRODUCT.md`).
