@@ -4,7 +4,7 @@ Reescrito no fechamento de 11/10/2026 (20h10) pelo Curador; atualizado em 12/10 
 
 ## Em curso (12/10): identidade visual nova, antes da página de vendas
 
-A página de vendas **não começa antes da identidade**. Ordem decidida na conversa: identidade → media kit → página de vendas → painel. Estado: rodada "mistura" (desenho botânico + fio de ponto) com os 12 motivos e quatro caminhos de logo prontos (tinta, etiqueta, limpa, fio), falta o agente do sistema (paleta, tipografia, componentes), a folha de cada logo sobre o mesmo sistema e a escolha dela. Arquivos de trabalho no scratchpad da sessão e em `ferramenta-grupos/docs/marca/` (sem commit). A criadora não é citada em nenhuma peça: [[2026-10-11-criadora-sem-ligacao-publica]].
+A página de vendas **não começa antes da identidade**. Ordem decidida na conversa: identidade → media kit → página de vendas → painel. Estado (12/10, meio-dia): a rodada "mistura" (desenho botânico + fio de ponto) está pronta: 12 motivos, padrão, faixa, sistema (Newsreader + Hanken Grotesk, contraste conferido) e os quatro caminhos de logo (tinta, fio, etiqueta, limpa) aplicados ao mesmo sistema. **Falta só ela escolher o logo** (recomendação: Tinta com o símbolo refeito; Fio como alternativa segura). Arquivos em `ferramenta-grupos/docs/marca/estudos-identidade/mistura/` e o PDF comparativo de todas as identidades em `ferramenta-grupos/docs/marca/estudos-identidade/comparacao-identidades.pdf`, sem commit. A criadora não é citada em nenhuma peça: [[2026-10-11-criadora-sem-ligacao-publica]].
 
 ## Próximo passo depois da identidade: abrir o Construtor da 5H (só documentos legais)
 
