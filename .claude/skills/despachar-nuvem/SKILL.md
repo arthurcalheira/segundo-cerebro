@@ -23,7 +23,7 @@ Toda sessão tem uma função, com o papel em `maestri/papeis/<função>.md`. Co
 
 ## Antes
 
-- Em `../ferramenta-grupos` (cópia só de leitura): `git checkout <branch de partida>` e `git pull`. A sessão parte do que está no GitHub nessa branch; normalmente o `master`, ou a branch do plano em andamento segundo o `STATE.md`.
+- Em `../ferramenta-grupos` (cópia local): se o `git status` mostrar trabalho local sem commit, pare e pergunte antes de trocar de branch. Depois, `git checkout <branch de partida>` e `git pull`. A sessão parte do que está no GitHub nessa branch; normalmente o `master`, ou a branch do plano em andamento segundo o `STATE.md`.
 - Pesquisador: a sessão parte do que está no GitHub do vault. Confira que o Obsidian Git já enviou o que ela precisa ler (`git status` limpo e `git log origin/<branch>..HEAD` vazio).
 - Cota da semana: abra `claude` no terminal recrutado e leia o `7d:` na barra de baixo; saia com `/exit`. Funcionou em 10/10 e na manhã de 11/10; na noite de 11/10 a barra mostrou só `Eff:--`, sem a cota, em duas tentativas. Não há leitura pela ferramenta de shell. Sem leitura, diga que o valor é desconhecido e peça que ela olhe o `/usage`; não abra um plano inteiro no escuro. Mande ao terminal o que começa com `/` pela ferramenta PowerShell: o Git Bash troca `/exit` por um caminho do Windows.
 - Referência de gasto: a 5G inteira (spec, plano, nove tarefas, revisão em lentes) começou com a semana em 53%; às 9h02 do dia seguinte, com quatro tarefas feitas, estava em 58%. O valor ao fim não foi lido.

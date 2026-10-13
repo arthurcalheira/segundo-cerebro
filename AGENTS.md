@@ -1,6 +1,6 @@
 # Segundo cérebro — Vitrinista
 
-Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-grupos`, desenvolvido em sessões do Claude Code na nuvem; cópia de leitura na pasta irmã `../ferramenta-grupos`). Mantido pelo Curador, um Claude Code no Maestri, no notebook Windows.
+Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-grupos`, desenvolvido em sessões do Claude Code na nuvem; cópia local na pasta irmã `../ferramenta-grupos`). Mantido pelo Curador, um Claude Code no Maestri, no notebook Windows.
 
 ## Onde mora cada verdade
 
@@ -26,7 +26,7 @@ Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-g
 ## Como escrever
 
 - Português do Brasil. Nome de arquivo em minúsculas com hífen; nota com data começa por `AAAA-MM-DD-`.
-- Diário, decisão e pesquisa nascem do modelo em `templates/` (frontmatter `tipo` e `data`; decisão tem `status: valendo` e "Onde entrou"; pesquisa tem `conferido`). O Obsidian cria a nota do dia em `30-diario/` com o mesmo modelo.
+- Diário, decisão e pesquisa nascem do modelo em `templates/` (frontmatter `tipo` e `data`; decisão tem `status: valendo` e "Onde entrou"; pesquisa tem `conferido`). O Obsidian cria a nota do dia em `30-diario/` com o mesmo modelo. Só o Obsidian troca `{{date:...}}` e `{{title}}`: agente que cria a nota pelo arquivo preenche os dois à mão.
 - Link entre notas com `[[nome-da-nota]]`. Arquivo do projeto pelo caminho, em código: `ferramenta-grupos/STATE.md`.
 - Decisão, pesquisa e pendência dizem a fonte (conversa, arquivo do projeto, site) e a data. O que não foi confirmado vai marcado como não confirmado.
 - Nada de número, depoimento ou resultado inventado (princípio "prova real ou nenhuma" do `PRODUCT.md`).
@@ -34,10 +34,10 @@ Vault do Obsidian do projeto Vitrinista (código em `arthurcalheira/ferramenta-g
 
 ## Quem faz o quê no Maestri
 
-- **Curador**: o único agente no notebook. Terminal com o modo Maestro, Claude Code aberto neste vault. Organiza o inbox, mantém mapa, pendências e decisões, escreve o diário, acompanha o projeto e manda tarefas para a nuvem. Papel: `maestri/papeis/curador.md`.
+- **Curador**: o único agente no notebook. Terminal com o modo Maestro, Claude Code aberto neste vault. Organiza o inbox, mantém mapa, pendências e decisões, escreve o diário, acompanha o projeto e manda tarefas para a nuvem. Papel: `maestri/papeis/curador.md`. O terminal do Maestri carrega o papel sozinho (`--append-system-prompt-file`); sessão aberta de outro jeito neste vault lê o arquivo antes de agir.
 - **Executor = sessões do Claude Code na nuvem.** O código do `ferramenta-grupos` é feito lá, abertas pelo claude.ai ou pelo Curador (`claude --cloud`). Elas trabalham no repositório do projeto e não escrevem aqui. O Curador traz o resultado pelo `STATE.md` e pelas branches do projeto, e registra as que ele mesmo abriu em `10-vitrinista/sessoes-nuvem.md` (skill `despachar-nuvem`).
 - **Cada sessão na nuvem tem uma função** (10/10), com o papel em `maestri/papeis/`: `construtor` (um plano de código, um por vez), `revisor` (lê a branch do construtor, sem editar), `conteudo` (textos de venda e lançamento) e `pesquisador`. As três primeiras rodam no projeto; o pesquisador roda neste vault e só cria arquivo novo no `00-inbox/`.
-- `../ferramenta-grupos` no notebook é só uma cópia para leitura e para mandar tarefas à nuvem: ninguém desenvolve nela.
+- `../ferramenta-grupos` no notebook é uma cópia para leitura e para mandar tarefas à nuvem. Desenvolver nela, só por pedido explícito na conversa (foi assim com a página de vendas e o painel, em 11 e 12/10); o pedido vale para aquele trabalho, e commit, merge, push e deploy pedem cada um o seu ok.
 
 ## Sincronização
 
