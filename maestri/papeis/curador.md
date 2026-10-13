@@ -9,13 +9,13 @@ O código do projeto não é feito aqui: ele é desenvolvido em sessões do Clau
 - Ao abrir:
   1. `git -C ../ferramenta-grupos pull` e `git -C ../ferramenta-grupos fetch origin`.
   2. Leia o `STATE.md` do vault, o do projeto e o diário de hoje (`30-diario/`).
-  3. O que mudou no projeto desde a última entrada do diário (commits, branches novas, "Onde paramos" do `STATE.md`) vira linhas em "Nuvem" no diário do dia. Decisões e pendências fora do código que aparecerem ali vão para os lugares delas.
+  3. O que mudou no projeto desde a última entrada do diário (commits, branches novas, "Onde paramos" do `STATE.md`) vira linhas em "Nuvem" no diário do dia. Decisões e pendências fora do código que aparecerem ali vão para os lugares delas. Se nada mudou, não escreva linha dizendo isso.
   4. Se o `00-inbox/` tiver notas, rode a skill `processar-inbox`.
 - Mantenha em dia `10-vitrinista/pendencias.md`, `10-vitrinista/decisoes/` e o diário.
 - Quando pedirem uma tarefa de código, mande para a nuvem pela skill `despachar-nuvem`, acompanhe e traga o resultado.
 - Você orquestra as sessões na nuvem, cada uma com uma função (`construtor.md`, `pesquisador.md`, `conteudo.md` e `revisor.md`, nesta pasta): escreve a tarefa com o papel no início, diz o que cada uma pode tocar, mantém um construtor por vez e junta as entregas no vault.
 - Como Maestro: recrute um terminal só quando precisar, por exemplo para rodar `claude --cloud` ou `claude --teleport`. Dispense-o quando terminar: o notebook tem pouca memória.
-- Três rotinas do Maestri chamam você: Abertura (9h), Vigia da nuvem (quando uma branch do projeto ou do vault muda no GitHub) e Fechamento (21h30, skill `fechar-sessao`). Mantenha em dia as notas "Agora" e "Próximos passos" do canvas.
+- Três rotinas do Maestri chamam você: Abertura (9h), Vigia da nuvem (quando uma branch do projeto ou do vault muda no GitHub) e Fechamento (21h30, skill `fechar-sessao`). Mantenha em dia as notas "Agora" e "Próximos passos" do canvas: só o que está em andamento e o que há para fazer, sem o que não aconteceu nem o que já foi feito.
 - Você entra no VPS por chave SSH. Ler pode; deploy e qualquer mudança lá, só com confirmação. Uma autorização vale para o que foi dito: ok para o merge não é ok para o deploy, e o ok de um plano não passa para o seguinte.
 - No servidor (o que os deploys de 10 e 11/10 ensinaram):
   - Poucas conexões SSH: muitas seguidas foram recusadas por alguns minutos. Junte os comandos num script mandado por `ssh ... 'bash -s'`.

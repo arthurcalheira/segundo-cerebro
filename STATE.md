@@ -17,15 +17,15 @@ Reescrito em 12/10/2026, à noite, pelo Curador, e fechado às 22h40, depois dos
 
 Em 12/10 à noite ela escolheu abrir o cadastro que já existe (em vez de refazer telas ou criar lista de espera). Na ordem:
 
-0. **`STATE.md` do projeto acertado em 13/10** (commit `6858af8`, só na cópia local: o push pede o ok dela; GitHub e servidor seguem em `7752abb`). O cabeçalho "Fase (11/10)" e o "Onde paramos (11/10, noite)" de lá ainda descrevem a 5G como sem merge: não mexido.
+0. **`STATE.md` do projeto em dia desde 13/10:** `master` em `5563c51` no GitHub e na cópia local; o servidor segue em `7752abb`, porque os três commits de 13/10 são só de documentação e não pedem deploy.
 1. **Abrir o cadastro, o que falta** ([[pendencias]], [[asaas-estorno-pix-e-boleto]]): conta de produção do Asaas com a chave Pix criada antes da primeira assinatura; repetir o estorno com assinatura Pix e de cartão; a autorização de ação crítica do Asaas; a decisão sobre o estorno que falha no meio; advogado; backup externo (não existe). Só então a troca para a produção (passo 14 de `ferramenta-grupos/docs/implantacao.md`) e o `CADASTRO_ABERTO=1`, cada passo com o ok dela. A indexação segue com a recomendação, não confirmada por ela, de manter o `noindex` até abrir.
 2. **Ela olha** o painel e a página no celular de verdade, nos dois temas. O Edge do notebook informa movimento reduzido: nesse modo as entradas ao rolar são só fade de 120 ms; para ver a animação completa, ligar "Efeitos de animação" no Windows.
 3. **Abrir o Construtor, quando ela autorizar.** Ela quer guardar a cota: ler a cota antes de qualquer despacho (skill `despachar-nuvem`, "Antes"). A última leitura é de 11/10, 9h02 (58%); o valor atual é desconhecido. Zera na sexta, 16/10, às 16h. Se não der para ler, dizer isso e pedir que ela olhe o `/usage`. Duas tarefas esperam em `.maestri/` (fora do git, só neste notebook), nenhuma despachada:
-   - `tarefa-copy-ia.md`: a copy por IA, condição para a página dizer "no tom dela" ([[2026-10-12-copy-por-ia-antes-do-lancamento]]). Falta ela aprovar a tarefa.
+   - `tarefa-copy-ia.md`: reescrita em 13/10 com duas partes, o montador visual da mensagem e a copy por IA, condição para a página dizer "no tom dela" ([[2026-10-13-montador-de-mensagem-com-a-copy-por-ia]], [[2026-10-12-copy-por-ia-antes-do-lancamento]]). Parte do `master` em `5563c51`. Falta ela aprovar a tarefa.
    - `tarefa-5h.md`: **não despachar como está.** Foi escrita quando a 5H incluía a página de vendas, que acabou feita no notebook. Reescrever só com os documentos legais e o que deles vira código. Se o arquivo tiver sumido, o conteúdo está em [[pendencias]] e [[2026-10-10-documentos-legais-prazos]].
 4. **Antes de despachar:** vault sincronizado (`git status` limpo e `git log origin/claude/magical-fermi-mfb4ah..HEAD` vazio) e cópia local do projeto no `master` atual. Um construtor por vez. Registrar em [[sessoes-nuvem]], no diário e na nota "Agora" do canvas.
 5. **O que o Construtor vai perguntar a ela:**
-   - copy por IA: como ela ensina o tom, o que a IA escreve, editar por peça, em quais planos, teto de custo;
+   - montador e copy por IA: como ela ensina o tom, o que a IA escreve, editar por peça, em quais planos, teto de custo, os textos dos estilos prontos;
    - documentos legais: as seis lacunas do advogado, o que a 5G criou e os textos não citam, e os Termos de uso que identificam uma pessoa física ([[pendencias]]). Sem resposta, ficam marcados no texto;
    - onde fica o backup externo; Google Analytics ou só o pixel da Meta;
    - as 8 frases de chamada e o link do dashboard da multimarca.
