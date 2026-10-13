@@ -1,10 +1,10 @@
 # Estado
 
-Reescrito em 13/10/2026, à noite, pelo Curador. Os dias estão em `30-diario/` ([[2026-10-12]], [[2026-10-13]]).
+Reescrito em 13/10/2026, à noite, pelo Curador, e fechado às 20h11. Os dias estão em `30-diario/` ([[2026-10-12]], [[2026-10-13]]).
 
 ## Agora: tudo no ar e conferido por ela; falta decidir por onde cobrar
 
-- **No ar:** o painel em `https://painel.usevitrinista.com.br` e a página de vendas em `usevitrinista.com.br`, na identidade A; o Plano 11 (montador da mensagem e copy por IA, com a IA desligada) e as correções da revisão dele; os onze ajustes de UX de 13/10. Servidor em `928790e`, conferido pelo Curador depois de cada deploy; **ela olhou o painel por dentro em 13/10 à noite: "tudo certo com o painel".** Não dito por ela: se viu um envio sair depois dos deploys.
+- **No ar:** o painel em `https://painel.usevitrinista.com.br` e a página de vendas em `usevitrinista.com.br`, na identidade A; o Plano 11 (montador da mensagem e copy por IA, com a IA desligada) e as correções da revisão dele; os onze ajustes de UX de 13/10 ([[2026-10-13-ajustes-de-ux-do-painel]]). Servidor em `928790e`, conferido pelo Curador depois de cada deploy; **ela olhou o painel por dentro em 13/10 à noite: "tudo certo com o painel".** Não dito por ela: se viu um envio sair depois dos deploys.
 - **Repositório do projeto:** `master` em `1589929` no GitHub e na cópia local (um commit de documentação à frente do servidor; sem deploy pendente). A cópia local está no `master`, limpa; sobraram branches locais já contidas nele (`ajustes-ux-13-10` e as de 12/10). `docs/marca/estudos-identidade/` e `estudos-logo/` seguem sem versionar.
 - **Cadastro fechado** (`CADASTRO_ABERTO` ausente); a página está com `noindex`. Cobrança no sandbox do Asaas.
 - **IA das mensagens:** código pronto e em produção, desligada por falta da chave. Para ligar: crédito no Claude Console, `ANTHROPIC_API_KEY` no `.env` do servidor e `atualizar.sh` (como em `ferramenta-grupos/STATE.md`, "Para ligar a IA depois"), com o ok dela, e antes os documentos legais ([[pendencias]]). Os cartões do Maison e do Atelier já dizem "Mensagem escrita por IA no seu tom" (decisão dela): a chave precisa entrar antes de abrir o cadastro. Decisão e o que a spec fixou: [[2026-10-13-montador-de-mensagem-com-a-copy-por-ia]].
@@ -39,7 +39,7 @@ Reescrito em 13/10/2026, à noite, pelo Curador. Os dias estão em `30-diario/` 
 - **Maestri:** workspace "vitrinista", terminal do Curador com Maestro (aparece no canvas como "Maestro"), rodando `claude -n curador --add-dir ../ferramenta-grupos --append-system-prompt-file maestri/papeis/curador.md`. O Maestri grava o workspace em `C:\Users\arthu\.maestri\workspaces\<id>\`, fora do vault. No canvas: o terminal do Curador e as notas "Agora" e "Próximos passos".
 - **Rotinas:** Abertura (9h), Vigia da nuvem (a cada 20 min, `maestri/scripts/vigia-nuvem.ps1`, olha o projeto e o vault) e Fechamento (21h30). O vigia avisa a cada push, inclusive os feitos do próprio notebook, e às vezes repete o aviso de um push já trazido.
 - **Modelo do Curador:** `.claude/settings.local.json` (ignorado pelo git) pede o Sonnet na abertura do terminal. Em 12/10 à noite ela trocou a sessão para o Opus 5.5 com esforço médio, como padrão das sessões novas; na reabertura, conferir qual modelo sobe.
-- **Cota:** a identidade e o media kit usaram workflows de vários agentes; o painel, a página e o deploy foram feitos sem agentes.
+- **Cota:** a identidade e o media kit usaram workflows de vários agentes; o painel, a página e o deploy foram feitos sem agentes. Em 13/10 a sessão do Curador subiu no Opus 5.5; as quatro sessões na nuvem e os ajustes de UX (um subagente no Sonnet) levaram a semana de 93% a 96%.
 
 ## Decisões
 

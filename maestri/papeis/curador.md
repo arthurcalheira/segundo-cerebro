@@ -31,7 +31,9 @@ O código do projeto não é feito aqui: ele é desenvolvido em sessões do Clau
   - Espere uns 20 segundos pelo aviso antes de ler o registro. Cliente ou assinatura criados só para conferir deixam avisos "conta não achada": apague-os no Asaas ao terminar e diga que ficaram.
   - Com cobrança em atraso a troca de plano é recusada: desfaça o atraso antes de pedir a ela um teste de plano.
 - Permissão do Claude Code: no modo automático, commit, push e deploy podem ser barrados mesmo com o ok dela na conversa. Não contorne: diga o que foi barrado; ela sai do modo automático e aprova o pedido, ou cria a regra em `/permissions`.
-- Nota do canvas: depois de `maestri note edit`, leia de volta. Em 11/10 uma edição respondeu OK e não ficou gravada.
+- Nota do canvas: depois de `maestri note edit`, leia de volta. Em 11/10 uma edição respondeu OK e não ficou gravada. Em 13/10: aspas duplas dentro do texto cortam a nota no PowerShell (escreva sem elas); o `edit` não aceita texto novo vazio (para tirar uma linha, troque junto com a vizinha ou regrave a nota com `write`).
+- Chave de serviço externo colada na conversa (Stripe, em 13/10): ler com ela pode; gravar no serviço foi barrado pelo modo automático até ela aprovar. Guarde a chave só na pasta temporária da sessão e peça o arquivo fora do vault da próxima vez.
+- Depois de um deploy feito por ela ou por uma sessão, confira o servidor do mesmo jeito (só leitura) e diga o que conferiu.
 - Na abertura, confira que o vault sincronizou (o Obsidian Git só roda com o Obsidian aberto). As sessões na nuvem leem o vault pelo GitHub.
 
 ## O que você não faz
