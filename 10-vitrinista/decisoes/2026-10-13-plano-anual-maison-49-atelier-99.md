@@ -12,7 +12,9 @@ fonte: conversa com o Curador, 13/10/2026
 
 **Conta do Curador, com as taxas da Stripe de [[asaas-nome-nas-cobrancas]]:** o Maison anual rende R$ 560,03 líquidos por ano (R$ 46,67 por mês), contra R$ 94,82 por mês no Maison mensal e R$ 56,70 no Essencial mensal. O anual rende mais que o mensal só se a assinante mensal ficasse menos de 6 meses (Atelier: menos de 7). Permanência não medida: o cadastro está fechado.
 
-**Em aberto na mesma conversa:** se é preço de lançamento com data de fim ou preço fixo; a regra de reembolso de quem sai no meio do ano; limite de mensagens no Essencial; teste de 7 dias com recursos do Maison para todos.
+**Dito por ela em seguida:** é preço fixo, não de lançamento (o Curador tinha recomendado preço de lançamento com data de fim); valores redondos, R$ 49,00 e R$ 99,00. E o papel do Essencial: "a intenção do Essencial nunca foi ser acessível, foi empurrar o usuário a comprar o Maison".
+
+**Em aberto na mesma conversa:** a regra de reembolso de quem sai no meio do ano; limite de mensagens no Essencial; teste de 7 dias com recursos do Maison para todos.
 
 **Onde entrou:** ainda não entrou. Entra junto com a troca da cobrança para a Stripe (`ferramenta-grupos/packages/core/src/billing/plans.ts` só tem preço mensal), na página de vendas, em `/assinar` e nos Termos.
 
