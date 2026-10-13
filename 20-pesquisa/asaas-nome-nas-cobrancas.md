@@ -39,6 +39,18 @@ Pedido dela: "estude sobre a stripe".
 - **Dinheiro:** cartão nacional fica disponível em 30 dias; Pix e boleto em 2 dias; repasse diário; o primeiro repasse pode levar até 30 dias. Contestação: R$ 55,00.
 - **Custo de trocar:** refazer a cobrança (o plano 5E, as trocas de plano com diferença, atraso, estorno e os avisos) e testar tudo de novo.
 
+### Teste na conta de teste da Stripe (13/10, pela API)
+
+Conta criada por ela, país Brasil, sem ativar e sem dados de titular. O Curador criou um produto, um preço de R$ 99,90 por mês, um cliente fictício e uma assinatura paga com o cartão de teste, e leu o recibo, a fatura em PDF e a página de pagamento.
+
+- **Recibo e fatura mostram só o nome público** que ela pôs na conta ("Vitrinista sandbox"). Nenhum nome de pessoa, nenhum CPF; o campo de documento fiscal da fatura veio vazio (é opcional).
+- **O e-mail de contato do recibo é o do login da conta** enquanto não houver um e-mail de suporte cadastrado. Neste teste saiu o e-mail pessoal dela. Corrige-se pondo o `contato@` do domínio em informações públicas.
+- **A fatura tem um bloco de endereço do negócio** (veio só "Brazil", porque não há endereço cadastrado). Depois da ativação, o endereço que estiver nas informações públicas aparece ali: numa conta de pessoa física, cuidar para não ser o de casa.
+- **Pix e boleto não estão disponíveis nesta conta:** a configuração lista só cartão e Apple Pay, e finalizar uma fatura com Pix foi recusado ("not available for this account"). Pode mudar depois da ativação; não confirmado.
+- **A página de pagamento da assinatura** saiu só com cartão.
+- **Limite do teste:** a conta não tem nome legal nem CPF cadastrados, então o teste mostra quais campos os modelos usam, não o que acontece depois da verificação. Os modelos usam o nome público, o e-mail e o endereço de suporte.
+- Ficaram na área de teste da conta dela: um produto, um preço, um cliente, uma assinatura ativa e duas faturas em rascunho. A chave de teste foi colada na conversa: gerar outra ao terminar.
+
 ### Mesclar cartão na Stripe com Pix em outro lugar (pergunta dela, 13/10)
 
 Raciocínio do Curador, sem fonte nova: tecnicamente dá, mas o Pix mostra sempre o nome de quem recebe. Pix pelo Asaas no CPF mostraria o nome dela a quem paga por Pix, e seriam dois sistemas de cobrança para manter. O único Pix que esconderia o nome é o da própria Stripe (recebedor Ebanx), que é avulso e "por convite". Correção apontada por ela no mesmo dia: o Pix do Asaas hoje também é avulso (uma cobrança por mês, paga à mão; o sistema não usa Pix automático), então o Pix avulso da Stripe não seria perda em relação ao que existe, se a Stripe emitir a fatura mensal com Pix e liberar o Pix para a conta, o que não foi confirmado. O teste grátis da Vitrinista já é só no cartão (código e Termos, conferido em 12/10), o que diminui a perda de ficar sem Pix.
