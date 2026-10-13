@@ -1,13 +1,13 @@
 # Estado
 
-Reescrito em 12/10/2026, à noite, pelo Curador, depois do deploy do painel e da página de vendas. Os dias estão em `30-diario/` ([[2026-10-10]], [[2026-10-11]], [[2026-10-12]]).
+Reescrito em 12/10/2026, à noite, pelo Curador, e fechado às 22h40, depois dos testes do sandbox do Asaas e do deploy de `7752abb`. Os dias estão em `30-diario/` ([[2026-10-10]], [[2026-10-11]], [[2026-10-12]]).
 
 ## Agora: painel e página de vendas no ar; falta decidir o cadastro
 
 - **No ar desde 12/10** (merge, push e deploy autorizados na conversa; `master` de `aa655fb` a `4c8b006`, sem migração): o painel na identidade A, nos temas claro e escuro ([[2026-10-12-painel-na-identidade-a]]); a página de vendas em `usevitrinista.com.br`, com o `www` redirecionando para a raiz ([[2026-10-12-pagina-na-raiz-do-dominio]]); e o Atelier à venda. O painel segue em `https://painel.usevitrinista.com.br`.
 - **Cadastro fechado** (`CADASTRO_ABERTO=0`): os botões da página levam a "O cadastro ainda não abriu". A página está com `noindex`.
-- **Repositório do projeto:** `master` em `4c8b006` no GitHub, no servidor e na cópia local (conferido em 12/10 à noite). As branches `plano-5h-pagina-de-vendas`, `painel-identidade-botanica` e `vendas-raiz-e-ajustes` existem só na cópia local e estão contidas no `master`. `docs/marca/estudos-identidade/` e `estudos-logo/` seguem sem versionar. Um `next-env.d.ts` alternado ficou no stash da cópia.
-- **Mudanças de 12/10 à noite, feitas na cópia do projeto:** o cartão do plano em Conta (subir de plano à vista; descer, cancelar e desistir recolhidos) e o nome do plano na fatura ao trocar de plano. Oito arquivos em `apps/web`, `apps/worker` e `packages/core`; suítes passando (core 1041, worker 642, web 638). No `master` e no GitHub desde 12/10 à noite (`902f273` e `7752abb`). **Falta o deploy:** barrado pela permissão do Claude Code; o servidor segue em `4c8b006`.
+- **Repositório do projeto:** `master` em `7752abb` no GitHub, no servidor e na cópia local (conferido em 12/10, 22h32). As branches `plano-5h-pagina-de-vendas`, `painel-identidade-botanica`, `vendas-raiz-e-ajustes` e `conta-plano-e-nome-na-fatura` existem só na cópia local e estão contidas no `master`. `docs/marca/estudos-identidade/` e `estudos-logo/` seguem sem versionar. Um `next-env.d.ts` alternado ficou no stash da cópia.
+- **Mudanças de 12/10 à noite, feitas na cópia do projeto:** o cartão do plano em Conta (subir de plano à vista; descer, cancelar e desistir recolhidos) e o nome do plano na fatura ao trocar de plano. Oito arquivos em `apps/web`, `apps/worker` e `packages/core`; suítes passando (core 1041, worker 642, web 638). No `master`, no GitHub e no servidor desde 12/10, 22h32 (`902f273` e `7752abb`, sem migração; conferido depois do deploy). Falta ela olhar o cartão do plano por dentro do painel.
 - **Sandbox do Asaas (12/10, noite):** atraso, pagar fatura atrasada e subir de plano com a diferença passaram. O estorno passou só na cobrança Pix; as mensalidades da conta de teste estão no Asaas como boleto e o estorno delas foi recusado. A conta de teste ficou cancelada, valendo até 09/11. Causa e o que fazer antes de abrir: [[asaas-estorno-pix-e-boleto]]. Detalhes em [[2026-10-12]].
 - **Nuvem:** nenhuma sessão rodando.
 - **Não conferido:** Trocar peça, Criar conta, ficha de conta na administração e documentos legais a olho; o estado do número `close` no servidor (1 aberto e 1 fechado; o estado antes do deploy não foi lido); a data do último backup depois de 11/10, 19h46.
@@ -15,9 +15,10 @@ Reescrito em 12/10/2026, à noite, pelo Curador, depois do deploy do painel e da
 
 ## Próximo
 
-Nada segue sem ela. Na ordem:
+Em 12/10 à noite ela escolheu abrir o cadastro que já existe (em vez de refazer telas ou criar lista de espera). Na ordem:
 
-1. **Ela decide:** abrir o cadastro e a indexação (recomendação, não confirmada por ela: manter o `noindex` até abrir o cadastro). O cadastro depende do sandbox do Asaas terminado, da conta de produção do Asaas e do advogado ([[pendencias]]).
+0. **Na abertura, acertar o `STATE.md` do projeto:** o item 3 de "Próxima sessão" ainda diz que faltam os três testes do sandbox, e os dois commits de 12/10 à noite não estão lá. É um commit de documentação no projeto: pedir o ok dela.
+1. **Abrir o cadastro, o que falta** ([[pendencias]], [[asaas-estorno-pix-e-boleto]]): conta de produção do Asaas com a chave Pix criada antes da primeira assinatura; repetir o estorno com assinatura Pix e de cartão; a autorização de ação crítica do Asaas; a decisão sobre o estorno que falha no meio; advogado; backup externo (não existe). Só então a troca para a produção (passo 14 de `ferramenta-grupos/docs/implantacao.md`) e o `CADASTRO_ABERTO=1`, cada passo com o ok dela. A indexação segue com a recomendação, não confirmada por ela, de manter o `noindex` até abrir.
 2. **Ela olha** o painel e a página no celular de verdade, nos dois temas. O Edge do notebook informa movimento reduzido: nesse modo as entradas ao rolar são só fade de 120 ms; para ver a animação completa, ligar "Efeitos de animação" no Windows.
 3. **Abrir o Construtor, quando ela autorizar.** Ela quer guardar a cota: ler a cota antes de qualquer despacho (skill `despachar-nuvem`, "Antes"). A última leitura é de 11/10, 9h02 (58%); o valor atual é desconhecido. Zera na sexta, 16/10, às 16h. Se não der para ler, dizer isso e pedir que ela olhe o `/usage`. Duas tarefas esperam em `.maestri/` (fora do git, só neste notebook), nenhuma despachada:
    - `tarefa-copy-ia.md`: a copy por IA, condição para a página dizer "no tom dela" ([[2026-10-12-copy-por-ia-antes-do-lancamento]]). Falta ela aprovar a tarefa.
