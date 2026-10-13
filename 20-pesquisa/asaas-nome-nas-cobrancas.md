@@ -28,6 +28,21 @@ Pergunta dela: existe outra forma de cobrar sem o nome aparecer? Três famílias
 
 Custo de trocar: a cobrança da Vitrinista foi construída e testada sobre o Asaas (plano 5E, trocas de plano, atraso, estorno, avisos). Outro meio de pagamento é um plano de código novo.
 
+## Stripe a fundo (13/10, páginas oficiais)
+
+Pedido dela: "estude sobre a stripe".
+
+- **Pessoa física pode abrir conta no Brasil, só com o CPF.** O CNPJ é opcional para "Pessoa Física". Pede CPF regular na Receita, documento com o CPF, endereço no Brasil, faixa de renda mensal, site ou rede social e conta bancária em reais no mesmo CPF. O nome legal não muda depois da verificação, e passar para CNPJ mais tarde exige abrir conta nova.
+- **O que o cliente vê é o que ela puser em "informações comerciais públicas":** nome e site do negócio, e-mail, telefone e endereço de suporte e o texto da fatura do cartão. Aparecem nas faturas do cartão e nos recibos por e-mail. O texto da fatura tem de 5 a 22 caracteres e deve refletir o nome fantasia. **Não confirmado:** se, numa conta de pessoa física, o nome legal ou o CPF aparecem em algum recibo, fatura ou página de pagamento; e o endereço de suporte, que é público, seria o dela. Dá para conferir de graça numa conta de teste, sem ativar.
+- **Pix: só pagamento avulso em conta brasileira.** A documentação diz que o Pix Automático (recorrente) não está disponível para contas do Brasil, e a página de preços diz que o Pix é "somente por convite". No banco do cliente, o recebedor que aparece é o parceiro da Stripe (Ebanx), com o nome do negócio no campo identificador. Estorno em até 90 dias.
+- **Na prática, assinatura automática na Stripe seria só no cartão.** Como o Pix e o boleto entrariam numa assinatura (uma fatura por mês paga à mão) não foi confirmado.
+- **Dinheiro:** cartão nacional fica disponível em 30 dias; Pix e boleto em 2 dias; repasse diário; o primeiro repasse pode levar até 30 dias. Contestação: R$ 55,00.
+- **Custo de trocar:** refazer a cobrança (o plano 5E, as trocas de plano com diferença, atraso, estorno e os avisos) e testar tudo de novo.
+
+### Mesclar cartão na Stripe com Pix em outro lugar (pergunta dela, 13/10)
+
+Raciocínio do Curador, sem fonte nova: tecnicamente dá, mas o Pix mostra sempre o nome de quem recebe. Pix pelo Asaas no CPF mostraria o nome dela a quem paga por Pix, e seriam dois sistemas de cobrança para manter. O único Pix que esconderia o nome é o da própria Stripe (recebedor Ebanx), que é avulso e "por convite". Correção apontada por ela no mesmo dia: o Pix do Asaas hoje também é avulso (uma cobrança por mês, paga à mão; o sistema não usa Pix automático), então o Pix avulso da Stripe não seria perda em relação ao que existe, se a Stripe emitir a fatura mensal com Pix e liberar o Pix para a conta, o que não foi confirmado. O teste grátis da Vitrinista já é só no cartão (código e Termos, conferido em 12/10), o que diminui a perda de ficar sem Pix.
+
 ## Taxas (13/10)
 
 Abrir empresa não é viável para ela agora (dito na conversa em 13/10). Custo por mensalidade paga, calculado sobre os três planos (R$ 59,90, R$ 99,90 e R$ 179,90):
@@ -49,6 +64,7 @@ Abrir empresa não é viável para ela agora (dito na conversa em 13/10). Custo 
 
 ## Fontes
 - [Preços e taxas do Asaas](https://www.asaas.com/precos-e-taxas) e [preços da Stripe no Brasil](https://stripe.com/br/pricing), lidas em 13/10/2026.
+- Stripe, lidas em 13/10/2026: [informações para abrir conta no Brasil](https://support.stripe.com/questions/brazil-specific-information-to-open-a-stripe-account), [mudanças de verificação de 2026](https://support.stripe.com/questions/2026-updates-to-brazil-verification-requirements), [configurar a conta, informações públicas](https://docs.stripe.com/get-started/account/set-up), [descrições no extrato](https://docs.stripe.com/get-started/account/statement-descriptors) e [prazos de repasse no Brasil](https://support.stripe.com/questions/brazil-specific-payout-schedule-and-payment-availability).
 - [Comparação de plataformas (bit4learn)](https://bit4learn.com/pt/?p=1434) e [Tactus](https://tactus.com.br/qual-a-melhor-plataforma-digital/amp/): taxas de Eduzz, Hotmart e Kiwify, não conferidas.
 - [Pix na Stripe](https://docs.stripe.com/payments/pix) e [o que é o descritor da fatura](https://support.stripe.com/questions/what-is-a-statement-descriptor-and-how-to-update-it), documentação da Stripe.
 - [Reclamação de cobrança identificada como "HOTMART"](https://portaldaqueixa.com/brands/hotmart/complaints/hotmart-cobranca-nao-autorizada-em-cartao-de-credito-159066726) (indício, não regra).
