@@ -18,4 +18,6 @@ fonte: conversa com o Curador, 13/10/2026
 
 **Onde entrou:** ainda não entrou. Entra junto com a troca da cobrança para a Stripe (`ferramenta-grupos/packages/core/src/billing/plans.ts` só tem preço mensal), na página de vendas, em `/assinar` e nos Termos.
 
+**Atualizado em 14/10:** além do à vista, o anual pode ser pago em 12x com compromisso de 12 meses: [[2026-10-14-anual-em-12x-com-compromisso]].
+
 **Alternativas descartadas:** 12 meses pelo preço de 10 (R$ 999 e R$ 1.799), sugestão do Curador de 10/10 e de 13/10.
