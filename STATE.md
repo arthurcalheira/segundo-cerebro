@@ -1,8 +1,8 @@
 # Estado
 
-Reescrito em 13/10/2026, à noite, pelo Curador, e fechado às 20h11. Os dias estão em `30-diario/` ([[2026-10-12]], [[2026-10-13]]).
+Reescrito em 13/10/2026, à noite, pelo Curador; fechado às 20h11 e de novo no fim da noite, depois da reformulação dos planos. Os dias estão em `30-diario/` ([[2026-10-12]], [[2026-10-13]]).
 
-## Agora: tudo no ar e conferido por ela; falta decidir por onde cobrar
+## Agora: planos reformulados e cobrança pela Stripe decididos; o Construtor escreve a spec
 
 - **No ar:** o painel em `https://painel.usevitrinista.com.br` e a página de vendas em `usevitrinista.com.br`, na identidade A; o Plano 11 (montador da mensagem e copy por IA, com a IA desligada) e as correções da revisão dele; os onze ajustes de UX de 13/10 ([[2026-10-13-ajustes-de-ux-do-painel]]). Servidor em `928790e`, conferido pelo Curador depois de cada deploy; **ela olhou o painel por dentro em 13/10 à noite: "tudo certo com o painel".** Não dito por ela: se viu um envio sair depois dos deploys.
 - **Repositório do projeto:** `master` em `1589929` no GitHub e na cópia local (um commit de documentação à frente do servidor; sem deploy pendente). A cópia local está no `master`, limpa; sobraram branches locais já contidas nele (`ajustes-ux-13-10` e as de 12/10). `docs/marca/estudos-identidade/` e `estudos-logo/` seguem sem versionar.
@@ -18,7 +18,7 @@ Reescrito em 13/10/2026, à noite, pelo Curador, e fechado às 20h11. Os dias es
 
 ## Próximo
 
-1. **Aviso dos 40 no `master`, sem deploy:** `41d4caf` (13/10, 21h30, commit e push com o ok dela; [[2026-10-13-sem-aviso-de-risco-acima-de-40]]). O servidor segue em `928790e`; o deploy pede o ok dela.
+1. **Aviso dos 40 no `master`, sem deploy:** `41d4caf` (13/10, 21h30, commit e push com o ok dela; [[2026-10-13-sem-aviso-de-risco-acima-de-40]]). O servidor segue em `928790e`: o deploy teve o ok dela e foi barrado pelo modo automático do Claude Code (ela sai do modo automático e aprova, ou cria a regra em `/permissions`). A leitura das branches do projeto foi barrada em seguida, na mesma sessão.
 1. **Construtor dos planos e da Stripe rodando desde as 21h35 de 13/10** ([session_01GrXD6rC5G8xRjKspTLKUcP](https://claude.ai/code/session_01GrXD6rC5G8xRjKspTLKUcP), do `master` em `41d4caf`, cota em 98%): vai só até a spec e para. Trazer a spec pelo `STATE.md` da branch dele, para ela aprovar; se a cota acabar no meio, ele retoma depois de 16/10, 16h. Registro em [[sessoes-nuvem]]. Antes do código, vale a recomendação antiga do Curador: ativar a conta da Stripe antes de qualquer código, com o `contato@` do domínio como e-mail de suporte e um endereço que não seja o de casa, e ver se o Pix é liberado. Se a Stripe for o caminho, é um plano de código novo (refazer a cobrança do 5E, as trocas de plano, atraso, estorno e avisos), para um Construtor depois de a cota zerar. Se ficar no Asaas: conta de produção com a chave Pix criada antes da primeira assinatura, repetir o estorno com assinatura Pix e de cartão, a autorização de ação crítica e a decisão sobre o estorno que falha no meio.
 2. **Ela, sem depender do item 1:** crédito no Claude Console e a chave da Anthropic; advogado (o que a IA exige dos documentos, as seis lacunas, o que a 5G criou, os Termos que identificam pessoa física); onde fica o backup externo (não existe); DKIM no Zoho.
 3. **Abrir o cadastro**, quando o resto estiver feito: troca para a produção (passo 14 de `ferramenta-grupos/docs/implantacao.md`, se ficar no Asaas) e `CADASTRO_ABERTO=1`, cada passo com o ok dela. A indexação segue com a recomendação, não confirmada por ela, de manter o `noindex` até abrir.
