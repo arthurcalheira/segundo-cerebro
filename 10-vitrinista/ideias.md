@@ -20,6 +20,8 @@ Levantadas em 10/10/2026 pelo Curador, a pedido, depois que a 5D saiu dos planos
 
 ## Planos e página de vendas
 
+**Decidido em 13/10/2026:** cobrança pela Stripe ([[2026-10-13-stripe-no-lugar-do-asaas]]), anual do Maison e do Atelier ([[2026-10-13-plano-anual-maison-49-atelier-99]]), teste com recursos do Maison para todos ([[2026-10-13-teste-com-maison-para-todos]]), cancelamento com pesquisa de motivo ([[2026-10-13-cancelamento-e-reembolso]]) e teto de 30 peças por dia no Essencial ([[2026-10-13-essencial-com-teto-de-30-pecas]]). O destaque do Maison e o convite a subir em cada bloqueio já estão no código. Das linhas abaixo, seguem sem decisão só "novidades só do Maison para cima" e o preço mensal do Essencial.
+
 Sugestões do Curador em 10/10/2026, para o objetivo declarado na conversa: levar o máximo de assinantes ao Maison ou ao Atelier, com lucro e sem perder leads. Guardadas a pedido; **nenhuma foi decidida**. São práticas conhecidas de preço, não resultados medidos com afiliadas de moda. Cabem na 5H (página de vendas e de assinar).
 
 A conta que orienta as sugestões: o Essencial rende R$ 59,90 por número, o Maison R$ 99,90 e o Atelier R$ 59,97 por número se a assinante usar os três, e ainda inclui o atendimento direto. O plano de maior lucro é o Maison. O custo real por número no servidor não foi medido.
