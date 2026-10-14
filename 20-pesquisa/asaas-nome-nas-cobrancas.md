@@ -55,6 +55,17 @@ Conta criada por ela, país Brasil, sem ativar e sem dados de titular. O Curador
 
 Raciocínio do Curador, sem fonte nova: tecnicamente dá, mas o Pix mostra sempre o nome de quem recebe. Pix pelo Asaas no CPF mostraria o nome dela a quem paga por Pix, e seriam dois sistemas de cobrança para manter. O único Pix que esconderia o nome é o da própria Stripe (recebedor Ebanx), que é avulso e "por convite". Correção apontada por ela no mesmo dia: o Pix do Asaas hoje também é avulso (uma cobrança por mês, paga à mão; o sistema não usa Pix automático), então o Pix avulso da Stripe não seria perda em relação ao que existe, se a Stripe emitir a fatura mensal com Pix e liberar o Pix para a conta, o que não foi confirmado. O teste grátis da Vitrinista já é só no cartão (código e Termos, conferido em 12/10), o que diminui a perda de ficar sem Pix.
 
+### Parcelamento no cartão pela Stripe (13/10, à noite)
+
+Pedido dela: "pesquisar como podemos ativar esse pagamento parcelado pela stripe", para o plano anual ([[2026-10-13-plano-anual-maison-49-atelier-99]]).
+
+- **Não há o que ativar: a Stripe não oferece parcelamento de cartão para conta do Brasil**, pelo que as páginas oficiais mostram. A página de parcelamento lista três produtos: Mastercard Installments (clientes na Austrália, Canadá, Alemanha, Malásia, Emirados, Reino Unido e Estados Unidos), México (meses sin intereses) e Japão. A página "formas de pagamento aceitas no Brasil" e a página de preços do Brasil não citam parcelamento.
+- **Mesmo onde existe, não vale para assinatura:** a documentação de cartões diz que, com parcelamento gerido pelo emissor, não dá para usar assinaturas para criar parcelas.
+- **Não confirmado:** nenhuma página diz com todas as letras "não disponível no Brasil"; a conclusão vem da ausência. O teste que fecha a questão é pedir os planos de parcelamento pela API na conta de teste dela (precisa de chave de teste nova, fora do vault), ou perguntar ao suporte da Stripe.
+- **O que dá o efeito de parcelado sem parcelamento:** assinatura de 12 cobranças mensais de R$ 49 com compromisso de um ano ("anual cobrado por mês"; a Stripe tem assinatura com número fixo de cobranças). Não ocupa o limite do cartão, mas o dinheiro entra mês a mês, a cliente pode deixar de pagar no meio e cobrar depois de ela "cancelar" é receita de contestação. Não é o que ela decidiu (anual cobrado de uma vez).
+
+Fontes, lidas em 13/10/2026: [parcelamento na Stripe](https://docs.stripe.com/payments/installments), [Mastercard Installments](https://docs.stripe.com/payments/mastercard-installments?locale=pt-BR), [cartões](https://docs.stripe.com/payments/cards), [formas de pagamento aceitas no Brasil](https://support.stripe.com/questions/accepted-payment-methods-in-brazil), [preços no Brasil](https://stripe.com/br/pricing).
+
 ## Taxas (13/10)
 
 Abrir empresa não é viável para ela agora (dito na conversa em 13/10). Custo por mensalidade paga, calculado sobre os três planos (R$ 59,90, R$ 99,90 e R$ 179,90):
