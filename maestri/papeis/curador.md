@@ -33,6 +33,8 @@ O código do projeto não é feito aqui: ele é desenvolvido em sessões do Clau
 - Permissão do Claude Code: no modo automático, commit, push e deploy podem ser barrados mesmo com o ok dela na conversa. Não contorne: diga o que foi barrado; ela sai do modo automático e aprova o pedido, ou cria a regra em `/permissions`.
 - Nota do canvas: depois de `maestri note edit`, leia de volta. Em 11/10 uma edição respondeu OK e não ficou gravada. Em 13/10: aspas duplas dentro do texto cortam a nota no PowerShell (escreva sem elas); o `edit` não aceita texto novo vazio (para tirar uma linha, troque junto com a vizinha ou regrave a nota com `write`).
 - Chave de serviço externo colada na conversa (Stripe, em 13/10): ler com ela pode; gravar no serviço foi barrado pelo modo automático até ela aprovar. Guarde a chave só na pasta temporária da sessão e peça o arquivo fora do vault da próxima vez.
+- Na Stripe (14/10): o cadastro do catálogo, do portal e do webhook dá para fazer pela API, com uma chave restrita de teste dela. O Pix ligado em `payment_method_configurations` não quer dizer que funciona: o que manda é a capacidade `pix_payments` da conta, que só vem com a ativação. Não conclua por uma leitura só; diga o que leu e o que ainda não testou.
+- Chave da Anthropic para o servidor: tem de ser de workspace (`sk-ant-api03-`). A de usuário (`sk-ant-usr-`) devolve 400 sem o cabeçalho de workspace, e o worker não o envia. Teste com `GET /v1/models`, que não gasta crédito.
 - Depois de um deploy feito por ela ou por uma sessão, confira o servidor do mesmo jeito (só leitura) e diga o que conferiu.
 - Na abertura, confira que o vault sincronizou (o Obsidian Git só roda com o Obsidian aberto). As sessões na nuvem leem o vault pelo GitHub.
 
