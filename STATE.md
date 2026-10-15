@@ -1,25 +1,26 @@
 # Estado
 
-Reescrito em 14/10/2026, às 22h50, pelo Curador, no fechamento. Os dias estão em `30-diario/` ([[2026-10-13]], [[2026-10-14]]).
+Atualizado em 15/10/2026, às 17h45, pelo Curador (sessão ainda aberta). Os dias estão em `30-diario/` ([[2026-10-14]], [[2026-10-15]]).
 
-## Agora: o Plano 12 (12A e 12B) está feito e no GitHub, sem merge; falta o Pix, o 12C e o deploy
+## Agora: o Plano 12 com o 12C está no GitHub, sem merge; o Tear faz o Pix só no anual à vista
 
 - **No ar:** o painel em `https://painel.usevitrinista.com.br` e a página de vendas em `usevitrinista.com.br`; o Plano 11 e as correções; os ajustes de UX de 13/10; a retirada do aviso dos 40. Servidor em `41d4caf`. **A IA das mensagens foi ligada em 14/10 à noite** (com o ok dela; `ANTHROPIC_API_KEY` no `.env`, log com "escrita por IA ligada"). Não conferido: uma copy gerada de verdade, se há crédito no Console e o número principal depois do reinício do worker.
 - **Cadastro fechado** (`CADASTRO_ABERTO` ausente), página com `noindex`. Em produção a cobrança ainda é a do sandbox do Asaas: a Stripe só entra com o deploy do Plano 12.
-- **Plano 12 na cópia local** (`../ferramenta-grupos`, branch `claude/stripe-billing-i0eof8`, ponta `6c72e16`): o 12A (Stripe e anual) e o 12B (teste com o Maison, cancelamento com motivo, pausa, teto do Essencial, faixa da renovação), feitos pelo Construtor local "Tear" (conta "Claude Trial 1"). Push feito em 14/10 às 22h58: a branch no GitHub está em `6c72e16`, igual à cópia local. Roteiro da Stripe rodado no notebook: passou tudo menos o Pix (itens 4 e 8) e os e-mails (9). Roteiro do deploy em `ferramenta-grupos/docs/deploy-plano-12.md`. O resumo está no "Onde paramos" do `ferramenta-grupos/STATE.md` da branch.
-- **Stripe, modo de teste:** produtos, os cinco preços e o portal foram cadastrados pelo Curador pela API em 14/10. O webhook fica para o deploy. **O Pix não funciona até ela concluir a ativação da conta** (dados da empresa e do recebedor): a configuração mostra o Pix ligado, mas a conta não tem a capacidade `pix_payments`. Ela disse que não consegue editar os dados na conta de teste: falta esclarecer o caminho.
-- **Decidido em 14/10:** anual à vista ou 12x com compromisso de 12 meses, multa de 20% das parcelas restantes e pausa de até 30 dias quando uma parcela falha ([[2026-10-14-anual-em-12x-com-compromisso]]). Isso vira o Plano 12C, com a tarefa pronta em `.maestri/tarefa-12c.md`. Também: "Voltar agora" sem cobrar hoje ([[2026-10-14-pausa-voltar-agora-sem-cobrar]]).
-- **Chaves passadas na conversa em 14/10**, guardadas só na pasta temporária da sessão do Curador (somem quando a sessão fecha): a restrita de teste da Stripe (ela revoga depois do webhook) e a da Anthropic (já no servidor). Ela precisa revogar a chave `sk-ant-usr-` colada antes.
+- **Plano 12 na cópia local** (`../ferramenta-grupos`, branch `claude/stripe-billing-i0eof8`): o 12A, o 12B e o 12C (anual em 12x), feitos pelo Construtor local "Tear" (conta "Claude Trial 1"). No GitHub em `9b3f930` (push de 15/10, com o ok dela). Roteiro da Stripe rodado: tudo passou, inclusive o 12x (item 12), menos o Pix, que muda de desenho. Roteiro do deploy em `ferramenta-grupos/docs/deploy-plano-12.md`; resumo no "Onde paramos" do `ferramenta-grupos/STATE.md` da branch.
+- **Stripe, modo de teste:** produtos, os sete preços (os dois do 12x criados em 15/10) e o portal cadastrados pelo Curador pela API. Conta ativada por ela em 15/10. Ela configurou em 15/10: tentativas terminando em vencida, e-mails de pagamento que falhou (link da Stripe), de recibo, de cartão vencendo e de aviso de renovação. O webhook fica para o deploy. **Pix:** conta brasileira só aceita Pix avulso; a fatura de assinatura recusa, mesmo com a conta ativada (testado pela API em 15/10). Decisão: [[2026-10-15-pix-so-no-anual-a-vista]].
+- **Decisões de 14 e 15/10:** o 12x ([[2026-10-14-anual-em-12x-com-compromisso]], adendo aprovado em 15/10), "Voltar agora" sem cobrar hoje ([[2026-10-14-pausa-voltar-agora-sem-cobrar]]) e o Pix só no anual à vista.
+- **Chaves:** a restrita de teste da Stripe e a da Anthropic ficam só na pasta temporária da sessão do Curador (somem quando a sessão fecha); ela revoga a da Stripe depois do webhook. A `sk-ant-usr-` foi revogada por ela em 15/10.
+- **Advogado:** sem advogado pago; o Curador pesquisa a lei e propõe as respostas (Próximo, item 5).
 - **Nuvem:** nenhuma sessão rodando ([[sessoes-nuvem]]).
-- **Cota:** a conta principal estava em 96% da semana em 13/10, e zera na sexta, 16/10, às 16h. O Tear, na "Claude Trial 1", está em 15% da semana.
+- **Cota:** a conta principal zera na sexta, 16/10, às 16h. O Tear, na "Claude Trial 1", estava em 22% da semana em 15/10.
 
 ## Próximo
 
-1. **Pix:** ela conclui a ativação da conta da Stripe; depois o Tear roda os itens 4 e 8 do roteiro.
-2. **Plano 12C** (anual em 12x), com o ok dela, pelo Tear na mesma branch: `.maestri/tarefa-12c.md`. Começa por um adendo à spec, para ela aprovar. Os dois preços novos do 12x o Curador cadastra pela API.
-3. **Merge e deploy do Plano 12** (push feito em 14/10), cada um com o ok dela. No deploy: as migrações `0038` a `0040` (a `0038` apaga os ids do Asaas) e a limpeza das assinaturas de teste, cada uma com confirmação; o Curador cria o webhook e põe a `sk_test_` e o `whsec_` no servidor. Ela revoga a chave restrita depois.
+1. **Pix só no anual à vista** ([[2026-10-15-pix-so-no-anual-a-vista]]): adendo aprovado por ela em 15/10 (`9b3f930`, as quatro recomendações do Tear); o Tear está no código, com commit e sem push, e depois roda o Pix de ponta a ponta na Stripe de teste. Ao terminar: pedir o ok do push e gerar de novo os Word de `.maestri/advogado/` (o item 6 dos Termos muda).
+2. **Plano 12C** (anual em 12x): feito e testado (`c4e0818` a `6730333`, no GitHub). Desvio do adendo, registrado lá: a volta da parcela usa `trial_end` em vez de `billing_cycle_anchor: now`. No `demo-seed.test.ts`, 76 de 77 (o que semeia duas vezes passa do limite de 5 s pela lentidão da máquina).
+3. **Merge e deploy do Plano 12**, cada um com o ok dela. No deploy: as migrações `0038` a `0041` (a `0038` apaga os ids do Asaas) e a limpeza das assinaturas de teste, cada uma com confirmação; o Curador cria o webhook e põe a `sk_test_` e o `whsec_` no servidor. Ela revoga a chave restrita depois.
 4. **Ela confere na Fila** a primeira copy da IA e o número principal com o automático ligado.
-5. **Ela, sem depender do resto:** advogado (anual, 12x com multa, cancelamento, IA, as seis lacunas, Termos de pessoa física); backup externo (não existe); DKIM no Zoho; revogar a chave `sk-ant-usr-`.
+5. **Lacunas legais, sem advogado pago (15/10):** ela pediu ao Curador para preencher. Pesquisa da lei por um agente no Sonnet, com fontes; o Curador propõe cada resposta com o risco marcado no documento "Vitrinista — pontos para o advogado", ela aprova, e o Tear aplica em `docs/legal/` depois do Pix. **Ela, sem depender do resto:** backup externo (não existe); o DMARC no registro.br. Feitos em 15/10: a chave `sk-ant-usr-` revogada; o DKIM do Zoho publicado (seletor `zmail`); na Stripe de teste, as tentativas terminando em vencida, os e-mails de pagamento que falhou com o link da Stripe, de recibo, de cartão vencendo e de aviso de renovação.
 6. **Abrir o cadastro** quando tudo isso estiver feito: Stripe de produção (refazer produtos, preços, portal e webhook) e `CADASTRO_ABERTO=1`, cada passo com o ok dela.
 7. **Documentos legais da 5H:** reescrever `.maestri/tarefa-5h.md` só com os documentos legais.
 8. **Antes de qualquer despacho:** ler a cota; vault sincronizado; um construtor por vez; registrar em [[sessoes-nuvem]], no diário e na nota "Agora". Merge e deploy pedem confirmação nova a cada vez.
@@ -28,7 +29,7 @@ Reescrito em 14/10/2026, às 22h50, pelo Curador, no fechamento. Os dias estão 
 ## Ainda por fazer, sem data
 
 - Da 5G: ver o cartão "Atendimento Atelier" quando houver a primeira conta no Atelier (o número de atendimento está no servidor como provisório, `ATENDIMENTO_WHATSAPP`, e não é escrito no vault); trocar pelo definitivo quando houver (linha no `.env` do servidor e `atualizar.sh`, com confirmação); olhar o log do worker no primeiro apagar real de um número, porque a resposta da Evolution ao apagar uma instância não foi confirmada.
-- Com quem cuida do produto ([[pendencias]]): DKIM no Zoho ([[email-do-dominio]]); retorno do advogado; backup externo; Google Analytics ou não; link do dashboard da multimarca; as 8 frases de chamada; INPI.
+- Com quem cuida do produto ([[pendencias]]): DMARC e teste de envio do e-mail ([[email-do-dominio]]); retorno do advogado; backup externo; Google Analytics ou não; link do dashboard da multimarca; as 8 frases de chamada; INPI.
 - Sem decisão, em [[ideias]]: 13 ideias de features e as sugestões de planos e página de vendas.
 - Do plano do workspace: atualizar `maestri/configurar-no-windows.md` com as rotinas, o terminal do VPS e o portal.
 

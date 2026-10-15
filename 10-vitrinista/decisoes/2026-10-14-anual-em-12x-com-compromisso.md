@@ -18,6 +18,8 @@ fonte: conversa com o Curador, 14/10/2026
 
 **Não confirmado:** se fechar o cancelamento pelo site e cobrar multa num compromisso de 12 meses se sustenta no Código de Defesa do Consumidor. Vai ao advogado ([[pendencias]]).
 
-**Onde entrou:** ainda não entrou. Fica para um Plano 12C, depois de o Tear terminar o 12B e antes do merge e do deploy do Plano 12. Entra em `/assinar`, na cobrança (`ferramenta-grupos/packages/core/src/billing/`), na página de vendas e nos Termos.
+**Adendo do 12C aprovado (15/10, "1. a, 2-6 ok"):** depois da 12ª parcela paga, o 12x renova sozinho por mais 12, com aviso 15 dias antes e cancelamento sem multa entre a 12ª e a 13ª (a renovação automática de um compromisso com multa vai ao advogado); 12x só no cartão; "perder o acesso" é o envio parado, com o painel abrindo para ela pagar; durante o compromisso, mudar de plano só pelo suporte (mensal para 12x fica para depois); a Administração tem "Encerrar sem multa" ao lado de "Cobrar e encerrar"; os textos do termo, dos Termos e da página de vendas aprovados, com os trechos marcados para o advogado.
+
+**Onde entrou:** no adendo da spec, `ferramenta-grupos/docs/superpowers/specs/2026-10-14-plano-12-stripe-e-planos-design.md` (commit `c4e0818`, branch `claude/stripe-billing-i0eof8`). O código está sendo feito pelo Tear desde 15/10.
 
 **Alternativas descartadas:** de 1x a 12x, com um produto por número de parcelas (a sugestão dela); só à vista, como estava em [[2026-10-13-plano-anual-maison-49-atelier-99]].
