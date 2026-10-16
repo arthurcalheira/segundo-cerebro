@@ -12,7 +12,7 @@ fonte: conversa com o Curador, 15/10/2026 ("1 a 4 ok. deixa só com contato na p
 2. **Anual à vista, cancelar depois dos 7 dias:** devolve os meses inteiros não usados, menos 20% deles (a mesma conta da multa do 12x).
 3. **Desistência nos 7 dias:** sai o limite de uma por pessoa. O teste grátis continua um só por cartão e número.
 4. **Foro:** o domicílio da consumidora.
-5. **Identificação:** o site mostra só o contato (`contato@usevitrinista.com.br`), sem nome, CPF nem endereço. Recomendação do Curador era nome, CPF e endereço comercial; ela escolheu sem. Risco médio (Decreto 7.962, art. 2º, I e II), aceito por ela.
+5. **Identificação:** o site mostra só o contato (`contato@usevitrinista.com.br`), sem nome, CPF nem endereço. Recomendação do Curador era nome, CPF e endereço comercial; ela escolheu sem. Risco médio (Decreto 7.962, art. 2º, I e II), aceito por ela. A Privacidade também deixou de nomear a controladora (LGPD, art. 9º, II): risco apontado pelo Tear e aceito por ela em 15/10 ("aceito o risco"); a correção, se houver cobrança, é incluir o nome.
 
 As demais lacunas seguem as respostas propostas na seção 6 do documento "Vitrinista — pontos para o advogado" (risco baixo ou médio, sem decisão de produto).
 
