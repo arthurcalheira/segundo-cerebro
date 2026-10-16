@@ -2,10 +2,10 @@
 
 Reescrito em 16/10/2026, às 17h45, pelo Curador, depois do deploy do menu. Os dias estão em `30-diario/` ([[2026-10-15]], [[2026-10-16]]).
 
-## Agora: Plano 12, 5H e menu novo no ar (16/10, 17h40); cobrança de teste desligada por chave expirada; cadastro fechado
+## Agora: Plano 12, 5H e menu novo no ar (16/10, 17h40); cobrança de teste religada; cadastro fechado
 
 - **No ar:** `master` e servidor em `6875662` (o Plano 12, a 5H e o menu no estilo do Claude), com o ok dela ("pode fazer o push, merge e deploy"). Deploy da 5H às 17h07 (migrações `0043` e `0044`) e do menu às 17h40, os dois com `EXIT=0` e backup antes. Conferido: containers saudáveis; `/versoes`, `/cookies` (cita o `vitrinista_lateral`), `/termos` e as páginas públicas 200; as telas novas (`/envio/...`, `/conta/...`) pedem login; `/regras`, `/conta` e `/ajustes` redirecionam certo; webhook responde; IA ligada; número principal conectado com o automático ligado. O painel por dentro (com login) ela olha.
-- **Cobrança de teste desligada:** a `sk_test_` do servidor expirou (log: "Expired API Key provided"); ela girou uma chave no painel em 15/10 e de novo em 16/10. Falta: a `sk_test_` nova no servidor; ela confirmar que a `sk_live_` colada na conversa em 15/10 foi girada (disse "dei o rotate key no dashboard" em 16/10). Cadastro fechado: nenhuma cliente afetada.
+- **Cobrança de teste:** a `sk_test_` do servidor tinha expirado (ela girou a de teste em 15/10); a nova foi posta no `.env` em 16/10, 17h38, conferida (conta certa, sete preços, webhook), worker reiniciado: "Stripe, modo teste", sete `ok`, a assinatura de teste dela relida. Ela confirmou que girou a `sk_live_` de produção (16/10).
 - **Merge do menu com a 5H** (Trama, `6875662`): o "Encerrar a conta" ficou no fim de Conta > Dados e senha; a política de cookies cita quatro cookies, na versão de 16/10.
 - **Stripe de produção montada** (produtos, sete preços, portal, e-mails e tentativas). Falta o webhook de produção, na abertura.
 - **Terminais:** Tear e Trama abertos e parados, com as conversas. A worktree `claude codeerramenta-grupos-menu` pode ser apagada (o menu está no `master`), com o ok dela.
@@ -13,12 +13,11 @@ Reescrito em 16/10/2026, às 17h45, pelo Curador, depois do deploy do menu. Os d
 
 ## Próximo
 
-1. **Religar a cobrança de teste:** ela passa a `sk_test_` atual; o Curador troca no `.env` do servidor e reinicia o worker (`billing:precos` com sete `ok`).
-2. **Ela:** confirmar a `sk_live_` girada; backup externo (sugestão: Cloudflare R2, grátis até 10 GB); testar uma resposta enviada pelo `contato@`; olhar o painel novo por dentro (menu, Conta, Encerrar a conta).
-3. **Abrir o cadastro**, com o ok dela em cada passo: a `sk_live_` nova direto ao servidor, o webhook de produção, `CADASTRO_ABERTO=1` e tirar o `noindex` da página de vendas.
-4. **Depois:** reduzir os registros de erro do programa de conexão (Privacidade, item 3.2); conta encerrada que não pode reusar o e-mail.
-5. **Antes de qualquer despacho:** ler a cota; vault sincronizado; registrar em [[sessoes-nuvem]], no diário e na nota "Agora". Ao delegar à noite, conferir com `maestri check` que a mensagem foi enviada.
-6. **Sobras:** a rotina "Revisor do Plano 11" (pausada); o produto antigo "Assinatura Atelier" na Stripe de teste; a worktree do menu.
+1. **Ela:** backup externo adiado por ela em 16/10 ("deixa pra fazer esse backup depois"; sugestão: Cloudflare R2, grátis até 10 GB; hoje as cópias ficam só no próprio servidor, e a Privacidade, item 8, continua marcada); testar uma resposta enviada pelo `contato@`; olhar o painel novo por dentro (menu, Conta, Encerrar a conta).
+2. **Abrir o cadastro**, com o ok dela em cada passo: a `sk_live_` nova direto ao servidor, o webhook de produção, `CADASTRO_ABERTO=1` e tirar o `noindex` da página de vendas.
+3. **Depois:** reduzir os registros de erro do programa de conexão (Privacidade, item 3.2); conta encerrada que não pode reusar o e-mail.
+4. **Antes de qualquer despacho:** ler a cota; vault sincronizado; registrar em [[sessoes-nuvem]], no diário e na nota "Agora". Ao delegar à noite, conferir com `maestri check` que a mensagem foi enviada.
+5. **Sobras:** a rotina "Revisor do Plano 11" (pausada); o produto antigo "Assinatura Atelier" na Stripe de teste; a worktree do menu.
 
 ## Ainda por fazer, sem data
 
