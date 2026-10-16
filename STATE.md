@@ -2,9 +2,10 @@
 
 Reescrito em 16/10/2026, às 17h45, pelo Curador, depois do deploy do menu. Os dias estão em `30-diario/` ([[2026-10-15]], [[2026-10-16]]).
 
-## Agora: Plano 12, 5H e menu novo no ar (16/10, 17h40); cobrança de teste religada; cadastro fechado
+## Agora: Plano 12, 5H, menu novo, apple-design e pareamento por código no ar (16/10, 20h); cadastro fechado
 
 - **No ar:** `master` e servidor em `6875662` (o Plano 12, a 5H e o menu no estilo do Claude), com o ok dela ("pode fazer o push, merge e deploy"). Deploy da 5H às 17h07 (migrações `0043` e `0044`) e do menu às 17h40, os dois com `EXIT=0` e backup antes. Conferido: containers saudáveis; `/versoes`, `/cookies` (cita o `vitrinista_lateral`), `/termos` e as páginas públicas 200; as telas novas (`/envio/...`, `/conta/...`) pedem login; `/regras`, `/conta` e `/ajustes` redirecionam certo; webhook responde; IA ligada; número principal conectado com o automático ligado. O painel por dentro (com login) ela olha.
+- **No ar desde 16/10, 19h50 e 20h05** (com o ok dela, "pode fazer o push, merge e deploy das duas"): a conexão por **código de pareamento** (Tear, `3490e67`; no celular o código vem primeiro) e o painel adaptado à skill **apple-design** (Trama, `ab711db`, merge do pareamento feito pelo Curador: só o `STATE.md` conflitou; typecheck, testes da Conexão e `next build` conferidos no código junto). `master` e servidor em `ab711db`, backups antes, conferido no servidor. **Não rodados:** a suíte inteira do worker do pareamento (memória; os arquivos mexidos passaram) e a Evolution local; **falta ela ligar um celular pelo código numa vaga nova**. Da apple-design falta o quadro a quadro da Fila.
 - **Cobrança de teste:** a `sk_test_` do servidor tinha expirado (ela girou a de teste em 15/10); a nova foi posta no `.env` em 16/10, 17h38, conferida (conta certa, sete preços, webhook), worker reiniciado: "Stripe, modo teste", sete `ok`, a assinatura de teste dela relida. Ela confirmou que girou a `sk_live_` de produção (16/10).
 - **Merge do menu com a 5H** (Trama, `6875662`): o "Encerrar a conta" ficou no fim de Conta > Dados e senha; a política de cookies cita quatro cookies, na versão de 16/10.
 - **Stripe de produção montada** (produtos, sete preços, portal, e-mails e tentativas). Falta o webhook de produção, na abertura.
@@ -16,8 +17,8 @@ Reescrito em 16/10/2026, às 17h45, pelo Curador, depois do deploy do menu. Os d
 1. **Ela:** backup externo adiado por ela em 16/10 ("deixa pra fazer esse backup depois"; sugestão: Cloudflare R2, grátis até 10 GB; hoje as cópias ficam só no próprio servidor, e a Privacidade, item 8, continua marcada); testar uma resposta enviada pelo `contato@`; olhar o painel novo por dentro (menu, Conta, Encerrar a conta).
 2. **Abrir o cadastro**, com o ok dela em cada passo: a `sk_live_` nova direto ao servidor, o webhook de produção, `CADASTRO_ABERTO=1` e tirar o `noindex` da página de vendas.
 3. **Depois:** reduzir os registros de erro do programa de conexão (Privacidade, item 3.2); conta encerrada que não pode reusar o e-mail.
-3a. **16/10, 19h:** a Trama terminou a `apple-design` (branch `claude/painel-apple-design`, 7 commits até `5d9bc7e`, sem push; suíte da web, build, typecheck e navegador ok; falta o quadro a quadro da Fila). Antes: a Trama adapta o painel à skill `apple-design` (`.maestri/tarefa-apple-design.md`; proposta aprovada por ela, com gaveta sem repique, topo translúcido no celular e lateral animada; branch `claude/painel-apple-design`). Em paralelo, o Tear faz a conexão por **código de pareamento** (quem só tem um celular não lê o QR; bloqueia o lançamento): `.maestri/tarefa-pareamento.md`, branch `claude/pareamento-por-codigo`.
-3b. **Na fila, depois da apple-design (Trama):** o painel como app instalável, com notificações ([[2026-10-16-painel-como-app]]): `.maestri/tarefa-pwa.md`.
+3a. **Ela testa:** conectar um celular pelo código de pareamento numa vaga nova, e olhar o painel com a apple-design no celular (gaveta, Fila, menus).
+3b. **Próximo (Trama):** o painel como app instalável, com notificações ([[2026-10-16-painel-como-app]]): `.maestri/tarefa-pwa.md`.
 4. **Antes de qualquer despacho:** ler a cota; vault sincronizado; registrar em [[sessoes-nuvem]], no diário e na nota "Agora". Ao delegar à noite, conferir com `maestri check` que a mensagem foi enviada.
 5. **Sobras:** a rotina "Revisor do Plano 11" (pausada); o produto antigo "Assinatura Atelier" na Stripe de teste; a worktree do menu.
 
