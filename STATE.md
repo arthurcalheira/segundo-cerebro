@@ -16,6 +16,7 @@ Reescrito em 16/10/2026, às 17h45, pelo Curador, depois do deploy do menu. Os d
 1. **Ela:** backup externo adiado por ela em 16/10 ("deixa pra fazer esse backup depois"; sugestão: Cloudflare R2, grátis até 10 GB; hoje as cópias ficam só no próprio servidor, e a Privacidade, item 8, continua marcada); testar uma resposta enviada pelo `contato@`; olhar o painel novo por dentro (menu, Conta, Encerrar a conta).
 2. **Abrir o cadastro**, com o ok dela em cada passo: a `sk_live_` nova direto ao servidor, o webhook de produção, `CADASTRO_ABERTO=1` e tirar o `noindex` da página de vendas.
 3. **Depois:** reduzir os registros de erro do programa de conexão (Privacidade, item 3.2); conta encerrada que não pode reusar o e-mail.
+3a. **Em andamento (16/10):** a Trama adapta o painel à skill `apple-design` (pedido dela): `.maestri/tarefa-apple-design.md`; começa por auditoria e proposta, para aprovação.
 4. **Antes de qualquer despacho:** ler a cota; vault sincronizado; registrar em [[sessoes-nuvem]], no diário e na nota "Agora". Ao delegar à noite, conferir com `maestri check` que a mensagem foi enviada.
 5. **Sobras:** a rotina "Revisor do Plano 11" (pausada); o produto antigo "Assinatura Atelier" na Stripe de teste; a worktree do menu.
 
