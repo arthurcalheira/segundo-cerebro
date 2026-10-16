@@ -10,6 +10,8 @@ fonte: conversa com o Curador, 16/10/2026 ("ja inclui as notificações. a trama
 
 **Por quê:** pedido dela. A recomendação do Curador era deixar as notificações para um plano próprio; ela quis junto.
 
+**Os avisos (16/10, à noite, "tudo tem q ter notificação menos g"):** número desconectado; envio pausado por falhas seguidas; fila do dia sem peças ou loja parada por falta de código (no máximo um por dia); pagamento (cartão recusado, parcela do 12x não paga, renovação do Pix vencendo); fim do teste em 2 dias; teto de 30 peças do Essencial atingido; reloginho ou promoção no ar numa loja (no máximo um por loja por dia); e, só para a administradora, assinatura nova, cancelamento e pagamento de assinante que falhou. **Fora:** o resumo do dia. Como a Trama recomendou: para a dona da conta, em cada aparelho ativado, dizendo qual número; um aviso quando o problema começa, sem repetir, no máximo um por tipo e número a cada 6 h; desconexão e pausa só nas horas de atuação dela (o da madrugada sai na abertura), pagamento e teste das 9h às 21h; tela "Notificações" no menu da conta com uma chave por aviso, todos ligados; o pedido de permissão só ao tocar "Ativar notificações" (em Conta > Notificações e num cartão no Início depois do primeiro número conectado); tocar abre a tela que resolve; texto curto na tela bloqueada; sem aviso por e-mail neste plano.
+
 **Onde entrou:** ainda não entrou. Vai para a Trama depois da adaptação do painel à skill `apple-design` (as duas mexem no menu da conta): `.maestri/tarefa-pwa.md`. Quais avisos mandar, para quem e com que frequência ficam para o brainstorming com ela.
 
 **Alternativas descartadas:** só a instalação agora e as notificações depois; o Tear em paralelo.
