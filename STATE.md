@@ -1,6 +1,6 @@
 # Estado
 
-Atualizado em 15/10/2026, às 17h45, pelo Curador (sessão ainda aberta). Os dias estão em `30-diario/` ([[2026-10-14]], [[2026-10-15]]).
+Atualizado em 15/10/2026, às 21h, pelo Curador, no fechamento. Os dias estão em `30-diario/` ([[2026-10-14]], [[2026-10-15]]).
 
 ## Agora: o Plano 12 com o 12C está no GitHub, sem merge; o Tear faz o Pix só no anual à vista
 
@@ -16,7 +16,7 @@ Atualizado em 15/10/2026, às 17h45, pelo Curador (sessão ainda aberta). Os dia
 
 ## Próximo
 
-1. **Pix só no anual à vista (Plano 12D)** ([[2026-10-15-pix-so-no-anual-a-vista]]): feito pelo Tear em 15/10 (`a88bd99` a `d09dac9`), sem push, falta o ok dela. Testes inteiros ok, `next build` ok; na Stripe de teste: compra, renovação, desistência (estornou os dois Pix) e subida com a diferença no Pix. Não rodados na Stripe: "Passar para o cartão" e o webhook real. [conferir na produção] o prazo do estorno do Pix. O checkout do Pix só manda `checkout.session.completed` já pago. Em seguida, o Tear faz `.maestri/tarefa-lacunas-legais.md` (adendo do reembolso do anual primeiro, para ela aprovar); depois, gerar de novo os Word de `.maestri/advogado/`.
+1. **Pix só no anual à vista (Plano 12D)** ([[2026-10-15-pix-so-no-anual-a-vista]]): feito pelo Tear em 15/10 (`a88bd99` a `d09dac9`). Push até `9176b62` feito pelo Tear às 20h30, com o ok dela dado no terminal dele (ela confirmou ao Curador). Combinado com o Tear: push só com o ok repassado pelo Maestro, ou avisando o Maestro. O Tear está no Plano 12E (lacunas legais): E1 a E4 feitas até `c03ec45` às 21h, sem push. Ao terminar: o ok do push, gerar de novo os Word e ajustar a nota do 12x (a renovação automática saiu). Testes inteiros ok, `next build` ok; na Stripe de teste: compra, renovação, desistência (estornou os dois Pix) e subida com a diferença no Pix. Não rodados na Stripe: "Passar para o cartão" e o webhook real. [conferir na produção] o prazo do estorno do Pix. O checkout do Pix só manda `checkout.session.completed` já pago. Em seguida, o Tear faz `.maestri/tarefa-lacunas-legais.md` (adendo do reembolso do anual primeiro, para ela aprovar); depois, gerar de novo os Word de `.maestri/advogado/`.
 2. **Plano 12C** (anual em 12x): feito e testado (`c4e0818` a `6730333`, no GitHub). Desvio do adendo, registrado lá: a volta da parcela usa `trial_end` em vez de `billing_cycle_anchor: now`. No `demo-seed.test.ts`, 76 de 77 (o que semeia duas vezes passa do limite de 5 s pela lentidão da máquina).
 3. **Merge e deploy do Plano 12**, cada um com o ok dela. No deploy: as migrações `0038` a `0041` (a `0038` apaga os ids do Asaas) e a limpeza das assinaturas de teste, cada uma com confirmação; o Curador cria o webhook e põe a `sk_test_` e o `whsec_` no servidor. Ela revoga a chave restrita depois.
 4. **Ela confere na Fila** a primeira copy da IA e o número principal com o automático ligado.
