@@ -20,6 +20,6 @@ As demais lacunas seguem as respostas propostas na seção 6 do documento "Vitri
 
 **Devolução do anual (adendo do Tear, `9176b62`, aprovado em 15/10; ela confirmou ao Curador com "sim, eu acho", depois de responder no terminal do Tear):** vale no cartão e no Pix depois dos 7 dias; o mês em curso conta como usado; devolução = meses não começados × o mês do anual (R$ 49 ou R$ 99) × 80%, arredondada para baixo (Maison pago em 15/10/2026 e cancelado em 03/02/2027: R$ 313,60); sai automática no cancelamento, com valor e data na tela; o plano acaba no fim do mês em curso, sem desfazer o cancelamento no mesmo ano.
 
-**Onde entrou:** no adendo da spec do Plano 12 (`9176b62`) e no Plano 12E, que o Tear está fazendo desde 15/10 à noite (`24fef75` em diante). Antes: Vai para o Tear depois do Pix, na branch `claude/stripe-billing-i0eof8`: `.maestri/tarefa-lacunas-legais.md`.
+**Onde entrou:** no adendo da spec do Plano 12 (`9176b62`) e no Plano 12E (`24fef75` a `c03ec45`), no ar desde 15/10, 22h36. A devolução do Pix depois de 90 dias pelo suporte entrou na 5H (branch `claude/plano-5h-documentos`, sem push). Antes: Vai para o Tear depois do Pix, na branch `claude/stripe-billing-i0eof8`: `.maestri/tarefa-lacunas-legais.md`.
 
 **Alternativas descartadas:** renovação automática do 12x com multa; anual sem devolução; mostrar nome e CPF; abrir ME ou SLU agora (custo de contador).
