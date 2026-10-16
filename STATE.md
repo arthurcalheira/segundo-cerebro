@@ -1,28 +1,24 @@
 # Estado
 
-Reescrito em 16/10/2026, às 16h, pelo Curador, no fechamento. Os dias estão em `30-diario/` ([[2026-10-15]], [[2026-10-16]]).
+Reescrito em 16/10/2026, às 17h45, pelo Curador, depois do deploy do menu. Os dias estão em `30-diario/` ([[2026-10-15]], [[2026-10-16]]).
 
-## Agora: Plano 12 no ar (Stripe em teste, cadastro fechado); a 5H e o menu novo prontos em branches, sem push
+## Agora: Plano 12, 5H e menu novo no ar (16/10, 17h40); cobrança de teste desligada por chave expirada; cadastro fechado
 
-- **No ar desde 15/10, 22h36:** o Plano 12 inteiro (12A a 12E: Stripe, anual, 12x, Pix só no anual à vista, lacunas legais), `master` e servidor em `c03ec45`, com a Stripe em modo de teste. Conferido depois: worker "Stripe, modo teste", sete preços `ok`, webhook de teste, IA ligada, número principal conectado. Ela assinou com o cartão de teste e funcionou. As assinaturas de teste do Asaas foram apagadas.
-- **Cadastro fechado** (`CADASTRO_ABERTO` ausente), página de vendas com `noindex`.
-- **Plano 5H pronto** (Tear, conta "Claude Trial 1"): branch `claude/plano-5h-documentos` (11 commits de `c03ec45` a `8892bb7`), **sem push**. Limpezas automáticas (12 meses e 180 dias), devolução do Pix depois de 90 dias pelo suporte, "Encerrar a conta", encerramento automático 6 meses depois do fim do plano e exclusão em 5 anos, `/versoes` pública, documentos na versão de 16/10. Migrações `0043` e `0044`. Testes inteiros, typecheck, `next build` e navegador ok. Ficam marcados nos documentos: o backup externo e a redução dos registros de erro. Limite conhecido: quem encerrou a conta não cria outra com o mesmo e-mail.
-- **Menu no estilo do Claude pronto** (Trama, conta principal): branch `claude/menu-estilo-claude` na worktree `claude codeerramenta-grupos-menu` (11 commits até `38326e1`), **sem push**. Spec aprovada pelo Curador em nome dela ([[2026-10-15-menu-estilo-claude]]). Suíte da web, typecheck, `next build` e navegador ok.
-- **Stripe de produção montada pelo Curador** (15/10): três produtos, sete preços, portal; ela repetiu os e-mails e as tentativas. Falta o webhook de produção, criado na abertura com a `sk_live_` nova.
-- **Terminais:** o Tear está aberto, parado, com a conversa da 5H. A Trama foi trocada por um terminal de shell (para liberar memória); a conversa dela pode ser retomada com `maestri recall`. **De madrugada, a conversa do Tear foi para o "segundo plano" do Claude Code e parou** (o pedido de vez dele e o aviso do Curador não chegaram): ao delegar à noite, conferir com `maestri check` se a mensagem foi enviada (ficou uma vez digitada sem Enter).
-- **Memória do notebook:** 3,6 GB; com dois construtores e uma atualização do Windows (AppXSvc), chegou a 30 MB livres e derrubou suítes. Duas construções ao mesmo tempo só com a parte pesada revezada pelo Curador.
+- **No ar:** `master` e servidor em `6875662` (o Plano 12, a 5H e o menu no estilo do Claude), com o ok dela ("pode fazer o push, merge e deploy"). Deploy da 5H às 17h07 (migrações `0043` e `0044`) e do menu às 17h40, os dois com `EXIT=0` e backup antes. Conferido: containers saudáveis; `/versoes`, `/cookies` (cita o `vitrinista_lateral`), `/termos` e as páginas públicas 200; as telas novas (`/envio/...`, `/conta/...`) pedem login; `/regras`, `/conta` e `/ajustes` redirecionam certo; webhook responde; IA ligada; número principal conectado com o automático ligado. O painel por dentro (com login) ela olha.
+- **Cobrança de teste desligada:** a `sk_test_` do servidor expirou (log: "Expired API Key provided"); ela girou uma chave no painel em 15/10 e de novo em 16/10. Falta: a `sk_test_` nova no servidor; ela confirmar que a `sk_live_` colada na conversa em 15/10 foi girada (disse "dei o rotate key no dashboard" em 16/10). Cadastro fechado: nenhuma cliente afetada.
+- **Merge do menu com a 5H** (Trama, `6875662`): o "Encerrar a conta" ficou no fim de Conta > Dados e senha; a política de cookies cita quatro cookies, na versão de 16/10.
+- **Stripe de produção montada** (produtos, sete preços, portal, e-mails e tentativas). Falta o webhook de produção, na abertura.
+- **Terminais:** Tear e Trama abertos e parados, com as conversas. A worktree `claude codeerramenta-grupos-menu` pode ser apagada (o menu está no `master`), com o ok dela.
 - **Nuvem:** nenhuma sessão rodando ([[sessoes-nuvem]]).
 
 ## Próximo
 
-1. **Push das duas branches**, com o ok dela.
-2. **Merge e deploy, um de cada vez, com o ok dela:** primeiro a 5H (migrações `0043` e `0044`), depois o menu. No merge do menu: o "Encerrar a conta" da 5H vira item do menu da conta (a Conta virou 5 telas), e a política de cookies passa a citar quatro cookies (sessão, número, tema e `vitrinista_lateral`). Desvio do menu: o `PLAN_HREF` continua `/conta#plano` (o redirecionamento cobre).
-3. **Ela:** backup externo (sugestão do Curador: Cloudflare R2, grátis até 10 GB); teste de uma resposta enviada pelo `contato@`.
-4. **Abrir o cadastro**, com o ok dela em cada passo: a `sk_live_` nova (direto ao servidor), o webhook de produção, a troca das chaves, `CADASTRO_ABERTO=1` e tirar o `noindex` da página de vendas.
-5. **Depois:** a redução dos registros de erro do programa de conexão (Privacidade, item 3.2); o e-mail de conta encerrada que não pode ser reusado.
-6. **Antes de qualquer despacho:** ler a cota; vault sincronizado; registrar em [[sessoes-nuvem]], no diário e na nota "Agora". Merge e deploy pedem confirmação nova a cada vez.
-7. **Sobras:** a rotina "Revisor do Plano 11" está pausada e não serve mais (apagar pede o ok dela); o produto antigo "Assinatura Atelier" na conta de teste da Stripe; a worktree `ferramenta-grupos-menu` (apagar depois do merge do menu).
-
+1. **Religar a cobrança de teste:** ela passa a `sk_test_` atual; o Curador troca no `.env` do servidor e reinicia o worker (`billing:precos` com sete `ok`).
+2. **Ela:** confirmar a `sk_live_` girada; backup externo (sugestão: Cloudflare R2, grátis até 10 GB); testar uma resposta enviada pelo `contato@`; olhar o painel novo por dentro (menu, Conta, Encerrar a conta).
+3. **Abrir o cadastro**, com o ok dela em cada passo: a `sk_live_` nova direto ao servidor, o webhook de produção, `CADASTRO_ABERTO=1` e tirar o `noindex` da página de vendas.
+4. **Depois:** reduzir os registros de erro do programa de conexão (Privacidade, item 3.2); conta encerrada que não pode reusar o e-mail.
+5. **Antes de qualquer despacho:** ler a cota; vault sincronizado; registrar em [[sessoes-nuvem]], no diário e na nota "Agora". Ao delegar à noite, conferir com `maestri check` que a mensagem foi enviada.
+6. **Sobras:** a rotina "Revisor do Plano 11" (pausada); o produto antigo "Assinatura Atelier" na Stripe de teste; a worktree do menu.
 
 ## Ainda por fazer, sem data
 
