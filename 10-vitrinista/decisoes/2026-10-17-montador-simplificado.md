@@ -16,6 +16,8 @@ fonte: conversa com o Curador, 17/10/2026; estudo [[2026-10-17-mensagens-dos-gru
 
 **Atenção:** a página de vendas diz "mensagem no seu tom"; com a IA em "Avançado", a promessa fica mais fraca. Recomendação do Curador, não decidida por ela: perguntar a 2 ou 3 vendedoras do teste se usariam a escrita por IA.
 
-**Onde entrou:** ainda não entrou. Vai ao construtor depois da cópia de teste.
+**Detalhes aprovados por ela em 17/10, na spec do Tear** (`ferramenta-grupos/docs/superpowers/specs/2026-10-18-montador-simplificado-design.md`): quem nunca mexeu no montador passa direto; quem mexeu fica com o que tem em Avançado e vê "Usar o simplificado"; um "meu tamanho" para todas as peças; detalhes da promoção só com o texto que o robô já lê, desligados por padrão; o Essencial ganha chamadas e interruptores, o Avançado (com a IA) fica a partir do Maison; chamada por loja só quando ela pedir; peça sem promoção sem chamada.
+
+**Onde entrou:** branch local `claude/montador-simplificado` (Tear), em execução em 17/10; vai primeiro à cópia de teste.
 
 **Alternativas descartadas:** manter o montador atual com ajustes pequenos.
