@@ -10,7 +10,7 @@ fonte: conversa com o Curador, 17/10/2026
 - O Essencial ganha plano anual: R$ 360 por ano (R$ 30 por mês), à vista (cartão ou Pix) ou em 12x de R$ 30 no cartão, com o mesmo compromisso do 12x dos outros planos. O mensal continua R$ 59,90.
 - A página de vendas abre com os preços anuais; o mensal fica a um clique.
 - O desconto do anual aparece no rótulo ("até 50% de desconto") e em cada cartão, sobre o mensal: Essencial 49%, Maison 50%, Atelier 44%. O número é arredondado para baixo, para nunca prometer mais do que é (49,9% vira 49%).
-- Embaixo do nome de cada plano, a fase de quem o escolhe: "Para quem está começando." (Essencial), "Para quem já vende e quer crescer." (Maison), "Para quem vive do grupo e usa mais de um número." (Atelier). A primeira frase foi dada na conversa; as outras duas são do Curador, a confirmar.
+- Embaixo do nome de cada plano, a fase de quem o escolhe: "Para quem está começando." (Essencial), "Para quem já vende e quer crescer." (Maison), "Para quem vive do grupo e usa mais de um número." (Atelier). A primeira frase foi dada na conversa; as outras duas são do Curador, aprovadas na mesma conversa ("estão boas as frases").
 
 **Por quê:** pedido na conversa, antes de abrir o cadastro.
 
