@@ -1,6 +1,6 @@
 # Estado
 
-Reescrito em 16/10/2026, às 17h45, pelo Curador, depois do deploy do menu. Os dias estão em `30-diario/` ([[2026-10-15]], [[2026-10-16]]).
+Atualizado em 16/10/2026, às 21h30, pelo Curador, no fechamento. Os dias estão em `30-diario/` ([[2026-10-15]], [[2026-10-16]]).
 
 ## Agora: no ar até o nome Vitrinista e a lista de grupos rápida (16/10, 20h35); próximo, o app instalável; cadastro fechado
 
@@ -19,7 +19,7 @@ Reescrito em 16/10/2026, às 17h45, pelo Curador, depois do deploy do menu. Os d
 2. **Abrir o cadastro**, com o ok dela em cada passo: a `sk_live_` nova direto ao servidor, o webhook de produção, `CADASTRO_ABERTO=1` e tirar o `noindex` da página de vendas.
 3. **Depois:** reduzir os registros de erro do programa de conexão (Privacidade, item 3.2); conta encerrada que não pode reusar o e-mail.
 3a. **Ela testa:** conectar um celular pelo código de pareamento numa vaga nova, e olhar o painel com a apple-design no celular (gaveta, Fila, menus).
-3b. **Próximo (Trama):** o painel como app instalável, com notificações ([[2026-10-16-painel-como-app]]): `.maestri/tarefa-pwa.md`.
+3b. **Em andamento (Trama, 16/10 à noite):** o painel como app instalável, com notificações ([[2026-10-16-painel-como-app]]): spec aprovada pelo Curador em nome dela (`e51ca66`), em código na branch `claude/painel-app`, sem push. No fim: as chaves VAPID geradas pela CLI nova vão só para o `.env` do servidor (nunca repositório nem vault), e um roteiro para ela testar no Android e no iPhone. Atenção: o contexto da Trama estava em 79%.
 4. **Antes de qualquer despacho:** ler a cota; vault sincronizado; registrar em [[sessoes-nuvem]], no diário e na nota "Agora". Ao delegar à noite, conferir com `maestri check` que a mensagem foi enviada.
 5. **Sobras:** a rotina "Revisor do Plano 11" (pausada); o produto antigo "Assinatura Atelier" na Stripe de teste; a worktree do menu.
 
