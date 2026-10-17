@@ -14,6 +14,6 @@ fonte: conversa com o Curador, 16/10/2026 ("ja inclui as notificações. a trama
 
 **Spec (17/10):** da Trama (`e51ca66`, `ferramenta-grupos/docs/superpowers/specs/2026-10-17-painel-como-app-design.md`, ícones pelo Sonnet), aprovada pelo Curador em nome dela, com as 6 decisões como a Trama recomendou: a Privacidade cita o serviço de push do navegador (Google, Apple, Mozilla); /instalar e o cartão no Início para o iPhone; "Mandar um teste"; o favicon e o ícone do iPhone trocados pelo símbolo botânico (ainda eram os da identidade antiga); o badge com o traço mais grosso; o desenho a ~63% no ícone maskable.
 
-**Onde entrou:** em código pela Trama, branch `claude/painel-app`. Antes: vai para a Trama depois da adaptação do painel à skill `apple-design` (as duas mexem no menu da conta): `.maestri/tarefa-pwa.md`. Quais avisos mandar, para quem e com que frequência ficam para o brainstorming com ela.
+**Onde entrou:** no ar desde 16/10, 22h50 (`2307080`, migração `0045`, chaves VAPID no servidor). Antes: vai para a Trama depois da adaptação do painel à skill `apple-design` (as duas mexem no menu da conta): `.maestri/tarefa-pwa.md`. Quais avisos mandar, para quem e com que frequência ficam para o brainstorming com ela.
 
 **Alternativas descartadas:** só a instalação agora e as notificações depois; o Tear em paralelo.
