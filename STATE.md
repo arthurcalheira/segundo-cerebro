@@ -20,7 +20,8 @@ Atualizado em 16/10/2026, às 21h30, pelo Curador, no fechamento. Os dias estão
 2. **Abrir o cadastro**, com o ok dela em cada passo: a `sk_live_` nova direto ao servidor, o webhook de produção, `CADASTRO_ABERTO=1` e tirar o `noindex` da página de vendas.
 3. **Depois:** reduzir os registros de erro do programa de conexão (Privacidade, item 3.2); conta encerrada que não pode reusar o e-mail.
 3a. **Ela testa:** conectar um celular pelo código de pareamento numa vaga nova, e olhar o painel com a apple-design no celular (gaveta, Fila, menus).
-3b. **Ela testa o app no celular** pelo roteiro (Android e iPhone): instalar, ativar as notificações, "Mandar um teste", tela sem internet.
+3b. **App testado por ela no iPhone em 17/10: "tudo funcionando"** (não tem Android; o Android fica só com os testes automáticos).
+3c. **Em andamento (17/10):** o guia "Use a Vitrinista como app", pedido dela: página pública `usevitrinista.com.br/app` (iPhone e Android, com a animação), seção "Receba os avisos no celular" na página de vendas, item "Instale o app e ative os avisos" nos primeiros passos do Início, e um vídeo MP4 9:16 da animação para Instagram e WhatsApp. Feito por um agente no Sonnet (design) a pedido dela, na worktree `claude codeerramenta-grupos-guia`, branch `claude/guia-do-app`, sem push. A animação é ilustração dos passos (não prints).
 4. **Antes de qualquer despacho:** ler a cota; vault sincronizado; registrar em [[sessoes-nuvem]], no diário e na nota "Agora". Ao delegar à noite, conferir com `maestri check` que a mensagem foi enviada.
 5. **Sobras:** a rotina "Revisor do Plano 11" (pausada); o produto antigo "Assinatura Atelier" na Stripe de teste; a worktree do menu.
 
