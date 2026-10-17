@@ -16,6 +16,6 @@ fonte: conversa com o Curador, 17/10/2026
 
 **Atenção:** a decisão de [[2026-10-13-plano-anual-maison-49-atelier-99]] contava com o Maison anual abaixo do Essencial mensal para levar assinantes ao Maison. Com o Essencial anual a R$ 30, o plano mais barato à vista passa a ser o Essencial anual.
 
-**Onde entrou:** branch local `claude/essencial-anual` de `ferramenta-grupos`, sem commit em 17/10: `packages/core/src/billing/plans.ts`, `apps/web/src/app/vendas/page.tsx`, Termos e Termo de compromisso do 12x (versão de 17/10), `docs/implantacao.md` (nove preços). Antes do deploy, os preços `essencial_anual` e `essencial_12x` precisam existir na Stripe de teste e na de produção: sem eles o worker desliga a cobrança.
+**Onde entrou:** `ferramenta-grupos`, no `master` e no servidor desde 17/10 (`bfd2818`; `/assinar` abrindo no anual em `8a606cf`): `packages/core/src/billing/plans.ts`, `apps/web/src/app/vendas/page.tsx`, Termos e Termo de compromisso do 12x (versão de 17/10), `docs/implantacao.md` (nove preços). Os preços `essencial_anual` e `essencial_12x` existem na Stripe de teste e na de produção desde 17/10.
 
 **Alternativas descartadas:** nenhuma discutida.

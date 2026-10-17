@@ -5,14 +5,14 @@ Atualizado em 17/10/2026, por volta das 17h20, pelo Curador, antes de ela fechar
 ## Agora: lançado em 17/10; cadastro aberto, cobrança real
 
 - **No ar** (`master` e servidor em `8a606cf`): cadastro aberto (`CADASTRO_ABERTO=1`), Stripe de produção (cartão e Pix; boleto ativo na conta, não oferecido), webhook de produção, os nove preços (com o Essencial anual), marca na tela de pagamento, página de vendas e `/app` no índice do Google; `/assinar` e a página de vendas abrindo no anual com o desconto; promoção sem reloginho (Liqui e Bazar da Farm, 80% da fila, lida a qualquer hora) com os botões "Promoções no ar" no Catálogo; estoque das peças da fila conferido a cada 15 min. As chaves de teste da Stripe ficaram guardadas no servidor, para a cópia de teste.
-- **Captura de mensagens ligada no servidor** (`DATABASE_SAVE_DATA_NEW_MESSAGE=true` no `deploy/evolution.env`, alterado à mão: todo deploy guarda a mudança de lado com `git stash` e repõe). Serve ao estudo de três grupos de vendedoras para o montador de mensagens ([[2026-10-17]]); a rotina "Estudo dos grupos" faz o relatório, desliga a captura (cópia em `/tmp/evolution.env.antes-estudo` no servidor), recria a Evolution e apaga o que foi guardado, com o ok dela já dado.
-- **Tear:** spec da cópia de teste em `teste.usevitrinista.com.br` (branch local `claude/copia-de-teste`, `eb6eabf`, sem push), parado esperando três respostas dela: dados de demonstração (semente adaptada ou só catálogo e administração), o que a cópia testa (a branch antes do merge ou o `master`), copy por IA e notificações desligadas na cópia. **Trama:** conversa limpa por ela, parada.
+- **Estudo dos grupos feito em 17/10:** [[2026-10-17-mensagens-dos-grupos-de-vendedoras]] (o montador de mensagens pode ficar bem mais simples). Captura desligada e mensagens apagadas; o `deploy/evolution.env` do servidor voltou ao do repositório.
+- **Tear:** cópia de teste em `teste.usevitrinista.com.br` ([[2026-10-17-copia-de-teste]]), spec aprovada por ela com as três recomendações; plano e execução na branch local `claude/copia-de-teste`. Depois, o Curador monta no servidor, com o ok dela. **Trama:** conversa limpa por ela, parada.
 - **Nuvem:** nenhuma sessão rodando.
 
 ## Próximo
 
-1. **Estudo dos grupos:** relatório e desligar a captura (rotina "Estudo dos grupos"; se o Maestri estava fechado às 21h, fazer na abertura).
-2. **Cópia de teste:** levar a ela as três perguntas da spec do Tear; com o ok, execução, montagem no servidor e o fluxo novo (deploy primeiro na cópia).
+1. **Montador de mensagens:** levar a ela as sugestões do relatório dos grupos e, com o ok, mandar a simplificação ao construtor.
+2. **Cópia de teste:** conferir a execução do Tear e montar no servidor (o `docs/implantacao.md` da branch traz os passos), com o ok dela; depois, todo deploy passa primeiro pela cópia.
 3. **Depois, ao construtor, nesta ordem:** cortesia com data de fim (para o teste de 2 semanas das vendedoras; hoje ela dá a cortesia na Administração e tira à mão), registro de atualizações no painel para todas as assinantes (texto curto do Curador a cada deploy), cupom no pagamento, lembrete de pagamento abandonado (conferir se o e-mail da Stripe vale no Brasil).
 4. **Ela:** backup externo (Cloudflare R2; agora com dinheiro real, pesa mais); ver no painel a Liqui e o Bazar na Fila; mandar as respostas das vendedoras do teste (sem nomes) para consolidar.
 5. **Marketing:** as perguntas de 17/10 seguem sem resposta (quantas vendedoras a Fran cadastra por mês, se ela recomenda a Vitrinista no suporte, conversa com a dona da multimarca). Textos da abordagem por DM foram dados na conversa, não salvos.
