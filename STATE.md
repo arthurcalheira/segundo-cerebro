@@ -6,13 +6,13 @@ Atualizado em 17/10/2026, por volta das 17h20, pelo Curador, antes de ela fechar
 
 - **No ar** (`master` e servidor em `8a606cf`): cadastro aberto (`CADASTRO_ABERTO=1`), Stripe de produção (cartão e Pix; boleto ativo na conta, não oferecido), webhook de produção, os nove preços (com o Essencial anual), marca na tela de pagamento, página de vendas e `/app` no índice do Google; `/assinar` e a página de vendas abrindo no anual com o desconto; promoção sem reloginho (Liqui e Bazar da Farm, 80% da fila, lida a qualquer hora) com os botões "Promoções no ar" no Catálogo; estoque das peças da fila conferido a cada 15 min. As chaves de teste da Stripe ficaram guardadas no servidor, para a cópia de teste.
 - **Estudo dos grupos feito em 17/10:** [[2026-10-17-mensagens-dos-grupos-de-vendedoras]] (o montador de mensagens pode ficar bem mais simples). Captura desligada e mensagens apagadas; o `deploy/evolution.env` do servidor voltou ao do repositório.
-- **Cópia de teste no ar** em `teste.usevitrinista.com.br` ([[2026-10-17-copia-de-teste]]; `/opt/curadora-teste`, projeto `ferramenta-teste`, Stripe de teste, senha do site com ela). A demonstração saiu incompleta (só administração e catálogo). **Tear:** investigando a semente (`claude/semear-cópia`). **Trama:** parada.
+- **Cópia de teste no ar** em `teste.usevitrinista.com.br` ([[2026-10-17-copia-de-teste]]; `/opt/curadora-teste`, projeto `ferramenta-teste`, Stripe de teste, senha do site com ela). Refeita do zero em 17/10 com a demonstração completa (8 contas, 60 itens de fila, 9 números desconectados); cópia e `master` em `900110e`, produção em `ed46aa4` (a diferença é só o `teste:semear` e o guia). **Tear:** parado. **Trama:** parada.
 - **Nuvem:** nenhuma sessão rodando.
 
 ## Próximo
 
 1. **Montador de mensagens simplificado** (aprovado por ela em 17/10, [[2026-10-17-montador-simplificado]]): vai ao construtor logo depois da cópia de teste.
-2. **Cópia de teste:** com a correção do Tear, refazer a cópia do zero (passo 17, Recomeçar) e copiar a saída do `teste:semear` antes de qualquer limpeza. Daqui em diante, todo deploy passa primeiro pela cópia (`atualizar.sh <branch>` em `/opt/curadora-teste`).
+2. **Cópia de teste:** pronta. Todo deploy passa primeiro por ela (`./deploy/atualizar.sh <branch>` em `/opt/curadora-teste`); ela confere; depois merge e deploy na produção.
 3. **Depois do montador, ao construtor, nesta ordem:** cortesia com data de fim (para o teste de 2 semanas das vendedoras; hoje ela dá a cortesia na Administração e tira à mão), registro de atualizações no painel para todas as assinantes (texto curto do Curador a cada deploy), cupom no pagamento, lembrete de pagamento abandonado (conferir se o e-mail da Stripe vale no Brasil).
 4. **Ela:** backup externo (Cloudflare R2; agora com dinheiro real, pesa mais); ver no painel a Liqui e o Bazar na Fila; mandar as respostas das vendedoras do teste (sem nomes) para consolidar.
 5. **Marketing:** as perguntas de 17/10 seguem sem resposta (quantas vendedoras a Fran cadastra por mês, se ela recomenda a Vitrinista no suporte, conversa com a dona da multimarca). Textos da abordagem por DM foram dados na conversa, não salvos.
