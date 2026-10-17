@@ -25,6 +25,8 @@ O código do projeto não é feito aqui: ele é desenvolvido em sessões do Clau
   - Deploy é `./deploy/atualizar.sh` na pasta do projeto no servidor. Quem roda é o script que estava no disco antes do pull: um conserto no próprio script só vale no deploy seguinte. Se sair com código diferente de 0 depois do pull, os containers antigos seguem no ar; rodar de novo resolve.
   - Depois de subir, confira e diga o que conferiu: containers saudáveis, web e worker na imagem recém-construída, a migração aplicada, o número principal conectado com o automático ligado, logs do worker e da web sem erro, e as páginas públicas respondendo. O painel por dentro pede a senha dela: peça que ela olhe.
   - O `STATE.md` do projeto traz a lista "Antes do merge e do deploy" de cada plano: leia antes.
+  - Log com senha que aparece uma vez (`teste:semear`, `account:senha`): leia e passe a ela antes de apagar o arquivo. Em 17/10 o log da semente foi apagado antes da leitura.
+  - Desde 17/10 há duas instalações: a produção em `/opt/curadora` e a cópia de teste em `/opt/curadora-teste`. Todo deploy passa primeiro pela cópia (`./deploy/atualizar.sh <branch>` lá); confira a linha `Instalação:` antes de qualquer comando que apaga.
 - No sandbox do Asaas (o que os testes de 12/10 ensinaram):
   - As chamadas saem de dentro do container do worker, que já tem a chave no ambiente; o script confere que o endereço é o do sandbox antes de qualquer chamada, e a chave nunca é impressa.
   - `POST /sandbox/payment/<id>/overdue` vence uma cobrança na hora e `POST /sandbox/payment/<id>/confirm` a marca como paga. O de vencer joga o vencimento para antes de hoje: para desfazer, `PUT /payments/<id>` com o vencimento original.
