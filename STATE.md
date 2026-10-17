@@ -11,9 +11,9 @@ Atualizado em 17/10/2026, por volta das 17h20, pelo Curador, antes de ela fechar
 
 ## Próximo
 
-1. **Montador de mensagens:** levar a ela as sugestões do relatório dos grupos e, com o ok, mandar a simplificação ao construtor.
+1. **Montador de mensagens simplificado** (aprovado por ela em 17/10, [[2026-10-17-montador-simplificado]]): vai ao construtor logo depois da cópia de teste.
 2. **Cópia de teste:** conferir a execução do Tear e montar no servidor (o `docs/implantacao.md` da branch traz os passos), com o ok dela; depois, todo deploy passa primeiro pela cópia.
-3. **Depois, ao construtor, nesta ordem:** cortesia com data de fim (para o teste de 2 semanas das vendedoras; hoje ela dá a cortesia na Administração e tira à mão), registro de atualizações no painel para todas as assinantes (texto curto do Curador a cada deploy), cupom no pagamento, lembrete de pagamento abandonado (conferir se o e-mail da Stripe vale no Brasil).
+3. **Depois do montador, ao construtor, nesta ordem:** cortesia com data de fim (para o teste de 2 semanas das vendedoras; hoje ela dá a cortesia na Administração e tira à mão), registro de atualizações no painel para todas as assinantes (texto curto do Curador a cada deploy), cupom no pagamento, lembrete de pagamento abandonado (conferir se o e-mail da Stripe vale no Brasil).
 4. **Ela:** backup externo (Cloudflare R2; agora com dinheiro real, pesa mais); ver no painel a Liqui e o Bazar na Fila; mandar as respostas das vendedoras do teste (sem nomes) para consolidar.
 5. **Marketing:** as perguntas de 17/10 seguem sem resposta (quantas vendedoras a Fran cadastra por mês, se ela recomenda a Vitrinista no suporte, conversa com a dona da multimarca). Textos da abordagem por DM foram dados na conversa, não salvos.
 6. **Sobras:** worktrees `ferramenta-grupos-menu` e `ferramenta-grupos-guia` (podem ser apagadas, com o ok dela); a rotina "Revisor do Plano 11" (pausada); o produto antigo "Assinatura Atelier" na Stripe de teste; dois arquivos de marca sem uso na Stripe de produção (ícone e logo da primeira tentativa).
