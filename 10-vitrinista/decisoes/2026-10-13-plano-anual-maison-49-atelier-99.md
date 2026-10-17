@@ -6,7 +6,7 @@ fonte: conversa com o Curador, 13/10/2026
 ---
 # Plano anual: Maison a R$ 49 e Atelier a R$ 99 por mês, cobrados uma vez por ano
 
-**Decisão:** o Maison e o Atelier ganham plano anual, cobrado de uma vez: Maison a R$ 49 por mês (R$ 588 por ano) e Atelier a R$ 99 por mês (R$ 1.188 por ano). O Essencial não tem anual. Os preços mensais (R$ 59,90, R$ 99,90 e R$ 179,90) não foram alterados na conversa.
+**Decisão:** o Maison e o Atelier ganham plano anual, cobrado de uma vez: Maison a R$ 49 por mês (R$ 588 por ano) e Atelier a R$ 99 por mês (R$ 1.188 por ano). O Essencial não tinha anual; ganhou em 17/10 ([[2026-10-17-essencial-anual-e-planos-na-landing]]). Os preços mensais (R$ 59,90, R$ 99,90 e R$ 179,90) não foram alterados na conversa.
 
 **Por quê:** objetivo dela de levar o máximo de assinantes ao Maison ([[2026-10-13-stripe-no-lugar-do-asaas]] para a cobrança). O Maison anual fica abaixo do Essencial mensal.
 
