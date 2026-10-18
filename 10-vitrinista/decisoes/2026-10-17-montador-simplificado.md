@@ -1,9 +1,11 @@
 ---
 tipo: decisao
 data: 2026-10-17
-status: valendo
+status: substituida
 fonte: conversa com o Curador, 17/10/2026; estudo [[2026-10-17-mensagens-dos-grupos-de-vendedoras]]
 ---
+> Substituída em 17/10 por [[2026-10-17-montador-por-ia]]: testado na cópia de teste, ela achou ainda complexo. Não foi para a produção.
+
 # Montador de mensagens simplificado: chamada por promoção e interruptores
 
 **Decisão:** o montador de mensagens passa a ser uma tela só:

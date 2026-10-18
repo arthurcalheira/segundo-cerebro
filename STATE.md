@@ -1,6 +1,6 @@
 # Estado
 
-Atualizado em 17/10/2026, por volta das 17h20, pelo Curador, antes de ela fechar o Maestri. O dia está em [[2026-10-17]].
+Atualizado em 17/10/2026, à noite, pelo Curador, no fechamento. O dia está em [[2026-10-17]].
 
 ## Agora: lançado em 17/10; cadastro aberto, cobrança real
 
