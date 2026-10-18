@@ -1,17 +1,17 @@
 # Estado
 
-Atualizado em 17/10/2026, à noite, pelo Curador, no fechamento. O dia está em [[2026-10-17]].
+Atualizado em 18/10/2026, por volta das 10h20, pelo Curador, no fim da sessão (ela vai limpar a conversa). Os dias estão em [[2026-10-17]] e [[2026-10-18]].
 
 ## Agora: lançado em 17/10; cadastro aberto, cobrança real
 
 - **No ar** (`master` e servidor em `8a606cf`): cadastro aberto (`CADASTRO_ABERTO=1`), Stripe de produção (cartão e Pix; boleto ativo na conta, não oferecido), webhook de produção, os nove preços (com o Essencial anual), marca na tela de pagamento, página de vendas e `/app` no índice do Google; `/assinar` e a página de vendas abrindo no anual com o desconto; promoção sem reloginho (Liqui e Bazar da Farm, 80% da fila, lida a qualquer hora) com os botões "Promoções no ar" no Catálogo; estoque das peças da fila conferido a cada 15 min. As chaves de teste da Stripe ficaram guardadas no servidor, para a cópia de teste.
 - **Estudo dos grupos feito em 17/10:** [[2026-10-17-mensagens-dos-grupos-de-vendedoras]] (o montador de mensagens pode ficar bem mais simples). Captura desligada e mensagens apagadas; o `deploy/evolution.env` do servidor voltou ao do repositório.
-- **Cópia de teste no ar** em `teste.usevitrinista.com.br` ([[2026-10-17-copia-de-teste]]; `/opt/curadora-teste`, projeto `ferramenta-teste`, Stripe de teste, senha do site com ela). Refeita do zero em 17/10 com a demonstração completa (8 contas, 60 itens de fila, 9 números desconectados); cópia e `master` em `900110e`, produção em `ed46aa4` (a diferença é só o `teste:semear` e o guia). A cópia está com a branch `claude/montador-por-ia` (`8425a17`; refeita do zero em 18/10, IA ligada só para este teste), esperando ela testar; o montador simplificado não vai para a produção. **Trama:** terminou o montador pela IA ([[2026-10-17-montador-por-ia]]), parada. **Tear:** parado.
+- **Cópia de teste no ar** em `teste.usevitrinista.com.br` ([[2026-10-17-copia-de-teste]]; `/opt/curadora-teste`, projeto `ferramenta-teste`, Stripe de teste, senha do site com ela). Refeita do zero em 17/10 com a demonstração completa (8 contas, 60 itens de fila, 9 números desconectados); cópia e `master` em `900110e`, produção em `ed46aa4` (a diferença é só o `teste:semear` e o guia). Montador pela IA na produção desde 18/10 (`e35f0bd`, [[2026-10-17-montador-por-ia]]), com os Termos e a Privacidade de 18/10 (a revisar pelo advogado). A cópia está na mesma versão. **Trama** e **Tear:** parados.
 - **Nuvem:** nenhuma sessão rodando.
 
 ## Próximo
 
-1. **Montador pela IA:** ela testa na cópia; com o ok, merge e deploy na produção (migração `0047`; a chave da Anthropic já está na produção). Antes da IA ligar em produção para as assinantes, os textos legais que a Trama apontou ([[2026-10-18]]).
+1. **A conta de assinante do número dela sem plano** desde o lançamento (o envio do robô parou): cortesia, com o ok dela. Depois, a revisão do advogado dos textos da IA.
 2. **Cópia de teste:** pronta. Todo deploy passa primeiro por ela (`./deploy/atualizar.sh <branch>` em `/opt/curadora-teste`); ela confere; depois merge e deploy na produção.
 3. **Depois do montador, ao construtor, nesta ordem:** cortesia com data de fim (para o teste de 2 semanas das vendedoras; hoje ela dá a cortesia na Administração e tira à mão), registro de atualizações no painel para todas as assinantes (texto curto do Curador a cada deploy), cupom no pagamento, lembrete de pagamento abandonado (conferir se o e-mail da Stripe vale no Brasil).
 4. **Ela:** backup externo (Cloudflare R2; agora com dinheiro real, pesa mais); ver no painel a Liqui e o Bazar na Fila; mandar as respostas das vendedoras do teste (sem nomes) para consolidar.
