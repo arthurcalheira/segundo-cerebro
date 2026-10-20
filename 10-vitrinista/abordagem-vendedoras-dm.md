@@ -103,6 +103,17 @@ Para o C: "no Atelier são 3 números, cada um com as lojas e as regras dele".
 
 > Oi, [nome], passando só mais esta vez: se montar as ofertas toma muito do seu dia, esse vídeo de 30 segundos mostra como fica. Se não for para você agora, tudo bem, não te chamo de novo.
 
+### Quando ela pergunta "por quê?" (abordagem pelo WhatsApp, 19/10)
+
+Na primeira abordagem pelo WhatsApp, a pergunta foi "boa tarde, é você que manda os links do seu grupo?". Elas responderam que sim e perguntaram por quê.
+
+Resposta:
+A primeira leva saiu de um WhatsApp pessoal, com foto e nome de quem mandou. Nesse caso a assinatura é o nome real da pessoa, nunca "Iza": nome e foto que não batem parecem golpe. A Iza assina só o que sai do @usevitrinista.
+
+> Oi! Desculpa o mistério 😊 Aqui é [seu nome], da Vitrinista. A gente faz uma ferramenta que monta e manda as ofertas no grupo sozinha, com o seu código no link. Por isso perguntei: hoje você monta as ofertas uma por uma, na mão?
+
+Se ela disser que sim, segue a DM 2, com a troca abaixo: sem o vídeo, o fim vira "Quer que eu te mostre como fica no seu grupo?". Depois vem a DM 3.
+
 ## Objeções
 
 | Ela diz | Resposta |

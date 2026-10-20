@@ -1,22 +1,29 @@
 # Estado
 
-Atualizado em 18/10/2026, por volta das 10h20, pelo Curador, no fim da sessão (ela vai limpar a conversa). Os dias estão em [[2026-10-17]] e [[2026-10-18]].
+Atualizado em 20/10/2026, de madrugada, pelo Curador, no fechamento antes de ela limpar a conversa. Os dias estão em [[2026-10-19]] e [[2026-10-20]].
 
-## Agora: lançado em 17/10; cadastro aberto, cobrança real
+## Agora
 
-- **No ar** (`master` e servidor em `8a606cf`): cadastro aberto (`CADASTRO_ABERTO=1`), Stripe de produção (cartão e Pix; boleto ativo na conta, não oferecido), webhook de produção, os nove preços (com o Essencial anual), marca na tela de pagamento, página de vendas e `/app` no índice do Google; `/assinar` e a página de vendas abrindo no anual com o desconto; promoção sem reloginho (Liqui e Bazar da Farm, 80% da fila, lida a qualquer hora) com os botões "Promoções no ar" no Catálogo; estoque das peças da fila conferido a cada 15 min. As chaves de teste da Stripe ficaram guardadas no servidor, para a cópia de teste.
-- **Estudo dos grupos feito em 17/10:** [[2026-10-17-mensagens-dos-grupos-de-vendedoras]] (o montador de mensagens pode ficar bem mais simples). Captura desligada e mensagens apagadas; o `deploy/evolution.env` do servidor voltou ao do repositório.
-- **Cópia de teste no ar** em `teste.usevitrinista.com.br` ([[2026-10-17-copia-de-teste]]; `/opt/curadora-teste`, projeto `ferramenta-teste`, Stripe de teste, senha do site com ela). Refeita do zero em 17/10 com a demonstração completa (8 contas, 60 itens de fila, 9 números desconectados); cópia e `master` em `900110e`, produção em `ed46aa4` (a diferença é só o `teste:semear` e o guia). Montador pela IA na produção desde 18/10 (`e35f0bd`, [[2026-10-17-montador-por-ia]]), com os Termos e a Privacidade de 18/10 (a revisar pelo advogado). A cópia está na mesma versão. **Trama** e **Tear:** parados.
-- **Nuvem:** nenhuma sessão rodando.
+- **No ar** (`master` e servidor em `9107abe`): cadastro aberto, Stripe de produção, página de vendas no Google; Liqui e Bazar da Farm como promoção (a Liqui por cupom de volta ao filtro em 19/10); busca do Catálogo pela referência da peça; "Robô pode enviar" desligado quando ela monta a fila; montador pela IA **sem limite por dia**, com as instruções em cache, o tempo no log e o **ajuste como edição** da proposta atual (avisa o que não dá para fazer); "Conectar com código" no navegador padrão do Baileys (sem teste com celular).
+- **Captura de mensagens ligada na produção** desde 19/10, 19h26, para o estudo de 5 grupos (rotina "Estudo dos grupos", 20/10 às 16h). Em todo deploy até lá: guardar de lado o `deploy/evolution.env` do servidor e repor depois (os deploys de 19/10 rodaram desacoplados da conexão, com `nohup`, e repuseram).
+- **Cópia de teste** na branch `claude/configuracao-guiada` (`0135696`, migração 0049), esperando ela conferir no celular. Ela não tem a IA sem limite nem o ajuste como edição.
+- **Prontas, sem merge** (cada uma no seu worktree):
+  - Configuração guiada ([[2026-10-19-configuracao-guiada]]; Tear, `0135696`, `ferramenta-grupos-guiada`).
+  - Cortesia com data de fim (Tear, `4f547bb`, `ferramenta-grupos-cortesia`, migração 0051; as 3 perguntas com as recomendações dele, que ela pode mudar; faltam as suítes inteiras do banco e do worker, o `next build` e a primeira cobrança com data no checkout de teste da Stripe).
+  - Histórico interno da IA (Trama, `ead9a81`, `ferramenta-grupos-historico-ia`, migração 0050, tela `/admin/ia`, Privacidade de 19/10 com os itens 4 e 7 a revisar pelo advogado; checagem de tipos de todos os pacotes ok; faltam as suítes inteiras do banco e do worker, o `next build` e o navegador).
+  - **Na junção:** as migrações 0049, 0050 e 0051 foram feitas em paralelo: acertar o `prevId` dos snapshots e o journal nessa ordem.
+- **Na fila, sem commit:** o "Robô pode enviar" sumir quando ela monta a fila (worktree `ferramenta-grupos-robo`, branch `claude/robo-some`; checagem de tipos ok, a suíte da web não rodou).
+- **Notebook sem disco:** cerca de 0,7 GB livres; o arquivo de paginação do Windows cresceu para 11,2 GB com a memória baixa. As suítes do banco caem. Pedido a ela: reiniciar e o ok para apagar as dependências dos worktrees do Tear (cerca de 1,1 GB).
+- **Construtores:** Tear e Trama parados, com as entregas acima. Nuvem: nenhuma sessão.
 
 ## Próximo
 
-1. **A conta de assinante do número dela sem plano** desde o lançamento (o envio do robô parou): cortesia, com o ok dela. Depois, a revisão do advogado dos textos da IA.
-2. **Cópia de teste:** pronta. Todo deploy passa primeiro por ela (`./deploy/atualizar.sh <branch>` em `/opt/curadora-teste`); ela confere; depois merge e deploy na produção.
-3. **Depois do montador, ao construtor, nesta ordem:** cortesia com data de fim (para o teste de 2 semanas das vendedoras; hoje ela dá a cortesia na Administração e tira à mão), registro de atualizações no painel para todas as assinantes (texto curto do Curador a cada deploy), cupom no pagamento, lembrete de pagamento abandonado (conferir se o e-mail da Stripe vale no Brasil).
-4. **Ela:** backup externo (Cloudflare R2; agora com dinheiro real, pesa mais); ver no painel a Liqui e o Bazar na Fila; mandar as respostas das vendedoras do teste (sem nomes) para consolidar.
-5. **Marketing:** as perguntas de 17/10 seguem sem resposta (quantas vendedoras a Fran cadastra por mês, se ela recomenda a Vitrinista no suporte, conversa com a dona da multimarca). Textos da abordagem por DM foram dados na conversa, não salvos.
-6. **Sobras:** worktrees `ferramenta-grupos-menu` e `ferramenta-grupos-guia` (podem ser apagadas, com o ok dela); a rotina "Revisor do Plano 11" (pausada); o produto antigo "Assinatura Atelier" na Stripe de teste; dois arquivos de marca sem uso na Stripe de produção (ícone e logo da primeira tentativa).
+1. **20/10, 16h:** o relatório dos 5 grupos pela rotina; depois, com o ok dela, desligar a captura e apagar as mensagens.
+2. **Liberar o disco** (reinício dela; dependências dos worktrees do Tear com o ok dela) e então as verificações que faltam: histórico da IA (Trama) e cortesia (Tear), uma por vez.
+3. **Ela confere:** a configuração guiada na cópia; a assinante repetir o espaçamento na Mensagem e o botão da Liqui; o "Conectar com código" com o celular.
+4. **Merge e deploy, com o ok dela, um de cada vez pela cópia:** configuração guiada, histórico da IA, cortesia, o "Robô pode enviar" sumir.
+5. **Com ela:** cortesia na conta do número dela (sem plano desde o lançamento); a revisão do advogado (textos da IA, Privacidade de 19/10); o que mudar no modo avançado de editar mensagens; o registro de atualizações no painel para as assinantes; backup externo.
+6. **Sobras:** a pasta vazia `ferramenta-grupos-menu` (o terminal da Trama segura; sai quando ele fechar); a branch local `claude/montador-simplificado` no clone; a rotina "Revisor do Plano 11" (pausada); o `dev:demo --12x <parcelas>` que recusa qualquer número (achado do Tear, só na demonstração).
 
 ## Ainda por fazer, sem data
 

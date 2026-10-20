@@ -47,3 +47,22 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [ ] **Ao construtor, depois do montador pela IA, nesta ordem:** cortesia com data de fim; registro de atualizações no painel para todas as assinantes (texto curto do Curador a cada deploy); campo de cupom no pagamento; lembrete de pagamento abandonado (conferir se o e-mail da Stripe vale no Brasil). Aprovados por ela em 17/10.
 - [ ] **Marketing:** responder quantas vendedoras a Fran cadastra por mês, se ela recomenda a Vitrinista no suporte às vendedoras e se a dona da multimarca toparia uma conversa. Fonte: conversa de 17/10.
 - [ ] **Venda por DM às vendedoras** ([[abordagem-vendedoras-dm]]): antes da primeira DM, o perfil da marca no Instagram pronto, o vídeo de uma oferta chegando num grupo de teste, quem assina e a planilha (fora do vault) com 50 perfis qualificados. Fonte: conversa de 18/10.
+
+## De 18/10
+
+- [ ] **"Conectar com código" não conectou na cópia de teste** (18/10, por volta de 13h15–13h40): o painel gerou QR e código seguidos, o número ficou em "conectando" e caiu a cada 30–45 s, sem nenhuma conexão completa (registro do worker da cópia, `demo connecting/close`). Pelo QR, lido na tela do notebook, o mesmo número conectou na hora. O caminho nunca foi testado ao vivo (`ferramenta-grupos/.claude/guides/whatsapp.md`, "[conferir ao vivo]"). Se falhar na produção, a assinante com um celular só não conecta. Ao construtor: reproduzir com um número real e corrigir. Fonte: conversa de 18/10. **19/10:** falhou também na produção (dito por ela). Causa provável: o `patch-baileys.mjs` de 16/10 troca o navegador do pareamento por código para "Vitrinista" (o `STATE.md` do projeto já dizia: "se recusar, desfazer só o ajuste do navegador"). Ajuste desfeito (`4eb3d58`), na cópia de teste e na produção desde 19/10 (`ed7eb28`). Falta ela testar o código com o celular; se não conectar, a próxima suspeita é o código que muda a cada QR (cerca de 45 s).
+- [ ] **Instagram @usevitrinista** ([[instagram]], [[2026-10-18-instagram-da-marca]]):
+  - Pronto em `.maestri/instagram/`: textos do perfil, 3 capas de destaque e 6 posts sem print.
+  - Falta ela escolher as imagens e como receber no celular (o envio pela conversa caiu).
+  - Falta conferir na produção se a promoção do site entra na fila, antes de publicar o post 3.
+  - Fonte: conversa de 18 e 19/10.
+- [ ] **Mensagem no grupo das vendedoras da multimarca** ([[copy-grupo-vendedoras]]): texto pronto. Falta responder se a criadora usa a Vitrinista ("conheci" ou "tô usando") e quem atende as dúvidas (recomendação do Curador: a @usevitrinista). Fonte: conversa de 19/10.
+
+## De 19/10
+
+- [ ] **Testar o "Conectar com código" com o celular** na produção. A correção de 19/10 tirou o nome "Vitrinista" do navegador do pareamento; não foi testada com celular. Se não conectar, a próxima suspeita é o código que muda a cada QR (cerca de 45 s). Fonte: conversa de 19/10.
+- [ ] **Pedir à assinante que reclamou para conferir o botão da Liqui** no Catálogo (682 peças desde 19/10, 19h14; conferido só no banco). Fonte: conversa de 19/10.
+- [ ] **Desligar a captura de mensagens** depois do relatório de 20/10, com o ok dela, e apagar as mensagens guardadas. Fonte: conversa de 19/10.
+- [ ] **Registro de atualizações no painel para as assinantes:** ela pediu "o log de versão" em 19/10; hoje só existe o registro do projeto. Está na fila do construtor. Fonte: conversa de 19/10.
+- [ ] **Mudar o modo avançado de editar as mensagens** (aba Mensagem, "Editar o texto (avançado)"): ela quer mudar; ainda sem dizer o quê. Perguntar o que incomoda antes de levar ao construtor. Fonte: conversa de 19/10.
+- [ ] **Liberar o disco do notebook:** o arquivo de paginação do Windows cresceu para 11,2 GB e o disco ficou sem espaço (20/10); as suítes de teste do banco caem. Reiniciar o notebook e decidir sobre apagar as dependências dos worktrees do Tear (cerca de 1,1 GB). Fonte: conversa de 20/10.
