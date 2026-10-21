@@ -13,7 +13,6 @@ fonte: conversa de 20/10, à noite ("coloca meus numeros nas partes de atendimen
 **Onde entrou:** `ferramenta-grupos`, `0a95c26` (branch `claude/atendimento-para-todos`, sobre a cortesia com data de fim), na produção desde 20/10, 23h35.
 
 **O que fica para ela:**
-- Ela falou em "números", no plural, e o painel tem um número só. Se for mais de um, ou outro número, falta dizer qual.
 - O Atelier perde o atendimento direto como diferença. A página de vendas e os Termos continuam dizendo que ele é do Atelier: decidir se mudam, e levar os Termos ao advogado.
 
 **Alternativas descartadas:** nenhuma discutida.

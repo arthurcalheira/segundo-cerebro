@@ -11,7 +11,7 @@ Atualizado em 20/10/2026, 23h45, pelo Curador, no fechamento da sessão da noite
 
 ## Próximo
 
-1. **Ela olha:** o botão "Falar no WhatsApp" na Conta > Atendimento da produção e diz se são outros números ou mais de um; `/admin/ia` com as primeiras chamadas de verdade; a cortesia com data numa conta (a dela, sem plano desde o lançamento, é candidata). Na produção, o Curador não leu o banco nem o `.env` depois do deploy (o modo automático barrou): as migrações 0051 e 0052 foram conferidas só na cópia.
+1. **Ela olha:** `/admin/ia` com as primeiras chamadas de verdade; a cortesia com data numa conta (a dela, sem plano desde o lançamento, é candidata). Na produção, o Curador não leu o banco nem o `.env` depois do deploy (o modo automático barrou): as migrações 0051 e 0052 foram conferidas só na cópia.
 2. **Ela confere também:** a primeira mensagem de verdade com os 10% do código num grupo; o "Conectar com código" com o celular; a assinante, o botão da Liqui.
 3. **Com ela:** cortesia na conta do número dela (sem plano desde o lançamento); o advogado (textos da IA, Privacidade de 19/10, Termos com os preços novos: eles prometem 30 dias de aviso e a troca de plano vai ao preço novo na hora; o atendimento que deixou de ser só do Atelier, também na página de vendas); o registro de atualizações no painel para as assinantes; backup externo.
 4. **Sobras:** a branch local `claude/montador-simplificado` no clone; worktrees velhas (`ferramenta-grupos-precos`, `-robo`, `-guiada`) com o trabalho já no `master`; a rotina "Estudo dos grupos" (o estudo foi feito à mão) e a "Revisor do Plano 11" (pausada); o `dev:demo --12x <parcelas>` que recusa qualquer número (só na demonstração).
