@@ -1,28 +1,24 @@
 # Estado
 
-Atualizado em 20/10/2026, 22h20, pelo Curador, no fechamento da sessão (depois do de 21h40). Os dias estão em [[2026-10-19]] e [[2026-10-20]].
+Atualizado em 20/10/2026, 23h45, pelo Curador, no fechamento da sessão da noite (depois do deploy de 23h35). Os dias estão em [[2026-10-19]] e [[2026-10-20]].
 
 ## Agora
 
-- **No ar** (`master` e servidor em `51cda52`, deploy de 20/10 às 22h08): cadastro aberto, Stripe de produção, página de vendas no Google; **preços novos** (149,90, 249,90 e 349,90; anual 79, 117 e 150 por mês; as 4 assinantes de antes ficam na tabela de preço antiga até trocarem de plano); **configuração guiada** (migração 0050); **construtor de mensagem** (edição direto no exemplo, abas por tipo e loja); os **10% do código de vendedora** nas peças da Farm a preço cheio; código repetido e chamada que dá para apagar ou editar; a **linha do frete escrita pelo sistema** (posta uma vez nas mensagens gravadas sem frete: 15 linhas de 3 contas); Liqui, Bazar e reloginho da Farm e Bazar da Dress To como promoção, com catálogo e agenda a cada hora; IA sem limite por dia; "Robô pode enviar" some quando ela monta a fila; busca pela referência; "Conectar com código" (sem teste com celular).
+- **No ar** (`master` e servidor em `0a95c26`, deploy de 20/10 às 23h35): **histórico interno da IA** (migração 0051, tela `/admin/ia`, Privacidade de 19/10 no ar com os itens 4 e 7 a revisar pelo advogado); **cortesia com data de fim** (migração 0052, `account:plano <email> <plano> --ate AAAA-MM-DD` ou a Administração); **atendimento por WhatsApp para todas as contas** ([[2026-10-20-atendimento-para-todas]]); cadastro aberto, Stripe de produção, página de vendas no Google; **preços novos** (149,90, 249,90 e 349,90; anual 79, 117 e 150 por mês; as 4 assinantes de antes ficam na tabela de preço antiga até trocarem de plano); **configuração guiada** (migração 0050); **construtor de mensagem** (edição direto no exemplo, abas por tipo e loja); os **10% do código de vendedora** nas peças da Farm a preço cheio; código repetido e chamada que dá para apagar ou editar; a **linha do frete escrita pelo sistema** (posta uma vez nas mensagens gravadas sem frete: 15 linhas de 3 contas); Liqui, Bazar e reloginho da Farm e Bazar da Dress To como promoção, com catálogo e agenda a cada hora; IA sem limite por dia; "Robô pode enviar" some quando ela monta a fila; busca pela referência; "Conectar com código" (sem teste com celular).
 - **Captura de mensagens desligada** em 20/10, mensagens apagadas e backup limpo; o estudo está em [[2026-10-20-ofertas-dos-grupos-de-vendedoras]]. Não precisa mais guardar o `deploy/evolution.env` nos deploys.
-- **Construtores:** Trama e Tear livres. Nuvem: nenhuma sessão.
-- **Prontas, não no `master`:**
-  - Histórico interno da IA: `claude/historico-ia-junta` (migração 0051, tela `/admin/ia`; Privacidade de 19/10 com os itens 4 e 7 a revisar pelo advogado). A Trama pausou a verificação no original (`e774d56`) porque a suíte do banco travou.
-  - Cortesia com data de fim: `claude/cortesia-junta` (migração 0052), em cadeia sobre a do histórico.
-  - As duas foram juntadas sobre o `master` de antes do construtor de mensagem: refazer a junção sobre o de hoje. Faltam o banco e o worker inteiros, o `next build` e o pagamento de teste da cortesia na Stripe.
+- **Construtores:** Trama e Tear livres. Nuvem: nenhuma sessão. As branches de junção (`claude/historico-ia-junta`, `claude/cortesia-junta`, `claude/atendimento-para-todos`) já estão no `master`.
 - **Notebook:** disco com 4,9 GB livres (chegou a 60 MB em 20/10); o arquivo de paginação do Windows ainda ocupa cerca de 11 GB. Pedido a ela: reiniciar com nada rodando. Dependências dos worktrees do Tear só se apagam com o ok dela.
 
 ## Próximo
 
-1. **Histórico da IA e cortesia:** juntar sobre o `master` de hoje (as migrações passam a 0051 e 0052; conferir o `prevId` e o journal), rodar o que falta e levar à cópia e à produção, uma por vez, cada uma com o ok dela.
-2. **Ela confere:** a primeira mensagem de verdade com os 10% do código num grupo; o "Conectar com código" com o celular; a assinante, o botão da Liqui.
-3. **Com ela:** cortesia na conta do número dela (sem plano desde o lançamento); o advogado (textos da IA, Privacidade de 19/10, Termos com os preços novos: eles prometem 30 dias de aviso e a troca de plano vai ao preço novo na hora); o registro de atualizações no painel para as assinantes; backup externo.
+1. **Ela olha:** o botão "Falar no WhatsApp" na Conta > Atendimento da produção e diz se são outros números ou mais de um; `/admin/ia` com as primeiras chamadas de verdade; a cortesia com data numa conta (a dela, sem plano desde o lançamento, é candidata). Na produção, o Curador não leu o banco nem o `.env` depois do deploy (o modo automático barrou): as migrações 0051 e 0052 foram conferidas só na cópia.
+2. **Ela confere também:** a primeira mensagem de verdade com os 10% do código num grupo; o "Conectar com código" com o celular; a assinante, o botão da Liqui.
+3. **Com ela:** cortesia na conta do número dela (sem plano desde o lançamento); o advogado (textos da IA, Privacidade de 19/10, Termos com os preços novos: eles prometem 30 dias de aviso e a troca de plano vai ao preço novo na hora; o atendimento que deixou de ser só do Atelier, também na página de vendas); o registro de atualizações no painel para as assinantes; backup externo.
 4. **Sobras:** a branch local `claude/montador-simplificado` no clone; worktrees velhas (`ferramenta-grupos-precos`, `-robo`, `-guiada`) com o trabalho já no `master`; a rotina "Estudo dos grupos" (o estudo foi feito à mão) e a "Revisor do Plano 11" (pausada); o `dev:demo --12x <parcelas>` que recusa qualquer número (só na demonstração).
 
 ## Ainda por fazer, sem data
 
-- Da 5G: ver o cartão "Atendimento Atelier" quando houver a primeira conta no Atelier (o número de atendimento está no servidor como provisório, `ATENDIMENTO_WHATSAPP`, e não é escrito no vault); trocar pelo definitivo quando houver (linha no `.env` do servidor e `atualizar.sh`, com confirmação); olhar o log do worker no primeiro apagar real de um número, porque a resposta da Evolution ao apagar uma instância não foi confirmada.
+- Da 5G: o cartão "Atendimento" aparece para todas desde 20/10 (o número de atendimento está no servidor como provisório, `ATENDIMENTO_WHATSAPP`, e não é escrito no vault); trocar pelo definitivo quando houver (linha no `.env` do servidor e `atualizar.sh`, com confirmação); olhar o log do worker no primeiro apagar real de um número, porque a resposta da Evolution ao apagar uma instância não foi confirmada.
 - Com quem cuida do produto ([[pendencias]]): teste de envio do e-mail ([[email-do-dominio]]); backup externo; Google Analytics ou não; link do dashboard da multimarca; as 8 frases de chamada; INPI.
 - Sem decisão, em [[ideias]]: 13 ideias de features e as sugestões de planos e página de vendas.
 - Do plano do workspace: atualizar `maestri/configurar-no-windows.md` com as rotinas, o terminal do VPS e o portal.
@@ -38,7 +34,7 @@ Atualizado em 20/10/2026, 22h20, pelo Curador, no fechamento da sessão (depois 
 
 ## Decisões
 
-- 20/10: [[2026-10-20-precos-novos]], [[2026-10-20-edicao-no-exemplo]], [[2026-10-20-codigo-da-farm-na-mensagem]].
+- 20/10: [[2026-10-20-atendimento-para-todas]], [[2026-10-20-precos-novos]], [[2026-10-20-edicao-no-exemplo]], [[2026-10-20-codigo-da-farm-na-mensagem]].
 - Vault separado do código; código e estado técnico só no projeto, e aqui o que não é código.
 - O projeto é comandado pelo Curador no Maestri. O código é feito em sessões na nuvem ou, a pedido dela, por Construtores locais no Maestri (o "Tear", desde 13/10; a "Trama", na conta principal, desde 15/10, em worktree própria). Um construtor por vez, salvo pedido dela (em 15/10 rodaram dois, revezando a parte pesada): [[2026-10-10-comando-pelo-maestri]].
 - Desenvolver na cópia local do projeto, só por pedido explícito na conversa; o pedido não cobre commit, merge, push nem deploy.

@@ -10,7 +10,7 @@ fonte: conversa de 20/10, à noite ("coloca meus numeros nas partes de atendimen
 
 **Por quê:** pedido dela.
 
-**Onde entrou:** `ferramenta-grupos`, `0a95c26` (branch `claude/atendimento-para-todos`, sobre a cortesia com data de fim).
+**Onde entrou:** `ferramenta-grupos`, `0a95c26` (branch `claude/atendimento-para-todos`, sobre a cortesia com data de fim), na produção desde 20/10, 23h35.
 
 **O que fica para ela:**
 - Ela falou em "números", no plural, e o painel tem um número só. Se for mais de um, ou outro número, falta dizer qual.
