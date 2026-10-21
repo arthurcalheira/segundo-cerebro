@@ -1,26 +1,24 @@
 # Estado
 
-Atualizado em 20/10/2026, 21h40, pelo Curador, no fechamento do dia. Os dias estão em [[2026-10-19]] e [[2026-10-20]].
+Atualizado em 20/10/2026, 22h20, pelo Curador, no fechamento da sessão (depois do de 21h40). Os dias estão em [[2026-10-19]] e [[2026-10-20]].
 
 ## Agora
 
-- **No ar** (`master` e servidor em `ee2c534`, deploy de 20/10 à noite): cadastro aberto, Stripe de produção, página de vendas no Google; **preços novos** (149,90, 249,90 e 349,90; anual 79, 117 e 150 por mês; as 4 assinantes de antes ficam na tabela de preço antiga até trocarem de plano); **configuração guiada** (migração 0050); **construtor de mensagem** (edição direto no exemplo, abas por tipo e loja); os **10% do código de vendedora** nas peças da Farm a preço cheio; código repetido e chamada que dá para apagar ou editar; Liqui, Bazar e reloginho da Farm e Bazar da Dress To como promoção, com catálogo e agenda a cada hora; IA sem limite por dia; "Robô pode enviar" some quando ela monta a fila; busca pela referência; "Conectar com código" (sem teste com celular).
+- **No ar** (`master` e servidor em `51cda52`, deploy de 20/10 às 22h08): cadastro aberto, Stripe de produção, página de vendas no Google; **preços novos** (149,90, 249,90 e 349,90; anual 79, 117 e 150 por mês; as 4 assinantes de antes ficam na tabela de preço antiga até trocarem de plano); **configuração guiada** (migração 0050); **construtor de mensagem** (edição direto no exemplo, abas por tipo e loja); os **10% do código de vendedora** nas peças da Farm a preço cheio; código repetido e chamada que dá para apagar ou editar; a **linha do frete escrita pelo sistema** (posta uma vez nas mensagens gravadas sem frete: 15 linhas de 3 contas); Liqui, Bazar e reloginho da Farm e Bazar da Dress To como promoção, com catálogo e agenda a cada hora; IA sem limite por dia; "Robô pode enviar" some quando ela monta a fila; busca pela referência; "Conectar com código" (sem teste com celular).
 - **Captura de mensagens desligada** em 20/10, mensagens apagadas e backup limpo; o estudo está em [[2026-10-20-ofertas-dos-grupos-de-vendedoras]]. Não precisa mais guardar o `deploy/evolution.env` nos deploys.
-- **Em andamento, sem merge nem deploy:** a linha do frete escrita pelo sistema (Trama, `claude/linha-do-frete`, worktree `ferramenta-grupos-ia`, `9b881f3`; falta o comando da CLI que põe a linha uma vez nas mensagens gravadas, ainda sem commit).
+- **Construtores:** Trama e Tear livres. Nuvem: nenhuma sessão.
 - **Prontas, não no `master`:**
   - Histórico interno da IA: `claude/historico-ia-junta` (migração 0051, tela `/admin/ia`; Privacidade de 19/10 com os itens 4 e 7 a revisar pelo advogado). A Trama pausou a verificação no original (`e774d56`) porque a suíte do banco travou.
   - Cortesia com data de fim: `claude/cortesia-junta` (migração 0052), em cadeia sobre a do histórico.
   - As duas foram juntadas sobre o `master` de antes do construtor de mensagem: refazer a junção sobre o de hoje. Faltam o banco e o worker inteiros, o `next build` e o pagamento de teste da cortesia na Stripe.
 - **Notebook:** disco com 4,9 GB livres (chegou a 60 MB em 20/10); o arquivo de paginação do Windows ainda ocupa cerca de 11 GB. Pedido a ela: reiniciar com nada rodando. Dependências dos worktrees do Tear só se apagam com o ok dela.
-- **Construtores:** Trama na linha do frete; Tear parado. Nuvem: nenhuma sessão.
 
 ## Próximo
 
-1. **Linha do frete:** a Trama termina, junção com o `master`, cópia de teste, ok dela para a produção e depois o comando que põe a linha uma vez nas mensagens gravadas.
-2. **Histórico da IA e cortesia:** juntar sobre o `master` de hoje (as migrações passam a 0051 e 0052; conferir o `prevId` e o journal), rodar o que falta e levar à cópia e à produção, uma por vez, cada uma com o ok dela.
-3. **Ela confere:** a primeira mensagem de verdade com os 10% do código num grupo; o "Conectar com código" com o celular; a assinante, o botão da Liqui.
-4. **Com ela:** cortesia na conta do número dela (sem plano desde o lançamento); o advogado (textos da IA, Privacidade de 19/10, Termos com os preços novos: eles prometem 30 dias de aviso e a troca de plano vai ao preço novo na hora); o registro de atualizações no painel para as assinantes; backup externo.
-5. **Sobras:** a branch local `claude/montador-simplificado` no clone; worktrees velhas (`ferramenta-grupos-precos`, `-robo`, `-guiada`) com o trabalho já no `master`; a rotina "Estudo dos grupos" (o estudo foi feito à mão) e a "Revisor do Plano 11" (pausada); o `dev:demo --12x <parcelas>` que recusa qualquer número (só na demonstração).
+1. **Histórico da IA e cortesia:** juntar sobre o `master` de hoje (as migrações passam a 0051 e 0052; conferir o `prevId` e o journal), rodar o que falta e levar à cópia e à produção, uma por vez, cada uma com o ok dela.
+2. **Ela confere:** a primeira mensagem de verdade com os 10% do código num grupo; o "Conectar com código" com o celular; a assinante, o botão da Liqui.
+3. **Com ela:** cortesia na conta do número dela (sem plano desde o lançamento); o advogado (textos da IA, Privacidade de 19/10, Termos com os preços novos: eles prometem 30 dias de aviso e a troca de plano vai ao preço novo na hora); o registro de atualizações no painel para as assinantes; backup externo.
+4. **Sobras:** a branch local `claude/montador-simplificado` no clone; worktrees velhas (`ferramenta-grupos-precos`, `-robo`, `-guiada`) com o trabalho já no `master`; a rotina "Estudo dos grupos" (o estudo foi feito à mão) e a "Revisor do Plano 11" (pausada); o `dev:demo --12x <parcelas>` que recusa qualquer número (só na demonstração).
 
 ## Ainda por fazer, sem data
 
@@ -40,6 +38,7 @@ Atualizado em 20/10/2026, 21h40, pelo Curador, no fechamento do dia. Os dias est
 
 ## Decisões
 
+- 20/10: [[2026-10-20-precos-novos]], [[2026-10-20-edicao-no-exemplo]], [[2026-10-20-codigo-da-farm-na-mensagem]].
 - Vault separado do código; código e estado técnico só no projeto, e aqui o que não é código.
 - O projeto é comandado pelo Curador no Maestri. O código é feito em sessões na nuvem ou, a pedido dela, por Construtores locais no Maestri (o "Tear", desde 13/10; a "Trama", na conta principal, desde 15/10, em worktree própria). Um construtor por vez, salvo pedido dela (em 15/10 rodaram dois, revezando a parte pesada): [[2026-10-10-comando-pelo-maestri]].
 - Desenvolver na cópia local do projeto, só por pedido explícito na conversa; o pedido não cobre commit, merge, push nem deploy.
