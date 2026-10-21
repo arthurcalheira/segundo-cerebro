@@ -62,7 +62,13 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 
 - [ ] **Testar o "Conectar com código" com o celular** na produção. A correção de 19/10 tirou o nome "Vitrinista" do navegador do pareamento; não foi testada com celular. Se não conectar, a próxima suspeita é o código que muda a cada QR (cerca de 45 s). Fonte: conversa de 19/10.
 - [ ] **Pedir à assinante que reclamou para conferir o botão da Liqui** no Catálogo (682 peças desde 19/10, 19h14; conferido só no banco). Fonte: conversa de 19/10.
-- [ ] **Desligar a captura de mensagens** depois do relatório de 20/10, com o ok dela, e apagar as mensagens guardadas. Fonte: conversa de 19/10.
+- [x] **Desligar a captura de mensagens** depois do relatório de 20/10, com o ok dela, e apagar as mensagens guardadas. Feito em 20/10 ([[2026-10-20]]; relatório em [[2026-10-20-ofertas-dos-grupos-de-vendedoras]]). Fonte: conversa de 19/10.
 - [ ] **Registro de atualizações no painel para as assinantes:** ela pediu "o log de versão" em 19/10; hoje só existe o registro do projeto. Está na fila do construtor. Fonte: conversa de 19/10.
-- [ ] **Mudar o modo avançado de editar as mensagens** (aba Mensagem, "Editar o texto (avançado)"): ela quer mudar; ainda sem dizer o quê. Perguntar o que incomoda antes de levar ao construtor. Fonte: conversa de 19/10.
-- [ ] **Liberar o disco do notebook:** o arquivo de paginação do Windows cresceu para 11,2 GB e o disco ficou sem espaço (20/10); as suítes de teste do banco caem. Reiniciar o notebook e decidir sobre apagar as dependências dos worktrees do Tear (cerca de 1,1 GB). Fonte: conversa de 20/10.
+- [x] **Mudar o modo avançado de editar as mensagens** (aba Mensagem, "Editar o texto (avançado)"): feito em 20/10, com a edição direto no exemplo, já na produção ([[2026-10-20]]). Fonte: conversa de 19/10.
+- [ ] **Liberar o disco do notebook:** o arquivo de paginação do Windows cresceu para 11,2 GB e o disco ficou sem espaço (20/10); as suítes de teste do banco caem. Em 20/10, à noite, o disco estava com 4,9 GB livres, depois de limpezas. Falta reiniciar o notebook com nada rodando e decidir sobre apagar as dependências dos worktrees do Tear (cerca de 1,1 GB). Fonte: conversa de 20/10.
+
+## De 20/10
+
+- [ ] **Conferir a primeira mensagem de verdade com os 10% do código** num grupo (preço cheio riscado e preço com desconto, só em peça da Farm a preço cheio): só conferido em teste. Fonte: conversa de 20/10.
+- [ ] **Advogado, Termos dos preços novos:** os Termos prometem 30 dias de aviso antes de preço novo, e a troca de plano de quem está na tabela antiga vai ao preço novo na hora (decisão dela). Fonte: conversa de 20/10; [[2026-10-20]].
+- [ ] **Cortesia na conta do número dela** (sem plano desde o lançamento), depois que a cortesia com data de fim for ao ar. Fonte: conversa de 20/10.
