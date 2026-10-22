@@ -44,6 +44,7 @@ Elas disparam no terminal do Curador. Com um `--pre-run` que só sai com código
 |---|---|---|
 | Abertura | todo dia às 9h | Rotina de abertura do papel (pull, estados, diário, inbox) |
 | Vigia da nuvem | a cada 20 min | O pre-run faz `git fetch` e compara as branches com a última leitura (script em `maestri/scripts/`). Só dispara quando alguma branch mudou, e o comando pede ao Curador para trazer o resultado |
+| Conferente do site | a cada 1 h (desde 22/10) | O pre-run (`maestri/scripts/conferente-site.ps1`) lê no servidor `./deploy/cli.sh site:conferir` (a linha do ssh fica em `.maestri/servidor.txt`, fora do git) e só dispara quando aparece divergência nova entre o site e o painel, ou loja sem leitura de promoção. O Curador confere e manda o conserto ao construtor ([[2026-10-22-conferente-do-site]]) |
 | Fechamento | todo dia às 21h30 | Skill `fechar-sessao` |
 
 Rotina só dispara com o notebook ligado e o Maestri aberto. Se o terminal estiver ocupado, ela pula (o padrão).

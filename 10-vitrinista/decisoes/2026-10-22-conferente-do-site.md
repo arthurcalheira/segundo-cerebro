@@ -13,6 +13,6 @@ fonte: conversa com ela, 22/10, à tarde
 
 **Por quê:** ela teve de avisar várias vezes que algo do site não aparecia no painel (em 22/10: bazar só no menu, banner das t-shirts a R$ 98 sem texto, vitrine com 11 de 31 peças). Ela quer que isso pare de depender dela.
 
-**Onde entrou:** ainda não entrou. Trama: `claude/bazar-tshirt-vitrine` (botões) e depois `claude/conferente-do-site`. Falta a rotina do Curador que lê o comando do conferente.
+**Onde entrou:** produção em 22/10. Botões: `fb9b90e` a `0380224`; leitura que não cai inteira: `9effa77`, `57a85f8`, `2d8e789`; conferente: `d4a62f2` (migração 0054, `ferramenta-grupos/.claude/guides/promocoes.md`). No notebook, a rotina "Conferente do site" (`maestri/plano-workspace.md`).
 
 **Alternativas descartadas:** seguir consertando caso a caso, quando ela avisa.
