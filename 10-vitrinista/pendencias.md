@@ -73,3 +73,20 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [ ] **Advogado, Termos dos preços novos:** os Termos prometem 30 dias de aviso antes de preço novo, e a troca de plano de quem está na tabela antiga vai ao preço novo na hora (decisão dela). Fonte: conversa de 20/10; [[2026-10-20]].
 - [ ] **Cortesia na conta do número dela** (sem plano desde o lançamento), depois que a cortesia com data de fim for ao ar. Fonte: conversa de 20/10.
 - [ ] **Atendimento fora do Atelier:** a página de vendas e os Termos ainda dizem que o atendimento direto é do Atelier. Decidir se mudam; levar os Termos ao advogado junto com os preços novos. Fonte: conversa de 20/10.
+
+## De 21/10
+
+- [ ] **Avisar a assinante da queixa de 20/10** que a edição livre está no ar ([[2026-10-21-edicao-livre]]): as linhas repetidas que ela já tem gravadas (código no Bazar e no reloginho) só saem quando ela apagar de novo no exemplo; agora não voltam. Conferir a primeira mensagem dela num grupo. Fonte: conversa de 21/10.
+- [ ] **Conferir a produção por dentro depois dos deploys de 20 e 21/10:** o modo automático barrou a leitura do banco e do `.env` (migrações 0051 e 0052 vistas só na cópia; o número do atendimento não lido). Ela libera a leitura por SSH em `/permissions` ou sai do modo automático. Fonte: sessão de 20 e 21/10.
+- [ ] **Confirmar com a Farm (ou com uma compra de teste) se a venda pelo link da Lojix com `?sc=6` e o código conta para a vendedora.** Sem isso, as peças da Lojix ficam fora do robô. Fonte: conversa de 21/10 ([[2026-10-21-lojix-no-catalogo]]).
+- [ ] **Conferir a Lojix no painel:** ligar o interruptor no Catálogo e mandar uma peça à mão para um grupo dela, para ver a mensagem com o `🔴 *Lojix*`. O Curador só conferiu pelo servidor. Fonte: conversa de 21/10.
+- [ ] **Texto do rótulo da Lojix:** fica `🔴 *Lojix*` por enquanto, e ela muda depois (`LOJIX_LINE` no projeto). Fonte: conversa de 21/10.
+- [x] **Formato do cupom e "Lojix · Reloginho" (Trama, `claude/cupom-formato`, `bd577b8`): no ar em `ec4752a`, 21/10 às 21h45.** "De ~R$ X~ / Por R$ Y (n% off)" com o preço do cupom e embaixo só "🎟️ Cupom: *X*"; Lojix e reloginho numa linha. Decisão da Trama a confirmar com ela: o "De" é o preço cheio (em peça já com preço riscado sai "De 398 / Por 268,20", não "De 298"). Precisa juntar com o `master` (`68bddf1`) antes do deploy. Fonte: conversa de 21/10.
+- [x] **Confirmar a comissão pelo link da live** (confirmado por ela em 21/10, 23h40: "existe sim comissão") (`lojix.farmrio.com.br/?product=…&cod=…`): o app manda o código ao carrinho como `utm_source=vendedora&utm_campaign=<código>`, e o link do site usa `utm_source=<código>`. Uma compra de teste ou a Farm. Fonte: conversa de 21/10.
+- [ ] **Trocar o texto padrão da Lojix antes da próxima live:** desde 21/10, 23h24 (`14d13ca`), o padrão é "📺🦉 *Lojix Corujão!*" (o nome da edição de 21/10), com o percentual do cupom na frente quando a peça tem cupom ("20% OFF …", calculado do cupom). "Corujão" é só desta edição: mudar o `LOJIX_LINE` (`packages/core/src/whatsapp/caption.ts`) para a próxima. Fonte: conversa de 21/10.
+- [ ] **Restrição de reenviar no mesmo dia: tirada temporariamente** (pedido dela em 21/10, 23h45: "vamos voltar a regra depois"). No ar desde 22/10, 00h16 (`bef36ea`), pela constante `SAME_DAY_RESEND = true` em `packages/core/src/queue/manual.ts`: o Catálogo deixa adicionar de novo a peça que já saiu hoje, e o robô deixa o "uma vez por dia", com a volta mantida. **Voltar a regra:** constante a `false` e deploy, quando ela pedir. Há duas travas, e falta ela dizer quais saem:
+  - **(a) Catálogo, à mão:** a peça que já está ou já esteve na fila de hoje (qualquer status, inclusive enviada) não entra: "já na fila de hoje" / "já esteve na fila de hoje" (`pickBlock` com `queued`, `apps/web/src/lib/catalog-view.ts`).
+  - **(b) Robô:** a peça sai no máximo uma vez por dia no grupo (`takenToday`, decisão dela de 07/10) e uma vez por volta (`cyclePool`).
+  - O "Enviar agora" já deixa repetir, com aviso.
+  - Para a Lojix, isso pesa: a mesma peça é apresentada várias vezes na live.
+  - Fonte: conversa de 21/10.
