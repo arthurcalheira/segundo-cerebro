@@ -31,3 +31,5 @@ Ela foi dormir em 22/10 e deixou o Curador trabalhando, com a ordem da fila téc
 17. **A conferência no navegador das Novidades e da Promoção à mão** vira uma sessão própria da Trama, agora que o vídeo terminou e o disco tem espaço.
 
 **Achado sobre o `/clear`:** o construtor fica "trabalhando" até o Curador terminar a resposta ao aviso dele (o `maestri ask "Maestro"` espera), então o `/clear` mandado logo depois entrava na fila. A partir de agora o Curador espera o construtor ficar livre para mandar o `/clear` e a tarefa nova.
+18. **Telas conferidas no navegador** (Trama): Novidades sem nada a consertar; Promoção à mão com um conserto (estender não mostrava o aviso e tirava o foco do botão, `b3dbd31`, CI verde). Capturas na pasta temporária da sessão.
+19. **Coleção que não existe é recusada na Promoção à mão** (decisão do Curador sobre o que a Trama deixou para ela): a tela e o worker recusam coleção inexistente e promoção pela coleção ou pela página com 0 peças; a da Lojix pode começar vazia. A sugestão de coleções busca pelo que ela digita. Mudar: aceitar e avisar, em vez de recusar.
