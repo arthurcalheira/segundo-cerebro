@@ -1,38 +1,20 @@
 # Estado
 
-Atualizado em 21/10/2026, à tarde, pelo Curador, depois do deploy da Lojix. Os dias estão em [[2026-10-20]] e [[2026-10-21]].
-
 ## Agora
 
-- **No ar** (`master` e servidor em `09c3c2e`, deploy de 21/10, 16h30): **Lojix no Catálogo** ([[2026-10-21-lojix-no-catalogo]]: as peças que estão na live da Farm e não no site, lidas pela API da live na sync, com link `?sc=6`; interruptor "Lojix" com cor e animação, selo e o rótulo `🔴 *Lojix*` na mensagem; o robô não as escolhe, só à mão); **edição livre da mensagem** ([[2026-10-21-edicao-livre]]: o que ela escreve no exemplo é o que sai, só o link obrigatório, "Código:" e "Cupom:" no padrão); **histórico interno da IA** (migração 0051, tela `/admin/ia`, Privacidade de 19/10 no ar com os itens 4 e 7 a revisar pelo advogado); **cortesia com data de fim** (migração 0052, `account:plano <email> <plano> --ate AAAA-MM-DD` ou a Administração); **atendimento por WhatsApp para todas as contas** ([[2026-10-20-atendimento-para-todas]]); cadastro aberto, Stripe de produção, página de vendas no Google; **preços novos** (149,90, 249,90 e 349,90; anual 79, 117 e 150 por mês; as 4 assinantes de antes ficam na tabela de preço antiga até trocarem de plano); **configuração guiada** (migração 0050); **construtor de mensagem** (edição direto no exemplo, abas por tipo e loja); os **10% do código de vendedora** nas peças da Farm a preço cheio; código repetido e chamada que dá para apagar ou editar; a **linha do frete escrita pelo sistema** (posta uma vez nas mensagens gravadas sem frete: 15 linhas de 3 contas); Liqui, Bazar e reloginho da Farm e Bazar da Dress To como promoção, com catálogo e agenda a cada hora; IA sem limite por dia; "Robô pode enviar" some quando ela monta a fila; busca pela referência; "Conectar com código" (sem teste com celular).
-- **Captura de mensagens desligada** em 20/10, mensagens apagadas e backup limpo; o estudo está em [[2026-10-20-ofertas-dos-grupos-de-vendedoras]]. Não precisa mais guardar o `deploy/evolution.env` nos deploys.
-- **Construtores:** Trama e Tear livres (a Trama terminou a edição livre em 21/10). Nuvem: nenhuma sessão. As branches de junção (`claude/historico-ia-junta`, `claude/cortesia-junta`, `claude/atendimento-para-todos`) já estão no `master`.
-- **Notebook:** disco com 4,9 GB livres (chegou a 60 MB em 20/10); o arquivo de paginação do Windows ainda ocupa cerca de 11 GB. Pedido a ela: reiniciar com nada rodando. Em 21/10, com o ok dela, saíram as worktrees `-precos`, `-robo`, `-guiada`, `-cortesia` e `-historico-ia` (tudo já no `master`) e 9 Postgres de teste parados desde 20/10; o disco quase não mudou (2,1 GB livres: os pacotes ficam no depósito comum do pnpm). Ficam a `-ia` (Trama, edição livre) e a pasta `-menu`.
+Atualizado em 23/10/2026, 09h, pelo Curador, ao fechar a sessão de 22 e 23/10. Os dias estão em [[2026-10-22]] e [[2026-10-23]]; as decisões da noite, em [[revisar-decisoes-da-noite]].
+
+- **No ar** (`master` e servidor em `eb01f81`, deploy de 23/10, 07h47): botões que copiam o site (Bazar pelo menu, banner com preço, Vitrine da Semana = `ta-na-vitrine`, a loja em todo botão, "FARM Rio"); leitura de promoções que não cai inteira (reloginho pela home e pela agenda); conferente do site de hora em hora, com releitura automática da contagem, botão provisório, leitura da imagem dos banners pela IA e avisos no celular da administração ([[2026-10-22-conferente-do-site]]); cupom na assinatura; chave fixa das server actions; CI no GitHub a cada push; reenvio no mesmo dia na opção B; abas de loja no Catálogo e no Trocar; Conta > Novidades; cupom conferido peça por peça no carrinho; lembrete de pagamento abandonado (só por notificação); Lojix automática (vigia, Promoção à mão, avisos, peça apresentada nos grupos, nome da edição), **desligada** até `LOJIX_AUTOMATICA=1`.
+- **Rotinas:** Abertura (9h), Vigia da nuvem (20 min), Fechamento (21h30) e, desde 22/10, **Conferente do site** (1 h, `maestri/scripts/conferente-site.ps1`; a linha do ssh em `.maestri/servidor.txt`, fora do git).
+- **Construtores:** Trama e Tear livres. Uma sessão nova (`/clear`) a cada tarefa; o `/clear` só depois de o construtor ficar livre (`.maestri/mandar-tarefa.sh`).
+- **Vídeo de lançamento:** primeiro corte em `ferramenta-grupos-catalogo/docs/marca/video-lancamento/` (sem commit).
+- **Notebook:** ~2,6 GB livres; várias worktrees das branches da noite ficaram (todas no `master`), para limpar com o ok dela.
 
 ## Próximo
 
-0. **Fechamento de 21/10, 21h30** (o que vem abaixo é o histórico da tarde):
-   - **No ar:** `ec4752a` (21h45), com a Lojix completa (todos os botões, a timeline, o link da live, a aba Lojix, 10% fora de promoção), o formato do cupom (De/Por com cupom, "Cupom: X") e `promo:manual`/`catalog:refresh`. ALTO20 manual até 23h ou até ela pedir para desativar (`promo:manual farm --encerrar alto20`). Às 21h42 entrou um botão novo na live, "spoiler", com 12 vestidos, marcados como Lojix.
-   - **Rodando no notebook até 23h30:** o gravador da API da live, o do canal ao vivo (socket) e o monitor que atualiza o painel (este precisa de sessão aberta). **No servidor até 21h:** syncs de 15 em 15 (já acabaram); a sync por hora do worker continua.
-   - **22/10:**
-     - spec da Lojix automática pronta para revisão, sem commit (`ferramenta-grupos/docs/superpowers/specs/2026-10-22-lojix-automatica-design.md`, branch `claude/spec-lojix-automatica`, na worktree `-lojix-modelo`). Falta só a decisão dos avisos; depois, mandar à Trama e ao Tear;
-     - tirar a restrição de reenviar no mesmo dia a peça que já saiu: falta ela dizer se é a do Catálogo, a do robô ou as duas ([[pendencias]]);
-     - ler a gravação (`.maestri/lojix-2026-10-21/`: `socket.jsonl` com a sequência apresentada, `log.txt`, `stream-*`) para a Lojix automática;
-     - chave fixa das server actions;
-     - testes no GitHub;
-     - **Feito em 22/10, 05h20:** Lojix desligada (`6f098a2`, `LOJIX_LIVE_ON = false` em `apps/worker/src/connector-factory.ts`; religar na próxima Lojix). Zero peças marcadas; 105 que só existiam na live ficaram indisponíveis.
-     - **Feito em 22/10, 05h30, com o ok dela:** o disco tinha zerado. Saíram as 11 worktrees da noite (todas no `master`) e 14 Postgres de teste presos, e o disco voltou a 2,3 GB. Ficaram o clone, a `-ia` e a `-lojix-modelo`, que tem a spec sem commit. Reiniciar o notebook devolve mais.
-   - **Antes (fim da tarde):**
-   - (a) Lojix só pelo botão "preview": Trama na `claude/lojix`. Quando ela terminar, subir na produção (ok dado) e rodar `./deploy/cli.sh sync farm` logo depois; esperam-se ~50 peças marcadas.
-   - (b) Preços da tabela 3 ([[2026-10-21-precos-tabela-3]]): subagente na `claude/precos-v3`. Conferir, juntar com o `master`, criar os 9 preços `_v3` na Stripe de produção e fazer o deploy, com o ok dela.
-   - O deploy da Vitrinista está liberado no modo automático (aba Auto mode do `/permissions`), mas o ok dela na conversa continua valendo.
-   - **22/10:** configurar os testes no GitHub a cada push (pedido dela, [[ideias]]).
-   - **22/10, de manhã:** fixar `NEXT_SERVER_ACTIONS_ENCRYPTION_KEY` no build da web (o servidor guarda a chave; nunca no vault). Em 21/10, depois dos deploys da noite, uma assinante recebeu "Server Action … was not found" ao pôr foto numa peça: a página aberta tinha os códigos do deploy anterior, e recarregar resolve. Com a chave fixa, os códigos ficam iguais de um deploy para outro. O deploy dessa mudança derruba uma última vez as páginas abertas, por isso fora do horário de movimento (pedido dela).
-   - **Lojix, depois:** ela confere o Catálogo e uma mensagem com o rótulo, e confirma a comissão pelo `?sc=6` ([[pendencias]]). Amanhã: ler a gravação da live (`.maestri/lojix-2026-10-21/`) para a versão automática da próxima Lojix.
-1. **Ela avisa a assinante** que já dá para apagar as linhas repetidas no exemplo (as gravadas continuam até ela apagar de novo) e confere a primeira mensagem dela num grupo. **Ela olha:** `/admin/ia` com as primeiras chamadas de verdade; a cortesia com data numa conta (a dela, sem plano desde o lançamento, é candidata). Na produção, o Curador não leu o banco nem o `.env` depois do deploy (o modo automático barrou): as migrações 0051 e 0052 foram conferidas só na cópia.
-2. **Ela confere também:** a primeira mensagem de verdade com os 10% do código num grupo; o "Conectar com código" com o celular; a assinante, o botão da Liqui.
-3. **Com ela:** cortesia na conta do número dela (sem plano desde o lançamento); o advogado (textos da IA, Privacidade de 19/10, Termos com os preços novos: eles prometem 30 dias de aviso e a troca de plano vai ao preço novo na hora; o atendimento que deixou de ser só do Atelier, também na página de vendas); o registro de atualizações no painel para as assinantes; backup externo.
-4. **Sobras:** a branch local `claude/montador-simplificado` no clone; a rotina "Estudo dos grupos" (o estudo foi feito à mão) e a "Revisor do Plano 11" (pausada); o `dev:demo --12x <parcelas>` que recusa qualquer número (só na demonstração).
+1. **Com ela:** ler [[revisar-decisoes-da-noite]]; textos do lembrete de pagamento e das Novidades; serviço de e-mail; o vídeo (trilha e a cena do preço); o primeiro cupom; ligar a Lojix automática na véspera da próxima live; o texto não enviado no terminal do Tear; ativar os avisos no celular com a conta de administração.
+2. **Técnico, sem tarefa ainda:** caminho 2 (conserto por código pela nuvem), a rever em algumas semanas; o reenvio no mesmo dia de verdade (opção A), se ela quiser.
+3. **Da fila de antes:** a chave da Stripe de teste nova está só na pasta temporária da sessão de 22/10 (some com ela); o advogado (IA, Privacidade, Termos dos preços, atendimento e agora o cupom); backup externo; reiniciar o notebook.
 
 ## Ainda por fazer, sem data
 
@@ -52,6 +34,7 @@ Atualizado em 21/10/2026, à tarde, pelo Curador, depois do deploy da Lojix. Os 
 
 ## Decisões
 
+- 22/10: [[2026-10-22-conferente-do-site]]; as da noite de 22 para 23/10 em [[revisar-decisoes-da-noite]], para ela revisar.
 - 21/10: [[2026-10-21-edicao-livre]].
 - 20/10: [[2026-10-20-atendimento-para-todas]], [[2026-10-20-precos-novos]], [[2026-10-20-edicao-no-exemplo]], [[2026-10-20-codigo-da-farm-na-mensagem]].
 - Vault separado do código; código e estado técnico só no projeto, e aqui o que não é código.
