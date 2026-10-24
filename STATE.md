@@ -2,19 +2,20 @@
 
 ## Agora
 
-Atualizado em 23/10/2026, 09h, pelo Curador, ao fechar a sessão de 22 e 23/10. Os dias estão em [[2026-10-22]] e [[2026-10-23]]; as decisões da noite, em [[revisar-decisoes-da-noite]].
+Atualizado em 23/10/2026, noite, pelo Curador, ao fechar a sessão de 23/10. O dia está em [[2026-10-23]].
 
-- **No ar** (`master` e servidor em `eb01f81`, deploy de 23/10, 07h47): botões que copiam o site (Bazar pelo menu, banner com preço, Vitrine da Semana = `ta-na-vitrine`, a loja em todo botão, "FARM Rio"); leitura de promoções que não cai inteira (reloginho pela home e pela agenda); conferente do site de hora em hora, com releitura automática da contagem, botão provisório, leitura da imagem dos banners pela IA e avisos no celular da administração ([[2026-10-22-conferente-do-site]]); cupom na assinatura; chave fixa das server actions; CI no GitHub a cada push; reenvio no mesmo dia na opção B; abas de loja no Catálogo e no Trocar; Conta > Novidades; cupom conferido peça por peça no carrinho; lembrete de pagamento abandonado (só por notificação); Lojix automática (vigia, Promoção à mão, avisos, peça apresentada nos grupos, nome da edição), **desligada** até `LOJIX_AUTOMATICA=1`.
-- **Rotinas:** Abertura (9h), Vigia da nuvem (20 min), Fechamento (21h30) e, desde 22/10, **Conferente do site** (1 h, `maestri/scripts/conferente-site.ps1`; a linha do ssh em `.maestri/servidor.txt`, fora do git).
-- **Construtores:** Trama e Tear livres. Uma sessão nova (`/clear`) a cada tarefa; o `/clear` só depois de o construtor ficar livre (`.maestri/mandar-tarefa.sh`).
-- **Vídeo de lançamento:** primeiro corte em `ferramenta-grupos-catalogo/docs/marca/video-lancamento/` (sem commit).
-- **Notebook:** ~2,6 GB livres; várias worktrees das branches da noite ficaram (todas no `master`), para limpar com o ok dela.
+- **No ar** (`master` e servidor em `cb0a0cb`, deploy de 23/10, 20h): tudo de `eb01f81` (manhã) mais o anual com desconto menor (R$ 149, 209 e 329 por mês; [[2026-10-23-anual-com-desconto-menor]]), a FARM Etc como chip das categorias ([[2026-10-23-farm-etc-no-catalogo]]) e o conserto do reloginho vazio (peça repetida no lote derrubava a busca das peças). Cupons DANI10 e FOGUETES10 na Stripe. Lojix automática segue **desligada**.
+- **Prontos, sem deploy:** lembrete por e-mail (`claude/lembrete-email`, migração 0066; espera o Zoho). Vídeo de lançamento dinâmico (sem commit, `ferramenta-grupos-catalogo/docs/marca/video-lancamento/brag-*-dinamico.mp4`).
+- **Em andamento:** Trama na Dress To, fatia 1, a "leve N" (`claude/dressto-promocoes`; [[2026-10-23-dressto-promocoes]]). Spec da FARM Etc como loja pronta (`claude/farm-etc-loja`), esperando as respostas 3 a 7 dela; a fatia 2 dela só depois da fatia 1 da Trama no `master`.
+- **Rotinas:** Abertura (9h), Vigia da nuvem (20 min), Fechamento (21h30), Conferente do site (1 h).
+- **Construtores:** Trama (worktree `-menu`) e Tear (worktrees `-trocar` e `-vitrine`, reaproveitadas). Uma sessão nova (`/clear`) a cada tarefa (`.maestri/mandar-tarefa.sh`). A memória do notebook (3,7 GB) não aguenta render de vídeo com testes rodando junto.
+- **Notebook:** disco entre 1 e 2 GB livres; apagar 6 worktrees foi barrado pelo modo automático. ElevenLabs Starter assinada; a chave está no `.env.local` da pasta do vídeo, fora do git.
 
 ## Próximo
 
-1. **Com ela:** ler [[revisar-decisoes-da-noite]]; textos do lembrete de pagamento e das Novidades; serviço de e-mail; o vídeo (trilha e a cena do preço); o primeiro cupom; ligar a Lojix automática na véspera da próxima live; o texto não enviado no terminal do Tear; ativar os avisos no celular com a conta de administração.
-2. **Técnico, sem tarefa ainda:** caminho 2 (conserto por código pela nuvem), a rever em algumas semanas; o reenvio no mesmo dia de verdade (opção A), se ela quiser.
-3. **Da fila de antes:** a chave da Stripe de teste nova está só na pasta temporária da sessão de 22/10 (some com ela); o advogado (IA, Privacidade, Termos dos preços, atendimento e agora o cupom); backup externo; reiniciar o notebook.
+1. **Com ela** ([[pendencias]], "De 23/10"): respostas 3 a 7 da FARM Etc; o exemplo de peça da assinante; o Zoho (plano e senha de app) e as 3 confirmações do lembrete; as 2 assinaturas pendentes; ver o vídeo e decidir o cabeçalho; conferir no painel os preços e o chip; ler [[revisar-decisoes-da-noite]].
+2. **Técnico:** quando a Trama entregar a fatia 1 da Dress To, subir com o ok dela (juntar com o que estiver no `master`); depois a FARM Etc como loja, em fatias; conferir no log que o próximo reloginho tem peças.
+3. **Da fila de antes:** advogado (IA, Privacidade, Termos dos preços, cupom, atendimento); backup externo; reiniciar o notebook; ligar a Lojix automática na véspera da próxima live.
 
 ## Ainda por fazer, sem data
 
@@ -34,6 +35,7 @@ Atualizado em 23/10/2026, 09h, pelo Curador, ao fechar a sessão de 22 e 23/10. 
 
 ## Decisões
 
+- 23/10: [[2026-10-23-farm-etc-no-catalogo]], [[2026-10-23-anual-com-desconto-menor]], [[2026-10-23-dressto-promocoes]].
 - 22/10: [[2026-10-22-conferente-do-site]]; as da noite de 22 para 23/10 em [[revisar-decisoes-da-noite]], para ela revisar.
 - 21/10: [[2026-10-21-edicao-livre]].
 - 20/10: [[2026-10-20-atendimento-para-todas]], [[2026-10-20-precos-novos]], [[2026-10-20-edicao-no-exemplo]], [[2026-10-20-codigo-da-farm-na-mensagem]].
