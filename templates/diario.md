@@ -4,6 +4,6 @@ data: {{date:YYYY-MM-DD}}
 ---
 # {{date:DD/MM/YYYY}}
 
-## Curador
+## Gerente
 
 ## Nuvem

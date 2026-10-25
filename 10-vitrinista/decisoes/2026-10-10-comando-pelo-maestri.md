@@ -1,7 +1,7 @@
 ---
 tipo: decisao
 data: 2026-10-10
-status: valendo
+status: substituída por [[2026-10-25-comando-pelo-openbot]]
 fonte: conversa com o Curador, 10/10/2026
 ---
 # Projeto comandado pelo Maestri, código na nuvem

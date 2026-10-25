@@ -1,6 +1,6 @@
 # Sessões na nuvem
 
-Tarefas mandadas para o Claude Code na nuvem (skill `despachar-nuvem`). Função: `construtor`, `pesquisador`, `conteudo` ou `revisor` (`maestri/papeis/`). Situação: `rodando`, `pronta` ou `falhou`.
+Tarefas mandadas para o Claude Code na nuvem (skill `despachar-nuvem`). Função: `construtor`, `pesquisador`, `conteudo` ou `revisor` (`openbot/papeis/`). Situação: `rodando`, `pronta` ou `falhou`.
 
 | Data | Função | Tarefa | Sessão | Branch | Situação | Resultado |
 |---|---|---|---|---|---|---|

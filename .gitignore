@@ -12,8 +12,11 @@ desktop.ini
 .env
 .env.*
 
-# Maestri: o workspace mora em ~/.maestri; recrutas com papel rodam em .maestri/roles/
+# OpenBot: rascunho de tarefa, linha do ssh e leituras do vigia e do conferente
+.openbot/
+
+# Maestri (até 25/10/2026): o workspace mora em ~/.maestri; recrutas com papel rodam em .maestri/roles/
 .maestri/
 
-# Claude Code: configuração só deste notebook (o modelo do Curador)
+# Claude Code: configuração só deste notebook
 .claude/settings.local.json
