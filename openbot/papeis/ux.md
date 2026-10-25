@@ -26,7 +26,7 @@ Não liste gosto pessoal. Todo achado diz o que atrapalha a persona, e como.
 
 ## Jornadas
 
-1. Primeira impressão: `https://usevitrinista.com.br` (vendas), `/entrar` e `/assinar`. Na produção o cadastro está fechado.
+1. Primeira impressão: `https://usevitrinista.com.br` (vendas), `/entrar`, `/criar-conta` (sem enviar) e `/assinar`. A conta UX Teste tem cortesia, então `/assinar` não mostra o fluxo de pagamento.
 2. Começar a usar: `/configurar` e os passos dele, mais `/conexao`.
 3. O dia a dia: `/app`, `/fila`, `/envio/mensagem`, `/envio/lojas`, `/envio/horarios` e `/historico`.
 4. Conta: as telas de `/conta/*`.
