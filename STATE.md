@@ -2,19 +2,20 @@
 
 ## Agora
 
-Atualizado em 23/10/2026, noite, pelo Curador, ao fechar a sessão de 23/10. O dia está em [[2026-10-23]].
+Atualizado em 24/10/2026, noite, pelo Curador, ao fechar a sessão de 23 e 24/10. Os dias estão em [[2026-10-23]] e [[2026-10-24]].
 
-- **No ar** (`master` e servidor em `cb0a0cb`, deploy de 23/10, 20h): tudo de `eb01f81` (manhã) mais o anual com desconto menor (R$ 149, 209 e 329 por mês; [[2026-10-23-anual-com-desconto-menor]]), a FARM Etc como chip das categorias ([[2026-10-23-farm-etc-no-catalogo]]) e o conserto do reloginho vazio (peça repetida no lote derrubava a busca das peças). Cupons DANI10 e FOGUETES10 na Stripe. Lojix automática segue **desligada**.
-- **Prontos, sem deploy:** lembrete por e-mail (`claude/lembrete-email`, migração 0066; espera o Zoho). Vídeo de lançamento dinâmico (sem commit, `ferramenta-grupos-catalogo/docs/marca/video-lancamento/brag-*-dinamico.mp4`).
-- **Em andamento:** Trama na Dress To, fatia 1, a "leve N" (`claude/dressto-promocoes`; [[2026-10-23-dressto-promocoes]]). Spec da FARM Etc como loja pronta (`claude/farm-etc-loja`), esperando as respostas 3 a 7 dela; a fatia 2 dela só depois da fatia 1 da Trama no `master`.
+- **No ar** (`master` e servidor em `81a28d26`, 24/10 noite): Dress To como a Farm (a "leve 2", frete, vitrine, banners pela IA; [[2026-10-23-dressto-promocoes]]); FARM Etc como loja própria, com categorias e lida pela home `/farm-etc` ([[2026-10-23-farm-etc-como-loja]]); seletor de lojas B; reenvio à mão da mesma peça no mesmo dia; o nome de cada promoção pela administração (`/admin/promocoes`) e pela vendedora (Mensagem, Promoções no ar), com {desconto} e {preço} e nome automático mais esperto ([[2026-10-24-texto-de-cada-promocao]]); conserto das mensagens vazias (a Evolution guarda as mensagens enviadas por 24 h; o Baileys não reenvia vazio). Lojix automática segue **desligada**.
+- **Em andamento:** Trama no código da faixa "Nome desta promoção" no editor de Mensagem (`claude/nome-no-editor`), com as cinco respostas dela. Tear livre.
+- **Prontos, sem deploy:** lembrete por e-mail (`claude/lembrete-email`; espera o Zoho; a migração 0066 precisa ir para depois da 0069). Vídeo vertical com iPhone (`brag-vertical-iphone.mp4`, sem commit).
+- **CI do GitHub parado por cobrança** desde 24/10: os construtores rodam as suítes no notebook.
 - **Rotinas:** Abertura (9h), Vigia da nuvem (20 min), Fechamento (21h30), Conferente do site (1 h).
-- **Construtores:** Trama (worktree `-menu`) e Tear (worktrees `-trocar` e `-vitrine`, reaproveitadas). Uma sessão nova (`/clear`) a cada tarefa (`.maestri/mandar-tarefa.sh`). A memória do notebook (3,7 GB) não aguenta render de vídeo com testes rodando junto.
-- **Notebook:** disco entre 1 e 2 GB livres; apagar 6 worktrees foi barrado pelo modo automático. ElevenLabs Starter assinada; a chave está no `.env.local` da pasta do vídeo, fora do git.
+- **Construtores:** Trama (worktree `-menu`) e Tear (`-vitrine`); sobram também o clone e a `-catalogo` (vídeo). As perguntas e os resultados chegam ao Curador por `maestri ask` (regra nova em `maestri/papeis/construtor.md`, 24/10). A memória do notebook (3,7 GB) não aguenta duas rodadas de teste nem render com teste.
+- **Notebook:** disco com ~5,7 GB livres depois da limpeza de 24/10; arquivo de paginação em 9,9 GB (reiniciar devolve).
 
 ## Próximo
 
-1. **Com ela** ([[pendencias]], "De 23/10"): respostas 3 a 7 da FARM Etc; o exemplo de peça da assinante; o Zoho (plano e senha de app) e as 3 confirmações do lembrete; as 2 assinaturas pendentes; ver o vídeo e decidir o cabeçalho; conferir no painel os preços e o chip; ler [[revisar-decisoes-da-noite]].
-2. **Técnico:** quando a Trama entregar a fatia 1 da Dress To, subir com o ok dela (juntar com o que estiver no `master`); depois a FARM Etc como loja, em fatias; conferir no log que o próximo reloginho tem peças.
+1. **Com ela** ([[pendencias]], "De 24/10" e "De 23/10"): pagamento do GitHub; Zoho (plano e senha de app) e as 3 confirmações do lembrete; as 2 assinaturas pendentes; o exemplo de peça da assinante da FARM Etc (talvez já resolvido pelas categorias); confirmar com a Dani que as mensagens vazias pararam; ler [[revisar-decisoes-da-noite]].
+2. **Técnico:** quando a Trama entregar a faixa do nome no editor, subir com o ok dela; renumerar a migração do lembrete por e-mail; conferir o log da limpeza das mensagens guardadas e um reloginho novo com peças.
 3. **Da fila de antes:** advogado (IA, Privacidade, Termos dos preços, cupom, atendimento); backup externo; reiniciar o notebook; ligar a Lojix automática na véspera da próxima live.
 
 ## Ainda por fazer, sem data
@@ -35,7 +36,8 @@ Atualizado em 23/10/2026, noite, pelo Curador, ao fechar a sessão de 23/10. O d
 
 ## Decisões
 
-- 23/10: [[2026-10-23-farm-etc-no-catalogo]], [[2026-10-23-anual-com-desconto-menor]], [[2026-10-23-dressto-promocoes]].
+- 24/10: [[2026-10-24-texto-de-cada-promocao]].
+- 23/10: [[2026-10-23-farm-etc-no-catalogo]], [[2026-10-23-anual-com-desconto-menor]], [[2026-10-23-dressto-promocoes]], [[2026-10-23-farm-etc-como-loja]].
 - 22/10: [[2026-10-22-conferente-do-site]]; as da noite de 22 para 23/10 em [[revisar-decisoes-da-noite]], para ela revisar.
 - 21/10: [[2026-10-21-edicao-livre]].
 - 20/10: [[2026-10-20-atendimento-para-todas]], [[2026-10-20-precos-novos]], [[2026-10-20-edicao-no-exemplo]], [[2026-10-20-codigo-da-farm-na-mensagem]].

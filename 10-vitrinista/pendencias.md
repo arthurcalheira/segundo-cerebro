@@ -102,6 +102,14 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] **Primeiro cupom da assinatura:** código, desconto, duração, planos, modos, validade e limite; o Curador cria na Stripe de produção. Fonte: conversa de 22/10. **Feito em 23/10:** DANI10 e FOGUETES10 (10% só na primeira cobrança, só no mensal, sem validade nem limite). Continua para o advogado: os Termos não falam de cupom.
 - [ ] **Texto não enviado no terminal do Tear** ("roda a suíte inteira do worker de novo"): confirmar se foi ela. Fonte: sessão de 22/10.
 
+## De 24/10
+
+- [ ] **Pagamento do GitHub Actions:** o CI parou em 24/10 à tarde ("recent account payments have failed or your spending limit needs to be increased"). Ela acerta em github.com › Settings › Billing and plans (cartão ou limite de gastos). Até lá, os construtores rodam as suítes no notebook. Fonte: entrega do Tear de 24/10.
+- [ ] **Confirmar com a Dani** (grupo "DANI ✨ COD. B962 ✨ FARM") que as mensagens vazias pararam depois do conserto de 24/10 (Evolution guardando as mensagens enviadas; Baileys sem reenvio vazio). No log, nenhuma vazia desde 12h06. Fonte: [[2026-10-24]].
+- [ ] **As chamadas sem o nome da promoção** (a conta da Dani com Bazar, Liqui e Reloginho escritos à mão; uma conta com a Liqui "{desconto} DE DESCONTO"): nelas, o nome que a administração ou a vendedora dá à promoção não sai. Ficaram como estão (decisão dela); se quiser, avisar a Dani. Fonte: [[2026-10-24]].
+- [ ] **Reiniciar o notebook** com os construtores parados: o arquivo de paginação está em 9,9 GB e a memória ficou no limite o dia todo. Fonte: [[2026-10-24]].
+- [ ] **Vídeo vertical com iPhone** (`ferramenta-grupos-catalogo/docs/marca/video-lancamento/brag-vertical-iphone.mp4`, cabeçalho de Reloginho): assistir com som e publicar; o horizontal continua no corte antigo. Fonte: [[2026-10-24]].
+
 ## De 23/10
 
 - [x] **Respondido em 23/10, noite** ([[2026-10-23-farm-etc-como-loja]]), inclusive a comissão (a mesma da Farm). Texto de antes: **FARM Etc como loja (subdivisão da Farm, sem contar no limite do plano; decidido por ela):** responder as perguntas 3 a 7 da spec (`claude/farm-etc-loja`, `docs/superpowers/specs/2026-10-23-farm-etc-loja-design.md`): quem já tem a Farm ganha a FARM Etc ligada; espaço na fila; se os 10% do código valem na FARM Etc (hoje a mensagem promete); copiar os textos próprios da Farm; o seletor de lojas (recomendado o B). E confirmar que a comissão na FARM Etc é a mesma da Farm. Fonte: conversa de 23/10.

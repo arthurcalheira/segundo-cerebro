@@ -8,10 +8,12 @@ Pedido de 18/10: DM no Instagram para vender a assinatura, não para dar cortesi
 
 ## O que dá para vender hoje (e o que não)
 
-- Lojas: **Farm e Dress To**. Renner, Riachuelo e C&A não estão no produto: vendedora que vive de varejo fica fora por enquanto.
-- Teste grátis de 7 dias no cartão, com os recursos do Maison. Não há campo de cupom (está na fila do construtor): **sem desconto exclusivo de DM** até ele existir. A alavanca de preço é o anual.
-- Planos: Essencial R$ 59,90 (R$ 30 no anual), 1 grupo, 1 loja, 30 envios por dia, modelo pronto. **Maison** R$ 99,90 (R$ 49 no anual), 1 número, até 3 grupos, as 2 lojas, sem teto, mensagem montada pela IA a partir das ofertas dela, foto própria. **Atelier** R$ 179,90 (R$ 99 no anual), 3 números, vitrine própria em cada um, atendimento direto.
-- O que dá para afirmar: escolhe as peças pelas regras dela, link com o código dela, envia nos horários dela, ela aprova a fila, peça esgotada não sai (estoque conferido a cada 15 min e antes do envio), Liqui e Bazar da Farm lidos sozinhos, app no celular com avisos.
+**Atualizado em 24/10/2026** (preços de [[2026-10-23-anual-com-desconto-menor]] e o produto no ar em `a69e598e`). As versões de 18/10 tinham outros preços e recursos: não use números antigos.
+
+- Lojas: **FARM Rio, FARM Etc** (loja própria dentro da Farm, com categorias como copos, bolsas e papelaria; não conta como loja a mais no plano) **e Dress To**. Renner, Riachuelo e C&A não estão no produto: vendedora que vive de varejo fica fora por enquanto.
+- Teste grátis de 7 dias no cartão. Há campo de cupom na assinatura (DANI10 e FOGUETES10: 10% na primeira cobrança do mensal); um cupom próprio para a prospecção, se ela quiser, o Curador cria na hora.
+- Preços (mensal / anual por mês): Essencial R$ 179,90 / R$ 149; **Maison** R$ 279,90 / R$ 209; Atelier R$ 399,90 / R$ 329. Conferir em `ferramenta-grupos/packages/core/src/billing/plans.ts` antes de citar.
+- O que dá para afirmar: escolhe as peças pelas regras dela; link com o código dela; envia nos horários dela; ela aprova a fila e pode mandar de novo à mão a peça que já saiu; peça esgotada não sai; as promoções do site entram sozinhas (reloginho, Liqui, Bazar, ação relâmpago, a "leve 2" da Dress To com o preço conferido no carrinho); ela dá o nome que quiser a cada promoção (com {desconto} e {preço}); foto dela usando a peça no lugar da foto da loja; app no celular com avisos.
 - O que não dá: resultado de venda, número de assinantes, depoimento ("prova real ou nenhuma"). Nada que cite a criadora ([[2026-10-11-criadora-sem-ligacao-publica]]): a DM sai do @ da marca, nunca do perfil dela.
 
 ## Quem pesquisar
@@ -114,12 +116,28 @@ A primeira leva saiu de um WhatsApp pessoal, com foto e nome de quem mandou. Nes
 
 Se ela disser que sim, segue a DM 2, com a troca abaixo: sem o vídeo, o fim vira "Quer que eu te mostre como fica no seu grupo?". Depois vem a DM 3.
 
+### Sequência pelo WhatsApp revista (24/10)
+
+O que acontecia (relato dela, 24/10): "bom dia" → "posso tirar uma dúvida?" → "é você que manda os links no grupo?" → "demora muito?" e só depois a apresentação. Muitas não respondiam ou sumiam depois da apresentação. Leitura do Curador: perguntas demais antes de dizer quem é e por quê; de número desconhecido, parece pesquisa ou golpe. Não medido: é a explicação mais provável.
+
+Regras: dizer quem é e o motivo na primeira mensagem; uma pergunta só, que se responde com "sim"; mostrar (o vídeo) em vez de explicar; no máximo um lembrete; poucas por dia e texto variado.
+
+> **1ª:** Oi, [nome]! Aqui é a [seu nome], da Vitrinista 😊 Vi o seu grupo de ofertas da Farm. A gente criou uma ferramenta que monta e manda as ofertas no grupo sozinha, já com o seu código no link. Posso te mandar um vídeo de 30 segundos mostrando como fica?
+
+> **Se ela disser sim:** [vídeo de lançamento vertical] + Hoje você monta as ofertas uma por uma, na mão?
+
+> **Depois da resposta:** a DM 2 acima, curta, e o teste de 7 dias com a oferta de ajuda para configurar.
+
+> **Lembrete (2 ou 3 dias sem resposta, uma vez):** Oi, [nome]! Conseguiu ver? Se quiser, eu deixo o seu grupo rodando no teste de 7 dias, sem pagar nada, e você vê na prática. Se não for agora, tudo bem 😊
+
+**Áudio:** não como primeira mensagem (de desconhecido incomoda e muitas não ouvem na hora). Bom como segundo passo, depois que ela respondeu: 30 a 40 s, tom de conversa, para explicar ou tirar dúvida. Uma saída: "posso te mandar um áudio rapidinho explicando?".
+
 ## Objeções
 
 | Ela diz | Resposta |
 |---|---|
 | "Meu número pode ser bloqueado?" | Dizer às claras: a conexão não é a oficial do WhatsApp e há risco; recomendamos um número só para o grupo; o sistema espera no mínimo 3 minutos entre mensagens. |
-| "Tá caro" | O anual: Maison sai R$ 49 por mês. Comparar com as horas por dia que ela mesma disse na DM 1. |
+| "Tá caro" | O anual: Maison sai R$ 209 por mês (24/10). Comparar com as horas por dia que ela mesma disse na DM 1. |
 | "Vai parecer robô" | A mensagem sai no formato dela, a partir das ofertas que ela já manda, e ela aprova a fila antes. |
 | "Já uso outra ferramenta" | Perguntar o que falta nela; mostrar Liqui e Bazar automáticos, estoque e o formato dela. |
 | "Vendo mais Renner e C&A" | Hoje são Farm e Dress To. Anotar na planilha: é sinal para as próximas lojas. |
