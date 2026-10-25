@@ -19,7 +19,7 @@ Criados em 25/10, na seção "Vitrinista" da barra lateral, todos na conta Claud
 | **Engenharia** (construtor) | Opus 5.5 | worktree `claude code\ferramenta-grupos-menu` | Um plano de código por vez. Papel: `openbot/papeis/construtor.md`. Um segundo construtor, se houver, ganha outro nome funcional |
 | **QA** | Opus 5.5 | worktree `claude code\ferramenta-grupos-vitrine` | Revisa e testa o que a Engenharia entregou, só em plano grande ou sensível. Nunca corrige. Papel: `openbot/papeis/revisor.md` |
 | **Infra** | Haiku 5.5 | pasta própria do OpenBot; roda os scripts de `openbot/scripts/` | Só leitura: Vigia da nuvem, Conferente do site e Saúde do servidor. Quando um script acha algo, avisa o Gerente |
-| **UX** | Sonnet 5.5 | pasta própria do OpenBot; navegador do OpenBot na cópia de teste | Usa o site como a cliente e aponta o que confunde ou pesa. Escreve só em `10-vitrinista/ux/backlog.md`. Papel: `openbot/papeis/ux.md` |
+| **UX** | Sonnet 5.5 | pasta própria do OpenBot; navegador do OpenBot na produção, com a conta "UX Teste" | Usa o site como a cliente e aponta o que confunde ou pesa. Escreve só em `10-vitrinista/ux/backlog.md`. Papel: `openbot/papeis/ux.md` |
 | Sessão na nuvem | — | GitHub | Plano grande demais para o notebook, ou pesquisador e conteúdo. Skill `despachar-nuvem` |
 
 A worktree `-catalogo` (vídeo) sobrou do Maestri, sem agente.
@@ -45,7 +45,7 @@ Cada execução abre uma sessão nova, sem a conversa: a instrução de cada rot
 | Conferente do site | a cada 1 h | Roda `openbot/scripts/conferente-site.ps1` (lê `./deploy/cli.sh site:conferir` no servidor, com a linha do ssh em `.openbot/servidor.txt`). Saída 0: divergência nova; o Gerente confere e manda o conserto ao construtor ([[2026-10-22-conferente-do-site]]); subir ao ar, só com o seu ok |
 | Saúde do servidor | todo dia às 8h30 | Roda `openbot/scripts/saude-servidor.ps1` (só leitura: containers, disco, linhas de erro do worker e da web em 24 h). Saída 0: algo fora do normal; o Gerente diagnostica e diz a ela |
 | Fechamento | todo dia às 21h30 | Skill `fechar-sessao` |
-| Varredura semanal de UX | segunda, 9h30 | No agente UX: uma jornada por semana, em rodízio, na cópia de teste. Achado novo vai ao backlog e ao Gerente; sem achado, nada. Depois de cada deploy na cópia, o Gerente pede a ele as telas que mudaram |
+| Varredura semanal de UX | segunda, 9h30 | No agente UX: uma jornada por semana, em rodízio, na produção. Achado novo vai ao backlog e ao Gerente; sem achado, nada. Depois de cada deploy, o Gerente pede a ele as telas que mudaram |
 
 Diferente do Maestri: lá o `--pre-run` barrava o disparo sem gastar token. No OpenBot não há esse filtro; a rotina sempre abre uma sessão curta, roda o script e para. Por isso Vigia e Conferente ficam na Infra, no Haiku, e o Vigia roda a cada 30 min (48 vezes por dia) em vez de 20.
 
