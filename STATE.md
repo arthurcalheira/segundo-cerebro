@@ -2,10 +2,10 @@
 
 ## Agora
 
-Atualizado em 24/10/2026, noite, pelo Curador, ao fechar a sessão de 23 e 24/10. Os dias estão em [[2026-10-23]] e [[2026-10-24]].
+Atualizado em 25/10/2026, madrugada, pelo Curador, ao fechar a sessão de 23 a 25/10. Os dias estão em [[2026-10-23]], [[2026-10-24]] e [[2026-10-25]].
 
-- **No ar** (`master` e servidor em `81a28d26`, 24/10 noite): Dress To como a Farm (a "leve 2", frete, vitrine, banners pela IA; [[2026-10-23-dressto-promocoes]]); FARM Etc como loja própria, com categorias e lida pela home `/farm-etc` ([[2026-10-23-farm-etc-como-loja]]); seletor de lojas B; reenvio à mão da mesma peça no mesmo dia; o nome de cada promoção pela administração (`/admin/promocoes`) e pela vendedora (Mensagem, Promoções no ar), com {desconto} e {preço} e nome automático mais esperto ([[2026-10-24-texto-de-cada-promocao]]); conserto das mensagens vazias (a Evolution guarda as mensagens enviadas por 24 h; o Baileys não reenvia vazio). Lojix automática segue **desligada**.
-- **Em andamento:** Trama no código da faixa "Nome desta promoção" no editor de Mensagem (`claude/nome-no-editor`), com as cinco respostas dela. Tear livre.
+- **No ar** (`master` e servidor em `17300e9d`, 25/10, 2h): a **mensagem por promoção** (um editor só: a mensagem geral, com a linha da promoção automática, e a mensagem própria de cada promoção; sem as abas por tipo nem a troca só do nome; [[2026-10-24-texto-de-cada-promocao]]). Antes, em `81a28d26` (24/10 noite): Dress To como a Farm (a "leve 2", frete, vitrine, banners pela IA; [[2026-10-23-dressto-promocoes]]); FARM Etc como loja própria, com categorias e lida pela home `/farm-etc` ([[2026-10-23-farm-etc-como-loja]]); seletor de lojas B; reenvio à mão da mesma peça no mesmo dia; o nome de cada promoção pela administração (`/admin/promocoes`) e pela vendedora (Mensagem, Promoções no ar), com {desconto} e {preço} e nome automático mais esperto ([[2026-10-24-texto-de-cada-promocao]]); conserto das mensagens vazias (a Evolution guarda as mensagens enviadas por 24 h; o Baileys não reenvia vazio). Lojix automática segue **desligada**.
+- **Em andamento:** nada; Trama e Tear livres. A faixa do nome (24/10) e o título da Novidade subiram e depois foram substituídos pela mensagem por promoção.
 - **Prontos, sem deploy:** lembrete por e-mail (`claude/lembrete-email`; espera o Zoho; a migração 0066 precisa ir para depois da 0069). Vídeo vertical com iPhone (`brag-vertical-iphone.mp4`, sem commit).
 - **CI do GitHub parado por cobrança** desde 24/10: os construtores rodam as suítes no notebook.
 - **Rotinas:** Abertura (9h), Vigia da nuvem (20 min), Fechamento (21h30), Conferente do site (1 h).
@@ -15,7 +15,7 @@ Atualizado em 24/10/2026, noite, pelo Curador, ao fechar a sessão de 23 e 24/10
 ## Próximo
 
 1. **Com ela** ([[pendencias]], "De 24/10" e "De 23/10"): pagamento do GitHub; Zoho (plano e senha de app) e as 3 confirmações do lembrete; as 2 assinaturas pendentes; o exemplo de peça da assinante da FARM Etc (talvez já resolvido pelas categorias); confirmar com a Dani que as mensagens vazias pararam; ler [[revisar-decisoes-da-noite]].
-2. **Técnico:** quando a Trama entregar a faixa do nome no editor, subir com o ok dela; renumerar a migração do lembrete por e-mail; conferir o log da limpeza das mensagens guardadas e um reloginho novo com peças.
+2. **Técnico:** a Dani: aviso pessoal (texto pronto em [[2026-10-24]]) e, com o sim dela, `message:abas <email>` (primeiro sem `--aplicar`); os 8 pontos pequenos adiados da mensagem por promoção (no `STATE.md` do projeto), se ela quiser; renumerar a migração do lembrete por e-mail para depois da 0070; conferir a limpeza das mensagens guardadas e um reloginho novo com peças.
 3. **Da fila de antes:** advogado (IA, Privacidade, Termos dos preços, cupom, atendimento); backup externo; reiniciar o notebook; ligar a Lojix automática na véspera da próxima live.
 
 ## Ainda por fazer, sem data
