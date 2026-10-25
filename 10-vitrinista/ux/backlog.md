@@ -9,7 +9,7 @@ Status: `aberto` → `aprovado` → `mandado` → `resolvido`, ou `descartado (m
 | Jornada | Última varredura |
 |---|---|
 | 1. Primeira impressão | 2026-10-25 (parcial: `/assinar` não avaliável com a conta de cortesia) |
-| 2. Começar a usar | — |
+| 2. Começar a usar | 2026-10-25 |
 | 3. O dia a dia | — |
 | 4. Conta | — |
 
