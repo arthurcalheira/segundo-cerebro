@@ -66,35 +66,35 @@ Nota de medição: `set_environment` com 390 de largura rendeu 375 px de área �
 - Critério: toque (44 px)
 - Conserto sugerido: dar área de toque de 44 px a esses links (padding vertical), sem mudar o texto.
 
-### UX-008 · alta · aberto
+### UX-008 · alta · mandado (Engenharia, 25/10)
 - Tela: `/configurar/mensagem` (passo 4 de 5), desktop (1366)
 - Visto: 2026-10-25
 - O que atrapalha: a tela quebra. A coluna do assistente tem 408 px, mas ela tenta mostrar duas colunas: os cartões "Tenho mensagens que já mandei" e "Ainda não tenho" ficam espremidos em 115 px de largura (texto em 3 a 5 palavras por linha) e a Prévia (384 px) cai por cima deles. O título "Como você quer começar?" se sobrepõe a "Prévia". Medido: cartões em `left` 472, Prévia em `left` 496. Quem abre o assistente no computador não consegue ler nem escolher com segurança. No celular a tela está certa.
 - Critério: hierarquia, clareza de ação
 - Conserto sugerido: nessa tela, uma coluna só (cartões em cima, Prévia embaixo) em qualquer largura, como já é no celular.
 
-### UX-009 · média · aberto
+### UX-009 · média · mandado (Engenharia, 25/10)
 - Tela: `/configurar/whatsapp` (passo 5 de 5, "Tudo pronto para conectar"), celular (390)
 - Visto: 2026-10-25
 - O que atrapalha: o resumo põe ✓ verde nas quatro linhas e diz "Tudo pronto", mas a primeira diz "Lojas: Nenhuma marcada". Sem loja não sai peça nenhuma. A cliente que pulou o passo 1 lê que está tudo certo. Outra linha diz "cerca de 32 peças por dia" quando o passo 2 oferecia 10, 20, 30 ou 40 (padrão 30): a conta não bate com o que ela escolheu.
 - Critério: heurística (status do sistema, consistência)
 - Conserto sugerido: ✓ só no que foi respondido; "Lojas: nenhuma marcada" com aviso (cor de atenção) e título "Falta escolher as lojas" em vez de "Tudo pronto"; mostrar "30 peças por dia" igual ao botão escolhido.
 
-### UX-010 · média · aberto
+### UX-010 · média · mandado (Engenharia, 25/10)
 - Tela: `/conexao`, sem número conectado, celular (390) e desktop (1366)
 - Visto: 2026-10-25
 - O que atrapalha: a única coisa a fazer na tela é marcar a caixa do termo de riscos. Mesmo assim o "Como funciona" tem 5 passos (cerca de 140 palavras) que falam de botões que ainda não existem na tela ("Conectar com código", "Conectar por QR", "Também enviar", "Adicionar número") e do envio automático. O passo 5 manda "ligar o envio nas horas de atuação das Regras", mas o menu não tem "Regras" (tem "Lojas e seções" e "Horários e ritmo").
 - Critério: densidade, texto (linguagem da cliente)
 - Conserto sugerido: no estado sem número, mostrar só o passo 1 e, depois de conectar, os seguintes; trocar "Regras" pelo nome real do menu.
 
-### UX-011 · baixa · aberto
+### UX-011 · baixa · mandado (Engenharia, 25/10)
 - Tela: `/conexao`, rodapé, celular (390) e desktop (1366)
 - Visto: 2026-10-25
 - O que atrapalha: "Esta plataforma usa a Evolution API para se conectar ao WhatsApp." A cliente não sabe o que é Evolution API; a frase só preocupa logo ao lado do aviso de bloqueio de número.
 - Critério: texto (palavra técnica)
 - Conserto sugerido: tirar a frase da tela da cliente (deixar nos Termos) ou trocar por "A conexão com o WhatsApp não é oficial", que já está no aviso acima.
 
-### UX-012 · baixa · aberto
+### UX-012 · baixa · aberto (rodada de acabamento)
 - Tela: `/configurar/*` (passos 1 a 5), celular (390)
 - Visto: 2026-10-25
 - O que atrapalha: (a) os links "Mudar" do resumo têm 47×24 px, abaixo dos 44 px de toque; (b) os botões 10/20/30/40 do passo 2 têm 42 px de altura; (c) no passo 2 a barra fixa de baixo (125 px, Continuar + Voltar + Pular) cobre "Quantas peças por dia?", a segunda pergunta, na primeira tela; (d) no passo 4 o Continuar fica no meio da página, abaixo dos cartões, e a barra fixa só tem Voltar e Pular; nos outros passos o Continuar está na barra. A cliente procura o botão em lugares diferentes.
