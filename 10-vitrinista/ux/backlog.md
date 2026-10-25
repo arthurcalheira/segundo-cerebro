@@ -24,7 +24,7 @@ Nota de medição: `set_environment` com 390 de largura rendeu 375 px de área �
 - Critério: heurística (prevenção de erro, linguagem da cliente), texto
 - Conserto sugerido: no cartão do plano, junto do preço, uma linha curta dizendo que o 12x é compromisso de 12 meses (com o link do termo); mostrar o desconto real de cada plano em vez de "até 25%"; subir a etiqueta e o desconto para pelo menos 14 px.
 
-### UX-002 · alta · esperando a dona: o FAQ diverge dos Termos no cancelamento do anual à vista
+### UX-002 · alta · mandado (Engenharia, 25/10): FAQ alinhado aos Termos
 - Tela: vendas, seção Perguntas, celular (390) e desktop (1366)
 - Visto: 2026-10-25
 - O que atrapalha: o subtítulo do FAQ diz "Textos de exemplo; os termos definitivos entram com os documentos legais." e logo abaixo as respostas falam de multa de 20%, reembolso em 7 dias e cancelamento. A cliente não sabe se vale o que leu e a dúvida chega bem na hora de pôr o cartão.
