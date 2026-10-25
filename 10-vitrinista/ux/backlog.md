@@ -17,14 +17,14 @@ Nota de medição: `set_environment` com 390 de largura rendeu 375 px de área �
 
 ## Achados
 
-### UX-001 · alta · mandado (Engenharia, 25/10)
+### UX-001 · alta · feito na branch `claude/ux-primeira-impressao` (falta deploy)
 - Tela: vendas (`usevitrinista.com.br`), seção Planos, celular (390) e desktop (1366)
 - Visto: 2026-10-25
 - O que atrapalha: o plano vem com "Anual" marcado e o preço grande diz "R$ 149 por mês". Quem lê só o número entende que paga por mês, sem prazo. O compromisso de 12 meses e a multa de 20% das parcelas que faltam só aparecem na 4ª pergunta do FAQ (fechada) e no link "Compromisso do 12x" do rodapé. O desconto do seletor diz "até 25%", mas dois dos três planos dão 17%. A etiqueta "ANUAL" e o "até 25% de desconto" estão em 13 px.
 - Critério: heurística (prevenção de erro, linguagem da cliente), texto
 - Conserto sugerido: no cartão do plano, junto do preço, uma linha curta dizendo que o 12x é compromisso de 12 meses (com o link do termo); mostrar o desconto real de cada plano em vez de "até 25%"; subir a etiqueta e o desconto para pelo menos 14 px.
 
-### UX-002 · alta · mandado (Engenharia, 25/10)
+### UX-002 · alta · esperando a dona: o FAQ diverge dos Termos no cancelamento do anual à vista
 - Tela: vendas, seção Perguntas, celular (390) e desktop (1366)
 - Visto: 2026-10-25
 - O que atrapalha: o subtítulo do FAQ diz "Textos de exemplo; os termos definitivos entram com os documentos legais." e logo abaixo as respostas falam de multa de 20%, reembolso em 7 dias e cancelamento. A cliente não sabe se vale o que leu e a dúvida chega bem na hora de pôr o cartão.
@@ -52,14 +52,14 @@ Nota de medição: `set_environment` com 390 de largura rendeu 375 px de área �
 - Critério: heurística (controle do usuário, saída de erro), clareza de ação
 - Conserto sugerido: recuperação de senha por link no e-mail; enquanto isso não existe, oferecer também o WhatsApp do atendimento nessa linha.
 
-### UX-006 · média · mandado (Engenharia, 25/10)
+### UX-006 · média · feito na branch `claude/ux-primeira-impressao` (falta deploy)
 - Tela: botões "Começar teste grátis" da vendas e `/criar-conta`, celular (390)
 - Visto: 2026-10-25
 - O que atrapalha: todos os botões da vendas dizem "Começar teste grátis de 7 dias · Teste de 7 dias no cartão. Nada é cobrado hoje" e levam a `/criar-conta` (os dos planos com `?plano=essencial|maison|atelier`). Essa tela se chama só "Criar conta", com o subtítulo "A sua vitrine no WhatsApp, arrumada todo dia." (a vendas usa outra frase: "Pare de montar cada mensagem do seu grupo de ofertas."). Ela não repete a promessa do teste, não diz em que momento o cartão entra nem mostra que plano foi escolhido (não conferi o plano: a aba logada redireciona a URL com `?plano=`).
 - Critério: heurística (consistência, status do sistema), texto
 - Conserto sugerido: repetir no topo do formulário "Teste de 7 dias, nada é cobrado hoje" e o plano escolhido; usar a mesma frase de promessa nas duas telas. Conferir antes se o cadastro está mesmo fechado em produção (o papel diz que sim, mas o formulário aparece completo; não enviei).
 
-### UX-007 · baixa · mandado (Engenharia, 25/10)
+### UX-007 · baixa · feito na branch `claude/ux-primeira-impressao` (falta deploy)
 - Tela: `/entrar`, `/criar-conta` e vendas (rodapé), celular (390)
 - Visto: 2026-10-25
 - O que atrapalha: links dentro de frase têm 15 px de fonte e 20 px de altura, abaixo dos 44 px de toque: "Criar conta" em `/entrar` (76×20), "Entrar" em `/criar-conta` (42×20), o e-mail de contato (195×20) e o logo do topo da vendas (96×36). Na hora de errar o dedo, a cliente abre a tela errada.
