@@ -110,6 +110,13 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [ ] **Reiniciar o notebook** com os construtores parados: o arquivo de paginação está em 9,9 GB e a memória ficou no limite o dia todo. Fonte: [[2026-10-24]].
 - [ ] **Vídeo vertical com iPhone** (`ferramenta-grupos-catalogo/docs/marca/video-lancamento/brag-vertical-iphone.mp4`, cabeçalho de Reloginho): assistir com som e publicar; o horizontal continua no corte antigo. Fonte: [[2026-10-24]].
 
+## De 25/10
+
+- [x] **Liberar o disco do notebook (bloqueia tudo):** feito em 25/10, 22h15 (3,77 GB livres); UX-023 no ar em `1393c2dc`. Antes: 0 MB livres desde 25/10, 20h55. Ok para apagar ~3,3 GB que voltam sozinhos: `.next` das worktrees `-menu` (2,2 GB) e `-vitrine` (0,6 GB), o instalador do WSL na pasta temporária (0,35 GB) e perfis temporários do Edge dos testes (~0,2 GB). Depois o Gerente desfaz o merge pela metade na cópia principal e sobe a UX-023 (ok dela já dado). Combinar com a Engenharia apagar o `.next` ao fim de cada tarefa. Fonte: conversa de 25/10.
+- [ ] **Salvar no Vault do OpenBot as duas senhas da cópia de teste** (página de entrada e conta `dev@local`, arquivos em `.openbot/`), para o UX entrar sem ela. Fonte: conversa de 25/10.
+- [ ] **Nome e link do painel da multimarca** para a tela de códigos (UX-018, já no ar sem eles). Mesmo item de 10/10, acima. Fonte: conversa de 25/10.
+- [ ] **Olhar a página de vendas no celular** depois dos ajustes de UX de 25/10 (FAQ igual aos Termos, compromisso do anual, "17% a 25%"). Fonte: conversa de 25/10.
+
 ## De 23/10
 
 - [x] **Respondido em 23/10, noite** ([[2026-10-23-farm-etc-como-loja]]), inclusive a comissão (a mesma da Farm). Texto de antes: **FARM Etc como loja (subdivisão da Farm, sem contar no limite do plano; decidido por ela):** responder as perguntas 3 a 7 da spec (`claude/farm-etc-loja`, `docs/superpowers/specs/2026-10-23-farm-etc-loja-design.md`): quem já tem a Farm ganha a FARM Etc ligada; espaço na fila; se os 10% do código valem na FARM Etc (hoje a mensagem promete); copiar os textos próprios da Farm; o seletor de lojas (recomendado o B). E confirmar que a comissão na FARM Etc é a mesma da Farm. Fonte: conversa de 23/10.

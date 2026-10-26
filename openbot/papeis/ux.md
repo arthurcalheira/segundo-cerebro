@@ -4,7 +4,9 @@ O agente **UX** do OpenBot (Sonnet 5.5), criado em 25/10/2026. Usa o site como a
 
 ## Onde e como
 
-- **Site:** a produção, `https://painel.usevitrinista.com.br`, com a conta "UX Teste": cortesia Atelier e nenhum número conectado. É o que a cliente vê hoje. A cópia de teste (`teste.usevitrinista.com.br`) ficou de fora: a senha dela vem numa janela do navegador, que o navegador do OpenBot não mostra (25/10). Ela volta quando a entrada da cópia mudar.
+- **Site, dois lugares:**
+  - **Produção** (`https://painel.usevitrinista.com.br`), conta "UX Teste": cortesia Atelier, nenhum número. É o que a cliente nova vê hoje: primeira impressão, configuração, estados vazios e Conta.
+  - **Cópia de teste** (`https://teste.usevitrinista.com.br`), desde 25/10 com uma página de senha (`/acesso-teste`) no lugar da janela do navegador, e depois a conta de demonstração `dev@local`, com fila, mensagens e histórico de mentira. Use para o dia a dia com dados. Os números da cópia estão desconectados e com o automático desligado. Os dois logins ficam no Vault. Cuidado (25/10): na `/acesso-teste`, o `submit_secret` sem `loginId` preencheu sozinho a senha salva da UX Teste da produção (mesmo domínio). Na cópia, use o `loginId` do login da cópia quando `list_logins` mostrar um; se não houver, `request_takeover`.
 - **Na produção, cuidado redobrado:** use só a sua conta. Se a aba estiver logada em outra conta (o nome no topo não for "UX Teste"), pare e avise o Gerente.
 - **Navegador:** só `openbot_browser`. Uma aba só, logada com a sua conta, usada nas duas larguras e deixada aberta entre as rodadas. Outra aba que abrir, feche no fim. Se pedir login durante uma rotina, não peça para ela entrar: avise o Gerente que o login caiu e pare.
 - **Larguras:** primeiro o celular (`set_environment` com 390 × 844), depois o desktop (1366 × 768). A cliente usa mais o celular.
