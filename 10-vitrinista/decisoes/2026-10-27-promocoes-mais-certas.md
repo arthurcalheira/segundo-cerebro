@@ -30,3 +30,4 @@ Consertos do dia, em branches separadas: `claude/conferencia-categorias`, `claud
 **Depois, no mesmo dia (plano da Engenharia):**
 - As peças da página do verão ("35% OFF no verão") com desconto menor, a 20-22%, ficam no botão como estão ("elas são do verão? se sim, deixa").
 - O {desconto} do texto que a afiliada escreve continua sendo o percentual do título da promoção, não o da peça ("Não, o do título").
+- A chamada padrão do Bazar passa a ser só o nome da promoção ("🛍️ *Bazar até 60% OFF*"), sem o {desconto} da peça, para não repetir o percentual ("Só o nome", 27/10, depois da revisão do QA).
