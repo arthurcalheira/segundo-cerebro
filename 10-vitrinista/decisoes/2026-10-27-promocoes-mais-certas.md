@@ -26,3 +26,7 @@ Consertos do dia, em branches separadas: `claude/conferencia-categorias`, `claud
 **Por quê:** a mensagem que chega às assinantes não pode dizer um percentual que as peças não têm. E o botão "Mostrar às assinantes" deve aparecer menos e quase sempre certo.
 
 **Spec:** `/var/lib/openbot/OpenBot/Shared/gerente/spec-promocoes-mais-certas.md` (no servidor do OpenBot). A Engenharia a copia para `docs/superpowers/specs/` do projeto ao fazer o plano.
+
+**Depois, no mesmo dia (plano da Engenharia):**
+- As peças da página do verão ("35% OFF no verão") com desconto menor, a 20-22%, ficam no botão como estão ("elas são do verão? se sim, deixa").
+- O {desconto} do texto que a afiliada escreve continua sendo o percentual do título da promoção, não o da peça ("Não, o do título").
