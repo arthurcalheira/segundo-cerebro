@@ -18,6 +18,8 @@ fonte: conversa de 27/10, noite ("mudança urgente aqui na questão dos planos";
    - Quem assina na Black Friday mantém o preço enquanto a assinatura durar, pela regra de 20/10.
    - Os preços `_v4` foram criados na Stripe pelo Gerente em 27/10.
 3. **Oferta verdadeira:** a página não mostra "de R$ X por R$ Y" com o preço de hoje como "de", porque ele quase não foi praticado. A mensagem é a do prazo e da garantia do preço. O visual de Black Friday some sozinho depois de 30/11.
-4. **Cupom de adesão DANI3:** 30% nas 3 primeiras cobranças do mensal, nos três planos, por código, somando com os 7 dias grátis. Criado na Stripe em 27/10.
+4. **Cupom de adesão DANI3:** 30% nas 3 primeiras cobranças do mensal, nos três planos, por código, somando com os 7 dias grátis. Criado na Stripe em 27/10. Divulgar só depois do deploy dos planos (antes disso, incide sobre a tabela 3).
+5. **Quem já assina:** os grupos parados só pelo limite antigo voltam a enviar sozinhos na primeira subida depois do deploy ("voltam a enviar sozinhos"). O aviso de Novidades, aprovado por ela ("o texto está bom"): "Mais no Essencial e no Maison: o Essencial agora usa as suas fotos nas mensagens, envia em até 3 grupos por número e não tem mais o limite de peças por dia. O Maison vai a 5 grupos por número. Os grupos que estavam parados pelo limite voltaram a receber."
+6. **Visual:** faixa e tag "BLACK FRIDAY" nas cores da marca, com animação leve ("o design está ok"). O texto diz "o Essencial por R$ 119,90 por mês", porque o valor só vale para o Essencial mensal.
 
 **Por quê:** baixar o preço com um motivo e um prazo reais, sem prometer desconto que não existe (CDC e Procon), e usando a regra das tabelas que já existe.

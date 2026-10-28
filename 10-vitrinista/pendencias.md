@@ -110,6 +110,13 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [ ] **Reiniciar o notebook** com os construtores parados: o arquivo de paginação está em 9,9 GB e a memória ficou no limite o dia todo. Fonte: [[2026-10-24]].
 - [ ] **Vídeo vertical com iPhone** (`ferramenta-grupos-catalogo/docs/marca/video-lancamento/brag-vertical-iphone.mp4`, cabeçalho de Reloginho): assistir com som e publicar; o horizontal continua no corte antigo. Fonte: [[2026-10-24]].
 
+## De 27/10
+
+- [ ] **Trocar uma chave interna do painel** (28/10, de manhã, com ela; o detalhe fica na conversa, fora do vault). Ela roda os comandos de root que o Gerente manda prontos, antes e depois de um deploy; quem estiver com o painel aberto vê "recarregue a página" uma vez. Fonte: conversa de 27/10.
+- [ ] **Divulgar o cupom DANI3** (`/assinar?cupom=DANI3`) só depois do deploy dos planos. A tela de assinar com o cupom não foi vista: conferido pela mesma validação que a tela chama e pela Stripe. Fonte: conversa de 27/10.
+- [ ] **Conta de teste sem plano na produção**, criada pelo Gerente em 27/10 com o ok dela para ver o cupom (não usada: a senha teria de ser digitada em texto aberto no navegador). Não há comando para apagar conta; fica parada, sem plano. Fonte: conversa de 27/10.
+- [ ] **Ver os Termos novos (versão 27/10) antes do deploy dos planos:** o Gerente mostra o trecho antes e depois. Fonte: conversa de 27/10.
+
 ## De 25/10
 
 - [x] **Liberar o disco do notebook (bloqueia tudo):** feito em 25/10, 22h15 (3,77 GB livres); UX-023 no ar em `1393c2dc`. Antes: 0 MB livres desde 25/10, 20h55. Ok para apagar ~3,3 GB que voltam sozinhos: `.next` das worktrees `-menu` (2,2 GB) e `-vitrine` (0,6 GB), o instalador do WSL na pasta temporária (0,35 GB) e perfis temporários do Edge dos testes (~0,2 GB). Depois o Gerente desfaz o merge pela metade na cópia principal e sobe a UX-023 (ok dela já dado). Combinar com a Engenharia apagar o `.next` ao fim de cada tarefa. Fonte: conversa de 25/10.
