@@ -112,10 +112,14 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 
 ## De 27/10
 
-- [ ] **Trocar uma chave interna do painel** (28/10, de manhã, com ela; o detalhe fica na conversa, fora do vault). Ela roda os comandos de root que o Gerente manda prontos, antes e depois de um deploy; quem estiver com o painel aberto vê "recarregue a página" uma vez. Fonte: conversa de 27/10.
-- [ ] **Divulgar o cupom DANI3** (`/assinar?cupom=DANI3`) só depois do deploy dos planos. A tela de assinar com o cupom não foi vista: conferido pela mesma validação que a tela chama e pela Stripe. Fonte: conversa de 27/10.
+- [ ] **Trocar uma chave interna do painel** (com ela; o detalhe fica na conversa, fora do vault). Ela roda os comandos de root que o Gerente manda prontos, antes e depois de um deploy; quem estiver com o painel aberto vê "recarregue a página" uma vez. Estava para a manhã de 28/10 e não aconteceu: falta ela dar um horário. Fonte: conversa de 27 e 28/10.
+- [ ] **Divulgar o cupom DANI3** (`/assinar?cupom=DANI3`): os planos estão no ar desde 28/10, 00h05, então já pode. A tela de assinar com o cupom não foi vista: conferido pela mesma validação que a tela chama e pela Stripe. Fonte: conversa de 27/10.
 - [ ] **Conta de teste sem plano na produção**, criada pelo Gerente em 27/10 com o ok dela para ver o cupom (não usada: a senha teria de ser digitada em texto aberto no navegador). Não há comando para apagar conta; fica parada, sem plano. Fonte: conversa de 27/10.
-- [ ] **Ver os Termos novos (versão 27/10) antes do deploy dos planos:** o Gerente mostra o trecho antes e depois. Fonte: conversa de 27/10.
+- [ ] **Ler os Termos novos (versão 27/10):** no ar desde o deploy de 28/10, 00h05, sem a leitura dela, que estava combinada para antes. Se ela quiser mudar algo, sai uma versão nova. Fonte: conversa de 27 e 28/10.
+
+## De 28/10
+
+- [ ] **Assinantes da tabela 3 até 30/11:** pagam mais que quem assina agora (Essencial R$ 179,90 contra R$ 119,90) e só chegam à Black Friday cancelando e assinando de novo ou trocando a periodicidade. Ela decide se passam à tabela 4 (recomendação do Gerente: sim, depois de contar quantas são). Fonte: achado do QA, noite de 27/10 ([[2026-10-28]]).
 
 ## De 25/10
 

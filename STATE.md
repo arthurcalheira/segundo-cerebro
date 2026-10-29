@@ -2,19 +2,18 @@
 
 ## Agora
 
-Atualizado em 27/10/2026, 21h30, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-10-27]]; antes, [[2026-10-26]] e [[2026-10-25]].
+Atualizado em 28/10/2026, 21h30, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-10-28]]; antes, [[2026-10-27]] e [[2026-10-26]].
 
-- **No ar em 27/10:** FARM Friday em dois botões (17h35, `4949fc4c`); página curta da VTEX e conferência sem categorias comuns (18h50, `e27b63ac`). Antes, em 26/10: chamada sem hora e ajustes Apple (`699adc45`), nomes das promoções pela IA (`d3bf45e6`), /assinar e página de vendas (`ecc93386`).
-- **Sobe à meia-noite de 28/10** (rotina, ok dela): `claude/integracao-2810c` (`f8c41730`) com a leitura do site (VTEX), o deploy mais seguro, as promoções mais certas ([[2026-10-27-promocoes-mais-certas]]) e a troca automática de chave. Sem migração; cópia de teste EXIT=0.
-- **Em curso:** mudança dos planos com preços de Black Friday até 30/11 ([[2026-10-27-planos-black-friday]]), na `claude/planos-2710` (Engenharia; falta a suíte do worker, o push e o QA). Visual de Black Friday na `claude/black-friday` (Engenharia 2; aprovado por ela, espera a tabela 4). Preços `_v4` e cupom DANI3 já na Stripe. Ressalvas das promoções na `claude/promocoes-ajustes`, com o QA.
+- **No ar desde 28/10, 00h05** (deploy da meia-noite, `2afb507e`): os planos novos com os limites permanentes e os preços de Black Friday até 30/11 ([[2026-10-27-planos-black-friday]]), o visual da Black Friday, as promoções mais certas com os ajustes ([[2026-10-27-promocoes-mais-certas]]), a leitura do site (VTEX), o deploy mais seguro e a troca automática de chave. Migração `0073`. Termos e Termo de compromisso na versão de 27/10. O DANI3 já pode ser divulgado.
+- **Fila do projeto:** nada em curso nem pronto para subir. Esperam: `claude/teste-guarda-portao` (o QA), as ressalvas baixas do QA (nome automático com "no pix", frase e leitura de tela da Black Friday) e o lembrete por e-mail (`claude/lembrete-email`; espera o Zoho; renumerar a migração).
 - **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez (pedido dela em 27/10). Uma suíte de teste por vez no servidor.
-- **Prontos, sem deploy:** lembrete por e-mail (`claude/lembrete-email`; espera o Zoho; renumerar a migração). Lojix automática segue **desligada**. CI do GitHub parado por cobrança desde 24/10.
+- Lojix automática segue **desligada**. CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
 
-0. **28/10, com ela:** conferir o deploy da meia-noite; trocar a chave interna do painel (ela roda os comandos de root); ver os Termos novos antes do deploy dos planos.
-1. **Planos e Black Friday:** a entrega da Engenharia (lista antes → depois, volta automática aos preços de hoje depois de 30/11), o QA, o rebase da Black Friday, o UX no celular, a cópia de teste e o deploy com o ok dela. Depois, divulgar o DANI3.
-2. **Promoções:** o QA da `claude/promocoes-ajustes` e da `claude/teste-guarda-portao`; entram no deploy seguinte.
+0. **Com ela:** horário para a troca da chave interna do painel (não aconteceu em 28/10); ler os Termos de 27/10, já no ar; decidir se as assinantes da tabela 3 passam à Black Friday ([[pendencias]], "De 28/10").
+1. **UX:** a lista das telas que mudaram no deploy de 28/10 (página de vendas, `/assinar`, planos e limites), no celular.
+2. **Depois:** as ressalvas baixas e a `claude/teste-guarda-portao` num pacote só, com o QA, antes de 01/12 (a virada da Black Friday).
 3. **Com ela** ([[pendencias]]): pagamento do GitHub; Zoho e o lembrete; as 2 assinaturas pendentes; a senha da `dev@local` da cópia no Vault; a UX-018 (painel da multimarca); ler [[revisar-decisoes-da-noite]].
 4. **Da fila de antes:** advogado (IA, Privacidade, Termos dos preços, cupom, atendimento); backup externo; ligar a Lojix automática na véspera da próxima live.
 
