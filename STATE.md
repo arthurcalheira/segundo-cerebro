@@ -2,17 +2,17 @@
 
 ## Agora
 
-Atualizado em 28/10/2026, 21h30, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-10-28]]; antes, [[2026-10-27]] e [[2026-10-26]].
+Atualizado em 29/10/2026, 21h30, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-10-29]]; antes, [[2026-10-28]] e [[2026-10-27]].
 
-- **No ar desde 28/10, 00h05** (deploy da meia-noite, `2afb507e`): os planos novos com os limites permanentes e os preços de Black Friday até 30/11 ([[2026-10-27-planos-black-friday]]), o visual da Black Friday, as promoções mais certas com os ajustes ([[2026-10-27-promocoes-mais-certas]]), a leitura do site (VTEX), o deploy mais seguro e a troca automática de chave. Migração `0073`. Termos e Termo de compromisso na versão de 27/10. O DANI3 já pode ser divulgado.
-- **Fila do projeto:** nada em curso nem pronto para subir. Esperam: `claude/teste-guarda-portao` (o QA), as ressalvas baixas do QA (nome automático com "no pix", frase e leitura de tela da Black Friday) e o lembrete por e-mail (`claude/lembrete-email`; espera o Zoho; renumerar a migração).
+- **No ar desde 29/10, ~16h10** (`eed8c8ff`, terceiro deploy do dia): os consertos da linha da promoção (caso da Dani: o corpo da promoção sem a linha sai sem ela, a geral avisa onde tirar, a IA só tira quando o pedido fala dela) e o comando `account:mensagem`, que mostra o que está gravado numa conta. Sem migração. Antes, desde 28/10: planos novos e Black Friday até 30/11 ([[2026-10-27-planos-black-friday]]), migração `0073`.
+- **Fila do projeto:** pronta e aprovada pelo QA, esperando o ok dela: `claude/contagem-duas-leituras` (`8b2fdb31`, menos avisos falsos do Conferente). Esperam: `claude/teste-guarda-portao` (o QA), as ressalvas baixas do QA (nome automático com "no pix", frase e leitura de tela da Black Friday, "2 das últimas 3 voltas" na contagem, falso positivo "calças" e conjunto com a linha na mensagem da promoção) e o lembrete por e-mail (`claude/lembrete-email`; espera o Zoho; renumerar a migração).
 - **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez (pedido dela em 27/10). Uma suíte de teste por vez no servidor.
 - Lojix automática segue **desligada**. CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
 
-0. **Com ela:** horário para a troca da chave interna do painel (não aconteceu em 28/10); ler os Termos de 27/10, já no ar; decidir se as assinantes da tabela 3 passam à Black Friday ([[pendencias]], "De 28/10").
-1. **UX:** a lista das telas que mudaram no deploy de 28/10 (página de vendas, `/assinar`, planos e limites), no celular.
+0. **Com ela:** o ok para a `claude/contagem-duas-leituras`; horário para a troca da chave interna do painel; ler os Termos de 27/10, já no ar; decidir se as assinantes da tabela 3 passam à Black Friday ([[pendencias]], "De 28/10" e "De 29/10").
+1. **UX:** a lista das telas que mudaram no deploy de 28/10 (página de vendas, `/assinar`, planos e limites) e a tela de Mensagem da promoção (29/10), no celular. Atrasada desde 28/10.
 2. **Depois:** as ressalvas baixas e a `claude/teste-guarda-portao` num pacote só, com o QA, antes de 01/12 (a virada da Black Friday).
 3. **Com ela** ([[pendencias]]): pagamento do GitHub; Zoho e o lembrete; as 2 assinaturas pendentes; a senha da `dev@local` da cópia no Vault; a UX-018 (painel da multimarca); ler [[revisar-decisoes-da-noite]].
 4. **Da fila de antes:** advogado (IA, Privacidade, Termos dos preços, cupom, atendimento); backup externo; ligar a Lojix automática na véspera da próxima live.

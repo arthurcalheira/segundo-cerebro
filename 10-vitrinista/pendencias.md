@@ -117,6 +117,10 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [ ] **Conta de teste sem plano na produção**, criada pelo Gerente em 27/10 com o ok dela para ver o cupom (não usada: a senha teria de ser digitada em texto aberto no navegador). Não há comando para apagar conta; fica parada, sem plano. Fonte: conversa de 27/10.
 - [ ] **Ler os Termos novos (versão 27/10):** no ar desde o deploy de 28/10, 00h05, sem a leitura dela, que estava combinada para antes. Se ela quiser mudar algo, sai uma versão nova. Fonte: conversa de 27 e 28/10.
 
+## De 29/10
+
+- [ ] **Ok para subir a `claude/contagem-duas-leituras`** (`8b2fdb31`, QA ok, sem migração): a divergência de contagem do Conferente só abre se aparecer em duas conferências seguidas (três avisos falsos do cache da FARM em 29/10). Recomendação do Gerente: subir na meia-noite. Fonte: [[2026-10-29]].
+
 ## De 28/10
 
 - [ ] **Assinantes da tabela 3 até 30/11:** pagam mais que quem assina agora (Essencial R$ 179,90 contra R$ 119,90) e só chegam à Black Friday cancelando e assinando de novo ou trocando a periodicidade. Ela decide se passam à tabela 4 (recomendação do Gerente: sim, depois de contar quantas são). Fonte: achado do QA, noite de 27/10 ([[2026-10-28]]).
