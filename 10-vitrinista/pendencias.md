@@ -119,7 +119,7 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 
 ## De 29/10
 
-- [ ] **Ok para subir a `claude/contagem-duas-leituras`** (`8b2fdb31`, QA ok, sem migração): a divergência de contagem do Conferente só abre se aparecer em duas conferências seguidas (três avisos falsos do cache da FARM em 29/10). Recomendação do Gerente: subir na meia-noite. Fonte: [[2026-10-29]].
+- [ ] **Ok para subir a `claude/contagem-igual-ao-painel`** (`8c7b4876`, QA ok, sem migração, cópia de teste EXIT=0 em 30/10): contém a `claude/contagem-duas-leituras` (`8b2fdb31`; a divergência de contagem só abre se aparecer em duas conferências seguidas) e, de 30/10, a contagem do site pela régua do painel (só peças com estoque, mesmas categorias), que acaba com os avisos dos dois Bazares. Só mexe nos avisos internos. Recomendação do Gerente: subir na meia-noite. Fonte: [[2026-10-29]], [[2026-10-30]].
 
 ## De 28/10
 
