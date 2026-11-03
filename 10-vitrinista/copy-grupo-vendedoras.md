@@ -74,3 +74,46 @@ Por enquanto é Farm e Dress To.
 ```
 Chama a @usevitrinista no Instagram que eles te ajudam a deixar tudo pronto.
 ```
+
+## Black Friday com o cupom FOGUETES3 (02/11)
+
+Pedido de 02/11, para o grupo Foguetes. Sem "de R$ X por R$ Y" ([[2026-10-27-planos-black-friday]]), sem citar a criadora e sem o plano anual, porque o cupom só vale no mensal. O aviso sobre o WhatsApp restringir números ficou de fora: a página de vendas já avisa. Antes de mandar, ver [[pendencias]] ("De 02/11"). A linha final de contato está só na conversa de 02/11.
+
+```
+Vocês pediram e a gente atendeu 🧡
+
+A Vitrinista baixou os preços na Black Friday, e quem é do Foguetes ainda tem um cupom a mais.
+
+*O que é a Vitrinista?*
+É a ferramenta que mantém o seu grupo de ofertas no WhatsApp ativo todo dia, sem você montar mensagem por mensagem.
+
+*Como funciona:*
+🛍️ Escolhe as peças da FARM Rio, da FARM Etc e da Dress To pelas suas regras
+🔗 Coloca o seu link e o seu código em cada oferta
+⏰ Envia pelo seu número, nos horários que você escolher
+🏷️ Pega sozinha as promoções do site, como reloginho, Liqui e Bazar
+🚫 Peça esgotada não sai
+📱 Você confere a fila do dia pelo celular
+
+*Os planos, por mês, até 30/11:*
+
+*Essencial: R$ 119,90*
+1 loja e até 3 grupos, com as suas fotos nas mensagens
+
+*Maison: R$ 229,90*
+2 lojas e até 5 grupos, com as suas fotos e a mensagem do seu jeito
+
+*Atelier: R$ 299,90*
+2 lojas, até 3 números e grupos sem limite, com atendimento direto
+
+*Com o cupom FOGUETES3:* 30% OFF nas 3 primeiras mensalidades do plano mensal
+Essencial: R$ 83,93
+Maison: R$ 160,93
+Atelier: R$ 209,93
+
+Depois das 3 primeiras, a mensalidade fica no preço da Black Friday enquanto a sua assinatura durar. E você ainda tem 7 dias grátis para testar, no cartão.
+
+*Como usar:*
+1. Crie a sua conta: https://painel.usevitrinista.com.br/criar-conta
+2. Na hora de assinar, escolha o mensal, clique em "Tenho um cupom" e digite *FOGUETES3*
+```
