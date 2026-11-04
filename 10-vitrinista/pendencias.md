@@ -130,8 +130,9 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 
 ## De 03/11
 
-- [ ] **Lojix ao meio-dia de 04/11:** ligar a Lojix automática no servidor (linha de root mandada na conversa; só ela roda); escolher o nome da linha padrão, que ainda diz "Lojix Corujão" (recomendação do Gerente: "🔴 *Lojix*"); avisar a Dani para tirar o "Corujão" do texto próprio dela. Fonte: conversa de 03/11.
-- [ ] **Hora de subir a Fábula** ([[2026-11-03-fabula-como-loja]]): ela avisa; traz a migração 0074. Antes, a última passada do QA. Fonte: conversa de 03/11.
+- [ ] **Lojix ao meio-dia de 04/11:** (03/11, noite: a automática ficou ligada; o título da Dani passou a "🔴 *Lojix*" pelo `--lojix-padrao`, então não precisa avisá-la; falta ver as peças chegarem aos grupos na live e, se a edição tiver nome, gravá-lo em Administração e rodar o comando de novo.) Texto de antes: ligar a Lojix automática no servidor (linha de root mandada na conversa; só ela roda); escolher o nome da linha padrão, que ainda diz "Lojix Corujão" (recomendação do Gerente: "🔴 *Lojix*"); avisar a Dani para tirar o "Corujão" do texto próprio dela. Fonte: conversa de 03/11.
+- [x] **Hora de subir a Fábula** (no ar em 03/11, noite, `b2096986`, com o QA aprovando; falta o botão da Zumzum, abaixo) ([[2026-11-03-fabula-como-loja]]): ela avisa; traz a migração 0074. Antes, a última passada do QA. Fonte: conversa de 03/11.
+- [ ] **Botão "Zumzum 50% OFF":** não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
 ## De 28/10
