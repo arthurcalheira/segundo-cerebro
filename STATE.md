@@ -2,23 +2,25 @@
 
 ## Agora
 
-Atualizado em 02/11/2026, 21h30, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-02]]; antes, [[2026-10-31]] e [[2026-10-30]].
+Atualizado em 03/11/2026, 21h30, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-03]]; antes, [[2026-11-02]] e [[2026-10-31]].
 
-- **No ar desde 02/11, ~12h10** (`1219d87f`): o comando `message:abas`, ligado e com o `--tirar-linha`, usado na conta da Dani para tirar o segundo título das peças sem promoção. Sem migração; subiu sem o QA antes, com o ok dela, e o QA aprovou depois, com ressalvas. Antes, desde 29/10: os consertos da linha da promoção; desde 28/10: planos novos e Black Friday até 30/11 ([[2026-10-27-planos-black-friday]]).
-- **Stripe:** a chave do sistema estava vencida; ela trocou em 02/11, às 17h03, e o sistema voltou a responder. Não se sabe desde quando estava vencida. Cupom FOGUETES3 criado, igual ao DANI3; texto em [[copy-grupo-vendedoras]]; a tela de assinar com o cupom ainda não foi vista.
-- **Fila do projeto:** `claude/contagem-igual-ao-painel` (`8c7b4876`, com a `contagem-duas-leituras`): o Conferente conta o site como o painel (só peças com estoque) e só abre divergência vista em duas voltas seguidas. O QA tinha aprovado, mas ela ficou atrás do `master`: precisa de atualização e de nova revisão, depois do ok dela. Esperam: `claude/teste-guarda-portao` (o QA), as ressalvas baixas do QA (nome automático com "no pix", frase e leitura de tela da Black Friday, "2 das últimas 3 voltas" e total velho do site na contagem, falso positivo "calças" e conjunto com a linha na mensagem da promoção; de 02/11, as do `message:abas`), a causa da linha escondida na geral (pode voltar quando a Dani salvar) e o lembrete por e-mail (`claude/lembrete-email`; espera o Zoho; renumerar a migração).
-- **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez (pedido dela em 27/10). Uma suíte de teste por vez no servidor. O UX está parado: o navegador único está na conta de administração dela.
-- Lojix automática segue **desligada**. CI do GitHub parado por cobrança desde 24/10.
+- **No ar desde 02/11, ~12h10** (`1219d87f`): o `message:abas` com o `--tirar-linha`, usado na conta da Dani. Antes, desde 29/10: os consertos da linha da promoção; desde 28/10: planos novos e Black Friday até 30/11 ([[2026-10-27-planos-black-friday]]). Stripe: a chave do sistema foi trocada em 02/11; cupom FOGUETES3 criado ([[copy-grupo-vendedoras]]).
+- **Meia-noite de 04/11:** sobe a `claude/contagem-igual-ao-painel` (`711354f5`, QA ok, ok dela, sem migração): o Conferente conta o site como o painel e só abre divergência vista em duas voltas.
+- **Fábula** ([[2026-11-03-fabula-como-loja]]): branch `claude/fabula-loja` (`9c20300b`, migração 0074), loja nova na família da FARM, desligada para todas, com tamanhos infantis, filtro de público, 10% e frete de R$ 198. Cinco passadas do QA; a última (filtro de público) está com ele. Sobe quando ela avisar; depois, o botão "Zumzum 50% OFF" à mão.
+- **Lojix ao meio-dia de 04/11:** a automática segue **desligada** até ela rodar a linha no servidor; a linha padrão e o texto da Dani ainda dizem "Corujão".
+- **Fila do projeto:** `claude/teste-guarda-portao` (o QA), as ressalvas baixas do QA (nome com "no pix", Black Friday, contagem, "calças", `message:abas`), a causa da linha escondida na geral e o `claude/lembrete-email` (espera o Zoho; renumerar a migração, agora depois da 0074).
+- **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez. Uma suíte de teste por vez no servidor. O UX está parado: o navegador único está na conta de administração dela. CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
 
-0. **Com ela** ([[pendencias]], "De 02/11"): testar o FOGUETES3 em `/assinar` e mandar o texto no grupo; avisar a Dani do "só hoje!" e do cupom vencido na geral; escolher o login do UX; o ok para atualizar e subir a `claude/contagem-igual-ao-painel`.
-1. **Gerente:** descobrir desde quando a chave da Stripe estava vencida e se alguém tentou assinar nesse período; conferir uma mensagem real da Dani com um título só.
-2. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10, já no ar; decidir se as assinantes da tabela 3 passam à Black Friday ([[pendencias]], "De 27/10" e "De 28/10").
-3. **UX:** a lista das telas que mudaram no deploy de 28/10 (página de vendas, `/assinar`, planos e limites) e a tela de Mensagem da promoção (29/10), no celular. Atrasada desde 28/10; depende do login. Junto, a varredura semanal que não rodou em 02/11.
-4. **Depois:** as ressalvas baixas, a causa da linha escondida na geral e a `claude/teste-guarda-portao` num pacote só, com o QA, antes de 01/12 (a virada da Black Friday).
-5. **Com ela** ([[pendencias]]): pagamento do GitHub; Zoho e o lembrete; as 2 assinaturas pendentes; a senha da `dev@local` da cópia no Vault; a UX-018 (painel da multimarca); ler [[revisar-decisoes-da-noite]].
-6. **Da fila de antes:** advogado (IA, Privacidade, Termos dos preços, cupom, atendimento); backup externo; ligar a Lojix automática na véspera da próxima live.
+0. **Com ela, para 04/11** ([[pendencias]], "De 03/11"): ligar a Lojix antes do meio-dia, o nome da linha e o aviso à Dani; a hora de subir a Fábula.
+1. **Gerente:** acompanhar a Lojix do meio-dia (peças chegando aos grupos); conferir o deploy da meia-noite; levar ao QA o fim da Fábula e, depois da subida, criar o botão da Zumzum e mandar ao UX as telas novas.
+2. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; avisar a Dani do "só hoje!" e do APP25; escolher o login do UX.
+3. **Gerente, de 02/11:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar; uma mensagem real da Dani com um título só.
+4. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday ([[pendencias]], "De 27/10" e "De 28/10").
+5. **UX:** telas do deploy de 28/10 e Mensagem da promoção, no celular; a varredura semanal. Depende do login.
+6. **Depois:** as ressalvas baixas, a causa da linha escondida e a `claude/teste-guarda-portao` num pacote só, com o QA, antes de 01/12.
+7. **Com ela** ([[pendencias]]): GitHub; Zoho e o lembrete; as 2 assinaturas pendentes; a senha da `dev@local` no Vault; a UX-018; [[revisar-decisoes-da-noite]]; advogado; backup externo.
 
 ## Ainda por fazer, sem data
 
@@ -36,6 +38,7 @@ Atualizado em 02/11/2026, 21h30, pelo Gerente (no OpenBot da VPS desde 27/10). O
 
 ## Decisões
 
+- 03/11: [[2026-11-03-fabula-como-loja]].
 - 27/10: [[2026-10-27-promocoes-mais-certas]], [[2026-10-27-planos-black-friday]].
 - 25/10: [[2026-10-25-comando-pelo-openbot]], [[2026-10-25-agente-ux]], [[2026-10-25-propostas-de-ux]].
 - 24/10: [[2026-10-24-texto-de-cada-promocao]].

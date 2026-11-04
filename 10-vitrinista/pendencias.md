@@ -119,7 +119,7 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 
 ## De 29/10
 
-- [ ] **Ok para subir a `claude/contagem-igual-ao-painel`** (`8c7b4876`, QA ok, sem migração, cópia de teste EXIT=0 em 30/10): contém a `claude/contagem-duas-leituras` (`8b2fdb31`; a divergência de contagem só abre se aparecer em duas conferências seguidas) e, de 30/10, a contagem do site pela régua do painel (só peças com estoque, mesmas categorias), que acaba com os avisos dos dois Bazares. Só mexe nos avisos internos. Recomendação do Gerente: subir na meia-noite. Fonte: [[2026-10-29]], [[2026-10-30]]. **02/11:** o `master` andou para `1219d87f` e a branch ficou atrás: com o ok, a Engenharia 2 atualiza, o QA revê e aí sobe na meia-noite. Sem resposta dela.
+- [x] **Ok para subir a `claude/contagem-igual-ao-painel`** (03/11: ok dela; atualizada em `711354f5`, QA ok, na fila da meia-noite de 04/11) (`8c7b4876`, QA ok, sem migração, cópia de teste EXIT=0 em 30/10): contém a `claude/contagem-duas-leituras` (`8b2fdb31`; a divergência de contagem só abre se aparecer em duas conferências seguidas) e, de 30/10, a contagem do site pela régua do painel (só peças com estoque, mesmas categorias), que acaba com os avisos dos dois Bazares. Só mexe nos avisos internos. Recomendação do Gerente: subir na meia-noite. Fonte: [[2026-10-29]], [[2026-10-30]]. **02/11:** o `master` andou para `1219d87f` e a branch ficou atrás: com o ok, a Engenharia 2 atualiza, o QA revê e aí sobe na meia-noite. Sem resposta dela.
 
 ## De 02/11
 
@@ -127,6 +127,12 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [ ] **Confirmar a associação do grupo Foguetes à marca** com quem cuida do grupo, antes de mandar o texto ([[2026-10-11-criadora-sem-ligacao-publica]]). Fonte: conversa de 02/11.
 - [ ] **Login do UX:** (a) ela entra com a UX Teste no navegador, e a sessão de administração sai; (b) conta de teste nova e varredura na cópia de teste; (c) o UX olha pela conta dela, sem salvar. Recomendação do Gerente: (b), conferindo se a senha extra da cópia ainda atrapalha. Até lá, nem varredura semanal nem lista de telas. Fonte: conversa de 02/11.
 - [ ] **Avisar a Dani:** o "só hoje!" e o "cupom: APP25" foram escritos à mão na geral e seguem saindo depois de 02/11, com o cupom vencido, até ela apagar. O "alto verão" saiu das peças sem promoção: se ela quiser de volta, escreve na geral. Se aparecer título duplicado (em conjunto ou depois de salvar a geral), o Gerente tira a linha. Fonte: conversa de 02/11.
+
+## De 03/11
+
+- [ ] **Lojix ao meio-dia de 04/11:** ligar a Lojix automática no servidor (linha de root mandada na conversa; só ela roda); escolher o nome da linha padrão, que ainda diz "Lojix Corujão" (recomendação do Gerente: "🔴 *Lojix*"); avisar a Dani para tirar o "Corujão" do texto próprio dela. Fonte: conversa de 03/11.
+- [ ] **Hora de subir a Fábula** ([[2026-11-03-fabula-como-loja]]): ela avisa; traz a migração 0074. Antes, a última passada do QA. Fonte: conversa de 03/11.
+- [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
 ## De 28/10
 
