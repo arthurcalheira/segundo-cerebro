@@ -2,19 +2,18 @@
 
 ## Agora
 
-Atualizado em 03/11/2026, 21h30, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-03]]; antes, [[2026-11-02]] e [[2026-10-31]].
+Atualizado em 04/11/2026, 21h30, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-04]]; antes, [[2026-11-03]] e [[2026-11-02]].
 
-- **No ar desde 02/11, ~12h10** (`1219d87f`): o `message:abas` com o `--tirar-linha`, usado na conta da Dani. Antes, desde 29/10: os consertos da linha da promoção; desde 28/10: planos novos e Black Friday até 30/11 ([[2026-10-27-planos-black-friday]]). Stripe: a chave do sistema foi trocada em 02/11; cupom FOGUETES3 criado ([[copy-grupo-vendedoras]]).
-- **Meia-noite de 04/11:** sobe a `claude/contagem-igual-ao-painel` (`711354f5`, QA ok, ok dela, sem migração): o Conferente conta o site como o painel e só abre divergência vista em duas voltas.
-- **Fábula** ([[2026-11-03-fabula-como-loja]]): branch `claude/fabula-loja` (`9c20300b`, migração 0074), loja nova na família da FARM, desligada para todas, com tamanhos infantis, filtro de público, 10% e frete de R$ 198. Cinco passadas do QA; a última (filtro de público) está com ele. Sobe quando ela avisar; depois, o botão "Zumzum 50% OFF" à mão.
-- **Lojix ao meio-dia de 04/11:** a automática segue **desligada** até ela rodar a linha no servidor; a linha padrão e o texto da Dani ainda dizem "Corujão".
-- **Fila do projeto:** `claude/teste-guarda-portao` (o QA), as ressalvas baixas do QA (nome com "no pix", Black Friday, contagem, "calças", `message:abas`), a causa da linha escondida na geral e o `claude/lembrete-email` (espera o Zoho; renumerar a migração, agora depois da 0074).
+- **No ar desde 04/11, à tarde** (`8ad24a10`): a Fábula como loja (03/11, migração 0074, [[2026-11-03-fabula-como-loja]]), a contagem igual ao painel, os cadernos e pratos da "Linha Quero" no Catálogo, a mensagem da Lojix sem "só até" e com a promoção embaixo do título ([[2026-11-04-mensagem-da-lojix]]) e o `message:abas --trocar`. A Lojix automática está ligada e rodou na live de 04/11. Desde 28/10: planos novos e Black Friday até 30/11 ([[2026-10-27-planos-black-friday]]).
+- **Espera o ok dela:** `claude/contagem-raiz-qualquer` (`13b313ab`, QA ok, sem migração), que fecha o aviso falso da contagem da Vitrine da Semana da FARM.
+- **Dani:** a linha do preço trocada por uma que mostra só o preço quando não há preço riscado (Lojix e conjunto das peças sem promoção); falta ver uma mensagem real e a geral.
+- **Fila do projeto:** `claude/teste-guarda-portao` (o QA), as ressalvas baixas do QA (nome com "no pix", Black Friday, contagem, "calças", `message:abas`, `--trocar`), a causa da linha escondida na geral, o fim da live da Lojix pelo banner, o botão da Zumzum e o `claude/lembrete-email` (espera o Zoho; renumerar a migração, depois da 0074).
 - **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez. Uma suíte de teste por vez no servidor. O UX está parado: o navegador único está na conta de administração dela. CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
 
-0. **Com ela, para 04/11** ([[pendencias]], "De 03/11"): ligar a Lojix antes do meio-dia, o nome da linha e o aviso à Dani; a hora de subir a Fábula.
-1. **Gerente:** acompanhar a Lojix do meio-dia (peças chegando aos grupos); conferir o deploy da meia-noite; levar ao QA o fim da Fábula e, depois da subida, criar o botão da Zumzum e mandar ao UX as telas novas.
+0. **Com ela** ([[pendencias]], "De 04/11"): o ok da `claude/contagem-raiz-qualquer`; o nome da criadora nas versões antigas dos Termos e da Privacidade; o botão da Zumzum ("De 03/11").
+1. **Gerente:** ver uma mensagem real da Dani com o preço; `promo:check fabula` no servidor; mandar ao UX as telas novas quando houver login.
 2. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; avisar a Dani do "só hoje!" e do APP25; escolher o login do UX.
 3. **Gerente, de 02/11:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar; uma mensagem real da Dani com um título só.
 4. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday ([[pendencias]], "De 27/10" e "De 28/10").
@@ -38,6 +37,7 @@ Atualizado em 03/11/2026, 21h30, pelo Gerente (no OpenBot da VPS desde 27/10). O
 
 ## Decisões
 
+- 04/11: [[2026-11-04-mensagem-da-lojix]].
 - 03/11: [[2026-11-03-fabula-como-loja]].
 - 27/10: [[2026-10-27-promocoes-mais-certas]], [[2026-10-27-planos-black-friday]].
 - 25/10: [[2026-10-25-comando-pelo-openbot]], [[2026-10-25-agente-ux]], [[2026-10-25-propostas-de-ux]].

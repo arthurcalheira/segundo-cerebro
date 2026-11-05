@@ -130,10 +130,19 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 
 ## De 03/11
 
-- [ ] **Lojix ao meio-dia de 04/11:** (03/11, noite: a automática ficou ligada; o título da Dani passou a "🔴 *Lojix*" pelo `--lojix-padrao`, então não precisa avisá-la; falta ver as peças chegarem aos grupos na live e, se a edição tiver nome, gravá-lo em Administração e rodar o comando de novo.) Texto de antes: ligar a Lojix automática no servidor (linha de root mandada na conversa; só ela roda); escolher o nome da linha padrão, que ainda diz "Lojix Corujão" (recomendação do Gerente: "🔴 *Lojix*"); avisar a Dani para tirar o "Corujão" do texto próprio dela. Fonte: conversa de 03/11.
+- [x] **Lojix ao meio-dia de 04/11:** (04/11: a live rodou com a automática ligada, consertos no ar, [[2026-11-04]].) (03/11, noite: a automática ficou ligada; o título da Dani passou a "🔴 *Lojix*" pelo `--lojix-padrao`, então não precisa avisá-la; falta ver as peças chegarem aos grupos na live e, se a edição tiver nome, gravá-lo em Administração e rodar o comando de novo.) Texto de antes: ligar a Lojix automática no servidor (linha de root mandada na conversa; só ela roda); escolher o nome da linha padrão, que ainda diz "Lojix Corujão" (recomendação do Gerente: "🔴 *Lojix*"); avisar a Dani para tirar o "Corujão" do texto próprio dela. Fonte: conversa de 03/11.
 - [x] **Hora de subir a Fábula** (no ar em 03/11, noite, `b2096986`, com o QA aprovando; falta o botão da Zumzum, abaixo) ([[2026-11-03-fabula-como-loja]]): ela avisa; traz a migração 0074. Antes, a última passada do QA. Fonte: conversa de 03/11.
 - [ ] **Botão "Zumzum 50% OFF":** não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
+
+## De 04/11
+
+- [ ] **Ok para subir a `claude/contagem-raiz-qualquer`** (`13b313ab`, QA ok, sem migração): fecha o aviso falso da contagem da Vitrine da Semana da FARM. Recomendação do Gerente: subir na meia-noite. Fonte: conversa de 04/11.
+- [ ] **Nome da criadora nas versões antigas dos Termos e da Privacidade** (10/10 e 14/10, públicas em "versões anteriores"; também no repositório do projeto, que é público): (a) esconder as quatro versões (recomendação do Gerente, pela [[2026-10-11-criadora-sem-ligacao-publica]]); (b) manter. Antes, perguntar ao advogado se pode tirar do ar uma versão que alguém aceitou. Limpar o histórico do GitHub é destrutivo e pede ok à parte. Fonte: conversa de 04/11.
+- [ ] **Ver uma mensagem real da Dani com o preço** depois da troca da linha do preço; e conferir se a geral e o texto da Vitrine da Semana dela têm a mesma linha (o `message:abas --mostrar` não mostra essas duas). Fonte: conversa de 04/11.
+- [ ] **Fim da live da Lojix:** o sistema considera a live no ar enquanto o banner estiver na home da FARM, mesmo sem peça nova (04/11: última peça às 17h43, banner até a noite). Ao construtor, se ela quiser: encerrar por tempo sem peça nova. Fonte: conversa de 04/11.
+- [ ] **Peças que a Dani escolhe à mão** aparecem na fila sem promoção: não confirmado se saem com o cupom da Lojix. Fonte: conversa de 04/11.
+- [ ] **Ressalvas baixas do QA no `message:abas --trocar`:** não avisa quando há proposta aberta na tela Mensagem; `--por` sem valor grava o texto da opção seguinte. Ao usar: prévia sempre antes e `account:mensagem` para ver proposta aberta. Fonte: QA, 04/11.
 
 ## De 28/10
 
