@@ -140,6 +140,17 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [ ] **Os 10% do código na peça a preço cheio das vitrines (Achadinhos):** o carrinho deve dar os 10%, mas a mensagem mostra só o frete. Recomendação do Gerente: mostrar os 10% (mudança pequena). Fonte: conversa e QA de 05/11.
 - [ ] **A geral e a Vitrine da Semana da Dani** ainda podem ter o "só hoje!"/APP25: o `message:abas` não alcança esses textos. Ela apaga na tela Mensagem, ou um comando novo. Fonte: conversa de 05/11.
 - [ ] **O reinício no deploy não pede a sync da Lojix:** as marcas só saem na sync de hora em hora. Baixo; ao construtor num pacote. Fonte: 05/11.
+- [ ] **Stories automáticos (uso interno, [[ideias]] de 05/11): teste antes de qualquer tela.** (1) publicar pela API um story de teste (foto com texto gravado) na conta da criadora; (2) ver a automação do ManyChat em todos os stories disparar com uma resposta; (3) ver a Solicitação Externa buscar o link num endereço de teste do worker. Se os três passarem, segue a spec no projeto, no fluxo de sempre. Precisa antes do app da Meta (modo de desenvolvimento, conta dela como testadora) e do acesso ao ManyChat. Não confirmado, a testar: se a conta de criadora serve ou só a comercial; se o login do Instagram publica story ou só o do Facebook (com Página ligada); se o gatilho de todos os stories dispara com story publicado pela API; se a Solicitação Externa está no plano dela e devolve o link para a mensagem; se o ManyChat diz qual story foi respondido. Fonte: conversa de 05/11.
+- [ ] **Stories automáticos, perguntas para ela e para a criadora** (as que mudam o trabalho):
+  1. Que tipo é a conta do Instagram hoje: pessoal, comercial ou de criadora?
+  2. Qual conta da Vitrinista é a dela (a que terá acesso)?
+  3. O ManyChat já tem automação em todos os stories ou por palavra que possa responder junto com a nova?
+  4. Uma palavra diferente por peça, ou a mesma em todos os stories?
+  5. Por quanto tempo a palavra vale depois que o story some (24 h, uma semana)? E o que responder quando a peça esgotou ou a palavra é desconhecida?
+  6. O que vai escrito na mídia: preço, preço riscado, tamanhos, "estou usando o M", instruções? Há um modelo de story de referência?
+  7. Um story por peça, ou às vezes várias peças no mesmo?
+  8. Horários: ela escolhe cada um, ou uma fila com horários fixos por dia?
+  Fonte: conversa de 05/11.
 
 ## De 04/11
 
