@@ -126,21 +126,27 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [ ] **Testar o FOGUETES3 antes de mandar o texto no grupo:** abrir `/assinar` com uma conta sem plano e digitar o código, sem pagar. A tela não foi vista. Texto em [[copy-grupo-vendedoras]]; a frase "vocês pediram" não tem registro e fica por conta dela. Fonte: conversa de 02/11.
 - [ ] **Confirmar a associação do grupo Foguetes à marca** com quem cuida do grupo, antes de mandar o texto ([[2026-10-11-criadora-sem-ligacao-publica]]). Fonte: conversa de 02/11.
 - [ ] **Login do UX:** (a) ela entra com a UX Teste no navegador, e a sessão de administração sai; (b) conta de teste nova e varredura na cópia de teste; (c) o UX olha pela conta dela, sem salvar. Recomendação do Gerente: (b), conferindo se a senha extra da cópia ainda atrapalha. Até lá, nem varredura semanal nem lista de telas. Fonte: conversa de 02/11.
-- [ ] **Avisar a Dani:** o "só hoje!" e o "cupom: APP25" foram escritos à mão na geral e seguem saindo depois de 02/11, com o cupom vencido, até ela apagar. O "alto verão" saiu das peças sem promoção: se ela quiser de volta, escreve na geral. Se aparecer título duplicado (em conjunto ou depois de salvar a geral), o Gerente tira a linha. Fonte: conversa de 02/11.
+- [x] **Avisar a Dani:** (05/11: o Gerente tirou o "só hoje!" e o APP25 dos 8 textos de aba; falta a geral e a Vitrine dela, que o comando não alcança.) o "só hoje!" e o "cupom: APP25" foram escritos à mão na geral e seguem saindo depois de 02/11, com o cupom vencido, até ela apagar. O "alto verão" saiu das peças sem promoção: se ela quiser de volta, escreve na geral. Se aparecer título duplicado (em conjunto ou depois de salvar a geral), o Gerente tira a linha. Fonte: conversa de 02/11.
 
 ## De 03/11
 
 - [x] **Lojix ao meio-dia de 04/11:** (04/11: a live rodou com a automática ligada, consertos no ar, [[2026-11-04]].) (03/11, noite: a automática ficou ligada; o título da Dani passou a "🔴 *Lojix*" pelo `--lojix-padrao`, então não precisa avisá-la; falta ver as peças chegarem aos grupos na live e, se a edição tiver nome, gravá-lo em Administração e rodar o comando de novo.) Texto de antes: ligar a Lojix automática no servidor (linha de root mandada na conversa; só ela roda); escolher o nome da linha padrão, que ainda diz "Lojix Corujão" (recomendação do Gerente: "🔴 *Lojix*"); avisar a Dani para tirar o "Corujão" do texto próprio dela. Fonte: conversa de 03/11.
 - [x] **Hora de subir a Fábula** (no ar em 03/11, noite, `b2096986`, com o QA aprovando; falta o botão da Zumzum, abaixo) ([[2026-11-03-fabula-como-loja]]): ela avisa; traz a migração 0074. Antes, a última passada do QA. Fonte: conversa de 03/11.
-- [ ] **Botão "Zumzum 50% OFF":** não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
+- [x] **Botão "Zumzum 50% OFF":** (05/11: criado pela opção "Sem cupom", até 12/11, [[2026-11-05-promocao-sem-cupom]].) não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
+
+## De 05/11
+
+- [ ] **Os 10% do código na peça a preço cheio das vitrines (Achadinhos):** o carrinho deve dar os 10%, mas a mensagem mostra só o frete. Recomendação do Gerente: mostrar os 10% (mudança pequena). Fonte: conversa e QA de 05/11.
+- [ ] **A geral e a Vitrine da Semana da Dani** ainda podem ter o "só hoje!"/APP25: o `message:abas` não alcança esses textos. Ela apaga na tela Mensagem, ou um comando novo. Fonte: conversa de 05/11.
+- [ ] **O reinício no deploy não pede a sync da Lojix:** as marcas só saem na sync de hora em hora. Baixo; ao construtor num pacote. Fonte: 05/11.
 
 ## De 04/11
 
-- [ ] **Ok para subir a `claude/contagem-raiz-qualquer`** (`13b313ab`, QA ok, sem migração): fecha o aviso falso da contagem da Vitrine da Semana da FARM. Recomendação do Gerente: subir na meia-noite. Fonte: conversa de 04/11.
+- [x] **Ok para subir a `claude/contagem-raiz-qualquer`** (no ar em 05/11, `55409516`) (`13b313ab`, QA ok, sem migração): fecha o aviso falso da contagem da Vitrine da Semana da FARM. Recomendação do Gerente: subir na meia-noite. Fonte: conversa de 04/11.
 - [ ] **Nome da criadora nas versões antigas dos Termos e da Privacidade** (10/10 e 14/10, públicas em "versões anteriores"; também no repositório do projeto, que é público): (a) esconder as quatro versões (recomendação do Gerente, pela [[2026-10-11-criadora-sem-ligacao-publica]]); (b) manter. Antes, perguntar ao advogado se pode tirar do ar uma versão que alguém aceitou. Limpar o histórico do GitHub é destrutivo e pede ok à parte. Fonte: conversa de 04/11.
 - [ ] **Ver uma mensagem real da Dani com o preço** depois da troca da linha do preço; e conferir se a geral e o texto da Vitrine da Semana dela têm a mesma linha (o `message:abas --mostrar` não mostra essas duas). Fonte: conversa de 04/11.
-- [ ] **Fim da live da Lojix:** o sistema considera a live no ar enquanto o banner estiver na home da FARM, mesmo sem peça nova (04/11: última peça às 17h43, banner até a noite). Ao construtor, se ela quiser: encerrar por tempo sem peça nova. Fonte: conversa de 04/11.
+- [x] **Fim da live da Lojix:** (05/11: o banner de reprise não conta mais, `d23f8746`.) o sistema considera a live no ar enquanto o banner estiver na home da FARM, mesmo sem peça nova (04/11: última peça às 17h43, banner até a noite). Ao construtor, se ela quiser: encerrar por tempo sem peça nova. Fonte: conversa de 04/11.
 - [ ] **Peças que a Dani escolhe à mão** aparecem na fila sem promoção: não confirmado se saem com o cupom da Lojix. Fonte: conversa de 04/11.
 - [ ] **Ressalvas baixas do QA no `message:abas --trocar`:** não avisa quando há proposta aberta na tela Mensagem; `--por` sem valor grava o texto da opção seguinte. Ao usar: prévia sempre antes e `account:mensagem` para ver proposta aberta. Fonte: QA, 04/11.
 
