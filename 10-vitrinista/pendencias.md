@@ -151,6 +151,8 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
   7. Um story por peça, ou às vezes várias peças no mesmo?
   8. Horários: ela escolhe cada um, ou uma fila com horários fixos por dia?
   Fonte: conversa de 05/11.
+  **Respostas de 05/11, noite:** o teste roda num perfil alternativo, não no da criadora (some o risco de story de teste no perfil real); a conta é profissional ("pro"; comercial ou de criadora, não dito); o ManyChat já tem algumas automações (ver se alguma responde a stories antes de ligar a nova). Em andamento: o teste com a Engenharia 2 (`claude/stories-teste`) e o rascunho do editor com a Engenharia (`claude/stories-editor-design`).
+- [ ] **Stories, o que só ela faz:** entrar no Facebook (app da Meta) e no ManyChat quando o Gerente pedir; aceitar no perfil alternativo o convite de testadora e autorizar o app; dizer se o perfil alternativo está ligado a um ManyChat e em qual plano (a Solicitação Externa pode ser só do Pro, não confirmado); rodar a linha de root que põe as chaves no `.env` da cópia de teste. Fonte: conversa de 05/11.
 
 ## De 04/11
 
