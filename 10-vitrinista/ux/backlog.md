@@ -395,119 +395,119 @@ Nota de medição: `set_environment` com 390 de largura rendeu 375 px de área �
 
 Capturas em `/var/lib/openbot/OpenBot/Shared/ux-stories-0611/` (nome do arquivo em cada achado). Montei dois stories de teste (peça → foto → fila → reordenar → prender a hora → editar textos) e tirei os dois no fim; a fila ficou vazia. Não vi: o teclado do celular, a pinça de dois dedos, o arrastar para reordenar, vídeo e as animações em movimento (só quadros parados); isso precisa do aparelho da dona.
 
-### UX-044 · alta · aberto (cópia, editor "Editar textos deste story", 390 e 1366)
+### UX-044 · alta · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, editor "Editar textos deste story", 390 e 1366)
 - Capturas: `editor-modo-texto-fontes-390.png`, `editor-cores-390.png`, `editor-camada-selecionada-390.png`, `editor-1366.png`
 - Visto: 2026-11-06
 - O que atrapalha: o editor abre só com um X, um "Aa" e um "Pronto" sobre a foto; nenhuma frase diz "toque no texto para editar". Se ela toca em "Aa", a foto escurece, aparecem fontes, cores e ferramentas, mas nenhum texto está selecionado: escolher o azul não muda nada que se veja (testei). Só funciona tocando no texto antes. A dica certa ("toque num texto para editar, arraste para mover e use dois dedos…") existe na tela Modelo, fora do editor, e não existe no editor de cada story.
 - Critério: clareza de ação, heurística (status do sistema, ajuda no ponto de uso)
 - Conserto sugerido: uma frase curta sobre a foto na primeira abertura ("Toque num texto para editar"), e as ferramentas só aparecerem depois que um texto for escolhido (ou "Aa" já abrir o primeiro texto, como o modo texto do Instagram).
 
-### UX-045 · alta · aberto (cópia, folha "Adicionar ao story", `/stories/pecas`, 390)
+### UX-045 · alta · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, folha "Adicionar ao story", `/stories/pecas`, 390)
 - Capturas: `folha-adicionar-com-foto-390.png`, `pecas-filtros-390.png`
 - Visto: 2026-11-06
 - O que atrapalha: nas duas peças em que abri a folha (Calça Guipure e Bolsa Jacquard), a única opção é "Suba uma foto ou vídeo seu com a peça"; não vi "usar as fotos da peça" (o card mostra a foto da loja logo acima). Se a opção só aparece para algumas peças, a tela não diz quais nem por quê; se não existe, a afiliada que usa a foto da loja (a maioria) precisa baixar a foto e subir de novo. "Pôr na fila" fica apagado e desabilitado sem nenhuma frase dizendo o que falta.
 - Critério: clareza de ação, heurística (status do sistema, flexibilidade)
 - Conserto sugerido: confirmar se a escolha das fotos da peça aparece nesta peça; se aparece só às vezes, dizer na folha ("Esta peça não tem foto da loja, suba a sua") e, com o botão desabilitado, uma linha embaixo: "Escolha uma foto ou vídeo para continuar".
 
-### UX-046 · média · aberto (cópia, Novo/Editar story e editor, 390 e 1366)
+### UX-046 · média · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Novo/Editar story e editor, 390 e 1366)
 - Capturas: `novo-story-campos-390.png`, `editor-camada-selecionada-390.png`, `editar-story-1366.png`
 - Visto: 2026-11-06
 - O que atrapalha: o campo se chama "Instrução (o campo {instrucao} do modelo)" e, dentro do editor, o texto aparece como "comenta {palavra} que eu te mando o link" e o botão é um "{ }" sem nome. Chaves e "campo do modelo" são linguagem de programador; ela não sabe que `{palavra}` vira "BOLSA" no story.
 - Critério: ux-writing (palavra técnica), heurística (linguagem da cliente)
 - Conserto sugerido: no editor, mostrar o valor real ("comenta BOLSA…") e marcar o trecho variável com cor ou sublinhado; chamar o campo de "Frase de chamada" ou o nome que ela já conhece; trocar o ícone "{ }" por "+ Nome / Preço" escrito.
 
-### UX-047 · média · aberto (cópia, Novo/Editar story, Modelo, folha, 390 e 1366)
+### UX-047 · média · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Novo/Editar story, Modelo, folha, 390 e 1366)
 - Capturas: `novo-story-topo-390.png`, `modelo-acoes-390.png`, `folha-adicionar-com-foto-390.png`
 - Visto: 2026-11-06
 - O que atrapalha: o aviso âmbar "Uma camada passa da parte que o app cobre (em cima ou embaixo): pode ficar escondida." aparece em todo story e no modelo padrão, porque o texto do próprio modelo já cai na faixa coberta; ela não consegue fazer nada com isso (não diz qual texto, nem para onde mover). "Camada" e "o app cobre" são palavras de designer, e o rótulo "o app cobre esta parte" na prévia tem 11 px.
 - Critério: ux-writing, densidade (alerta que nunca some), heurística (prevenção de erro com saída)
 - Conserto sugerido: avisar só quando o texto dela (não o do modelo) passar da faixa, e dizer "O texto 'comenta BOLSA…' pode ficar escondido pelo Instagram; arraste para cima"; rótulo da faixa com pelo menos 12 px: "Instagram cobre aqui".
 
-### UX-048 · média · aberto (cópia, folha "Adicionar ao story", 390)
+### UX-048 · média · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, folha "Adicionar ao story", 390)
 - Capturas: `folha-adicionar-com-foto-390.png`, `fila-vazia-390.png`
 - Visto: 2026-11-06
 - O que atrapalha: (a) o seletor de arquivo é o botão cru do navegador ("Choose File / No file chosen", 293×21 px, em inglês, abaixo dos 44 px); (b) os 3 botões quebram em 2 linhas, com "Fechar" e "Ajustar antes" em cima e o botão que fecha a tarefa ("Pôr na fila") sozinho embaixo, e nada explica a diferença entre os dois; (c) a prévia dentro da folha tem uns 175×280 px, o texto do story fica ilegível; (d) ao tocar "Pôr na fila" a folha volta por um instante ao estado vazio e só então fecha; o único aviso é "Na fila: hoje, 19:00" ao lado do botão do card, fácil de perder.
 - Critério: clareza de ação, hierarquia, heurística (status do sistema), alvo de toque
 - Conserto sugerido: botão grande "Escolher foto ou vídeo" no lugar do campo nativo; "Pôr na fila" à direita em linha com os outros ou em largura inteira, com "Ajustar antes" explicado numa linha ("Mudar texto ou enquadramento"); uma confirmação visível ao fechar ("Story na fila para hoje, 19:00. Ver a fila").
 
-### UX-049 · média · aberto (cópia, Fila, 390 e 1366)
+### UX-049 · média · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Fila, 390 e 1366)
 - Capturas: `fila-dois-stories-390.png`, `fila-hora-presa-390.png`, `fila-1366.png`
 - Visto: 2026-11-06
 - O que atrapalha: "Prender a hora" (botão com cadeado, quebra em 2 linhas no celular) é verbo pouco usado; ao tocar ele só fixa o horário que o story já tinha (hoje, 19:00), sem deixar escolher a hora, e a mensagem "Hora presa: o story sai neste horário." fica no fim da lista. A escolha da hora está em outro lugar (Editar). O status "GRAVANDO" aparece enquanto a imagem é gerada e a pessoa lê "gravando" como "estou gravando áudio/vídeo"; "AGENDADO" fica com a publicação desligada.
 - Critério: ux-writing, clareza de ação
 - Conserto sugerido: "Fixar neste horário" / "Soltar o horário" (ou "Escolher a hora" abrindo o seletor); "GRAVANDO" → "Preparando"; o cadeado ao lado da hora já ajuda, manter.
 
-### UX-050 · média · aberto (cópia, Fila, 390)
+### UX-050 · média · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Fila, 390)
 - Capturas: `fila-dois-stories-390.png`, `fila-reordenada-390.png`
 - Visto: 2026-11-06
 - O que atrapalha: cada story ocupa uns 315 px (4 botões empilhados); com 2 stories a lista já passa da tela, e com 6 seria uns 1.900 px. Ao descer um story pela seta, ele salta uns 330 px para baixo e sai da vista, e a confirmação "Fila reorganizada: as horas foram recalculadas." aparece só depois do último card, longe da seta tocada. Os controles têm 44 px (bom), mas a seta é a única forma prática de reordenar no celular.
 - Critério: densidade, heurística (status do sistema)
 - Conserto sugerido: linha do story mais baixa no celular (miniatura, nome e hora, e Editar/Prender/Tirar num menu "⋯"); a confirmação como aviso fixo no topo da tela, ou o card movido piscar e ficar à vista.
 
-### UX-051 · média · aberto (cópia, Stories, 390 e 1366)
+### UX-051 · média · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Stories, 390 e 1366)
 - Capturas: `fila-dois-banners-390.png`, `fila-1366.png`
 - Visto: 2026-11-06
 - O que atrapalha: duas faixas âmbar no topo da Fila ("A publicação está desligada no servidor…" e "A renovação automática do token está sem o app da Meta no servidor: o token vence em cerca de 60 dias.") ocupam uns 210 px no celular e levam o primeiro story para o fim da primeira tela; "servidor", "token" e "app da Meta" não são palavras dela, e ela não tem o que fazer. Só vale se a tela de produção também mostrar isso; se for aviso de operação, não deveria chegar à cliente.
 - Critério: densidade, ux-writing, heurística (linguagem da cliente)
 - Conserto sugerido: avisos de infraestrutura só para a administração; para a cliente, uma linha só quando algo exige ação dela ("Reconecte o Instagram até 12/01").
 
-### UX-052 · média · aberto (cópia, Peças, 390 e 1366)
+### UX-052 · média · parcial na claude/stories-intervalo (06/11): filtros em linha e 1ª peça na 1ª tela; falta a ordem das peças (cópia, Peças, 390 e 1366)
 - Capturas: `pecas-topo-390.png`, `pecas-filtros-390.png`, `pecas-1366.png`
 - Visto: 2026-11-06
 - O que atrapalha: antes da primeira peça há um aviso, 7 "Promoções no ar" (5 linhas no 1366), a busca, "Loja" e "Filtros", e 11 pílulas de categoria; a página tem 7.291 px no celular para 24 peças (582 páginas). Nenhuma peça aparece na primeira tela, nem no celular nem no computador. "FARM Etc 1168" aparece junto das categorias, mas é uma loja. As primeiras peças são velas e pulseiras: a ordem não ajuda quem procura roupa.
 - Critério: densidade, hierarquia
 - Conserto sugerido: promoções recolhidas numa linha com rolagem lateral (ou atrás de "Promoções"); a loja fora da fila de categorias; a primeira peça visível sem rolar.
 
-### UX-053 · média · aberto (cópia, Novo/Editar story, 390)
+### UX-053 · média · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Novo/Editar story, 390)
 - Capturas: `novo-story-topo-390.png`, `novo-story-campos-390.png`, `novo-story-quando-sai-390.png`
 - Visto: 2026-11-06
 - O que atrapalha: o título diz "Novo story" e "FARM Rio · disponível", sem o nome da peça (ele só aparece uns 820 px abaixo, depois da prévia); a prévia de 600 px vem antes do formulário e a página tem 2.050 px. Rótulos que não se entendem: "Estou usando o tamanho" (com o campo "M"), "Padrão (padrão)" no modelo, "Vídeo de 3 a 60 segundos… com o som dele" mesmo quando ela subiu foto, "Num horário escolhido (prende o story nele)", e, ao editar, o botão "Salvar e gravar de novo".
 - Critério: hierarquia, ux-writing
 - Conserto sugerido: o nome da peça no título; formulário ao lado da prévia só no computador, e no celular a prévia menor; "Tamanho que eu uso: M"; "Padrão"; "Num horário que eu escolho"; "Salvar mudanças".
 
-### UX-054 · média · aberto (cópia, Modelo, 390)
+### UX-054 · média · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Modelo, 390)
 - Capturas: `modelo-topo-390.png`, `modelo-acoes-390.png`
 - Visto: 2026-11-06
 - O que atrapalha: a primeira tela é só a foto de exemplo com uma faixa listrada; "Editar textos", a ação principal, fica uns 830 px abaixo, depois da foto, do aviso âmbar e do "Peça de exemplo…". Quem abre o Modelo não vê o que fazer. "Salvar modelo" é azul-marinho e as demais ações principais são verdes.
 - Critério: hierarquia, consistência
 - Conserto sugerido: o botão "Editar textos" no alto, antes da foto, ou a própria foto tocável com o rótulo "Toque para editar".
 
-### UX-055 · média · aberto (cópia, editor, 1366)
+### UX-055 · média · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, editor, 1366)
 - Capturas: `editor-1366.png`, `editor-1366-camada.png`
 - Visto: 2026-11-06
 - O que atrapalha: no computador a ajuda na tela Modelo manda "usar dois dedos para aumentar e girar", e não há alça, roda do mouse nem campo de grau visíveis no editor; girar o texto parece impossível com o mouse. O carrossel de fontes é cortado na borda direita da coluna de 432 px, sem seta nem sombra que diga que continua. Sobra ainda uma faixa creme de uns 15 px à direita da tela escura (a barra de rolagem da página fica por fora).
 - Critério: clareza de ação (affordance), heurística (flexibilidade)
 - Conserto sugerido: no computador, a ajuda diz o que vale ("arraste o canto para aumentar"); alças nos cantos do texto selecionado; sombra nas bordas do carrossel; cobrir a tela inteira ao abrir.
 
-### UX-056 · baixa · aberto (cópia, editor, 390)
+### UX-056 · baixa · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, editor, 390)
 - Capturas: `editor-modo-texto-fontes-390.png`, `editor-cores-390.png`
 - Visto: 2026-11-06
 - O que atrapalha: alvos abaixo de 44 px: pílulas de fonte 34 px de altura, ferramentas 44×40, cores 26×26 (conta-gotas 30×30), barra de tamanho com 28 px de largura e 8 px fora da tela à esquerda. Dois botões se chamam só "A" (efeito e fundo do texto), sem nome para leitor de tela. A ordem das cores e a linha de fontes seguem a gravação do Instagram (conta-gotas, branco, preto, azul, verde, amarelo, laranja, vermelho, rosa, roxo, com pontinhos), o que ajuda.
 - Critério: alvo de toque, heurística (acessibilidade)
 - Conserto sugerido: dar 44 px de área de toque (a pílula pode ser menor que a área); nomes "Efeito do texto" e "Fundo do texto".
 
-### UX-057 · média · aberto (cópia, Catálogo, 390)
+### UX-057 · média · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Catálogo, 390)
 - Capturas: `colar-link-390.png`
 - Visto: 2026-11-06
 - O que atrapalha: o único caminho para peças da Renner e da Riachuelo, "Colar o link de uma peça da Renner ou da Riachuelo", é um texto sublinhado dentro do subtítulo, sem aparência de botão. No formulário, os exemplos dos campos (link, "Vestido midi básico…", "55,90", "79,90") têm cor quase igual à do texto digitado (contraste 6,9:1 contra uns 12:1) e parecem já preenchidos; o campo "Foto" é o seletor cru do navegador.
 - Critério: clareza de ação (affordance), ux-writing
 - Conserto sugerido: botão de contorno "Colar link (Renner, Riachuelo)" ao lado da busca; exemplos em cinza claro.
 
-### UX-058 · baixa · aberto (cópia, Peças, 390 e 1366)
+### UX-058 · baixa · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Peças, 390 e 1366)
 - Capturas: `pecas-topo-390.png`, `pecas-1366.png`
 - Visto: 2026-11-06
 - O que atrapalha: o aviso "Cadastre seu código da Dress To em Códigos : sem ele, as peças da loja não aparecem aqui." quebra a frase em 3 linhas, com o link "Códigos" sozinho numa linha e os dois-pontos na linha seguinte. Há dois catálogos parecidos (Catálogo, com 16.085 peças, e Peças dos Stories, com 13.963): a diferença é só o código da Dress To e não está dita.
 - Critério: ux-writing, consistência
 - Conserto sugerido: link na mesma linha ("Cadastre seu código da Dress To em Códigos para ver as peças dela"); uma frase dizendo por que a lista é menor aqui.
 
-### UX-059 · baixa · aberto (cópia, Fila e Horários, 390)
+### UX-059 · baixa · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Fila e Horários, 390)
 - Capturas: `fila-vazia-390.png`, `horarios-390.png`
 - Visto: 2026-11-06
 - O que atrapalha: o link "Horários e respostas" tem 149×21 px e fica depois de "Publicados nos últimos 7 dias", no fim da página; as caixas de resposta usam fonte monoespaçada (cara de código). A tela de horários vai mudar, então só registro o link e a fonte.
 - Critério: alvo de toque, ux-writing
 - Conserto sugerido: link com 44 px de altura, perto do título da fila; fonte do corpo nas respostas.
 
-### UX-060 · baixa · aberto (cópia, Modelo e editor, 390)
+### UX-060 · baixa · corrigido na claude/stories-intervalo (06/11), aguardando deploy (cópia, Modelo e editor, 390)
 - Capturas: `modelo-editor-390.png`
 - Visto: 2026-11-06
 - O que atrapalha: no exemplo, o texto padrão é branco, fino e em letra cursiva sobre a foto clara; medi o branco contra a região do texto na foto da loja (mediana 3,6:1, pior 10% em 2,8:1), abaixo dos 4,5:1. Há sombra, mas a leitura no celular cansa. É a foto de exemplo da loja; a foto real da cliente pode ser pior ou melhor.
