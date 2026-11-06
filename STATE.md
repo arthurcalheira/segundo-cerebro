@@ -2,24 +2,27 @@
 
 ## Agora
 
-Atualizado em 05/11/2026, à tarde, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-05]]; antes, [[2026-11-04]] e [[2026-11-03]].
+Atualizado em 05/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-05]]; antes, [[2026-11-04]] e [[2026-11-03]].
 
 - **No ar desde 05/11, à tarde** (`55409516`): o fim da Lojix pelo banner de reprise, a promoção à mão "Sem cupom" ([[2026-11-05-promocao-sem-cupom]]), a contagem do site pela regra do catálogo. Antes: a Fábula como loja, a mensagem da Lojix ([[2026-11-04-mensagem-da-lojix]]).
 - **Deploy:** sem esperar a meia-noite; o que ela aprova sobe quando o QA aprova, depois da cópia de teste.
 - **Promoções à mão no ar:** "🎄 Achadinhos de Natal FARM" e "Zumzum 50% OFF", até 12/11; a rotina "Estender Achadinhos de Natal" (quintas, 9h) leva a primeira até 24/12.
 - **Dani:** "só hoje!" e APP25 fora dos textos de aba; falta a geral e a Vitrine dela.
+- **Stories automáticos (uso interno):** a função inteira na `claude/stories` (`86f1a30c`), na cópia de teste; QA revisando. ManyChat do perfil alternativo no Pro, automação em rascunho, travada na Solicitação de Teste (contato não aparece na busca). Nada publica sem o ok dela na hora.
+- **Lojas novas (C&A, Renner, Riachuelo):** `claude/lojas-renner-cea-riachuelo` (`1a2b4a12`), só para a conta liberada, com escolha de seções; entra depois dos stories (migração `0076`). Renner e Riachuelo dependem do feed da Awin dela.
 - **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez. Uma suíte de teste por vez no servidor. O UX está parado (o navegador único está na conta de administração dela). CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
 
-0. **Com ela** ([[pendencias]], "De 05/11" e "De 04/11"): os 10% nas vitrines; o nome da criadora nas versões antigas dos Termos e da Privacidade; a geral e a Vitrine da Dani.
-1. **Gerente:** ver uma mensagem real da Dani (preço e um título só); conferir na quinta, 12/11, que a rotina estendeu os Achadinhos.
-2. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX.
-3. **Gerente, de 02/11:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
-4. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday.
-5. **UX:** telas novas no celular e a varredura semanal, quando houver login.
-6. **Depois:** as ressalvas baixas do QA, a sync da Lojix no reinício e a `claude/teste-guarda-portao` num pacote só, antes de 01/12.
-7. **Com ela** ([[pendencias]]): GitHub; Zoho e o lembrete; as 2 assinaturas pendentes; a senha da `dev@local` no Vault; a UX-018; [[revisar-decisoes-da-noite]]; advogado; backup externo.
+0. **Gerente:** fechar o ManyChat (Solicitação de Teste, resposta ligada à mensagem; mostrar a ela antes de publicar). Depois do QA: stories na cópia de teste com um vídeo real dela, e as lojas depois, juntando as branches na ordem `0075` → `0076`. Merge e deploy, cada um com o ok dela.
+1. **Com ela** ([[pendencias]], "De 05/11"): Awin (programas, id, feeds da Renner e da Riachuelo); Riachuelo por link ou código; grupos e canais; chip de leitura; os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
+2. **Gerente:** ver uma mensagem real da Dani (preço e um título só); conferir na quinta, 12/11, que a rotina estendeu os Achadinhos; conferir no ManyChat a data da primeira cobrança do Pro (no Essential era 18/11) e lembrá-la antes.
+3. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX.
+4. **Gerente, de 02/11:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
+5. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday.
+6. **UX:** telas novas no celular e a varredura semanal, quando houver login.
+7. **Depois:** as ressalvas baixas do QA, a sync da Lojix no reinício e a `claude/teste-guarda-portao` num pacote só, antes de 01/12.
+8. **Com ela** ([[pendencias]]): GitHub; Zoho e o lembrete; as 2 assinaturas pendentes; a senha da `dev@local` no Vault; a UX-018; [[revisar-decisoes-da-noite]]; advogado; backup externo.
 
 ## Ainda por fazer, sem data
 
