@@ -2,7 +2,20 @@
 
 Escrito em 25/10/2026 pelo Gerente, na troca do Maestri pelo OpenBot ([[2026-10-25-comando-pelo-openbot]]). O plano do Maestri, com o que os testes de lá ensinaram, ficou em `90-arquivo/maestri/plano-workspace.md`.
 
-## O que limita tudo: memória
+## Servidor do OpenBot na VPS
+
+Desde 26/10 (opção A, decisão dela) todos os agentes rodam no OpenBot da VPS ("Vitrinista-VPS"), como o usuário `openbot`, sem root. O resto deste plano foi escrito para o notebook; onde a VPS muda algo, vale esta seção.
+
+- Caminhos: vault em `/var/lib/openbot/projetos/segundo-cerebro`; projeto em `/var/lib/openbot/projetos/ferramenta-grupos`; worktrees ao lado: `-menu` (Engenharia), `-vitrine` (QA), `-dev2` (Engenharia 2).
+- Limites do serviço: 1 núcleo, 3 GB e 2 GB de swap; no máximo 2 turnos ao mesmo tempo. Engenharia e QA nunca rodam suíte juntos; UX não abre o navegador com eles rodando. Subir o limite é decisão dela.
+- Node 22 em `/var/lib/openbot/.local/node/bin`, pnpm pelo `corepack`.
+- Deploy e conferência sem ssh: o sudo libera só os comandos de deploy (cópia de teste e produção), status e CLI da Vitrinista. A lista fica fora do vault, no `AGENTS.md` da pasta do Gerente. Outra coisa como root, ela faz.
+- Vault: sem Obsidian Git na VPS. Quem escreve faz `git pull --rebase` antes, commit com o nome do agente e push logo depois.
+- Rotinas da Infra rodam os `.sh` de `openbot/scripts/` (`bash <caminho do vault>/openbot/scripts/<nome>.sh`); os `.ps1` ficaram para o notebook.
+- Deploy sem esperar a meia-noite desde 05/11: o que ela aprova sobe assim que o QA aprova, depois da cópia de teste.
+- A rotina roda enquanto o servidor estiver no ar; não depende do notebook ligado.
+
+## O que limita tudo: memória (notebook, até 26/10)
 
 O notebook tem 3,7 GB. A suíte do worker leva cerca de 1 h e cai por falta de memória com outra coisa rodando junto; duas rodadas de teste ou render com teste não cabem (24/10). Daí a regra:
 
