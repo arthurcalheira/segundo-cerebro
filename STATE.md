@@ -2,20 +2,20 @@
 
 ## Agora
 
-Atualizado em 05/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-05]]; antes, [[2026-11-04]] e [[2026-11-03]].
+Atualizado em 06/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-06]]; antes, [[2026-11-05]] e [[2026-11-04]].
 
-- **No ar desde 05/11, à tarde** (`55409516`): o fim da Lojix pelo banner de reprise, a promoção à mão "Sem cupom" ([[2026-11-05-promocao-sem-cupom]]), a contagem do site pela regra do catálogo. Antes: a Fábula como loja, a mensagem da Lojix ([[2026-11-04-mensagem-da-lojix]]).
+- **No ar desde 06/11, ~19h30** (`3400896f`, quatro deploys no dia): stories automáticos com fila por intervalo, modelo por loja e aba "Promoções"; lojas novas só nos Stories; leitura interna dos grupos (desligada) e atalho do iPhone ([[2026-11-06-stories-lojas-novas-e-grupos]]). Antes: promoção à mão "Sem cupom" ([[2026-11-05-promocao-sem-cupom]]).
 - **Deploy:** sem esperar a meia-noite; o que ela aprova sobe quando o QA aprova, depois da cópia de teste.
 - **Promoções à mão no ar:** "🎄 Achadinhos de Natal FARM" e "Zumzum 50% OFF", até 12/11; a rotina "Estender Achadinhos de Natal" (quintas, 9h) leva a primeira até 24/12.
 - **Dani:** "só hoje!" e APP25 fora dos textos de aba; falta a geral e a Vitrine dela.
-- **Stories automáticos (uso interno):** a função inteira na `claude/stories` (`86f1a30c`), na cópia de teste; QA revisando. ManyChat do perfil alternativo no Pro, automação em rascunho, travada na Solicitação de Teste (contato não aparece na busca). Nada publica sem o ok dela na hora.
-- **Lojas novas (C&A, Renner, Riachuelo):** `claude/lojas-renner-cea-riachuelo` (`1a2b4a12`), só para a conta liberada, com escolha de seções; entra depois dos stories (migração `0076`). Renner e Riachuelo dependem do feed da Awin dela.
+- **Stories automáticos (uso interno):** ligados só para a conta dela; publicar e ManyChat seguem desligados. Pronta para subir, esperando o ok dela: `claude/integracao-1106e` (`2bfb8f90`; resposta no Direct pelo texto da criadora e a escuta do Instagram, que sobe desligada). Na fila do QA: `claude/stories-aviso-codigo` (`2bfbc540`). Nada publica sem o ok dela na hora.
+- **Lojas novas (C&A, Renner, Riachuelo):** no ar, só nos Stories da conta dela, com os códigos cadastrados. Renner e Riachuelo sem feed na Awin; esperando o dev da criadora.
 - **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez. Uma suíte de teste por vez no servidor. O UX está parado (o navegador único está na conta de administração dela). CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
 
-0. **Gerente:** fechar o ManyChat (Solicitação de Teste, resposta ligada à mensagem; mostrar a ela antes de publicar). Depois do QA: stories na cópia de teste com um vídeo real dela, e as lojas depois, juntando as branches na ordem `0075` → `0076`. Merge e deploy, cada um com o ok dela.
-1. **Com ela** ([[pendencias]], "De 05/11"): Awin (programas, id, feeds da Renner e da Riachuelo); Riachuelo por link ou código; grupos e canais; chip de leitura; os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
+0. **Com ela:** ok para subir a `claude/integracao-1106e`; depois, QA e deploy da `claude/stories-aviso-codigo`. Em seguida ([[pendencias]], "De 06/11"): login do Telegram e a vaga da leitura dos grupos; token e instalação do atalho; painel da Meta para a escuta; ManyChat apontado para a produção (publicar só com o ok dela).
+1. **Com ela** ([[pendencias]], "De 05/11"): Awin (feeds da Renner e da Riachuelo); os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
 2. **Gerente:** ver uma mensagem real da Dani (preço e um título só); conferir na quinta, 12/11, que a rotina estendeu os Achadinhos; conferir no ManyChat a data da primeira cobrança do Pro (no Essential era 18/11) e lembrá-la antes.
 3. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX.
 4. **Gerente, de 02/11:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
@@ -40,6 +40,7 @@ Atualizado em 05/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 
 ## Decisões
 
+- 06/11: [[2026-11-06-stories-lojas-novas-e-grupos]].
 - 04/11: [[2026-11-04-mensagem-da-lojix]].
 - 03/11: [[2026-11-03-fabula-como-loja]].
 - 27/10: [[2026-10-27-promocoes-mais-certas]], [[2026-10-27-planos-black-friday]].
