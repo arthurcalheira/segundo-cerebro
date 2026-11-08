@@ -135,14 +135,21 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] **Botão "Zumzum 50% OFF":** (05/11: criado pela opção "Sem cupom", até 12/11, [[2026-11-05-promocao-sem-cupom]].) não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
+## De 07/11
+
+- [ ] **1º story pela Vitrinista:** a publicação está ligada na produção e a fila está vazia. Ela monta em Stories > Novo story e põe na fila (isso é o ok dela para essa publicação). Depois, o Gerente confere a publicação, testa o "quero" de outra conta e o destaque. Fonte: conversa de 07/11.
+- [ ] **Renovação do token do Instagram:** a renovação pode falhar porque o app configurado na produção agora é o do login do Instagram; resolver antes de ~60 dias da troca (início de janeiro). Fonte: conversa de 07/11.
+- [ ] **Leitura dos grupos:** depois de um dia contando (08/11, à noite), o Gerente confere e propõe a ela passar a ler (texto limpo por 7 dias e propostas). Fonte: conversa de 07/11.
+- [ ] **Story pela foto:** ela manda ~20 fotos ou vídeos de stories da Fran, cada um com a peça certa (nome ou link), a maioria da Farm e alguns com fundo de rua; a Engenharia roda o teste e a regra de [[story-pela-foto]] decide. Fonte: conversa de 07/11.
+
 ## De 06/11
 
-- [ ] **Ok para subir a `claude/integracao-1106e`** (`2bfb8f90`, QA ok, cópia de teste sem erro, migração `0084` só com colunas novas): resposta no Direct pelo texto da criadora e a escuta do Instagram desligada. Recomendação do Gerente: subir. Depois, o QA da `claude/stories-aviso-codigo`. Fonte: conversa de 06/11, noite.
-- [ ] **ManyChat na produção:** a automação dos stories está desligada e aponta para a cópia de teste. Trocar para a produção e publicar só com o ok dela. Fonte: 06/11.
-- [ ] **Leitura dos grupos:** login do Telegram no terminal com ela; confirmar a vaga de leitura; contar por um dia; ela diz quais grupos. Fonte: 06/11.
-- [ ] **Atalho do iPhone:** ela gera o token em Administração > Atalho do iPhone e instala pelo passo a passo. Fonte: 06/11.
-- [ ] **Escuta do Instagram (teste):** terminar o painel da Meta e o roteamento de conversas; publicar um story de teste só com o ok dela na hora; comparar o id do story com o da peça; conferir que o ManyChat segue intacto. Fonte: 06/11.
-- [ ] **Primeiro story real:** vídeo 1080p; ligar a publicação e os dados do Instagram só com o ok explícito dela. Não conferido: ffmpeg na imagem do worker da produção. Fonte: 06/11.
+- [x] **Ok para subir a `claude/integracao-1106e`** (07/11: subiu com o ok dela, e a `claude/stories-aviso-codigo` também, em `a956bed7`.) (`2bfb8f90`, QA ok, cópia de teste sem erro, migração `0084` só com colunas novas): resposta no Direct pelo texto da criadora e a escuta do Instagram desligada. Recomendação do Gerente: subir. Depois, o QA da `claude/stories-aviso-codigo`. Fonte: conversa de 06/11, noite.
+- [x] **ManyChat na produção:** (07/11: automação "Stories - quero (Vitrinista)" ligada na produção, com o ok dela.) a automação dos stories está desligada e aponta para a cópia de teste. Trocar para a produção e publicar só com o ok dela. Fonte: 06/11.
+- [x] **Leitura dos grupos:** (07/11: login feito, 3 canais do Telegram contando; o resto em "De 07/11".) login do Telegram no terminal com ela; confirmar a vaga de leitura; contar por um dia; ela diz quais grupos. Fonte: 06/11.
+- [ ] **Atalho do iPhone:** (07/11: ela pediu para pular por enquanto; não cobrar.) ela gera o token em Administração > Atalho do iPhone e instala pelo passo a passo. Fonte: 06/11.
+- [x] **Escuta do Instagram (teste):** (07/11: escuta e "quero" ligados na produção; o teste com o 1º story foi para "De 07/11".) terminar o painel da Meta e o roteamento de conversas; publicar um story de teste só com o ok dela na hora; comparar o id do story com o da peça; conferir que o ManyChat segue intacto. Fonte: 06/11.
+- [x] **Primeiro story real:** (07/11: publicação ligada; o 1º story foi para "De 07/11".) vídeo 1080p; ligar a publicação e os dados do Instagram só com o ok explícito dela. Não conferido: ffmpeg na imagem do worker da produção. Fonte: 06/11.
 - [ ] **Renner e Riachuelo sem feed na Awin:** esperando o dev da criadora explicar como o robô dela lê o catálogo (proxy residencial ou computador em casa em aberto; não burlar o 403). Fonte: 06/11.
 - [ ] **Baixos para um pacote:** conferente seguir a landing de Black Friday da Fábula até a coleção; ressalvas do QA (cupom no link, token falso faz a web ler 8 MB, escuta lê 256 KB desligada, log sem limite de assinatura inválida). Fonte: QA e conferente, 06/11.
 
