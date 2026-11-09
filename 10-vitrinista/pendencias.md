@@ -139,7 +139,7 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 
 - [ ] **1º story pela Vitrinista:** a publicação está ligada na produção e a fila está vazia. Ela monta em Stories > Novo story e põe na fila (isso é o ok dela para essa publicação). Depois, o Gerente confere a publicação, testa o "quero" de outra conta e o destaque. Fonte: conversa de 07/11.
 - [ ] **Renovação do token do Instagram:** a renovação pode falhar porque o app configurado na produção agora é o do login do Instagram; resolver antes de ~60 dias da troca (início de janeiro). Fonte: conversa de 07/11.
-- [ ] **Leitura dos grupos:** depois de um dia contando (08/11, à noite), o Gerente confere e propõe a ela passar a ler (texto limpo por 7 dias e propostas). Fonte: conversa de 07/11.
+- [ ] **Leitura dos grupos:** (08/11: um dia contando, sem erro do Telegram no resumo de saúde.) Falta o ok dela para passar a ler (`telegram:modo ler`: texto limpo por 7 dias e propostas, vistas em `grupos:propostas`). Fonte: conversa de 07/11.
 - [ ] **Story pela foto:** ela manda ~20 fotos ou vídeos de stories da Fran, cada um com a peça certa (nome ou link), a maioria da Farm e alguns com fundo de rua; a Engenharia roda o teste e a regra de [[story-pela-foto]] decide. Fonte: conversa de 07/11.
 
 ## De 06/11

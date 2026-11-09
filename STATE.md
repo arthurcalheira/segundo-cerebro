@@ -16,7 +16,7 @@ Atualizado em 07/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 ## Próximo
 
 0. **Com ela** ([[pendencias]], "De 07/11"): pôr o 1º story na fila; depois o Gerente confere, testa o "quero" de outra conta e o destaque. Mandar as ~20 fotos da Fran para o teste do Story pela foto.
-1. **Gerente, 08/11 à noite:** conferir um dia de contagem do Telegram e propor a ela passar a ler.
+1. **Com ela:** ok para o Telegram passar de contar a ler (um dia contando sem erro, conferido em 08/11).
 2. **Antes de janeiro:** resolver a renovação do token do Instagram.
 3. **Com ela** ([[pendencias]], "De 05/11"): Awin (feeds da Renner e da Riachuelo); os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
 4. **Gerente:** ver uma mensagem real da Dani; conferir na quinta, 12/11, que a rotina estendeu os Achadinhos; conferir no ManyChat a data da primeira cobrança do Pro e lembrá-la antes.
