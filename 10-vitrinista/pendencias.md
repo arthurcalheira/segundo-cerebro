@@ -135,6 +135,11 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] **Botão "Zumzum 50% OFF":** (05/11: criado pela opção "Sem cupom", até 12/11, [[2026-11-05-promocao-sem-cupom]].) não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
+## De 10/11
+
+- [ ] **Conferir a IA com a chave nova:** a chave da Anthropic foi trocada em 10/11, à noite, depois de o crédito acabar. Ver no log do worker que os nomes das promoções e a leitura dos banners voltaram, sem erro de crédito. Gerente. Fonte: conversa de 10/11.
+- [ ] **Comando para o Gerente trocar chaves sozinho:** oferecido a ela (liberar no acesso dele um comando só para isso, feito uma vez como root); sem resposta. Fonte: conversa de 10/11.
+
 ## De 07/11
 
 - [ ] **1º story pela Vitrinista:** a publicação está ligada na produção e a fila está vazia. Ela monta em Stories > Novo story e põe na fila (isso é o ok dela para essa publicação). Depois, o Gerente confere a publicação, testa o "quero" de outra conta e o destaque. Fonte: conversa de 07/11.

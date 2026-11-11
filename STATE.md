@@ -2,12 +2,13 @@
 
 ## Agora
 
-Atualizado em 07/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-07]]; antes, [[2026-11-06]] e [[2026-11-05]].
+Atualizado em 10/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O último dia com entregas está em [[2026-11-07]]; de 08 a 10/11, sem deploy ([[2026-11-10]]).
 
 - **No ar desde 07/11, fim da tarde** (`693bae4e`, seis deploys no dia, migrações `0084` a `0088`): resposta no Direct pelo texto da criadora, o "quero" dos stories, sync da C&A a cada 4 h, mídia guardada só nos Stories, fontes Plus e emoji Apple ([[2026-11-07-stories-quero-e-publicar]]).
 - **Stories na @frannocloset:** "quero" e publicação ligados na produção desde 07/11; automação do ManyChat ligada na conta certa. Fila vazia: o 1º story fica por último, quando ela puser na fila. Teste de ponta a ponta ainda não feito.
 - **Leitura dos grupos:** Telegram contando nos canais da Riachuelo, da C&A e da Renner desde 07/11; WhatsApp desligado.
 - **Story pela foto:** prévia boa (83% entre as 8 opções na Farm, [[story-pela-foto]]); esperando as fotos reais da Fran.
+- **IA:** o crédito da Anthropic acabou em 09/11, à noite; em 10/11 ela trocou a chave e o worker voltou sem erro. Falta ver a IA usada de fato com a chave nova.
 - **Deploy:** sem esperar a meia-noite; o que ela aprova sobe quando o QA aprova, depois da cópia de teste.
 - **Promoções à mão no ar:** "🎄 Achadinhos de Natal FARM" e "Zumzum 50% OFF", até 12/11; a rotina das quintas leva a primeira até 24/12.
 - **Lojas novas (C&A, Renner, Riachuelo):** só nos Stories da conta dela. Renner e Riachuelo sem feed na Awin; esperando o dev da criadora.
@@ -19,7 +20,7 @@ Atualizado em 07/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 1. **Com ela:** ok para o Telegram passar de contar a ler (um dia contando sem erro, conferido em 08/11).
 2. **Antes de janeiro:** resolver a renovação do token do Instagram.
 3. **Com ela** ([[pendencias]], "De 05/11"): Awin (feeds da Renner e da Riachuelo); os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
-4. **Gerente:** ver uma mensagem real da Dani; conferir na quinta, 12/11, que a rotina estendeu os Achadinhos; conferir no ManyChat a data da primeira cobrança do Pro e lembrá-la antes.
+4. **Gerente:** conferir no log que a IA voltou com a chave nova (nomes das promoções e banners); ver uma mensagem real da Dani; conferir na quinta, 12/11, que a rotina estendeu os Achadinhos; conferir no ManyChat a data da primeira cobrança do Pro e lembrá-la antes.
 5. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX. **Gerente:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
 6. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday; atalho do iPhone quando ela quiser.
 7. **Depois:** as ressalvas baixas do QA (emoji esticado em letra grande, pacote mais leve, apagar mídia), a sync da Lojix no reinício e a `claude/teste-guarda-portao` num pacote só, antes de 01/12.
