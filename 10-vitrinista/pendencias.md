@@ -135,9 +135,15 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] **Botão "Zumzum 50% OFF":** (05/11: criado pela opção "Sem cupom", até 12/11, [[2026-11-05-promocao-sem-cupom]].) não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
+## De 11/11
+
+- [ ] **Botão do bazar da FARM Etc (prazo: hoje):** o banner de `/farm-etc/bazar` diz bazar com 45% OFF + 10% extra no app (cupom EXTRA10, "só hoje"); o único botão no ar é "FARM Etc Friday: +10% extra em tudo!". Recomendação do Gerente: criar ou corrigir para "Bazar 45% OFF + 10% extra no app (cupom EXTRA10)". Fonte: Conferente do site, 11/11, 01h05.
+- [ ] **Cupom EXTRA10 nos dois botões de +10%** (Farm e FARM Etc): estão "sem cupom", mas o banner pede o EXTRA10. Recomendação: incluir. Fonte: idem.
+- [ ] **Aviso da Farm `/novidades`:** falso alarme (os três descontos do banner têm botão). Recomendação: dispensar. Fonte: idem.
+
 ## De 10/11
 
-- [ ] **Conferir a IA com a chave nova:** a chave da Anthropic foi trocada em 10/11, à noite, depois de o crédito acabar. Ver no log do worker que os nomes das promoções e a leitura dos banners voltaram, sem erro de crédito. Gerente. Fonte: conversa de 10/11.
+- [ ] **Conferir a IA com a chave nova:** (11/11: a leitura dos banners voltou; faltam os nomes das promoções.) a chave da Anthropic foi trocada em 10/11, à noite, depois de o crédito acabar. Ver no log do worker que os nomes das promoções e a leitura dos banners voltaram, sem erro de crédito. Gerente. Fonte: conversa de 10/11.
 - [ ] **Comando para o Gerente trocar chaves sozinho:** oferecido a ela (liberar no acesso dele um comando só para isso, feito uma vez como root); sem resposta. Fonte: conversa de 10/11.
 
 ## De 07/11
