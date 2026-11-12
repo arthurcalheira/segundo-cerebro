@@ -12,6 +12,7 @@ conferido: 2026-11-07
 - Onde erra: outra peça do mesmo look (a Farm fotografa o conjunto) e peças lisas e básicas.
 - Ajustes propostos: um toque "Qual peça? Vestido, Blusa, Calça…" antes da busca; 3 fotos por peça no índice.
 - Regra proposta para decidir, com ~20 fotos reais: 70% ou mais entre as 8, construir; 50 a 70%, construir e reordenar com o Claude (gasto pequeno, pede o ok dela); abaixo de 50%, desistir. A tela é um plano médio. Ligada a [[2026-11-07-stories-quero-e-publicar]].
+- Teste real em 11/11, com 9 fotos da Fran (vestidos Farm, selfie no espelho): 8 estavam no catálogo; foto inteira, 7 de 8 em 1º e 8 de 8 entre as 8 opções (0,6 s); com recorte, 8 de 8 em 1º (2,2 s). Amostra pequena e fácil: falta medir com ~20 fotos variadas. Construído e no ar desde 11/11 (`7d487aca`), em [[2026-11-11-stories-so-quero-e-story-pela-foto]].
 
 ## Fontes
 

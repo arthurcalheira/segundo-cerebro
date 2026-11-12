@@ -137,9 +137,13 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 
 ## De 11/11
 
-- [ ] **Botão do bazar da FARM Etc (prazo: hoje):** o banner de `/farm-etc/bazar` diz bazar com 45% OFF + 10% extra no app (cupom EXTRA10, "só hoje"); o único botão no ar é "FARM Etc Friday: +10% extra em tudo!". Recomendação do Gerente: criar ou corrigir para "Bazar 45% OFF + 10% extra no app (cupom EXTRA10)". Fonte: Conferente do site, 11/11, 01h05.
-- [ ] **Cupom EXTRA10 nos dois botões de +10%** (Farm e FARM Etc): estão "sem cupom", mas o banner pede o EXTRA10. Recomendação: incluir. Fonte: idem.
-- [ ] **Aviso da Farm `/novidades`:** falso alarme (os três descontos do banner têm botão). Recomendação: dispensar. Fonte: idem.
+- [x] **Botão do bazar da FARM Etc:** nome trocado no painel, com o ok dela, para "🔥 Bazar FARM Etc 45% OFF + 10% extra no app (cupom EXTRA10)"; o da Farm para "✨ FARM Friday: +10% EXTRA em tudo no app (cupom EXTRA10)". Fonte: conversa de 11/11.
+- [ ] **Tirar esses dois nomes à mão quando o banner mudar** (o extra era "só hoje"; os botões não têm prazo). Responsável: Gerente.
+- [ ] **Avisos do conferente (Farm `/novidades`, Dress To `/essencia`):** não dispensados, porque dispensar cala a página para sempre; fecham sozinhos quando o banner sair. Responsável: Gerente acompanha.
+- [ ] **Story pela foto:** conferir que o índice das fotos terminou e fazer uma busca real pela tela com uma foto da Fran (só lê, não publica); testar um vídeo do iPhone. Responsável: Gerente, na Abertura de 12/11.
+- [ ] **Story pela foto, medir de novo:** pedir a ela ~20 fotos variadas (blusa, saia, calça; rua e casa; Renner, Riachuelo, C&A). O teste de 11/11 foi pequeno e só com vestidos Farm. Responsável: ela.
+- [ ] **Vídeo dos Stories até 500 MB** (`claude/stories-video-500mb`, Engenharia 2): esperando a entrega; depois QA, cópia de teste e o ok dela (o ok anterior não cobre). Responsável: Gerente.
+- [ ] **Antes do 1º story:** conferir que o modelo dela não usa mais `{palavra}`. Responsável: Gerente.
 
 ## De 10/11
 

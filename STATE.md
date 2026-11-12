@@ -2,29 +2,32 @@
 
 ## Agora
 
-Atualizado em 10/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O último dia com entregas está em [[2026-11-07]]; de 08 a 10/11, sem deploy ([[2026-11-10]]).
+Atualizado em 11/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-11]].
 
-- **No ar desde 07/11, fim da tarde** (`693bae4e`, seis deploys no dia, migrações `0084` a `0088`): resposta no Direct pelo texto da criadora, o "quero" dos stories, sync da C&A a cada 4 h, mídia guardada só nos Stories, fontes Plus e emoji Apple ([[2026-11-07-stories-quero-e-publicar]]).
-- **Stories na @frannocloset:** "quero" e publicação ligados na produção desde 07/11; automação do ManyChat ligada na conta certa. Fila vazia: o 1º story fica por último, quando ela puser na fila. Teste de ponta a ponta ainda não feito.
+- **No ar desde 11/11, à noite** (`7d487aca`, cinco deploys no dia, migração `0089`): Stories só com "QUERO", link da Farm/FARM Etc/Fábula com `utm_campaign`, fonte Headline nova e o Story pela foto ([[2026-11-11-stories-so-quero-e-story-pela-foto]]).
+- **Story pela foto:** modelo baixado e índice das fotos rodando desde ~22h de 11/11 (a C&A quase pronta; as outras lojas por último). Teste com 9 fotos reais: 8 de 8 entre as 8 opções ([[story-pela-foto]]).
+- **Stories na @frannocloset:** "quero" e publicação ligados desde 07/11; fila vazia, o 1º story fica por último, quando ela puser na fila. Teste de ponta a ponta ainda não feito.
+- **Vídeo dos Stories:** a subida estava limitada a 100 MB por engano; a Engenharia 2 está passando para 500 MB (deploy pede o ok dela).
 - **Leitura dos grupos:** Telegram contando nos canais da Riachuelo, da C&A e da Renner desde 07/11; WhatsApp desligado.
-- **Story pela foto:** prévia boa (83% entre as 8 opções na Farm, [[story-pela-foto]]); esperando as fotos reais da Fran.
-- **IA:** o crédito da Anthropic acabou em 09/11, à noite; em 10/11 ela trocou a chave e o worker voltou sem erro. Falta ver a IA usada de fato com a chave nova.
+- **IA:** chave nova desde 10/11; a leitura dos banners voltou em 11/11.
 - **Deploy:** sem esperar a meia-noite; o que ela aprova sobe quando o QA aprova, depois da cópia de teste.
-- **Promoções à mão no ar:** "🎄 Achadinhos de Natal FARM" e "Zumzum 50% OFF", até 12/11; a rotina das quintas leva a primeira até 24/12.
-- **Lojas novas (C&A, Renner, Riachuelo):** só nos Stories da conta dela. Renner e Riachuelo sem feed na Awin; esperando o dev da criadora.
+- **Promoções à mão no ar:** "🎄 Achadinhos de Natal FARM" e "Zumzum 50% OFF", até 12/11 (a rotina das quintas leva a primeira até 24/12); nomes à mão do bazar da FARM Etc e da FARM Friday com EXTRA10.
+- **Lojas novas (C&A, Renner, Riachuelo):** só nos Stories da conta dela. Renner e Riachuelo sem feed na Awin.
 - **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez; uma suíte de teste por vez. UX parado sem login. CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
 
-0. **Com ela** ([[pendencias]], "De 07/11"): pôr o 1º story na fila; depois o Gerente confere, testa o "quero" de outra conta e o destaque. Mandar as ~20 fotos da Fran para o teste do Story pela foto.
-1. **Com ela:** ok para o Telegram passar de contar a ler (um dia contando sem erro, conferido em 08/11).
-2. **Antes de janeiro:** resolver a renovação do token do Instagram.
-3. **Com ela** ([[pendencias]], "De 05/11"): Awin (feeds da Renner e da Riachuelo); os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
-4. **Gerente:** conferir no log que a IA voltou com a chave nova (nomes das promoções e banners); ver uma mensagem real da Dani; conferir na quinta, 12/11, que a rotina estendeu os Achadinhos; conferir no ManyChat a data da primeira cobrança do Pro e lembrá-la antes.
-5. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX. **Gerente:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
-6. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday; atalho do iPhone quando ela quiser.
-7. **Depois:** as ressalvas baixas do QA (emoji esticado em letra grande, pacote mais leve, apagar mídia), a sync da Lojix no reinício e a `claude/teste-guarda-portao` num pacote só, antes de 01/12.
-8. **Com ela** ([[pendencias]]): GitHub; Zoho e o lembrete; as 2 assinaturas pendentes; a senha da `dev@local` no Vault; a UX-018; [[revisar-decisoes-da-noite]]; advogado; backup externo.
+0. **Gerente, 12/11:** conferir o índice das fotos terminado e uma busca real pela tela com foto da Fran; testar um vídeo do iPhone; conferir que a rotina de quinta estendeu os Achadinhos.
+1. **Vídeo até 500 MB:** entrega da Engenharia 2 → QA → cópia de teste → ok dela.
+2. **Com ela** ([[pendencias]], "De 11/11" e "De 07/11"): pôr o 1º story na fila (antes, conferir o modelo sem `{palavra}`); depois o Gerente testa o "quero" de outra conta e o destaque. ~20 fotos variadas para medir de novo o Story pela foto.
+3. **Com ela:** ok para o Telegram passar de contar a ler.
+4. **Antes de janeiro:** resolver a renovação do token do Instagram.
+5. **Com ela** ([[pendencias]], "De 05/11"): Awin (feeds da Renner e da Riachuelo); os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
+6. **Gerente:** tirar os nomes à mão do EXTRA10 quando o banner mudar; ver os nomes de promoção da IA com a chave nova; ver uma mensagem real da Dani; conferir no ManyChat a data da primeira cobrança do Pro e lembrá-la antes.
+7. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX. **Gerente:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
+8. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday; atalho do iPhone quando ela quiser.
+9. **Depois:** as ressalvas baixas do QA (emoji esticado em letra grande, pacote mais leve, apagar mídia, story antigo com a Headline sai com a Bodoni), a sync da Lojix no reinício e a `claude/teste-guarda-portao` num pacote só, antes de 01/12.
+10. **Com ela** ([[pendencias]]): GitHub; Zoho e o lembrete; as 2 assinaturas pendentes; a senha da `dev@local` no Vault; a UX-018; [[revisar-decisoes-da-noite]]; advogado; backup externo.
 
 ## Ainda por fazer, sem data
 
@@ -42,6 +45,7 @@ Atualizado em 10/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 
 ## Decisões
 
+- 11/11: [[2026-11-11-stories-so-quero-e-story-pela-foto]].
 - 07/11: [[2026-11-07-stories-quero-e-publicar]].
 - 06/11: [[2026-11-06-stories-lojas-novas-e-grupos]].
 - 04/11: [[2026-11-04-mensagem-da-lojix]].
