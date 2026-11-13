@@ -135,14 +135,22 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] **Botão "Zumzum 50% OFF":** (05/11: criado pela opção "Sem cupom", até 12/11, [[2026-11-05-promocao-sem-cupom]].) não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
+## De 12/11
+
+- [ ] **Abas e promoções próprias da Dani com o conjunto desmontado** (18 textos): a peça sem desconto sai sem preço no conjunto mandado por essas abas. O `message:abas --conjunto-blocos` só corrige a mensagem geral. Pedir à Engenharia 2 a mesma correção para as abas, que sobe como conserto de bug. Responsável: Gerente.
+- [ ] **3ª conta com o conjunto desmontado:** ficou de fora porque tem uma edição da mensagem aberta na tela, e corrigir agora apagaria essa edição. Rever depois que a assinante usar ou descartar a edição. Responsável: Gerente.
+- [ ] **Família Farm no look** (`claude/look-familia-farm` `bda5c84f`) e **IA do nome refeita** (`claude/mensagem-sem-nome-2` `e04fd670`): QA, cópia de teste e produção, sem perguntar de novo. Responsável: Gerente.
+- [ ] **Chamada duplicada da assinante nova** ("{promoção} {desconto} OFF" com um nome que já traz o %): perguntado a ela se tira; sem resposta. Fonte: conversa de 12/11.
+- [ ] **Faixa escura atrás do texto do modelo Geral** (o texto branco some em foto clara): ela pediu para segurar a pergunta; a recomendação do Gerente é pôr. Trazer de volta quando ela liberar.
+
 ## De 11/11
 
 - [x] **Botão do bazar da FARM Etc:** nome trocado no painel, com o ok dela, para "🔥 Bazar FARM Etc 45% OFF + 10% extra no app (cupom EXTRA10)"; o da Farm para "✨ FARM Friday: +10% EXTRA em tudo no app (cupom EXTRA10)". Fonte: conversa de 11/11.
 - [ ] **Tirar esses dois nomes à mão quando o banner mudar** (o extra era "só hoje"; os botões não têm prazo). Responsável: Gerente.
 - [ ] **Avisos do conferente (Farm `/novidades`, Dress To `/essencia`):** não dispensados, porque dispensar cala a página para sempre; fecham sozinhos quando o banner sair. Responsável: Gerente acompanha.
-- [ ] **Story pela foto:** conferir que o índice das fotos terminou e fazer uma busca real pela tela com uma foto da Fran (só lê, não publica); testar um vídeo do iPhone. Responsável: Gerente, na Abertura de 12/11.
+- [ ] **Story pela foto:** (12/11: o índice terminou; faltam a busca real e o vídeo.) conferir que o índice das fotos terminou e fazer uma busca real pela tela com uma foto da Fran (só lê, não publica); testar um vídeo do iPhone. Responsável: Gerente, na Abertura de 12/11.
 - [ ] **Story pela foto, medir de novo:** pedir a ela ~20 fotos variadas (blusa, saia, calça; rua e casa; Renner, Riachuelo, C&A). O teste de 11/11 foi pequeno e só com vestidos Farm. Responsável: ela.
-- [ ] **Vídeo dos Stories até 500 MB** (`claude/stories-video-500mb`, Engenharia 2): esperando a entrega; depois QA, cópia de teste e o ok dela (o ok anterior não cobre). Responsável: Gerente.
+- [x] **Vídeo dos Stories até 500 MB** (12/11: no ar, `bdeafda0`, com o ok dela) (`claude/stories-video-500mb`, Engenharia 2): esperando a entrega; depois QA, cópia de teste e o ok dela (o ok anterior não cobre). Responsável: Gerente.
 - [ ] **Antes do 1º story:** conferir que o modelo dela não usa mais `{palavra}`. Responsável: Gerente.
 
 ## De 10/11
