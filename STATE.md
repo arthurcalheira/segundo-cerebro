@@ -2,10 +2,10 @@
 
 ## Agora
 
-Atualizado em 14/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-14]].
+Atualizado em 15/11/2026, de manhã, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-15]].
 
 - **No ar** (`8adce36f`, 14/11): desconto que não se repete na chamada (e `message:abas --trocar --aba geral`), botão de usar a mensagem fixo no rodapé, lembrete da assinatura pela metade por e-mail **ligado**, com os assuntos novos ([[2026-11-14-catalogo-da-fran-e-assuntos-do-email]]). A Jéssica com os tamanhos de volta na mensagem geral.
-- **Catálogo da Renner e da Riachuelo pela fila do robô da Fran:** `claude/catalogo-supabase-fran` `4e61ded6`, QA aprovou o código; o Gerente acertou a conexão para funcionar de dentro dos containers. Espera ela rodar a linha que grava a conexão no servidor; depois sobe sem perguntar de novo. Cupons ficaram de fora.
+- **Catálogo da Renner e da Riachuelo pela fila do robô da Fran:** no ar desde 14/11, ~22h55 (`4e61ded6`, `master` e produção): 70 peças da Renner e 36 da Riachuelo, atualizadas a cada 4 h, só nos Stories dela ("Seleção da Fran"). Cupons de fora: oferecidos, esperando ela dizer se quer e qual validade.
 - **Conjuntos:** falta só a 3ª conta, que segue com uma edição aberta na tela.
 - **Story pela foto:** índice pronto desde 12/11. Faltam a busca real pela tela e o vídeo do iPhone.
 - **Stories na @frannocloset:** "quero" e publicação ligados desde 07/11; a fila está vazia e o 1º story fica por último, quando ela o puser na fila. Teste de ponta a ponta ainda não feito.
@@ -17,7 +17,7 @@ Atualizado em 14/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 
 ## Próximo
 
-0. **Gerente, quando ela rodar a linha do catálogo:** cópia de teste, sync da Renner e da Riachuelo duas vezes, produção, sync de novo; contar as peças e avisá-la; depois oferecer os cupons.
+0. **Com ela:** cupons da Renner e da Riachuelo nos Stories (sim ou não, e qual validade); depois tarefa pequena à Engenharia 2.
 1. **Gerente:** tarefa pequena à Engenharia 2 para os 2 testes de `deploy-files` que falham no `master`; busca real pela tela com uma foto da Fran e um vídeo do iPhone no Story pela foto; rever a 3ª conta do conjunto.
 2. **Com ela** ([[pendencias]], "De 14/11" a "De 07/11"): confirmar o assunto com 💛; pôr o 1º story na fila (depois o Gerente testa o "quero" de outra conta e o destaque); ~20 fotos variadas para medir de novo o Story pela foto; a faixa escura atrás do texto do modelo Geral, quando ela liberar a pergunta.
 3. **Com ela:** ok para o Telegram passar de contar a ler.
