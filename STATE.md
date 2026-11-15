@@ -2,28 +2,27 @@
 
 ## Agora
 
-Atualizado em 13/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-13]].
+Atualizado em 14/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-14]].
 
-- **No ar desde a noite de 12/11** (`0ec59672`, sem migração nova; nenhum deploy de dia em 13/11): família Farm como uma loja só no look, prévia do look com a loja da família, IA tira o nome da peça só a pedido (assunto encerrado), conjunto remontado também nas abas e promoções (as 18 da Dani conferidas), Renner pelo programa Favoritos Renner BR da Awin.
-- **No QA, sobem sem perguntar de novo quando ele aprovar** ([[2026-11-13-chamada-sem-repetir-botao-usar-e-email]]): o desconto que não se repete quando a promoção já tem o mesmo percentual (`claude/chamada-sem-repetir` `5dcde5d4`, com o `--trocar --aba geral`); o botão de usar a mensagem fixo no rodapé (`claude/mensagem-usar-fixo` `b6ab4e59`); o lembrete por e-mail (`claude/lembrete-email-2` `b0944762`, migração `0091`).
-- **Lembrete por e-mail:** senha de app do Zoho no cofre do OpenBot; o plano gratuito aceita o envio. Depois do deploy, ela roda uma linha no servidor e recebe um e-mail de teste.
+- **No ar** (`8adce36f`, 14/11): desconto que não se repete na chamada (e `message:abas --trocar --aba geral`), botão de usar a mensagem fixo no rodapé, lembrete da assinatura pela metade por e-mail **ligado**, com os assuntos novos ([[2026-11-14-catalogo-da-fran-e-assuntos-do-email]]). A Jéssica com os tamanhos de volta na mensagem geral.
+- **Catálogo da Renner e da Riachuelo pela fila do robô da Fran:** `claude/catalogo-supabase-fran` `4e61ded6`, QA aprovou o código; o Gerente acertou a conexão para funcionar de dentro dos containers. Espera ela rodar a linha que grava a conexão no servidor; depois sobe sem perguntar de novo. Cupons ficaram de fora.
 - **Conjuntos:** falta só a 3ª conta, que segue com uma edição aberta na tela.
-- **Story pela foto:** índice das fotos terminado em 12/11. Faltam a busca real pela tela e o vídeo do iPhone.
+- **Story pela foto:** índice pronto desde 12/11. Faltam a busca real pela tela e o vídeo do iPhone.
 - **Stories na @frannocloset:** "quero" e publicação ligados desde 07/11; a fila está vazia e o 1º story fica por último, quando ela o puser na fila. Teste de ponta a ponta ainda não feito.
 - **Leitura dos grupos:** Telegram contando nos canais da Riachuelo, da C&A e da Renner desde 07/11; WhatsApp desligado.
 - **Deploy:** o que ela pediu ou aprovou, e conserto de bug, sobe depois do QA e da cópia de teste sem perguntar de novo; ela é avisada depois.
 - **Promoções:** o Gerente decide sozinho o que confere no site com quase certeza. Os Achadinhos de Natal FARM vão até 19/11 (a rotina das quintas estende até 24/12); seguem os nomes à mão do bazar da FARM Etc e da FARM Friday com EXTRA10.
-- **Lojas novas (C&A, Renner, Riachuelo):** só nos Stories da conta dela. Renner na conta nova da Awin desde 12/11 (o feed ainda vem da conta antiga); Riachuelo sem feed na Awin.
+- **Lojas novas (C&A, Renner, Riachuelo):** só nos Stories da conta dela. Renner na conta nova da Awin desde 12/11; Riachuelo na "Vitrine Riachuelo BR" (a certa); as duas passam a vir do robô da Fran quando a branch subir.
 - **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez; uma suíte de teste por vez. UX parado sem login. CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
 
-0. **Gerente, 14/11:** subir as três branches do QA quando ele aprovar (cópia de teste antes); em seguida, pôr a linha dos tamanhos na mensagem geral da Jéssica, mandar a ela a linha do e-mail e o e-mail de teste; rever a 3ª conta do conjunto.
-1. **Gerente:** busca real pela tela com uma foto da Fran e um vídeo do iPhone no Story pela foto.
-2. **Com ela** ([[pendencias]], "De 13/11", "De 12/11", "De 11/11" e "De 07/11"): pôr o 1º story na fila; depois o Gerente testa o "quero" de outra conta e o destaque. ~20 fotos variadas para medir de novo o Story pela foto. A faixa escura atrás do texto do modelo Geral, quando ela liberar a pergunta.
+0. **Gerente, quando ela rodar a linha do catálogo:** cópia de teste, sync da Renner e da Riachuelo duas vezes, produção, sync de novo; contar as peças e avisá-la; depois oferecer os cupons.
+1. **Gerente:** tarefa pequena à Engenharia 2 para os 2 testes de `deploy-files` que falham no `master`; busca real pela tela com uma foto da Fran e um vídeo do iPhone no Story pela foto; rever a 3ª conta do conjunto.
+2. **Com ela** ([[pendencias]], "De 14/11" a "De 07/11"): confirmar o assunto com 💛; pôr o 1º story na fila (depois o Gerente testa o "quero" de outra conta e o destaque); ~20 fotos variadas para medir de novo o Story pela foto; a faixa escura atrás do texto do modelo Geral, quando ela liberar a pergunta.
 3. **Com ela:** ok para o Telegram passar de contar a ler.
 4. **Antes de janeiro:** resolver a renovação do token do Instagram.
-5. **Com ela** ([[pendencias]], "De 05/11"): feed da Riachuelo na Awin; os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
+5. **Com ela** ([[pendencias]], "De 05/11"): os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
 6. **Gerente:** tirar os nomes à mão do EXTRA10 quando o banner mudar; ver uma mensagem real da Dani; conferir no ManyChat a data da primeira cobrança do Pro e lembrá-la antes.
 7. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX. **Gerente:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
 8. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday.

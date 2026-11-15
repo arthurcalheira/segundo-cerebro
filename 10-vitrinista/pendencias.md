@@ -135,11 +135,18 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] **Botão "Zumzum 50% OFF":** (05/11: criado pela opção "Sem cupom", até 12/11, [[2026-11-05-promocao-sem-cupom]].) não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
+## De 14/11
+
+- [ ] **Gravar a conexão do catálogo da Fran no servidor:** ela roda a linha que o Gerente mandou na conversa de 14/11 (grava na cópia de teste e na produção, sem reiniciar). Depois o Gerente sobe `claude/catalogo-supabase-fran` `4e61ded6` sem perguntar de novo: cópia de teste, sync da Renner e da Riachuelo duas vezes, produção, sync de novo e, se o escopo já estiver salvo, marcar "Seleção da Fran" em Lojas novas. Responsável: ela, depois o Gerente.
+- [ ] **Cupons da Renner e da Riachuelo** (estão no banco da Fran e ficaram de fora desta versão): oferecer a ela depois do catálogo no ar. Responsável: Gerente.
+- [ ] **Assunto com 💛 do lembrete por e-mail:** ela confirma que chegou bonito na caixa do contato (teste mandado em 14/11). Responsável: ela.
+- [ ] **Dois testes de `deploy-files` falhando no `master`** (variáveis da foto fora do `.env.example`; mensagem da guarda do portão): tarefa pequena para a Engenharia 2. Responsável: Gerente.
+
 ## De 13/11
 
-- [ ] **Três branches no QA** (`claude/chamada-sem-repetir` `5dcde5d4`, `claude/mensagem-usar-fixo` `b6ab4e59`, `claude/lembrete-email-2` `b0944762`): cópia de teste e produção sem perguntar de novo quando ele aprovar. No merge do botão fixo, entrada nas Novidades "O botão de usar a mensagem sempre à vista". Responsável: Gerente.
-- [ ] **Tamanhos na mensagem geral da Jéssica** (ok dela): depois do deploy da `chamada-sem-repetir`, prévia e aplicar a linha dos tamanhos abaixo da chamada; conferir que não fica edição aberta. Responsável: Gerente.
-- [ ] **Configuração do e-mail no servidor:** depois do deploy da `lembrete-email-2`, ela roda a linha que o Gerente manda; depois, o e-mail de teste para ela. Responsável: ela e o Gerente.
+- [x] **Três branches no QA** (`claude/chamada-sem-repetir` `5dcde5d4`, `claude/mensagem-usar-fixo` `b6ab4e59`, `claude/lembrete-email-2` `b0944762`): cópia de teste e produção sem perguntar de novo quando ele aprovar. No merge do botão fixo, entrada nas Novidades "O botão de usar a mensagem sempre à vista". Responsável: Gerente. **Feito em 14/11:** as três no ar (`5dcde5d4`, `506bb287`, `4d03ccef`).
+- [x] **Tamanhos na mensagem geral da Jéssica** (ok dela): depois do deploy da `chamada-sem-repetir`, prévia e aplicar a linha dos tamanhos abaixo da chamada; conferir que não fica edição aberta. Responsável: Gerente. **Feito em 14/11.**
+- [x] **Configuração do e-mail no servidor:** depois do deploy da `lembrete-email-2`, ela roda a linha que o Gerente manda; depois, o e-mail de teste para ela. Responsável: ela e o Gerente. **Feito em 14/11:** ligado; teste enviado.
 - [ ] **Teste da Jéssica até 19/11:** se ela continuar no Essencial, a mensagem feita pela IA volta ao modelo Completa sozinha (regra do teste grátis). Só acompanhar.
 
 ## De 12/11
