@@ -135,6 +135,16 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] **Botão "Zumzum 50% OFF":** (05/11: criado pela opção "Sem cupom", até 12/11, [[2026-11-05-promocao-sem-cupom]].) não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
+## De 16/11
+
+- [ ] **Story das 20h11 com chaves** ("{30% off 🔥}", vestido da C&A): fica no Instagram até 17/11, 20h11. Apagar e publicar de novo pela fila, com o texto sem chaves, é com ela; recomendação do Gerente: só se esse story for importante. Responsável: ela.
+- [ ] **Conserto das chaves no story** (chaves sem campo não saem na arte; aviso no editor): a Engenharia 2 constrói. Depois QA, cópia de teste e produção, sem perguntar de novo (conserto de bug). Responsável: Gerente.
+- [ ] **Vitrines, fase 1** (`claude/vitrines` `08c3a30c`, migração 0092) no QA. Depois: juntar com o `master` atual, ela roda uma linha no servidor que só lê (a contagem de antes da mudança), cópia de teste, produção e a conferência de depois (`vitrines:conferir`, a liberar). Responsável: Gerente; a linha, ela.
+- [ ] **Vitrines, três pontos pela recomendação** ([[2026-11-16-vitrines-separadas-dos-numeros-e-bento]]): teto de números igual ao de vitrines; piso de 3 min por número mais aviso; a palavra "vitrine" só para quem pode ter mais de uma. Se ela quiser mudar, tem de ser antes da fase 2. Responsável: ela.
+- [ ] **Fotos do Drive (Renner e Riachuelo):** vigiar. Se o Drive limitar o endereço de miniatura (fotos quebrando aos poucos, peça fora da busca do Story pela foto), pedir para guardar a foto no nosso servidor na sincronização. Responsável: Gerente.
+- [ ] **Envios com o link da live em 16/11, 14h42 a 15h56:** a contagem apareceu só na tela dela. Se quiser registrar, ela manda o número. Sem ação pendente.
+- [ ] **Um 4º número ativo no automático** (78 peças em 16/11) fora do acompanhamento do Gerente, que só citava a Dani e a Jéssica: conferir de qual conta é. Responsável: Gerente.
+
 ## De 14/11
 
 - [x] **Gravar a conexão do catálogo da Fran no servidor:** Feito em 14/11, ~22h55: ela rodou a linha e o catálogo subiu (70 Renner, 36 Riachuelo, [[2026-11-15]]). Texto de antes: ela roda a linha que o Gerente mandou na conversa de 14/11 (grava na cópia de teste e na produção, sem reiniciar). Depois o Gerente sobe `claude/catalogo-supabase-fran` `4e61ded6` sem perguntar de novo: cópia de teste, sync da Renner e da Riachuelo duas vezes, produção, sync de novo e, se o escopo já estiver salvo, marcar "Seleção da Fran" em Lojas novas. Responsável: ela, depois o Gerente.
@@ -152,7 +162,7 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 ## De 12/11
 
 - [x] **Abas e promoções próprias da Dani com o conjunto desmontado** (18 textos): a peça sem desconto sai sem preço no conjunto mandado por essas abas. O `message:abas --conjunto-blocos` só corrige a mensagem geral. Pedir à Engenharia 2 a mesma correção para as abas, que sobe como conserto de bug. Responsável: Gerente. **Feito na noite de 12/11:** `dfb2e5e8` no ar e os 18 remontados e conferidos.
-- [ ] **3ª conta com o conjunto desmontado:** ficou de fora porque tem uma edição da mensagem aberta na tela, e corrigir agora apagaria essa edição. Rever depois que a assinante usar ou descartar a edição. Responsável: Gerente. **13/11:** a edição segue aberta; se continuar por dias, decidir se aplica mesmo assim.
+- [ ] **3ª conta com o conjunto desmontado:** ficou de fora porque tem uma edição da mensagem aberta na tela, e corrigir agora apagaria essa edição. Rever depois que a assinante usar ou descartar a edição. Responsável: Gerente. **13/11:** a edição segue aberta; se continuar por dias, decidir se aplica mesmo assim. **16/11:** o número dessa conta aparece desconectado, com o automático desligado.
 - [x] **Família Farm no look** (`claude/look-familia-farm` `bda5c84f`) e **IA do nome refeita** (`claude/mensagem-sem-nome-2` `e04fd670`): QA, cópia de teste e produção, sem perguntar de novo. Responsável: Gerente. **Feito na noite de 12/11:** `bda5c84f` e `f6e0c416` no ar (a IA do nome encerrada em `0ec59672`).
 - [ ] **Chamada duplicada da assinante nova** ("{promoção} {desconto} OFF" com um nome que já traz o %): perguntado a ela se tira; sem resposta. Fonte: conversa de 12/11. **13/11:** ela pediu o conserto na raiz; em `claude/chamada-sem-repetir`, no QA ([[2026-11-13-chamada-sem-repetir-botao-usar-e-email]]).
 - [ ] **Faixa escura atrás do texto do modelo Geral** (o texto branco some em foto clara): ela pediu para segurar a pergunta; a recomendação do Gerente é pôr. Trazer de volta quando ela liberar.

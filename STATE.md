@@ -2,32 +2,35 @@
 
 ## Agora
 
-Atualizado em 15/11/2026, de manhã, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-15]].
+Atualizado em 16/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-16]].
 
-- **No ar** (`8adce36f`, 14/11): desconto que não se repete na chamada (e `message:abas --trocar --aba geral`), botão de usar a mensagem fixo no rodapé, lembrete da assinatura pela metade por e-mail **ligado**, com os assuntos novos ([[2026-11-14-catalogo-da-fran-e-assuntos-do-email]]). A Jéssica com os tamanhos de volta na mensagem geral.
-- **Catálogo da Renner e da Riachuelo pela fila do robô da Fran:** no ar desde 14/11, ~22h55 (`4e61ded6`, `master` e produção): 70 peças da Renner e 36 da Riachuelo, atualizadas a cada 4 h, só nos Stories dela ("Seleção da Fran"). Cupons de fora: oferecidos, esperando ela dizer se quer e qual validade.
-- **Conjuntos:** falta só a 3ª conta, que segue com uma edição aberta na tela.
+- **No ar** (`edd84392`, 16/11): quatro deploys no dia, todos com QA antes. A Lojix só liga com peça nova na live (conserto da Lojix falsa de 16/11); o público "Meninos" da Fábula virou "Bento (meninos)", com botões de público no Catálogo e nas Peças dos Stories; as fotos da Renner e da Riachuelo aparecem no painel, pelo endereço de miniatura do Drive.
+- **Vitrines separadas dos números** ([[2026-11-16-vitrines-separadas-dos-numeros-e-bento]]): spec e plano em quatro fases na `claude/vitrines`. A fase 1 (`08c3a30c`, migração 0092, nenhuma tela muda) está no QA.
+- **Chaves no story:** um story saiu com "{30% off 🔥}" em 16/11. O conserto está com a Engenharia 2; depois QA e produção.
+- **Stories na @frannocloset:** "quero" e publicação ligados desde 07/11, e os stories já saem pela fila (o 4º em 16/11, o 1º com peça de loja nova). O teste do "quero" de outra conta e do destaque ainda não foi feito.
+- **Catálogo da Renner e da Riachuelo pela fila do robô da Fran:** no ar desde 14/11, atualizado a cada 4 h, só nos Stories dela. Cupons de fora, esperando ela.
+- **Conjuntos:** falta só a 3ª conta, com uma edição aberta na tela e o número desconectado.
 - **Story pela foto:** índice pronto desde 12/11. Faltam a busca real pela tela e o vídeo do iPhone.
-- **Stories na @frannocloset:** "quero" e publicação ligados desde 07/11; a fila está vazia e o 1º story fica por último, quando ela o puser na fila. Teste de ponta a ponta ainda não feito.
 - **Leitura dos grupos:** Telegram contando nos canais da Riachuelo, da C&A e da Renner desde 07/11; WhatsApp desligado.
 - **Deploy:** o que ela pediu ou aprovou, e conserto de bug, sobe depois do QA e da cópia de teste sem perguntar de novo; ela é avisada depois.
 - **Promoções:** o Gerente decide sozinho o que confere no site com quase certeza. Os Achadinhos de Natal FARM vão até 19/11 (a rotina das quintas estende até 24/12); seguem os nomes à mão do bazar da FARM Etc e da FARM Friday com EXTRA10.
-- **Lojas novas (C&A, Renner, Riachuelo):** só nos Stories da conta dela. Renner na conta nova da Awin desde 12/11; Riachuelo na "Vitrine Riachuelo BR" (a certa); as duas passam a vir do robô da Fran quando a branch subir.
 - **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez; uma suíte de teste por vez. UX parado sem login. CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
 
-0. **Com ela:** cupons da Renner e da Riachuelo nos Stories (sim ou não, e qual validade); depois tarefa pequena à Engenharia 2.
-1. **Gerente:** tarefa pequena à Engenharia 2 para os 2 testes de `deploy-files` que falham no `master`; busca real pela tela com uma foto da Fran e um vídeo do iPhone no Story pela foto; rever a 3ª conta do conjunto.
-2. **Com ela** ([[pendencias]], "De 14/11" a "De 07/11"): confirmar o assunto com 💛; pôr o 1º story na fila (depois o Gerente testa o "quero" de outra conta e o destaque); ~20 fotos variadas para medir de novo o Story pela foto; a faixa escura atrás do texto do modelo Geral, quando ela liberar a pergunta.
-3. **Com ela:** ok para o Telegram passar de contar a ler.
-4. **Antes de janeiro:** resolver a renovação do token do Instagram.
-5. **Com ela** ([[pendencias]], "De 05/11"): os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
-6. **Gerente:** tirar os nomes à mão do EXTRA10 quando o banner mudar; ver uma mensagem real da Dani; conferir no ManyChat a data da primeira cobrança do Pro e lembrá-la antes.
-7. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX. **Gerente:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
-8. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday.
-9. **Depois:** as ressalvas baixas do QA (emoji esticado em letra grande, pacote mais leve, apagar mídia, story antigo com a Headline sai com a Bodoni), a sync da Lojix no reinício e a `claude/teste-guarda-portao` num pacote só, antes de 01/12.
-10. **Com ela** ([[pendencias]]): GitHub; as 2 assinaturas pendentes (o lembrete por e-mail pode cobrir); a senha da `dev@local` no Vault; a UX-018; [[revisar-decisoes-da-noite]]; advogado; backup externo.
+0. **Gerente:** quando o QA responder a fase 1 das vitrines, juntar a branch com o `master` atual, pedir a ela a linha que só lê (a contagem de antes), cópia de teste, produção e a conferência de depois. Quando a Engenharia 2 entregar o conserto das chaves: QA, cópia de teste e produção.
+1. **Com ela** ([[pendencias]], "De 16/11"): o story das 20h11 com chaves (apagar e refazer, se quiser, até 17/11 à noite); os três pontos das vitrines que seguem pela recomendação, antes da fase 2.
+2. **Com ela:** cupons da Renner e da Riachuelo nos Stories (sim ou não, e qual validade); depois tarefa pequena à Engenharia 2.
+3. **Gerente:** de qual conta é o 4º número ativo no automático; vigiar as fotos do Drive; tarefa pequena à Engenharia 2 para os 2 testes de `deploy-files` que falham no `master`; busca real pela tela com uma foto da Fran e um vídeo do iPhone no Story pela foto; rever a 3ª conta do conjunto.
+4. **Com ela** ([[pendencias]], "De 14/11" a "De 07/11"): confirmar o assunto com 💛; ~20 fotos variadas para medir de novo o Story pela foto; a faixa escura atrás do texto do modelo Geral, quando ela liberar a pergunta. **Gerente:** testar o "quero" de outra conta e o destaque, agora que há story publicado.
+5. **Com ela:** ok para o Telegram passar de contar a ler.
+6. **Antes de janeiro:** resolver a renovação do token do Instagram.
+7. **Com ela** ([[pendencias]], "De 05/11"): os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
+8. **Gerente:** tirar os nomes à mão do EXTRA10 quando o banner mudar; ver uma mensagem real da Dani; conferir no ManyChat a data da primeira cobrança do Pro e lembrá-la antes.
+9. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX. **Gerente:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
+10. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday.
+11. **Depois:** as ressalvas baixas do QA (emoji esticado em letra grande, pacote mais leve, apagar mídia, story antigo com a Headline sai com a Bodoni; a mesma peça em destaque por mais de 1 h desliga a Lojix; a tela de Trocar sem os botões de público), a sync da Lojix no reinício e a `claude/teste-guarda-portao` num pacote só, antes de 01/12.
+12. **Com ela** ([[pendencias]]): GitHub; as 2 assinaturas pendentes (o lembrete por e-mail pode cobrir); a senha da `dev@local` no Vault; a UX-018; [[revisar-decisoes-da-noite]]; advogado; backup externo.
 
 ## Ainda por fazer, sem data
 
@@ -45,6 +48,8 @@ Atualizado em 15/11/2026, de manhã, pelo Gerente (no OpenBot da VPS desde 27/10
 
 ## Decisões
 
+- 16/11: [[2026-11-16-vitrines-separadas-dos-numeros-e-bento]].
+- 14/11: [[2026-11-14-catalogo-da-fran-e-assuntos-do-email]].
 - 13/11: [[2026-11-13-chamada-sem-repetir-botao-usar-e-email]].
 - 12/11: [[2026-11-12-look-deploy-e-promocoes]].
 - 11/11: [[2026-11-11-stories-so-quero-e-story-pela-foto]].
