@@ -2,35 +2,39 @@
 
 ## Agora
 
-Atualizado em 16/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-16]].
+Atualizado em 17/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-17]].
 
-- **No ar** (`edd84392`, 16/11): quatro deploys no dia, todos com QA antes. A Lojix só liga com peça nova na live (conserto da Lojix falsa de 16/11); o público "Meninos" da Fábula virou "Bento (meninos)", com botões de público no Catálogo e nas Peças dos Stories; as fotos da Renner e da Riachuelo aparecem no painel, pelo endereço de miniatura do Drive.
-- **Vitrines separadas dos números** ([[2026-11-16-vitrines-separadas-dos-numeros-e-bento]]): spec e plano em quatro fases na `claude/vitrines`. A fase 1 (`08c3a30c`, migração 0092, nenhuma tela muda) está no QA.
-- **Chaves no story:** um story saiu com "{30% off 🔥}" em 16/11. O conserto está com a Engenharia 2; depois QA e produção.
-- **Stories na @frannocloset:** "quero" e publicação ligados desde 07/11, e os stories já saem pela fila (o 4º em 16/11, o 1º com peça de loja nova). O teste do "quero" de outra conta e do destaque ainda não foi feito.
-- **Catálogo da Renner e da Riachuelo pela fila do robô da Fran:** no ar desde 14/11, atualizado a cada 4 h, só nos Stories dela. Cupons de fora, esperando ela.
+- **No ar** (`2272e258`, 17/11): três deploys no dia, todos com QA antes. **Vitrines separadas dos números, fases 1, 2 e 3** ([[2026-11-16-vitrines-separadas-dos-numeros-e-bento]]): a assinante escolhe entre vitrines, e várias vitrines podem usar o mesmo número. Termos de uso e Política de cookies na versão de 17/11. Falta a fase 4 (trocar o número de uma vitrine, descida de plano, apagar vitrine).
+- **Lançamentos da Riachuelo** ([[2026-11-17-lancamentos-da-riachuelo-e-lojix-no-dia]]): leitor próprio do Gerente, sem disfarce, pronto e testado no servidor. A parte de receber (`claude/integracao-lancamentos` `7c22ba21`, que traz junto a fila da Fran de hora em hora) está no QA. A Renner fica de fora: o site recusa o servidor.
+- **Stories, mídias e vídeo:** a Engenharia constrói a `claude/stories-midia-video` (a mídia usada num story se guarda sozinha em "Minhas mídias"; mais qualidade no vídeo). A medição da qualidade começou em 17/11 com os vídeos originais dela.
+- **Lojix:** desligada desde 17/11, ~17h10, depois de ligar sozinha com o banner "vem aí". Decisão dela: a regra do banner não muda; religa no dia da live (19/11, rotina às 8h; live às 12h).
+- **Stories na @frannocloset:** "quero" e publicação ligados desde 07/11, e os stories saem pela fila. O teste do "quero" de outra conta e do destaque ainda não foi feito.
+- **Catálogo da Renner e da Riachuelo pela fila do robô da Fran:** no ar desde 14/11, atualizado a cada 4 h (passa a 1 h quando os lançamentos subirem), só nos Stories dela. Cupons de fora, esperando ela.
 - **Conjuntos:** falta só a 3ª conta, com uma edição aberta na tela e o número desconectado.
 - **Story pela foto:** índice pronto desde 12/11. Faltam a busca real pela tela e o vídeo do iPhone.
 - **Leitura dos grupos:** Telegram contando nos canais da Riachuelo, da C&A e da Renner desde 07/11; WhatsApp desligado.
 - **Deploy:** o que ela pediu ou aprovou, e conserto de bug, sobe depois do QA e da cópia de teste sem perguntar de novo; ela é avisada depois.
+- **Acesso do Gerente:** desde 17/11 consulta o banco só para leitura e troca variáveis de função sem chamá-la (ela rodou a linha de root). Outra coisa como root continua com ela.
 - **Promoções:** o Gerente decide sozinho o que confere no site com quase certeza. Os Achadinhos de Natal FARM vão até 19/11 (a rotina das quintas estende até 24/12); seguem os nomes à mão do bazar da FARM Etc e da FARM Friday com EXTRA10.
 - **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez; uma suíte de teste por vez. UX parado sem login. CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
 
-0. **Gerente:** quando o QA responder a fase 1 das vitrines, juntar a branch com o `master` atual, pedir a ela a linha que só lê (a contagem de antes), cópia de teste, produção e a conferência de depois. Quando a Engenharia 2 entregar o conserto das chaves: QA, cópia de teste e produção.
-1. **Com ela** ([[pendencias]], "De 16/11"): o story das 20h11 com chaves (apagar e refazer, se quiser, até 17/11 à noite); os três pontos das vitrines que seguem pela recomendação, antes da fase 2.
-2. **Com ela:** cupons da Renner e da Riachuelo nos Stories (sim ou não, e qual validade); depois tarefa pequena à Engenharia 2.
-3. **Gerente:** de qual conta é o 4º número ativo no automático; vigiar as fotos do Drive; tarefa pequena à Engenharia 2 para os 2 testes de `deploy-files` que falham no `master`; busca real pela tela com uma foto da Fran e um vídeo do iPhone no Story pela foto; rever a 3ª conta do conjunto.
-4. **Com ela** ([[pendencias]], "De 14/11" a "De 07/11"): confirmar o assunto com 💛; ~20 fotos variadas para medir de novo o Story pela foto; a faixa escura atrás do texto do modelo Geral, quando ela liberar a pergunta. **Gerente:** testar o "quero" de outra conta e o destaque, agora que há story publicado.
-5. **Com ela:** ok para o Telegram passar de contar a ler.
-6. **Antes de janeiro:** resolver a renovação do token do Instagram.
-7. **Com ela** ([[pendencias]], "De 05/11"): os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
-8. **Gerente:** tirar os nomes à mão do EXTRA10 quando o banner mudar; ver uma mensagem real da Dani; conferir no ManyChat a data da primeira cobrança do Pro e lembrá-la antes.
-9. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX. **Gerente:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
-10. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday.
-11. **Depois:** as ressalvas baixas do QA (emoji esticado em letra grande, pacote mais leve, apagar mídia, story antigo com a Headline sai com a Bodoni; a mesma peça em destaque por mais de 1 h desliga a Lojix; a tela de Trocar sem os botões de público), a sync da Lojix no reinício e a `claude/teste-guarda-portao` num pacote só, antes de 01/12.
-12. **Com ela** ([[pendencias]]): GitHub; as 2 assinaturas pendentes (o lembrete por e-mail pode cobrir); a senha da `dev@local` no Vault; a UX-018; [[revisar-decisoes-da-noite]]; advogado; backup externo.
+0. **Gerente:** quando o QA aprovar os lançamentos: cópia de teste, produção, o leitor na cópia de teste, a primeira carga na produção (4 páginas), a conferência nas Peças dos Stories e a rotina de hora em hora. Quando a Engenharia entregar as mídias e o vídeo: QA, cópia de teste e produção; o vídeo original do story de 11/11 é apagado em 18/11, ~16h56 (há cópia).
+1. **Gerente, 19/11:** conferir se a Lojix religou às 8h e se a live das 12h entrou e saiu certa.
+2. **Com ela** ([[pendencias]], "De 17/11"): a Renner (toque no celular, autorização confirmada pela loja ou o leitor dela em outro lugar); o prazo de 14 dias dos lançamentos; se as 27 peças da Farm com data de 2033 a 2049 são o que ela viu fora de ordem.
+3. **Gerente:** fase 4 das vitrines à Engenharia, depois das mídias, com as ressalvas do QA; QA da `claude/deploy-healthcheck`; conferir a 2ª vitrine num número numa conta de teste.
+4. **Com ela:** cupons da Renner e da Riachuelo nos Stories (sim ou não, e qual validade); depois tarefa pequena à Engenharia 2.
+5. **Gerente:** de qual conta é o 4º número ativo no automático; vigiar as fotos do Drive; tarefa pequena à Engenharia 2 para os 2 testes de `deploy-files` que falham no `master`; busca real pela tela com uma foto da Fran e um vídeo do iPhone no Story pela foto; rever a 3ª conta do conjunto.
+6. **Com ela** ([[pendencias]], "De 14/11" a "De 07/11"): confirmar o assunto com 💛; ~20 fotos variadas para medir de novo o Story pela foto; a faixa escura atrás do texto do modelo Geral, quando ela liberar a pergunta. **Gerente:** testar o "quero" de outra conta e o destaque.
+7. **Com ela:** ok para o Telegram passar de contar a ler.
+8. **Antes de janeiro:** resolver a renovação do token do Instagram.
+9. **Com ela** ([[pendencias]], "De 05/11"): os 10% nas vitrines; a geral e a Vitrine da Dani; o nome da criadora nas versões antigas dos Termos e da Privacidade.
+10. **Gerente:** tirar os nomes à mão do EXTRA10 quando o banner mudar; ver uma mensagem real da Dani; conferir no ManyChat a data da primeira cobrança do Pro e lembrá-la antes.
+11. **Com ela, de 02/11:** testar o FOGUETES3 em `/assinar` e mandar o texto; escolher o login do UX. **Gerente:** desde quando a chave da Stripe estava vencida e se alguém tentou assinar.
+12. **Com ela, de antes:** horário para a troca da chave interna do painel; ler os Termos de 27/10; tabela 3 e Black Friday.
+13. **Depois:** as ressalvas baixas do QA (emoji esticado em letra grande, pacote mais leve, apagar mídia, story antigo com a Headline sai com a Bodoni; a mesma peça em destaque por mais de 1 h desliga a Lojix; a tela de Trocar sem os botões de público; "Jaqueta com Cinto" em Acessórios), a sync da Lojix no reinício e a `claude/teste-guarda-portao` num pacote só, antes de 01/12.
+14. **Com ela** ([[pendencias]]): GitHub; as 2 assinaturas pendentes (o lembrete por e-mail pode cobrir); a senha da `dev@local` no Vault; a UX-018; [[revisar-decisoes-da-noite]]; advogado; backup externo.
 
 ## Ainda por fazer, sem data
 
@@ -48,6 +52,7 @@ Atualizado em 16/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 
 ## Decisões
 
+- 17/11: [[2026-11-17-lancamentos-da-riachuelo-e-lojix-no-dia]].
 - 16/11: [[2026-11-16-vitrines-separadas-dos-numeros-e-bento]].
 - 14/11: [[2026-11-14-catalogo-da-fran-e-assuntos-do-email]].
 - 13/11: [[2026-11-13-chamada-sem-repetir-botao-usar-e-email]].
