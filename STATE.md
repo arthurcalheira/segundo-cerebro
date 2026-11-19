@@ -2,14 +2,14 @@
 
 ## Agora
 
-Atualizado em 17/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-17]].
+Atualizado em 18/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-18]].
 
-- **No ar** (`2272e258`, 17/11): três deploys no dia, todos com QA antes. **Vitrines separadas dos números, fases 1, 2 e 3** ([[2026-11-16-vitrines-separadas-dos-numeros-e-bento]]): a assinante escolhe entre vitrines, e várias vitrines podem usar o mesmo número. Termos de uso e Política de cookies na versão de 17/11. Falta a fase 4 (trocar o número de uma vitrine, descida de plano, apagar vitrine).
-- **Lançamentos da Riachuelo** ([[2026-11-17-lancamentos-da-riachuelo-e-lojix-no-dia]]): leitor próprio do Gerente, sem disfarce, pronto e testado no servidor. A parte de receber (`claude/integracao-lancamentos` `7c22ba21`, que traz junto a fila da Fran de hora em hora) está no QA. A Renner fica de fora: o site recusa o servidor.
-- **Stories, mídias e vídeo:** a Engenharia constrói a `claude/stories-midia-video` (a mídia usada num story se guarda sozinha em "Minhas mídias"; mais qualidade no vídeo). A medição da qualidade começou em 17/11 com os vídeos originais dela.
+- **No ar** (`85474e7c`, 18/11). **Vitrines separadas dos números, fases 1, 2 e 3** ([[2026-11-16-vitrines-separadas-dos-numeros-e-bento]]): a assinante escolhe entre vitrines, e várias vitrines podem usar o mesmo número. Termos de uso e Política de cookies na versão de 17/11. Falta a fase 4 (trocar o número de uma vitrine, descida de plano, apagar vitrine).
+- **Lançamentos da Riachuelo** ([[2026-11-17-lancamentos-da-riachuelo-e-lojix-no-dia]]): no ar desde 17/11, ~23h50, com leitor próprio do Gerente, sem disfarce. Carga completa em 18/11 (todas as novidades femininas: ~1.540 peças, quase todas com foto); a Infra lê as 2 primeiras páginas de hora em hora e relê tudo aos domingos, 3h. A Renner fica de fora: o site recusa o servidor.
+- **Stories, mídias e vídeo:** no ar desde 18/11, ~7h. A mídia usada num story se guarda sozinha em "Minhas mídias", e o story feito de um vídeo guardado ficou com mais qualidade.
 - **Lojix:** desligada desde 17/11, ~17h10, depois de ligar sozinha com o banner "vem aí". Decisão dela: a regra do banner não muda; religa no dia da live (19/11, rotina às 8h; live às 12h).
 - **Stories na @frannocloset:** "quero" e publicação ligados desde 07/11, e os stories saem pela fila. O teste do "quero" de outra conta e do destaque ainda não foi feito.
-- **Catálogo da Renner e da Riachuelo pela fila do robô da Fran:** no ar desde 14/11, atualizado a cada 4 h (passa a 1 h quando os lançamentos subirem), só nos Stories dela. Cupons de fora, esperando ela.
+- **Catálogo da Renner e da Riachuelo pela fila do robô da Fran:** no ar desde 14/11, atualizado de hora em hora desde 17/11, só nos Stories dela. Cupons de fora, esperando ela.
 - **Conjuntos:** falta só a 3ª conta, com uma edição aberta na tela e o número desconectado.
 - **Story pela foto:** índice pronto desde 12/11. Faltam a busca real pela tela e o vídeo do iPhone.
 - **Leitura dos grupos:** Telegram contando nos canais da Riachuelo, da C&A e da Renner desde 07/11; WhatsApp desligado.
@@ -20,7 +20,7 @@ Atualizado em 17/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 
 ## Próximo
 
-0. **Gerente:** quando o QA aprovar os lançamentos: cópia de teste, produção, o leitor na cópia de teste, a primeira carga na produção (4 páginas), a conferência nas Peças dos Stories e a rotina de hora em hora. Quando a Engenharia entregar as mídias e o vídeo: QA, cópia de teste e produção; o vídeo original do story de 11/11 é apagado em 18/11, ~16h56 (há cópia).
+0. **Gerente:** tarefa pequena à Engenharia 2 com as ressalvas dos lançamentos (peça da fila da Fran que vira lançamento não pode passar à frente dos lançamentos da loja; foto que volta com caminho quebrado; as outras do QA). Conferir a renovação de domingo, 22/11.
 1. **Gerente, 19/11:** conferir se a Lojix religou às 8h e se a live das 12h entrou e saiu certa.
 2. **Com ela** ([[pendencias]], "De 17/11"): a Renner (toque no celular, autorização confirmada pela loja ou o leitor dela em outro lugar); o prazo de 14 dias dos lançamentos; se as 27 peças da Farm com data de 2033 a 2049 são o que ela viu fora de ordem.
 3. **Gerente:** fase 4 das vitrines à Engenharia, depois das mídias, com as ressalvas do QA; QA da `claude/deploy-healthcheck`; conferir a 2ª vitrine num número numa conta de teste.
