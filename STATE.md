@@ -21,7 +21,7 @@ Atualizado em 22/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 ## Próximo
 
 0. **Gerente:** perguntar à Infra por que a renovação completa da Riachuelo de domingo, 22/11, não rodou (rotina "Lançamentos da Riachuelo: renovação completa"); investigar por que o aviso "Pagamento recusado" no celular não ficou registrado para as duas assinantes com fatura em aberto; tarefa pequena à Engenharia 2 com as ressalvas dos lançamentos (peça da fila da Fran que vira lançamento não pode passar à frente dos lançamentos da loja; foto que volta com caminho quebrado; as outras do QA).
-0b. **Com ela:** conferir na Stripe se o e-mail de pagamento com cartão que falhou está ligado (ou deixar o Gerente conferir depois do login dela); novas tentativas de cobrança em 23/11 e 24/11.
+0b. **Com ela:** conferir na Stripe se o e-mail de pagamento com cartão que falhou está ligado (ou deixar o Gerente conferir depois do login dela); nova tentativa de cobrança em 24/11 (a assinante do anual cancelou pelo painel em 22/11, motivo "sem resultado"; fatura anulada, sem cobrança).
 1. **Gerente:** religar a Lojix no dia da próxima live da Farm (acompanhar o anúncio); acompanhar a Jéssica (sem fila por pagamento em atraso desde 19/11; conta de assinante).
 2. **Com ela** ([[pendencias]], "De 17/11"): a Renner (toque no celular, autorização confirmada pela loja ou o leitor dela em outro lugar); o prazo de 14 dias dos lançamentos; se as 27 peças da Farm com data de 2033 a 2049 são o que ela viu fora de ordem.
 3. **Gerente:** fase 4 das vitrines à Engenharia, depois das mídias, com as ressalvas do QA; QA da `claude/deploy-healthcheck`; conferir a 2ª vitrine num número numa conta de teste.
