@@ -2,10 +2,10 @@
 
 ## Agora
 
-Atualizado em 21/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-21]].
+Atualizado em 22/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-22]].
 
 - **No ar** (`ac2078c0`, 19/11; conserto do editor da Mensagem durante a live). **Vitrines separadas dos números, fases 1, 2 e 3** ([[2026-11-16-vitrines-separadas-dos-numeros-e-bento]]): a assinante escolhe entre vitrines, e várias vitrines podem usar o mesmo número. Termos de uso e Política de cookies na versão de 17/11. Falta a fase 4 (trocar o número de uma vitrine, descida de plano, apagar vitrine).
-- **Lançamentos da Riachuelo** ([[2026-11-17-lancamentos-da-riachuelo-e-lojix-no-dia]]): no ar desde 17/11, ~23h50, com leitor próprio do Gerente, sem disfarce. Carga completa em 18/11 (todas as novidades femininas: ~1.540 peças, quase todas com foto); a Infra lê as 2 primeiras páginas de hora em hora e relê tudo aos domingos, 3h. A Renner fica de fora: o site recusa o servidor.
+- **Lançamentos da Riachuelo** ([[2026-11-17-lancamentos-da-riachuelo-e-lojix-no-dia]]): no ar desde 17/11, ~23h50, com leitor próprio do Gerente, sem disfarce. Carga completa em 18/11 (todas as novidades femininas: ~1.540 peças, quase todas com foto); a Infra lê as 2 primeiras páginas de hora em hora; a releitura completa de domingo, 3h, não rodou em 22/11 (a última é de 18/11). A Renner fica de fora: o site recusa o servidor.
 - **Stories, mídias e vídeo:** no ar desde 18/11, ~7h. A mídia usada num story se guarda sozinha em "Minhas mídias", e o story feito de um vídeo guardado ficou com mais qualidade.
 - **Lojix:** desligada desde 21/11, 16h10, com o ok dela: o banner da home da Farm seguia abrindo a Lojix dias depois da live (acabou às 23h55 de 19/11). Nenhuma peça tem o selo; o registro da Lojix 6 fica aberto no painel, sem efeito. O Gerente religa no dia da próxima live (data ainda não anunciada). A regra do banner não muda (decisão dela, 17/11).
 - **Stories na @frannocloset:** "quero" e publicação ligados desde 07/11, e os stories saem pela fila. O teste do "quero" de outra conta e do destaque ainda não foi feito.
@@ -20,7 +20,8 @@ Atualizado em 21/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 
 ## Próximo
 
-0. **Gerente:** tarefa pequena à Engenharia 2 com as ressalvas dos lançamentos (peça da fila da Fran que vira lançamento não pode passar à frente dos lançamentos da loja; foto que volta com caminho quebrado; as outras do QA). Conferir a renovação de domingo, 22/11.
+0. **Gerente:** perguntar à Infra por que a renovação completa da Riachuelo de domingo, 22/11, não rodou (rotina "Lançamentos da Riachuelo: renovação completa"); investigar por que o aviso "Pagamento recusado" no celular não ficou registrado para as duas assinantes com fatura em aberto; tarefa pequena à Engenharia 2 com as ressalvas dos lançamentos (peça da fila da Fran que vira lançamento não pode passar à frente dos lançamentos da loja; foto que volta com caminho quebrado; as outras do QA).
+0b. **Com ela:** conferir na Stripe se o e-mail de pagamento com cartão que falhou está ligado (ou deixar o Gerente conferir depois do login dela); novas tentativas de cobrança em 23/11 e 24/11.
 1. **Gerente:** religar a Lojix no dia da próxima live da Farm (acompanhar o anúncio); acompanhar a Jéssica (sem fila por pagamento em atraso desde 19/11; conta de assinante).
 2. **Com ela** ([[pendencias]], "De 17/11"): a Renner (toque no celular, autorização confirmada pela loja ou o leitor dela em outro lugar); o prazo de 14 dias dos lançamentos; se as 27 peças da Farm com data de 2033 a 2049 são o que ela viu fora de ordem.
 3. **Gerente:** fase 4 das vitrines à Engenharia, depois das mídias, com as ressalvas do QA; QA da `claude/deploy-healthcheck`; conferir a 2ª vitrine num número numa conta de teste.
