@@ -2,18 +2,18 @@
 
 ## Agora
 
-Atualizado em 23/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-23]].
+Atualizado em 24/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-24]].
 
-- **No ar** (`ac2078c0`, 19/11; conserto do editor da Mensagem durante a live). **Vitrines separadas dos números, fases 1, 2 e 3** ([[2026-11-16-vitrines-separadas-dos-numeros-e-bento]]): a assinante escolhe entre vitrines, e várias vitrines podem usar o mesmo número. Termos de uso e Política de cookies na versão de 17/11. Falta a fase 4 (trocar o número de uma vitrine, descida de plano, apagar vitrine).
+- **No ar** (`dcb8a238`, 24/11; sete deploys no dia: fila sem teto ao adicionar à mão, catálogo completo por arquivo, texto dos últimos minutos da fila, a caixa da loja no exemplo da Mensagem e na IA). **Vitrines separadas dos números, fases 1, 2 e 3** ([[2026-11-16-vitrines-separadas-dos-numeros-e-bento]]): a assinante escolhe entre vitrines, e várias vitrines podem usar o mesmo número. Termos de uso e Política de cookies na versão de 17/11. Falta a fase 4 (trocar o número de uma vitrine, descida de plano, apagar vitrine).
 - **Lançamentos da Riachuelo** ([[2026-11-17-lancamentos-da-riachuelo-e-lojix-no-dia]]): no ar desde 17/11, ~23h50, com leitor próprio do Gerente, sem disfarce. Carga completa em 18/11 (todas as novidades femininas: ~1.540 peças, quase todas com foto); a Infra lê as 2 primeiras páginas de hora em hora; a releitura completa de domingo, 3h, não rodou em 22/11 (a última é de 18/11). A Renner entra pelo catálogo por arquivo (em correção).
 - **Stories, mídias e vídeo:** no ar desde 18/11, ~7h. A mídia usada num story se guarda sozinha em "Minhas mídias", e o story feito de um vídeo guardado ficou com mais qualidade.
 - **Lojix:** desligada desde 21/11, 16h10, com o ok dela: o banner da home da Farm seguia abrindo a Lojix dias depois da live (acabou às 23h55 de 19/11). Nenhuma peça tem o selo; o registro da Lojix 6 fica aberto no painel, sem efeito. O Gerente religa no dia da próxima live (data ainda não anunciada). A regra do banner não muda (decisão dela, 17/11).
 - **Stories na @frannocloset:** "quero" e publicação ligados desde 07/11, e os stories saem pela fila. O teste do "quero" de outra conta e do destaque ainda não foi feito.
 - **Catálogo da Renner e da Riachuelo pela fila do robô da Fran:** no ar desde 14/11, atualizado de hora em hora desde 17/11, só nos Stories dela. Cupons de fora (ela: "não precisa", 23/11).
-- **Catálogo completo da Renner e da Riachuelo pelo arquivo do leitor dela** ([[2026-11-23-catalogo-completo-por-arquivo-e-telegram-lendo]]): na cópia de teste (Renner 9.809 peças, Riachuelo 6.246); o QA recusou em 23/11 por falta de freio para saídas em massa; correções com a Engenharia. Resolve os lançamentos da Renner.
+- **Catálogo completo da Renner e da Riachuelo pelo arquivo do leitor dela** ([[2026-11-23-catalogo-completo-por-arquivo-e-telegram-lendo]]): no ar desde 24/11, madrugada, com o freio de saídas em massa e soltura só depois da coleta inteira. Renner ~8.900 e Riachuelo ~5.600 peças à venda; resolve os lançamentos da Renner. Falta ela liberar os comandos do catálogo no servidor.
 - **Conjuntos:** falta só a 3ª conta, com uma edição aberta na tela e o número desconectado.
 - **Story pela foto:** índice pronto desde 12/11. Faltam a busca real pela tela e o vídeo do iPhone.
-- **Leitura dos grupos:** Telegram lendo nos canais da Riachuelo, da C&A e da Renner desde 23/11 (contava desde 07/11); propostas conferidas pelo Gerente no site da loja antes de aprovar; WhatsApp desligado.
+- **Leitura dos grupos:** Telegram lendo os canais dos programas de afiliadas da Riachuelo, da C&A e da Renner desde 23/11; os cupons do programa valem pelo link de afiliada e entram com o ok dela (24/11). O Gerente confere no site antes de aprovar; ofertas só de remarcadas ou de uma categoria ficam de fora na Renner e na Riachuelo. WhatsApp desligado.
 - **Deploy:** o que ela pediu ou aprovou, e conserto de bug, sobe depois do QA e da cópia de teste sem perguntar de novo; ela é avisada depois.
 - **Acesso do Gerente:** desde 17/11 consulta o banco só para leitura e troca variáveis de função sem chamá-la (ela rodou a linha de root). Outra coisa como root continua com ela.
 - **Promoções:** o Gerente decide sozinho o que confere no site com quase certeza. Os Achadinhos de Natal FARM vão até 19/11 (a rotina das quintas estende até 24/12); seguem os nomes à mão do bazar da FARM Etc e da FARM Friday com EXTRA10.
@@ -21,8 +21,8 @@ Atualizado em 23/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 
 ## Próximo
 
-0. **Gerente:** quando a Engenharia entregar as correções da `claude/catalogo-arquivo`: cópia de teste, QA, produção sem perguntar de novo, ligar a leitura na produção e conferir; depois pôr a Infra para vigiar arquivo velho e rever as rotinas antigas da Riachuelo (a renovação de domingo não rodou em 22/11). Conferir as propostas do Telegram na Abertura e no Fechamento. Investigar por que o aviso "Pagamento recusado" no celular não ficou registrado. Tarefa pequena à Engenharia 2 com as ressalvas dos lançamentos.
-0b. **Com ela:** abrir uma peça da Renner no celular e dizer se a foto aparece (depois do deploy); o arquivo da Riachuelo do leitor dela está parado desde 23/11, 14h31; nova tentativa de cobrança da assinante do mensal em 24/11; a data da próxima live da Lojix.
+0. **Gerente:** pôr a Infra para vigiar arquivo velho do catálogo e rever as rotinas antigas dos lançamentos da Riachuelo (pausadas em 24/11; religar se o arquivo dela falhar por muito tempo). Conferir as propostas do Telegram na Abertura e no Fechamento. Investigar por que o aviso "Pagamento recusado" no celular não ficou registrado. Tarefa pequena à Engenharia 2 com as ressalvas dos lançamentos. Dress To: live em 25/11, 12h, e o banner "Dress to friday" sem botão.
+0b. **Com ela:** rodar a linha que libera os comandos do catálogo; a assinante que cancelou o anual (mensagem com 30 dias grátis, aviso de grupo pequeno no painel); promoção por categoria na Renner e na Riachuelo, se quiser; abrir uma peça da Renner no celular e dizer se a foto aparece; a data da próxima live da Lojix.
 1. **Gerente:** religar a Lojix no dia da próxima live da Farm; acompanhar a Jéssica (voltou a enviar em 23/11) e a Dani.
 2. **Com ela** ([[pendencias]], "De 17/11"): o prazo de 14 dias dos lançamentos.
 3. **Gerente:** fase 4 das vitrines à Engenharia, depois das mídias, com as ressalvas do QA; QA da `claude/deploy-healthcheck`; conferir a 2ª vitrine num número numa conta de teste.

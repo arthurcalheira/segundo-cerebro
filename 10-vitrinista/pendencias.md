@@ -135,11 +135,17 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] **Botão "Zumzum 50% OFF":** (05/11: criado pela opção "Sem cupom", até 12/11, [[2026-11-05-promocao-sem-cupom]].) não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
+## De 24/11
+
+- [ ] **Liberar os comandos do catálogo no servidor:** ela roda a linha mandada em 24/11 (acrescenta os comandos de soltar e esquecer peças do catálogo ao que o Gerente pode rodar). Responsável: ela.
+- [ ] **Assinante que cancelou o anual em 22/11** ([[2026-11-24]]): mandar ou não a mensagem pessoal com o diagnóstico e 30 dias grátis (o Gerente cria o cupom e libera com o ok dela); pedir à UX o aviso de grupo pequeno ou fora do público no começo do uso (recomendação: sim). Responsável: ela decide.
+- [ ] **Promoção por categoria ou só remarcadas na Renner e na Riachuelo:** o catálogo por arquivo não separa; se ela quiser, tarefa pequena à Engenharia (opção na promoção à mão). Responsável: ela decide.
+
 ## De 23/11
 
-- [ ] **Catálogo completo da Renner e da Riachuelo pelo arquivo** ([[2026-11-23-catalogo-completo-por-arquivo-e-telegram-lendo]]): `claude/catalogo-arquivo` `317a4be3` recusada pelo QA (falta o freio para saídas em massa e mais ajustes); correções com a Engenharia. Depois: cópia de teste, QA, produção sem perguntar de novo, ligar a leitura na produção e conferir. Depois do deploy: pôr a Infra para vigiar arquivo velho (mais de 3 h) e rever as rotinas antigas dos lançamentos da Riachuelo. Responsável: Gerente.
+- [x] **Catálogo completo da Renner e da Riachuelo pelo arquivo** (no ar desde 24/11, madrugada, com as correções do QA; [[2026-11-24]]) ([[2026-11-23-catalogo-completo-por-arquivo-e-telegram-lendo]]): `claude/catalogo-arquivo` `317a4be3` recusada pelo QA (falta o freio para saídas em massa e mais ajustes); correções com a Engenharia. Depois: cópia de teste, QA, produção sem perguntar de novo, ligar a leitura na produção e conferir. Depois do deploy: pôr a Infra para vigiar arquivo velho (mais de 3 h) e rever as rotinas antigas dos lançamentos da Riachuelo. Responsável: Gerente.
 - [ ] **Foto da Renner no celular:** quando o catálogo estiver no ar, ela abre uma peça da Renner nas Peças dos Stories e diz se a foto aparece (do servidor a loja recusa). Responsável: ela.
-- [ ] **Arquivo da Riachuelo parado** desde 23/11, 14h31: o leitor dela recusa as coletas por incompletas. Avisado a ela. Responsável: ela.
+- [x] **Arquivo da Riachuelo parado** (voltou a renovar em 24/11; fresco às 21h25) desde 23/11, 14h31: o leitor dela recusa as coletas por incompletas. Avisado a ela. Responsável: ela.
 - [ ] **Propostas do Telegram:** conferir na Abertura e no Fechamento; aprovar só o que estiver no site da loja. Responsável: Gerente.
 - [x] **E-mail de cartão recusado na Stripe:** ela conferiu ("feito", 23/11).
 - [ ] **Data da próxima live da Lojix:** ela passa quando a Farm anunciar; o Gerente religa no dia. Responsável: ela.
