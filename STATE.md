@@ -16,7 +16,7 @@ Atualizado em 25/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 - **Leitura dos grupos:** Telegram lendo os canais dos programas de afiliadas da Riachuelo, da C&A e da Renner desde 23/11; os cupons do programa valem pelo link de afiliada e entram com o ok dela (24/11). O Gerente confere no site antes de aprovar; ofertas só de remarcadas ou de uma categoria ficam de fora na Renner e na Riachuelo. WhatsApp desligado.
 - **Deploy:** o que ela pediu ou aprovou, e conserto de bug, sobe depois do QA e da cópia de teste sem perguntar de novo; ela é avisada depois.
 - **Acesso do Gerente:** desde 17/11 consulta o banco só para leitura e troca variáveis de função sem chamá-la (ela rodou a linha de root). Outra coisa como root continua com ela.
-- **Promoções:** o Gerente decide sozinho o que confere no site com quase certeza. Os Achadinhos de Natal FARM vão até 19/11 (a rotina das quintas estende até 24/12); seguem os nomes à mão do bazar da FARM Etc e da FARM Friday com EXTRA10.
+- **Promoções:** o Gerente decide sozinho o que confere no site com quase certeza. Os Achadinhos de Natal FARM vão até 03/12, 8h30 (a rotina das quintas, 9h, estende até 24/12; o fim às 8h30 vence antes dela rodar); seguem os nomes à mão do bazar da FARM Etc e da FARM Friday com EXTRA10.
 - **Agentes (OpenBot da VPS):** Gerente, Engenharia, Engenharia 2, QA, Infra e UX, na seção "Vitrinista". Uma mensagem por agente por vez; uma suíte de teste por vez. UX parado sem login. CI do GitHub parado por cobrança desde 24/10.
 
 ## Próximo
