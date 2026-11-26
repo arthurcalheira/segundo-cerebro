@@ -135,6 +135,12 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] **Botão "Zumzum 50% OFF":** (05/11: criado pela opção "Sem cupom", até 12/11, [[2026-11-05-promocao-sem-cupom]].) não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
+## De 25/11
+
+- [ ] **Fotos da Riachuelo para o Story pela foto** ([[2026-11-25-story-pela-foto-com-fotos-das-lojas]]): o Gerente roda o leitor de lançamentos dele de madrugada, devagar e sem disfarce, só para salvar as fotos na pasta do servidor (recomendação: sim). Responsável: ela decide.
+- [ ] **Fotos da Renner para o Story pela foto:** o site recusa o servidor; precisa ser no leitor dela, no outro servidor. Ela passa ao Gerente o acesso ao painel onde ele roda (entrando ela mesma na tela de login aberta no navegador do OpenBot) ou pede a mudança a quem cuida dele, com as instruções da conversa de 25/11. Responsável: ela.
+- [ ] **Dress To Friday "só hoje":** botão aprovado pelo Gerente em 25/11 sem data de fim; encerrar quando o banner sair. Responsável: Gerente.
+
 ## De 24/11
 
 - [ ] **Liberar os comandos do catálogo no servidor:** ela roda a linha mandada em 24/11 (acrescenta os comandos de soltar e esquecer peças do catálogo ao que o Gerente pode rodar). Responsável: ela.
