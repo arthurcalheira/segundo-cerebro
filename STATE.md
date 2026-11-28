@@ -2,7 +2,7 @@
 
 ## Agora
 
-Atualizado em 26/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-26]] (só promoções; nada subiu).
+Atualizado em 27/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10). O dia está em [[2026-11-27]] (só promoções e catálogo; nada subiu).
 
 - **No ar** (`b21a41e4`, 25/11; três deploys no dia, todos da busca do Story pela foto; em 24/11, sete: fila sem teto ao adicionar à mão, catálogo completo por arquivo, texto dos últimos minutos da fila, a caixa da loja no exemplo da Mensagem e na IA). **Vitrines separadas dos números, fases 1, 2 e 3** ([[2026-11-16-vitrines-separadas-dos-numeros-e-bento]]): a assinante escolhe entre vitrines, e várias vitrines podem usar o mesmo número. Termos de uso e Política de cookies na versão de 17/11. Falta a fase 4 (trocar o número de uma vitrine, descida de plano, apagar vitrine).
 - **Lançamentos da Riachuelo** ([[2026-11-17-lancamentos-da-riachuelo-e-lojix-no-dia]]): no ar desde 17/11, ~23h50, com leitor próprio do Gerente, sem disfarce. Carga completa em 18/11 (todas as novidades femininas: ~1.540 peças, quase todas com foto); a Infra lê as 2 primeiras páginas de hora em hora; a releitura completa de domingo, 3h, não rodou em 22/11 (a última é de 18/11). A Renner entra pelo catálogo por arquivo (em correção).
@@ -22,7 +22,7 @@ Atualizado em 26/11/2026, à noite, pelo Gerente (no OpenBot da VPS desde 27/10)
 ## Próximo
 
 0. **Gerente:** pôr a Infra para vigiar arquivo velho do catálogo e rever as rotinas antigas dos lançamentos da Riachuelo (pausadas em 24/11; religar se o arquivo dela falhar por muito tempo). Conferir as propostas do Telegram na Abertura e no Fechamento. Investigar por que o aviso "Pagamento recusado" no celular não ficou registrado. Tarefa pequena à Engenharia 2 com as ressalvas dos lançamentos. Telegram com 10 propostas abertas, não conferidas em 25/11. Achadinhos de Natal: fim às 8h30 vence antes da rotina das quintas (9h); mudar o fim ou o horário antes de 03/12.
-0b. **Com ela:** as fotos das lojas para o Story pela foto (Riachuelo pelo leitor do Gerente de madrugada; Renner pelo leitor dela, com o acesso ao painel onde ele roda); rodar a linha que libera os comandos do catálogo; a assinante que cancelou o anual (mensagem com 30 dias grátis, aviso de grupo pequeno no painel); promoção por categoria na Renner e na Riachuelo, se quiser; abrir uma peça da Renner no celular e dizer se a foto aparece; a data da próxima live da Lojix.
+0b. **Com ela:** baixar para ~80% o limite de "catálogo completo" do leitor da Riachuelo (descarta coletas na Black Friday, 27/11); as fotos das lojas para o Story pela foto (Riachuelo pelo leitor do Gerente de madrugada; Renner pelo leitor dela, com o acesso ao painel onde ele roda); rodar a linha que libera os comandos do catálogo; a assinante que cancelou o anual (mensagem com 30 dias grátis, aviso de grupo pequeno no painel); promoção por categoria na Renner e na Riachuelo, se quiser; abrir uma peça da Renner no celular e dizer se a foto aparece; a data da próxima live da Lojix.
 1. **Gerente:** religar a Lojix no dia da próxima live da Farm; acompanhar a Jéssica (voltou a enviar em 23/11) e a Dani.
 2. **Com ela** ([[pendencias]], "De 17/11"): o prazo de 14 dias dos lançamentos.
 3. **Gerente:** fase 4 das vitrines à Engenharia, depois das mídias, com as ressalvas do QA; QA da `claude/deploy-healthcheck`; conferir a 2ª vitrine num número numa conta de teste.

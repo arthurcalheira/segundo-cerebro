@@ -135,6 +135,11 @@ Levantado em 09/10/2026 do `STATE.md` e do `PRODUCT.md` do projeto (commit `ff62
 - [x] **Botão "Zumzum 50% OFF":** (05/11: criado pela opção "Sem cupom", até 12/11, [[2026-11-05-promocao-sem-cupom]].) não aparece sozinho. Pergunta do Gerente: pedir à Engenharia a opção "desconto no preço, sem cupom" na promoção à mão (recomendação: sim, serve a outras liquidações sem cupom). Fonte: conversa de 03/11.
 - [ ] **Modelos com `farm[…]` e frete escrito à mão:** um "R$ 399" escrito à mão num bloco `farm[…]` sairia na peça da Fábula (mínimo R$ 198). Só uma consulta ao banco da produção diz se alguma conta escreveu assim; o Gerente não tem esse acesso. Fonte: QA, 03/11.
 
+## De 27/11
+
+- [ ] **Limite de "catálogo completo" do leitor da Riachuelo** (o leitor dela, fora da Vitrinista): baixar para ~80%. Na Black Friday a coleta das 20h16 pegou 7.881 de 9.006 peças e foi descartada inteira. Recomendação do Gerente: o leitor já guarda por 3 h as peças que escapam e a Vitrinista tem o freio de saídas em massa. Fonte: [[2026-11-27]].
+- [ ] **Número de assinante desconectado** (conta `4574af36`, às 15h53 de 27/11, com o automático ligado): avisar a assinante para reconectar pelo QR, se ela não voltar sozinha. Fonte: [[2026-11-27]].
+
 ## De 25/11
 
 - [ ] **Fotos da Riachuelo para o Story pela foto** ([[2026-11-25-story-pela-foto-com-fotos-das-lojas]]): o Gerente roda o leitor de lançamentos dele de madrugada, devagar e sem disfarce, só para salvar as fotos na pasta do servidor (recomendação: sim). Responsável: ela decide.
